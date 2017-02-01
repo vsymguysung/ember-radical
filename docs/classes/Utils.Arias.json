@@ -1,0 +1,158 @@
+{
+  "name": "Utils.Arias",
+  "shortname": "Utils.Arias",
+  "classitems": [
+    {
+      "file": "addon/utils/arias.js",
+      "line": 6,
+      "description": "<p>Method or generating a unique string to use for binding aria-controls\nattributes. Returns a prefix with elementID.</p>\n",
+      "itemtype": "method",
+      "name": "controls",
+      "static": 1,
+      "return": {
+        "description": "Unique string for use with binding `aria-controls`",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 17,
+      "description": "<p>Method for generating a unique string to use for binding aria-describedby\nattributes. Returns a prefix with elementID</p>\n",
+      "itemtype": "method",
+      "name": "describedby",
+      "static": 1,
+      "return": {
+        "description": "Unique string for use with binding `aria-describedby`",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 28,
+      "description": "<p>Method for use with binding aria-expanded. Returns string of negated boolean\nfor hidden.</p>\n",
+      "itemtype": "method",
+      "name": "expanded",
+      "static": 1,
+      "return": {
+        "description": "String of negated boolean hidden for expanded",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 39,
+      "description": "<p>Method for use with directly binding <code>aria-hidden</code> to a component which\nrequires a string boolean b/c Ember will remove the attribute if it is\nboolean false.</p>\n",
+      "itemtype": "method",
+      "name": "hiddenForArias",
+      "static": 1,
+      "return": {
+        "description": "String of boolean hidden",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 51,
+      "description": "<p>Method for generating a unique string to use for binding aria-labelledby\nattributes. Returns prefix with elementID</p>\n",
+      "itemtype": "method",
+      "name": "labelledby",
+      "static": 1,
+      "return": {
+        "description": "Unique string for use with binding `aria-labelledby`",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/utils/arias.js",
+  "line": 1,
+  "is_constructor": 1,
+  "method": [
+    {
+      "file": "addon/utils/arias.js",
+      "line": 6,
+      "description": "<p>Method or generating a unique string to use for binding aria-controls\nattributes. Returns a prefix with elementID.</p>\n",
+      "itemtype": "method",
+      "name": "controls",
+      "static": 1,
+      "return": {
+        "description": "Unique string for use with binding `aria-controls`",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 17,
+      "description": "<p>Method for generating a unique string to use for binding aria-describedby\nattributes. Returns a prefix with elementID</p>\n",
+      "itemtype": "method",
+      "name": "describedby",
+      "static": 1,
+      "return": {
+        "description": "Unique string for use with binding `aria-describedby`",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 28,
+      "description": "<p>Method for use with binding aria-expanded. Returns string of negated boolean\nfor hidden.</p>\n",
+      "itemtype": "method",
+      "name": "expanded",
+      "static": 1,
+      "return": {
+        "description": "String of negated boolean hidden for expanded",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 39,
+      "description": "<p>Method for use with directly binding <code>aria-hidden</code> to a component which\nrequires a string boolean b/c Ember will remove the attribute if it is\nboolean false.</p>\n",
+      "itemtype": "method",
+      "name": "hiddenForArias",
+      "static": 1,
+      "return": {
+        "description": "String of boolean hidden",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    },
+    {
+      "file": "addon/utils/arias.js",
+      "line": 51,
+      "description": "<p>Method for generating a unique string to use for binding aria-labelledby\nattributes. Returns prefix with elementID</p>\n",
+      "itemtype": "method",
+      "name": "labelledby",
+      "static": 1,
+      "return": {
+        "description": "Unique string for use with binding `aria-labelledby`",
+        "type": "String"
+      },
+      "class": "Utils.Arias",
+      "srcFileId": "addon_utils_arias.js"
+    }
+  ],
+  "property": [],
+  "event": [],
+  "srcFileId": "addon_utils_arias.js"
+}

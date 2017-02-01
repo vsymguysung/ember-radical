@@ -1,0 +1,123 @@
+{
+  "parser": "YUIDoc",
+  "namespaces": [],
+  "name": "Ember Radical Docs",
+  "description": "API documentation for Ember Radical Components, Helpers and Services",
+  "version": "1.0.0-beta.1",
+  "repository": "https://github.com/healthsparq/ember-radical",
+  "modules": [],
+  "classes": [
+    {
+      "name": "Component.RadAlert",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadButton",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadCard",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadCard.Body",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadCard.Footer",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadCard.Title",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadDrawer",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadDrawer.Content",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadDrawer.Target",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadDropdown",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadDropdown.Content",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadDropdown.Target",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadModal",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadModal.Header",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadPopover",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadPopover.Content",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadSVG",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadState",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadTabs",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadTabs.Content",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadTooltip",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadTooltip.Content",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadTooltip.Title",
+      "type": "classes"
+    },
+    {
+      "name": "Eq",
+      "type": "classes"
+    },
+    {
+      "name": "Tagging",
+      "type": "classes"
+    },
+    {
+      "name": "Util.Analytics.SetupGTM",
+      "type": "classes"
+    },
+    {
+      "name": "Utils.Arias",
+      "type": "classes"
+    },
+    {
+      "name": "Utils.Listeners",
+      "type": "classes"
+    }
+  ]
+}

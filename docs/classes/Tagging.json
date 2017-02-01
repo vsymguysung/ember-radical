@@ -1,0 +1,140 @@
+{
+  "name": "Tagging",
+  "shortname": "Tagging",
+  "classitems": [
+    {
+      "file": "addon/services/tagging.js",
+      "line": 85,
+      "description": "<p>Send a page view by pushing virtual pageview event into data layer</p>\n",
+      "itemtype": "method",
+      "name": "firePageView",
+      "params": [
+        {
+          "name": "page",
+          "description": "<p>url of the page to send</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Tagging",
+      "srcFileId": "addon_services_tagging.js"
+    },
+    {
+      "file": "addon/services/tagging.js",
+      "line": 29,
+      "description": "<p>Fire tag by pushing analytics event into dataLayer</p>\n<p>Passing in an object representing tagging information is now supported and\nis the preferred method for invoking <code>fireTag</code>. Additionally, custom dimensions\nmay now also be passed in as part of this object.</p>\n<p>Example:</p>\n<pre class=\"language-javascript\"><code class=\"language-javascript\">tagging<span class=\"token punctuation\">.</span><span class=\"token function\">fireTag</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">{</span>\n  category<span class=\"token punctuation\">:</span> <span class=\"token string\">'Big Hunks'</span><span class=\"token punctuation\">,</span>\n  action<span class=\"token punctuation\">:</span> <span class=\"token string\">'A hunk didnt listen'</span><span class=\"token punctuation\">,</span>\n  label<span class=\"token punctuation\">:</span> <span class=\"token string\">'Hunks are bad listeners'</span><span class=\"token punctuation\">,</span>\n  cd<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    someCD<span class=\"token punctuation\">:</span> <span class=\"token string\">'somevalue'</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n</code></pre>\n",
+      "itemtype": "method",
+      "name": "fireTag",
+      "params": [
+        {
+          "name": "tag",
+          "description": "<p>Tag object containing all of the tag data</p>\n",
+          "type": "Object"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Tagging",
+      "srcFileId": "addon_services_tagging.js"
+    },
+    {
+      "file": "addon/services/tagging.js",
+      "line": 14,
+      "description": "<p>Method for pushing an object into the data layer. Used to set the custom\ndimensions included with tags.</p>\n",
+      "itemtype": "method",
+      "name": "pushData",
+      "params": [
+        {
+          "name": "data",
+          "description": "<p>Object of key/value pairs mapping to custom dimensions</p>\n",
+          "type": "Object"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Tagging",
+      "srcFileId": "addon_services_tagging.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/services/tagging.js",
+  "line": 3,
+  "description": "<p>Base tagging class. Provides methods for pushing data into the data layer.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Service",
+  "method": [
+    {
+      "file": "addon/services/tagging.js",
+      "line": 85,
+      "description": "<p>Send a page view by pushing virtual pageview event into data layer</p>\n",
+      "itemtype": "method",
+      "name": "firePageView",
+      "params": [
+        {
+          "name": "page",
+          "description": "<p>url of the page to send</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Tagging",
+      "srcFileId": "addon_services_tagging.js"
+    },
+    {
+      "file": "addon/services/tagging.js",
+      "line": 29,
+      "description": "<p>Fire tag by pushing analytics event into dataLayer</p>\n<p>Passing in an object representing tagging information is now supported and\nis the preferred method for invoking <code>fireTag</code>. Additionally, custom dimensions\nmay now also be passed in as part of this object.</p>\n<p>Example:</p>\n<pre class=\"language-javascript\"><code class=\"language-javascript\">tagging<span class=\"token punctuation\">.</span><span class=\"token function\">fireTag</span><span class=\"token punctuation\">(</span><span class=\"token punctuation\">{</span>\n  category<span class=\"token punctuation\">:</span> <span class=\"token string\">'Big Hunks'</span><span class=\"token punctuation\">,</span>\n  action<span class=\"token punctuation\">:</span> <span class=\"token string\">'A hunk didnt listen'</span><span class=\"token punctuation\">,</span>\n  label<span class=\"token punctuation\">:</span> <span class=\"token string\">'Hunks are bad listeners'</span><span class=\"token punctuation\">,</span>\n  cd<span class=\"token punctuation\">:</span> <span class=\"token punctuation\">{</span>\n    someCD<span class=\"token punctuation\">:</span> <span class=\"token string\">'somevalue'</span>\n  <span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">}</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">;</span>\n</code></pre>\n",
+      "itemtype": "method",
+      "name": "fireTag",
+      "params": [
+        {
+          "name": "tag",
+          "description": "<p>Tag object containing all of the tag data</p>\n",
+          "type": "Object"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Tagging",
+      "srcFileId": "addon_services_tagging.js"
+    },
+    {
+      "file": "addon/services/tagging.js",
+      "line": 14,
+      "description": "<p>Method for pushing an object into the data layer. Used to set the custom\ndimensions included with tags.</p>\n",
+      "itemtype": "method",
+      "name": "pushData",
+      "params": [
+        {
+          "name": "data",
+          "description": "<p>Object of key/value pairs mapping to custom dimensions</p>\n",
+          "type": "Object"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Tagging",
+      "srcFileId": "addon_services_tagging.js"
+    }
+  ],
+  "property": [],
+  "event": [],
+  "srcFileId": "addon_services_tagging.js"
+}

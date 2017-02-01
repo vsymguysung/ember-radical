@@ -1,0 +1,27 @@
+{
+  "name": "Util.Analytics.SetupGTM",
+  "shortname": "Util.Analytics.SetupGTM",
+  "classitems": [],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/utils/setup-gtm.js",
+  "line": 1,
+  "description": "<p>Analytics Setup Script</p>\n<p>This script will insert a script tag to pull down the google tag manager\nlibrary. That library will also handle pulling down the google analytics\nlibrary.</p>\n<p>Invoke this function with the unique GTM container ID from you friendly\nneighborhood analytics contact.</p>\n<p><em>NOTE: will attach <code>dataLayer</code> to window for namespacing analytics events.</em></p>\n",
+  "params": [
+    {
+      "name": "containerId",
+      "description": "Unique id matching application GTM id",
+      "type": "String"
+    }
+  ],
+  "return": {
+    "description": "",
+    "type": "Undefined"
+  },
+  "method": [],
+  "property": [],
+  "event": [],
+  "srcFileId": "addon_utils_setup-gtm.js"
+}

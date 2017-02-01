@@ -1,0 +1,27 @@
+{
+  "name": "Eq",
+  "shortname": "Eq",
+  "classitems": [],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/helpers/eq.js",
+  "line": 3,
+  "description": "<p>Helper to compare two values to see if they are equal. Uses strict equal\ncomparison</p>\n",
+  "params": [
+    {
+      "name": "args",
+      "description": "Positional args passed to helper which should be compared",
+      "type": "Array"
+    }
+  ],
+  "return": {
+    "description": "",
+    "type": "Boolean"
+  },
+  "method": [],
+  "property": [],
+  "event": [],
+  "srcFileId": "addon_helpers_eq.js"
+}

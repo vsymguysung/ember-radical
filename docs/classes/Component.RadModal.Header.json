@@ -1,0 +1,213 @@
+{
+  "name": "Component.RadModal.Header",
+  "shortname": "Component.RadModal.Header",
+  "classitems": [
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 39,
+      "description": "<p>Property bound to component id for usability</p>\n",
+      "itemtype": "property",
+      "name": "aria-labelledby",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 45,
+      "description": "<p>If you want that header to have some pop</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 68,
+      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "subprops": [
+        {
+          "name": "'brand'",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 78,
+      "description": "<p>Handle binding brand and basic related css class names</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 84,
+      "description": "<p>Bind class names</p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 29,
+      "description": "<p>Action closure passed in to modal. Is mounted to the modal background for\nclose on click (unless 'hideBackground' is true)</p>\n",
+      "itemtype": "property",
+      "name": "closeModal",
+      "type": "{function}",
+      "default": "() => {}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 99,
+      "description": "<p>Set id of component to aria-labelledby on init for usability</p>\n",
+      "itemtype": "event",
+      "name": "init",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 90,
+      "description": "<p>Wrapping <code>&lt;header&gt;</code></p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 51,
+      "description": "<p>Pass a <code>(hash)</code> of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:</p>\n<p><code>(hash category='Tag Category' action='Tag Action' label='Tag Label')</code></p>\n",
+      "itemtype": "property",
+      "name": "tagclose",
+      "type": "{[type]}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-modal/header/component.js",
+  "line": 5,
+  "description": "<p>Used to handle rendering a header for an Ember Radical Modal. Should always\nbe accessed via the <code>Header</code> prop or <code>components</code> hash of <code>rad-modal</code>.</p>\n<h3>Accessibility</h3>\n<p>The Core Modal Header always receives an <code>aria-labelledby</code> attribute from\nits parent modal, which it uses to set up as its own <code>elementId</code> to ensure\nthat screen readers are able to correctly associate the modal header with the\nmodal that it labels. Some form of a Header is always required for instances\nof Core Modal to ensure that they are properly labelled.</p>\n<h4>Configurations</h4>\n<ul>\n<li><code>brand</code>: When accessing the header subcomponent in block form, you can use\nthis property to access and apply standard branding classes to the header,\ne.g. <code>'primary'</code> or <code>'secondary'</code>.</li>\n</ul>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 39,
+      "description": "<p>Property bound to component id for usability</p>\n",
+      "itemtype": "property",
+      "name": "aria-labelledby",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 45,
+      "description": "<p>If you want that header to have some pop</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 68,
+      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "subprops": [
+        {
+          "name": "'brand'",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 78,
+      "description": "<p>Handle binding brand and basic related css class names</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 84,
+      "description": "<p>Bind class names</p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 29,
+      "description": "<p>Action closure passed in to modal. Is mounted to the modal background for\nclose on click (unless 'hideBackground' is true)</p>\n",
+      "itemtype": "property",
+      "name": "closeModal",
+      "type": "{function}",
+      "default": "() => {}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 90,
+      "description": "<p>Wrapping <code>&lt;header&gt;</code></p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 51,
+      "description": "<p>Pass a <code>(hash)</code> of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:</p>\n<p><code>(hash category='Tag Category' action='Tag Action' label='Tag Label')</code></p>\n",
+      "itemtype": "property",
+      "name": "tagclose",
+      "type": "{[type]}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    }
+  ],
+  "event": [
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 99,
+      "description": "<p>Set id of component to aria-labelledby on init for usability</p>\n",
+      "itemtype": "event",
+      "name": "init",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    }
+  ],
+  "srcFileId": "addon_components_rad-modal_header_component.js"
+}

@@ -1,0 +1,39 @@
+{
+  "name": "Component.RadCard.Footer",
+  "shortname": "Component.RadCard.Footer",
+  "classitems": [
+    {
+      "file": "addon/components/rad-card/footer/component.js",
+      "line": 14,
+      "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Footer",
+      "srcFileId": "addon_components_rad-card_footer_component.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-card/footer/component.js",
+  "line": 4,
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/rad-card/footer/component.js",
+      "line": 14,
+      "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Footer",
+      "srcFileId": "addon_components_rad-card_footer_component.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_rad-card_footer_component.js"
+}

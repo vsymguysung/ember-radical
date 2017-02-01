@@ -1,0 +1,112 @@
+{
+  "name": "Component.RadDropdown.Target",
+  "shortname": "Component.RadDropdown.Target",
+  "classitems": [
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 17,
+      "description": "<p>Ember fun: Attribute bindings require a value to bind on.</p>\n",
+      "itemtype": "property",
+      "name": "aria-haspopup",
+      "type": "string",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 33,
+      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 39,
+      "description": "<p>Bind <code>dropdown-target</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 23,
+      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
+      "itemtype": "property",
+      "name": "expanded",
+      "type": "{string}",
+      "class": "Component.RadDropdown.Target",
+      "subprops": [
+        {
+          "name": "hidden",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-dropdown/target/component.js",
+  "line": 7,
+  "description": "<p>Core dropdown target component</p>\n",
+  "is_constructor": 1,
+  "extends": "Component.CoreButton",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 17,
+      "description": "<p>Ember fun: Attribute bindings require a value to bind on.</p>\n",
+      "itemtype": "property",
+      "name": "aria-haspopup",
+      "type": "string",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 33,
+      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 39,
+      "description": "<p>Bind <code>dropdown-target</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target/component.js",
+      "line": 23,
+      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
+      "itemtype": "property",
+      "name": "expanded",
+      "type": "{string}",
+      "class": "Component.RadDropdown.Target",
+      "subprops": [
+        {
+          "name": "hidden",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_target_component.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_rad-dropdown_target_component.js"
+}

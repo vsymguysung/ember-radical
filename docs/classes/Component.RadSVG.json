@@ -1,0 +1,142 @@
+{
+  "name": "Component.RadSVG",
+  "shortname": "Component.RadSVG",
+  "classitems": [
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 36,
+      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 50,
+      "description": "<p>Bound classNames: <code>svgId</code></p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 44,
+      "description": "<p>Class names: <code>rad-svg</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 19,
+      "description": "<p>File path to svg definitions file</p>\n",
+      "itemtype": "property",
+      "name": "filePath",
+      "type": "{string}",
+      "default": "assets/svg-defs.svg",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 26,
+      "description": "<p>The id of the svg.</p>\n",
+      "itemtype": "property",
+      "name": "svgId",
+      "type": "{string}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 56,
+      "description": "<p>SVG DOM element</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-svg/component.js",
+  "line": 4,
+  "description": "<p>Core component for rendering svg icons. Expects an svg id as <code>svgId</code>.</p>\n<h4>Usage:</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">\"bubbles\"</span> classNames<span class=\"token operator\">=</span><span class=\"token string\">\"radical\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 36,
+      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 50,
+      "description": "<p>Bound classNames: <code>svgId</code></p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 44,
+      "description": "<p>Class names: <code>rad-svg</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 19,
+      "description": "<p>File path to svg definitions file</p>\n",
+      "itemtype": "property",
+      "name": "filePath",
+      "type": "{string}",
+      "default": "assets/svg-defs.svg",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 26,
+      "description": "<p>The id of the svg.</p>\n",
+      "itemtype": "property",
+      "name": "svgId",
+      "type": "{string}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg/component.js",
+      "line": 56,
+      "description": "<p>SVG DOM element</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg_component.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_rad-svg_component.js"
+}

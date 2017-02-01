@@ -1,0 +1,303 @@
+{
+  "name": "Component.RadAlert",
+  "shortname": "Component.RadAlert",
+  "classitems": [
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 138,
+      "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
+      "itemtype": "method",
+      "name": "_selfDestruct",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 157,
+      "description": "<p>Actions hash</p>\n",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 106,
+      "description": "<p>Attribute bindings applied to the component.</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 45,
+      "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "default": "''",
+      "type": "{string}",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 84,
+      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{string}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "subprops": [
+        {
+          "name": "'brand'",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 53,
+      "description": "<p>Whether this alert can be dismissed via the close button in the upper right\ncorner. Defaults to true. Adds an interactive close button to the alert.</p>\n<p><strong>Usage:</strong>\nOverride by passing <code>false</code> into this param in your handlebars template:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Standard template content goes here <span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "itemtype": "property",
+      "name": "canDismiss",
+      "type": "{boolean}",
+      "default": "true",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 123,
+      "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 115,
+      "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 163,
+      "description": "<p>A proxy action for the selfDestruct method</p>\n",
+      "itemtype": "method",
+      "name": "dismiss",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 72,
+      "description": "<p>Contains optional action that is executed when the alert is dismissed.\nThis action will be executed before the alert is destroyed.</p>\n",
+      "itemtype": "property",
+      "name": "onDismiss",
+      "type": "{function}",
+      "default": "() => {}",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 95,
+      "description": "<p>A++ accessibility. Tells a screen this component is an alert.</p>\n",
+      "itemtype": "property",
+      "name": "role",
+      "type": "{string}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-alert/component.js",
+  "line": 5,
+  "description": "<p>Multi-use alerts for in-page error messaging, pop-up alerts, notifications,\nand more.</p>\n<h3>Usage</h3>\n<h4>1. Basic usage</h4>\n<p>Alerts accept a <code>brand</code> property to change the alert color.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Even hunks were boys once<span class=\"token punctuation\">.</span> Pretty little boy hunks<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"secondary\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>If you're raking the leaves and it gets all over your driveway<span class=\"token punctuation\">,</span> just hose it off dummy<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"success\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>You have smelly body parts<span class=\"token operator\">?</span> Smelly under your arms<span class=\"token operator\">?</span> In the armpits<span class=\"token operator\">?</span> Just… just put some vinegar on it<span class=\"token operator\">!</span> Why didn't you think <span class=\"token keyword\">of</span> that<span class=\"token operator\">?</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"info\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>I'll be brack<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"warning\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Life comes <span class=\"token keyword\">from</span> eggs<span class=\"token punctuation\">.</span> Not just <span class=\"token keyword\">for</span> omelettes<span class=\"token punctuation\">,</span> ya dingus<span class=\"token punctuation\">,</span> you could make a baby boy or a baby girl too<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"danger\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Go to bed early you doofus<span class=\"token punctuation\">,</span> 'cause when you're sleeping there's no lonely times<span class=\"token punctuation\">,</span> just dreams<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-alert brand=\"primary\"}}Even hunks were boys once. Pretty little boy hunks!{{/rad-alert}}\n{{#rad-alert brand=\"secondary\"}}If you're raking the leaves and it gets all over your driveway, just hose it off dummy.{{/rad-alert}}\n{{#rad-alert brand=\"success\"}}You have smelly body parts? Smelly under your arms? In the armpits? Just… just put some vinegar on it! Why didn't you think of that?{{/rad-alert}}\n{{#rad-alert brand=\"info\"}}I'll be brack.{{/rad-alert}}\n{{#rad-alert brand=\"warning\"}}Life comes from eggs. Not just for omelettes, ya dingus, you could make a baby boy or a baby girl too.{{/rad-alert}}\n{{#rad-alert brand=\"danger\"}}Go to bed early you doofus, 'cause when you're sleeping there's no lonely times, just dreams.{{/rad-alert}}</p>\n<h4>2. Dismissing</h4>\n<p>By default alerts are dismissible. You can disable this by passing a\n<code>canDismiss</code> property.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Try to dismiss <span class=\"token keyword\">this</span><span class=\"token punctuation\">,</span> ya dingus<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-alert brand=\"primary\" canDismiss=false}}Try to dismiss this, ya dingus.{{/rad-alert}}</p>\n<p>When alerts are dismissed they also fire an <code>onDismiss</code> action.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> onDismiss<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"handleDismiss\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Dismiss me<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 138,
+      "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
+      "itemtype": "method",
+      "name": "_selfDestruct",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 163,
+      "description": "<p>A proxy action for the selfDestruct method</p>\n",
+      "itemtype": "method",
+      "name": "dismiss",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    }
+  ],
+  "property": [
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 157,
+      "description": "<p>Actions hash</p>\n",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 106,
+      "description": "<p>Attribute bindings applied to the component.</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 45,
+      "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "default": "''",
+      "type": "{string}",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 84,
+      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{string}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "subprops": [
+        {
+          "name": "'brand'",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 53,
+      "description": "<p>Whether this alert can be dismissed via the close button in the upper right\ncorner. Defaults to true. Adds an interactive close button to the alert.</p>\n<p><strong>Usage:</strong>\nOverride by passing <code>false</code> into this param in your handlebars template:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Standard template content goes here <span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "itemtype": "property",
+      "name": "canDismiss",
+      "type": "{boolean}",
+      "default": "true",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 123,
+      "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 115,
+      "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 72,
+      "description": "<p>Contains optional action that is executed when the alert is dismissed.\nThis action will be executed before the alert is destroyed.</p>\n",
+      "itemtype": "property",
+      "name": "onDismiss",
+      "type": "{function}",
+      "default": "() => {}",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert/component.js",
+      "line": 95,
+      "description": "<p>A++ accessibility. Tells a screen this component is an alert.</p>\n",
+      "itemtype": "property",
+      "name": "role",
+      "type": "{string}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert_component.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_rad-alert_component.js"
+}

@@ -1,0 +1,92 @@
+{
+  "name": "Component.RadDrawer.Content",
+  "shortname": "Component.RadDrawer.Content",
+  "classitems": [
+    {
+      "file": "addon/components/rad-drawer/content/component.js",
+      "line": 27,
+      "description": "<p>Bind <code>aria-hidden</code> for A+ usability\nBind <code>data-test</code> attr to modified <code>dataTest</code> value</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDrawer.Content",
+      "srcFileId": "addon_components_rad-drawer_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/content/component.js",
+      "line": 34,
+      "description": "<p>Bind <code>dropdown-content</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDrawer.Content",
+      "srcFileId": "addon_components_rad-drawer_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/content/component.js",
+      "line": 17,
+      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
+      "itemtype": "property",
+      "name": "hiddenForArias",
+      "type": "{string}",
+      "class": "Component.RadDrawer.Content",
+      "subprops": [
+        {
+          "name": "hidden",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-drawer_content_component.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-drawer/content/component.js",
+  "line": 6,
+  "description": "<p>Core drawer content component</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/rad-drawer/content/component.js",
+      "line": 27,
+      "description": "<p>Bind <code>aria-hidden</code> for A+ usability\nBind <code>data-test</code> attr to modified <code>dataTest</code> value</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDrawer.Content",
+      "srcFileId": "addon_components_rad-drawer_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/content/component.js",
+      "line": 34,
+      "description": "<p>Bind <code>dropdown-content</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDrawer.Content",
+      "srcFileId": "addon_components_rad-drawer_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/content/component.js",
+      "line": 17,
+      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
+      "itemtype": "property",
+      "name": "hiddenForArias",
+      "type": "{string}",
+      "class": "Component.RadDrawer.Content",
+      "subprops": [
+        {
+          "name": "hidden",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-drawer_content_component.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_rad-drawer_content_component.js"
+}

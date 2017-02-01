@@ -1,0 +1,108 @@
+{
+  "name": "Utils.Listeners",
+  "shortname": "Utils.Listeners",
+  "classitems": [
+    {
+      "file": "addon/utils/listeners.js",
+      "line": 8,
+      "description": "<p>Handle binding a listener to an element that calls a callback (typically a\nclose method) when the escape key is pressed.</p>\n",
+      "itemtype": "method",
+      "name": "closeOnEscape",
+      "params": [
+        {
+          "name": "namespace",
+          "description": "<p>Unique namespace for the listener</p>\n",
+          "type": "String"
+        },
+        {
+          "name": "cb",
+          "description": "<p>The method to call when the escape key is pressed</p>\n",
+          "type": "Function"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Utils.Listeners",
+      "srcFileId": "addon_utils_listeners.js"
+    },
+    {
+      "file": "addon/utils/listeners.js",
+      "line": 24,
+      "description": "<p>Handle unbinding escape listener.</p>\n",
+      "itemtype": "method",
+      "name": "unbindOnEscape",
+      "params": [
+        {
+          "name": "namespace",
+          "description": "<p>Unique namespace for the listener</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Utils.Listeners",
+      "srcFileId": "addon_utils_listeners.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/utils/listeners.js",
+  "line": 3,
+  "is_constructor": 1,
+  "method": [
+    {
+      "file": "addon/utils/listeners.js",
+      "line": 8,
+      "description": "<p>Handle binding a listener to an element that calls a callback (typically a\nclose method) when the escape key is pressed.</p>\n",
+      "itemtype": "method",
+      "name": "closeOnEscape",
+      "params": [
+        {
+          "name": "namespace",
+          "description": "<p>Unique namespace for the listener</p>\n",
+          "type": "String"
+        },
+        {
+          "name": "cb",
+          "description": "<p>The method to call when the escape key is pressed</p>\n",
+          "type": "Function"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Utils.Listeners",
+      "srcFileId": "addon_utils_listeners.js"
+    },
+    {
+      "file": "addon/utils/listeners.js",
+      "line": 24,
+      "description": "<p>Handle unbinding escape listener.</p>\n",
+      "itemtype": "method",
+      "name": "unbindOnEscape",
+      "params": [
+        {
+          "name": "namespace",
+          "description": "<p>Unique namespace for the listener</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Utils.Listeners",
+      "srcFileId": "addon_utils_listeners.js"
+    }
+  ],
+  "property": [],
+  "event": [],
+  "srcFileId": "addon_utils_listeners.js"
+}

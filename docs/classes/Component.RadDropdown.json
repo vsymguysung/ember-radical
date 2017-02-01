@@ -1,0 +1,281 @@
+{
+  "name": "Component.RadDropdown",
+  "shortname": "Component.RadDropdown",
+  "classitems": [
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 130,
+      "description": "<p>Actions</p>\n",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 98,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 56,
+      "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 63,
+      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 105,
+      "description": "<p>Bind <code>rad-dropdown</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 81,
+      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
+      "itemtype": "property",
+      "name": "describedby",
+      "type": "{string}",
+      "class": "Component.RadDropdown",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 73,
+      "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 151,
+      "description": "<p>Handle the hiding of the dropdown</p>\n",
+      "itemtype": "method",
+      "name": "hide",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 88,
+      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
+      "itemtype": "property",
+      "name": "labelledby",
+      "type": "{string}",
+      "class": "Component.RadDropdown",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 136,
+      "description": "<p>Handle the showing of the dropdown</p>\n",
+      "itemtype": "method",
+      "name": "show",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 114,
+      "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
+      "itemtype": "method",
+      "name": "willDestroyElement",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-dropdown/component.js",
+  "line": 8,
+  "description": "<p>Core dropdown component.</p>\n<p>Welcome friend, if you're looking for a button/link that opens a dropdown\nyou've come to the right place.</p>\n<h2>Usage</h2>\n<h3>1. Simple invocation. It's so easy. Just pass a Target and Content prop</h3>\n<p>and you've got a totally rad dropdown.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>dropdown Target<span class=\"token operator\">=</span><span class=\"token string\">\"Open me!\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"Hey, what's up?\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{rad-dropdown Target=\"Open me!\" Content=\"Hey, what's up?\"}}</p>\n<h3>2. Simple target with custom content. Use the Content contextual</h3>\n<p>component to add custom content to the dropdown.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>dropdown Target<span class=\"token operator\">=</span><span class=\"token string\">\"Open me!\"</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hey<span class=\"token punctuation\">,</span> what's up<span class=\"token operator\">?</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>dropdown<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<h3>3. Customize both the dropdown target and content.</h3>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>dropdown <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Open me<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hey<span class=\"token punctuation\">,</span> what's up<span class=\"token operator\">?</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>dropdown<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-dropdown as |components|}}\n{{#components.target}}Open me!{{/components.target}}\n{{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}</p>\n<h3>4. Turn the target into a button with <code>buttonStyle=true</code> and pass a</h3>\n<p><code>brand</code> to change the color button.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>dropdown buttonStyle<span class=\"token operator\">=</span><span class=\"token boolean\">true</span> brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> Target<span class=\"token operator\">=</span><span class=\"token string\">\"Open me!\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"Hey, what's up?\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>buttonStyle</code></td>\n<td>boolean</td>\n<td>false</td>\n<td>Whether to style the <code>target</code> to look like a button</td>\n</tr>\n<tr>\n<td><code>brand</code></td>\n<td>string</td>\n<td>''</td>\n<td>The brand class to use to style the <code>target</code></td>\n</tr>\n</tbody>\n</table>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 151,
+      "description": "<p>Handle the hiding of the dropdown</p>\n",
+      "itemtype": "method",
+      "name": "hide",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 136,
+      "description": "<p>Handle the showing of the dropdown</p>\n",
+      "itemtype": "method",
+      "name": "show",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 114,
+      "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
+      "itemtype": "method",
+      "name": "willDestroyElement",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    }
+  ],
+  "property": [
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 130,
+      "description": "<p>Actions</p>\n",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 98,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 56,
+      "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 63,
+      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 105,
+      "description": "<p>Bind <code>rad-dropdown</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 81,
+      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
+      "itemtype": "property",
+      "name": "describedby",
+      "type": "{string}",
+      "class": "Component.RadDropdown",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 73,
+      "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 88,
+      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
+      "itemtype": "property",
+      "name": "labelledby",
+      "type": "{string}",
+      "class": "Component.RadDropdown",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_rad-dropdown_component.js"
+}
