@@ -8,11 +8,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     
-<meta name="dummy/config/environment" content="%7B%22modulePrefix%22%3A%22dummy%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-radical%22%2C%22version%22%3A%221.0.0-beta.1+af6e875d%22%7D%2C%22featureFlags%22%3A%7B%22RADICAL%22%3Atrue%2C%22TAGGING%22%3Afalse%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
+<meta name="dummy/config/environment" content="%7B%22modulePrefix%22%3A%22dummy%22%2C%22environment%22%3A%22production%22%2C%22rootURL%22%3A%22/%22%2C%22locationType%22%3A%22auto%22%2C%22EmberENV%22%3A%7B%22FEATURES%22%3A%7B%7D%2C%22EXTEND_PROTOTYPES%22%3A%7B%22Date%22%3Afalse%7D%7D%2C%22APP%22%3A%7B%22name%22%3A%22ember-radical%22%2C%22version%22%3A%221.0.0-beta.1+317ed8af%22%7D%2C%22featureFlags%22%3A%7B%22RADICAL%22%3Atrue%2C%22TAGGING%22%3Afalse%7D%2C%22exportApplicationGlobal%22%3Afalse%7D" />
 <script></script>
 
     <link rel="stylesheet" href="/assets/vendor-0a99637f5355be7677cfc216889a9880.css" integrity="sha256-2oonNlTul9ziTkOfWYL36hAfi/7ogHk/t/ZdVy1zLd0= sha512-aqxUpvZTDZAaifdHOcG7nWWFQjxu8k8yNsvvobVq7jeNQJGFYSQly8Gu7tPXjFGvw2LamdZd0Hlxg3AncoA1bg==" >
     <link rel="stylesheet" href="/assets/dummy-3ef8e75620133f0b39e3fcd4d6cc5781.css" integrity="sha256-V953kKpNhawa7SqKgBdEDJqDziUO2zeR6o63xlNyttM= sha512-Oj5Mdairimg47BGj2qG0bti1kbrvLX9P4F8Rh5NBb/nkyt5AU0EChm3ImhjAn9zwimRfwu/W6BCH9Vk3U+i5zw==" >
+
+    <!-- Totally great hack for enabling a SPA within Github pages -->
+    <!-- Thanks to: http://www.backalleycoder.com/2016/05/13/sghpa-the-single-page-app-hack-for-github-pages/ -->
+    <script>
+      (function(){
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+          history.replaceState(null, null, redirect);
+        }
+      })();
+    </script>
 
     
   </head>
@@ -20,7 +32,7 @@
     
 
     <script src="/assets/vendor-18072ff37c4c73d5a35bcbbba46f6d7a.js" integrity="sha256-z0knMiU6o+pEKKXg6hnBWOhDdXRT7iUgTK7TU/IHi0M= sha512-47ATe0l2ZRipYfjHPSObMyagwyp1OhENrND0aEC88PJ0Bx8Xqc7xMI4QY1ec0oTsovtm1HxRB+flMte+Y0V/Pg==" ></script>
-    <script src="/assets/dummy-f8937579ef58e64a64ab1e878a9c6fee.js" integrity="sha256-plLMzSW6wT7CQNeecd0NlT2Q+ILgSld32CXLOrt+WdE= sha512-A/kAs9UxS4vjeoKdOhTyR7bPjfVXlFnqMq017VX6ZpkaRdbnzBPocJyV82DB/MFzA7KcyjH8GU96bwIWWuZbwA==" ></script>
+    <script src="/assets/dummy-1f79030a9151a06b52613b093922ccef.js" integrity="sha256-eOeGnzlqP8F4Rdv3tGg8H955xv1sNO8Gu7kbCep9uoI= sha512-LOMlR6pP6kxfeqOLACEx1jbXcrqEjNrpDz60tbf6sPd8/1It9C8ZcW3V3qOzFqO9dGkzCWsAlhNYFXrkDsvJFg==" ></script>
 
     
   </body>
