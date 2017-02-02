@@ -3,37 +3,37 @@
   "shortname": "Component.RadState",
   "classitems": [
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 59,
+      "file": "addon/components/rad-state.js",
+      "line": 67,
       "description": "<p>Actions hash</p>\n",
       "itemtype": "property",
       "name": "actions",
       "type": "{Object}",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
+      "file": "addon/components/rad-state.js",
       "line": 50,
       "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
       "itemtype": "property",
       "name": "active",
       "type": "{Boolean}",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 65,
+      "file": "addon/components/rad-state.js",
+      "line": 73,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
       "itemtype": "method",
       "name": "closeModal",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 72,
+      "file": "addon/components/rad-state.js",
+      "line": 80,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
       "itemtype": "method",
       "name": "openModal",
@@ -42,11 +42,21 @@
         "type": "Undefined"
       },
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 80,
+      "file": "addon/components/rad-state.js",
+      "line": 56,
+      "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 88,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
       "itemtype": "method",
       "name": "toggleState",
@@ -62,31 +72,31 @@
         "type": "Undefined"
       },
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-state/component.js",
+  "file": "addon/components/rad-state.js",
   "line": 4,
   "description": "<p>Component that can be used for tracking state changes with modals or drawers.\nWrap either in one of these and use the yielded state and actions to handle\nshowing/hiding/controlling your component.</p>\n<p>Useful mainly for demonstration/documentation purposes, but also handy for\nwhen you don't have a convenient place to store state (particularly during\nearly development stages). It's also kind of nice for not cluttering up your\nparent scope with a bunch of extra state and actions you might not want to\nhang onto. Go nuts!</p>\n<h2>Usage</h2>\n<p>Instances of <code>rad-state</code> yield an <code>active</code> property and a hash of <code>actions</code>\nfor manipulating that state: <code>open</code>, <code>close</code>, and <code>toggleState</code>.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>state stateActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>bank<span class=\"token operator\">-</span>vault\n    isOpen<span class=\"token operator\">=</span>state\n    closeVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>close\n    openVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>open<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Or for a smipler toggling implementation:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>switchState switchActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>light<span class=\"token operator\">-</span><span class=\"token keyword\">switch</span> isOn<span class=\"token operator\">=</span>switchState toggleSwitch<span class=\"token operator\">=</span>switchActions<span class=\"token punctuation\">.</span>toggleState<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>The actions in the actions hash have already been yielded via the action\nhelper, so it is not necessary to continue using that helper when passing\nactions into child components as properties (but you totally still can if\nyou would prefer to.</p>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 65,
+      "file": "addon/components/rad-state.js",
+      "line": 73,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
       "itemtype": "method",
       "name": "closeModal",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 72,
+      "file": "addon/components/rad-state.js",
+      "line": 80,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
       "itemtype": "method",
       "name": "openModal",
@@ -95,11 +105,11 @@
         "type": "Undefined"
       },
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 80,
+      "file": "addon/components/rad-state.js",
+      "line": 88,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
       "itemtype": "method",
       "name": "toggleState",
@@ -115,31 +125,41 @@
         "type": "Undefined"
       },
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     }
   ],
   "property": [
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 59,
+      "file": "addon/components/rad-state.js",
+      "line": 67,
       "description": "<p>Actions hash</p>\n",
       "itemtype": "property",
       "name": "actions",
       "type": "{Object}",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
+      "file": "addon/components/rad-state.js",
       "line": 50,
       "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
       "itemtype": "property",
       "name": "active",
       "type": "{Boolean}",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 56,
+      "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
     }
   ],
   "event": [],
-  "srcFileId": "addon_components_rad-state_component.js"
+  "srcFileId": "addon_components_rad-state.js"
 }

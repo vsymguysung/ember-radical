@@ -3,7 +3,7 @@
   "shortname": "Component.RadButton",
   "classitems": [
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 33,
       "description": "<p>Internal method that handles firiing a tag with or without custom dimensions.</p>\n",
       "itemtype": "method",
@@ -13,30 +13,30 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 56,
       "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
       "itemtype": "property",
       "name": "aria-describedby",
       "type": "{string}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 148,
       "description": "<p>ALLLLLLLLLLL the attributes you might need.\nNOTE: <code>role</code> should not be bound here. You can set the role of a button\nby passing an <a href=\"http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole\">ariaRole</a> prop.</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 64,
       "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
       "itemtype": "property",
@@ -44,10 +44,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 134,
       "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
       "itemtype": "property",
@@ -60,30 +60,30 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 175,
       "description": "<p>Handle binding brand and link related css class names</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 166,
       "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 71,
       "description": "<p>Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.</p>\n",
       "itemtype": "property",
@@ -91,10 +91,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 202,
       "description": "<p>The <code>mouseDown</code> event is used for some utility/housekeeping methods because\nwe use the <code>click</code> event to pass in actions.</p>\n<p>Handle setting the outline on this element to <code>none</code> because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!</p>\n<p>Handle checking for a tagging category and if one exists, fire a tag.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
       "itemtype": "event",
@@ -104,10 +104,10 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 233,
       "description": "<p>The <code>mouseEnter</code> checks for a tagging category and hover flag. If they're\npresent a tag is fired.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code>\nTODO: Only include this if Tagging feature is enabled</p>\n",
       "itemtype": "event",
@@ -117,10 +117,10 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 184,
       "description": "<p>Button DOM element</p>\n",
       "itemtype": "property",
@@ -128,10 +128,10 @@
       "type": "{string}",
       "default": "'button'",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 86,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -139,10 +139,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 79,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -150,10 +150,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 109,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -161,10 +161,10 @@
       "type": "{Object}",
       "default": "null",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 116,
       "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
       "itemtype": "property",
@@ -172,10 +172,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 93,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.</p>\n",
       "itemtype": "property",
@@ -183,10 +183,10 @@
       "type": "{string}",
       "default": "null",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 123,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -194,10 +194,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 102,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -205,10 +205,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 191,
       "description": "<p>Include type button for usability.</p>\n",
       "itemtype": "property",
@@ -216,21 +216,21 @@
       "type": "{string}",
       "default": "'button'",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-button/component.js",
+  "file": "addon/components/rad-button.js",
   "line": 6,
   "description": "<p>The <code>rad-button</code> component is used for all user interaction targets in Ember\nRadical. The component handles a number of housekeeping tasks including:</p>\n<ul>\n<li>Outline suppression only on clicks</li>\n<li>Tag firing when enabled</li>\n<li>Aria and html attributes</li>\n</ul>\n<p>{{#rad-button}}Core Button{{/rad-button}}</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>link</code></td>\n<td>boolean</td>\n<td><code>false</code></td>\n<td>Toggles the <code>.btn-link</code> class, making the button look and act like a link</td>\n</tr>\n<tr>\n<td><code>brand</code></td>\n<td>{'primary', 'secondary', 'info' etc. }</td>\n<td><code>null</code></td>\n<td>Toggles brand class for a branded button</td>\n</tr>\n</tbody>\n</table>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 33,
       "description": "<p>Internal method that handles firiing a tag with or without custom dimensions.</p>\n",
       "itemtype": "method",
@@ -240,32 +240,32 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     }
   ],
   "property": [
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 56,
       "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
       "itemtype": "property",
       "name": "aria-describedby",
       "type": "{string}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 148,
       "description": "<p>ALLLLLLLLLLL the attributes you might need.\nNOTE: <code>role</code> should not be bound here. You can set the role of a button\nby passing an <a href=\"http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole\">ariaRole</a> prop.</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 64,
       "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
       "itemtype": "property",
@@ -273,10 +273,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 134,
       "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
       "itemtype": "property",
@@ -289,30 +289,30 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 175,
       "description": "<p>Handle binding brand and link related css class names</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 166,
       "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 71,
       "description": "<p>Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.</p>\n",
       "itemtype": "property",
@@ -320,10 +320,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 184,
       "description": "<p>Button DOM element</p>\n",
       "itemtype": "property",
@@ -331,10 +331,10 @@
       "type": "{string}",
       "default": "'button'",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 86,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -342,10 +342,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 79,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -353,10 +353,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 109,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -364,10 +364,10 @@
       "type": "{Object}",
       "default": "null",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 116,
       "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
       "itemtype": "property",
@@ -375,10 +375,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 93,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.</p>\n",
       "itemtype": "property",
@@ -386,10 +386,10 @@
       "type": "{string}",
       "default": "null",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 123,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -397,10 +397,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 102,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -408,10 +408,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 191,
       "description": "<p>Include type button for usability.</p>\n",
       "itemtype": "property",
@@ -419,12 +419,12 @@
       "type": "{string}",
       "default": "'button'",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     }
   ],
   "event": [
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 202,
       "description": "<p>The <code>mouseDown</code> event is used for some utility/housekeeping methods because\nwe use the <code>click</code> event to pass in actions.</p>\n<p>Handle setting the outline on this element to <code>none</code> because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!</p>\n<p>Handle checking for a tagging category and if one exists, fire a tag.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
       "itemtype": "event",
@@ -434,10 +434,10 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 233,
       "description": "<p>The <code>mouseEnter</code> checks for a tagging category and hover flag. If they're\npresent a tag is fired.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code>\nTODO: Only include this if Tagging feature is enabled</p>\n",
       "itemtype": "event",
@@ -447,8 +447,8 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     }
   ],
-  "srcFileId": "addon_components_rad-button_component.js"
+  "srcFileId": "addon_components_rad-button.js"
 }

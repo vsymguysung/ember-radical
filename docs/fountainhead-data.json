@@ -1,24 +1,6 @@
 {
   "project": {},
   "files": {
-    "addon/components/rad-alert/component.js": {
-      "name": "addon/components/rad-alert/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadAlert": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-button/component.js": {
-      "name": "addon/components/rad-button/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadButton": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
     "addon/components/rad-card/body/component.js": {
       "name": "addon/components/rad-card/body/component.js",
       "modules": {},
@@ -145,24 +127,6 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-state/component.js": {
-      "name": "addon/components/rad-state/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadState": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-svg/component.js": {
-      "name": "addon/components/rad-svg/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadSVG": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
     "addon/components/rad-tabs/content/component.js": {
       "name": "addon/components/rad-tabs/content/component.js",
       "modules": {},
@@ -204,6 +168,42 @@
       "modules": {},
       "classes": {
         "Component.RadTooltip": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-alert.js": {
+      "name": "addon/components/rad-alert.js",
+      "modules": {},
+      "classes": {
+        "Component.RadAlert": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-button.js": {
+      "name": "addon/components/rad-button.js",
+      "modules": {},
+      "classes": {
+        "Component.RadButton": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-state.js": {
+      "name": "addon/components/rad-state.js",
+      "modules": {},
+      "classes": {
+        "Component.RadState": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-svg.js": {
+      "name": "addon/components/rad-svg.js",
+      "modules": {},
+      "classes": {
+        "Component.RadSVG": 1
       },
       "fors": {},
       "namespaces": {}
@@ -256,763 +256,6 @@
   },
   "modules": {},
   "classes": {
-    "Component.RadAlert": {
-      "name": "Component.RadAlert",
-      "shortname": "Component.RadAlert",
-      "classitems": [
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 138,
-          "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
-          "itemtype": "method",
-          "name": "_selfDestruct",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 157,
-          "description": "<p>Actions hash</p>\n",
-          "itemtype": "property",
-          "name": "actions",
-          "type": "{Object}",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 106,
-          "description": "<p>Attribute bindings applied to the component.</p>\n",
-          "itemtype": "property",
-          "name": "attributeBindings",
-          "type": "{Array}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 45,
-          "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
-          "itemtype": "property",
-          "name": "brand",
-          "default": "''",
-          "type": "{string}",
-          "access": "public",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 84,
-          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
-          "itemtype": "property",
-          "name": "brandClass",
-          "type": "{string}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "subprops": [
-            {
-              "name": "'brand'",
-              "description": ""
-            }
-          ],
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 53,
-          "description": "<p>Whether this alert can be dismissed via the close button in the upper right\ncorner. Defaults to true. Adds an interactive close button to the alert.</p>\n<p><strong>Usage:</strong>\nOverride by passing <code>false</code> into this param in your handlebars template:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Standard template content goes here <span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
-          "itemtype": "property",
-          "name": "canDismiss",
-          "type": "{boolean}",
-          "default": "true",
-          "access": "public",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 123,
-          "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
-          "itemtype": "property",
-          "name": "classNameBindings",
-          "type": "{Array}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 115,
-          "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
-          "itemtype": "property",
-          "name": "classNames",
-          "type": "{Array}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 163,
-          "description": "<p>A proxy action for the selfDestruct method</p>\n",
-          "itemtype": "method",
-          "name": "dismiss",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 72,
-          "description": "<p>Contains optional action that is executed when the alert is dismissed.\nThis action will be executed before the alert is destroyed.</p>\n",
-          "itemtype": "property",
-          "name": "onDismiss",
-          "type": "{function}",
-          "default": "() => {}",
-          "access": "public",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 95,
-          "description": "<p>A++ accessibility. Tells a screen this component is an alert.</p>\n",
-          "itemtype": "property",
-          "name": "role",
-          "type": "{string}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        }
-      ],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-alert/component.js",
-      "line": 5,
-      "description": "<p>Multi-use alerts for in-page error messaging, pop-up alerts, notifications,\nand more.</p>\n<h3>Usage</h3>\n<h4>1. Basic usage</h4>\n<p>Alerts accept a <code>brand</code> property to change the alert color.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Even hunks were boys once<span class=\"token punctuation\">.</span> Pretty little boy hunks<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"secondary\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>If you're raking the leaves and it gets all over your driveway<span class=\"token punctuation\">,</span> just hose it off dummy<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"success\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>You have smelly body parts<span class=\"token operator\">?</span> Smelly under your arms<span class=\"token operator\">?</span> In the armpits<span class=\"token operator\">?</span> Just… just put some vinegar on it<span class=\"token operator\">!</span> Why didn't you think <span class=\"token keyword\">of</span> that<span class=\"token operator\">?</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"info\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>I'll be brack<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"warning\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Life comes <span class=\"token keyword\">from</span> eggs<span class=\"token punctuation\">.</span> Not just <span class=\"token keyword\">for</span> omelettes<span class=\"token punctuation\">,</span> ya dingus<span class=\"token punctuation\">,</span> you could make a baby boy or a baby girl too<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"danger\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Go to bed early you doofus<span class=\"token punctuation\">,</span> 'cause when you're sleeping there's no lonely times<span class=\"token punctuation\">,</span> just dreams<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-alert brand=\"primary\"}}Even hunks were boys once. Pretty little boy hunks!{{/rad-alert}}\n{{#rad-alert brand=\"secondary\"}}If you're raking the leaves and it gets all over your driveway, just hose it off dummy.{{/rad-alert}}\n{{#rad-alert brand=\"success\"}}You have smelly body parts? Smelly under your arms? In the armpits? Just… just put some vinegar on it! Why didn't you think of that?{{/rad-alert}}\n{{#rad-alert brand=\"info\"}}I'll be brack.{{/rad-alert}}\n{{#rad-alert brand=\"warning\"}}Life comes from eggs. Not just for omelettes, ya dingus, you could make a baby boy or a baby girl too.{{/rad-alert}}\n{{#rad-alert brand=\"danger\"}}Go to bed early you doofus, 'cause when you're sleeping there's no lonely times, just dreams.{{/rad-alert}}</p>\n<h4>2. Dismissing</h4>\n<p>By default alerts are dismissible. You can disable this by passing a\n<code>canDismiss</code> property.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Try to dismiss <span class=\"token keyword\">this</span><span class=\"token punctuation\">,</span> ya dingus<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-alert brand=\"primary\" canDismiss=false}}Try to dismiss this, ya dingus.{{/rad-alert}}</p>\n<p>When alerts are dismissed they also fire an <code>onDismiss</code> action.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> onDismiss<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"handleDismiss\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Dismiss me<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
-      "is_constructor": 1,
-      "extends": "Ember.Component",
-      "method": [
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 138,
-          "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
-          "itemtype": "method",
-          "name": "_selfDestruct",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 163,
-          "description": "<p>A proxy action for the selfDestruct method</p>\n",
-          "itemtype": "method",
-          "name": "dismiss",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        }
-      ],
-      "property": [
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 157,
-          "description": "<p>Actions hash</p>\n",
-          "itemtype": "property",
-          "name": "actions",
-          "type": "{Object}",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 106,
-          "description": "<p>Attribute bindings applied to the component.</p>\n",
-          "itemtype": "property",
-          "name": "attributeBindings",
-          "type": "{Array}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 45,
-          "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
-          "itemtype": "property",
-          "name": "brand",
-          "default": "''",
-          "type": "{string}",
-          "access": "public",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 84,
-          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
-          "itemtype": "property",
-          "name": "brandClass",
-          "type": "{string}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "subprops": [
-            {
-              "name": "'brand'",
-              "description": ""
-            }
-          ],
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 53,
-          "description": "<p>Whether this alert can be dismissed via the close button in the upper right\ncorner. Defaults to true. Adds an interactive close button to the alert.</p>\n<p><strong>Usage:</strong>\nOverride by passing <code>false</code> into this param in your handlebars template:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Standard template content goes here <span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
-          "itemtype": "property",
-          "name": "canDismiss",
-          "type": "{boolean}",
-          "default": "true",
-          "access": "public",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 123,
-          "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
-          "itemtype": "property",
-          "name": "classNameBindings",
-          "type": "{Array}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 115,
-          "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
-          "itemtype": "property",
-          "name": "classNames",
-          "type": "{Array}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 72,
-          "description": "<p>Contains optional action that is executed when the alert is dismissed.\nThis action will be executed before the alert is destroyed.</p>\n",
-          "itemtype": "property",
-          "name": "onDismiss",
-          "type": "{function}",
-          "default": "() => {}",
-          "access": "public",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        },
-        {
-          "file": "addon/components/rad-alert/component.js",
-          "line": 95,
-          "description": "<p>A++ accessibility. Tells a screen this component is an alert.</p>\n",
-          "itemtype": "property",
-          "name": "role",
-          "type": "{string}",
-          "access": "private",
-          "tagname": "",
-          "class": "Component.RadAlert",
-          "srcFileId": "addon_components_rad-alert_component.js"
-        }
-      ],
-      "event": [],
-      "srcFileId": "addon_components_rad-alert_component.js"
-    },
-    "Component.RadButton": {
-      "name": "Component.RadButton",
-      "shortname": "Component.RadButton",
-      "classitems": [
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 33,
-          "description": "<p>Internal method that handles firiing a tag with or without custom dimensions.</p>\n",
-          "itemtype": "method",
-          "name": "_fireTag",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 56,
-          "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
-          "itemtype": "property",
-          "name": "aria-describedby",
-          "type": "{string}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 148,
-          "description": "<p>ALLLLLLLLLLL the attributes you might need.\nNOTE: <code>role</code> should not be bound here. You can set the role of a button\nby passing an <a href=\"http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole\">ariaRole</a> prop.</p>\n",
-          "itemtype": "property",
-          "name": "attributeBindings",
-          "type": "{Array}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 64,
-          "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
-          "itemtype": "property",
-          "name": "brand",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 134,
-          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
-          "itemtype": "property",
-          "name": "brandClass",
-          "type": "{string}",
-          "class": "Component.RadButton",
-          "subprops": [
-            {
-              "name": "'brand'",
-              "description": ""
-            }
-          ],
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 175,
-          "description": "<p>Handle binding brand and link related css class names</p>\n",
-          "itemtype": "property",
-          "name": "classNameBindings",
-          "type": "{Array}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 166,
-          "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
-          "itemtype": "property",
-          "name": "classNames",
-          "type": "{Array}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 71,
-          "description": "<p>Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.</p>\n",
-          "itemtype": "property",
-          "name": "link",
-          "type": "{Boolean}",
-          "default": "false",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 202,
-          "description": "<p>The <code>mouseDown</code> event is used for some utility/housekeeping methods because\nwe use the <code>click</code> event to pass in actions.</p>\n<p>Handle setting the outline on this element to <code>none</code> because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!</p>\n<p>Handle checking for a tagging category and if one exists, fire a tag.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
-          "itemtype": "event",
-          "name": "mouseDown",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 233,
-          "description": "<p>The <code>mouseEnter</code> checks for a tagging category and hover flag. If they're\npresent a tag is fired.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code>\nTODO: Only include this if Tagging feature is enabled</p>\n",
-          "itemtype": "event",
-          "name": "mouseEnter",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 184,
-          "description": "<p>Button DOM element</p>\n",
-          "itemtype": "property",
-          "name": "tagName",
-          "type": "{string}",
-          "default": "'button'",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 86,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagaction",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 79,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagcategory",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 109,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagcd",
-          "type": "{Object}",
-          "default": "null",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 116,
-          "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
-          "itemtype": "property",
-          "name": "taghover",
-          "type": "{Boolean}",
-          "default": "false",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 93,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.</p>\n",
-          "itemtype": "property",
-          "name": "taglabel",
-          "type": "{string}",
-          "default": "null",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 123,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagonce",
-          "type": "{Boolean}",
-          "default": "false",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 102,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagvalue",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 191,
-          "description": "<p>Include type button for usability.</p>\n",
-          "itemtype": "property",
-          "name": "type",
-          "type": "{string}",
-          "default": "'button'",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        }
-      ],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-button/component.js",
-      "line": 6,
-      "description": "<p>The <code>rad-button</code> component is used for all user interaction targets in Ember\nRadical. The component handles a number of housekeeping tasks including:</p>\n<ul>\n<li>Outline suppression only on clicks</li>\n<li>Tag firing when enabled</li>\n<li>Aria and html attributes</li>\n</ul>\n<p>{{#rad-button}}Core Button{{/rad-button}}</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>link</code></td>\n<td>boolean</td>\n<td><code>false</code></td>\n<td>Toggles the <code>.btn-link</code> class, making the button look and act like a link</td>\n</tr>\n<tr>\n<td><code>brand</code></td>\n<td>{'primary', 'secondary', 'info' etc. }</td>\n<td><code>null</code></td>\n<td>Toggles brand class for a branded button</td>\n</tr>\n</tbody>\n</table>\n",
-      "is_constructor": 1,
-      "extends": "Ember.Component",
-      "method": [
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 33,
-          "description": "<p>Internal method that handles firiing a tag with or without custom dimensions.</p>\n",
-          "itemtype": "method",
-          "name": "_fireTag",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        }
-      ],
-      "property": [
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 56,
-          "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
-          "itemtype": "property",
-          "name": "aria-describedby",
-          "type": "{string}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 148,
-          "description": "<p>ALLLLLLLLLLL the attributes you might need.\nNOTE: <code>role</code> should not be bound here. You can set the role of a button\nby passing an <a href=\"http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole\">ariaRole</a> prop.</p>\n",
-          "itemtype": "property",
-          "name": "attributeBindings",
-          "type": "{Array}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 64,
-          "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
-          "itemtype": "property",
-          "name": "brand",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 134,
-          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
-          "itemtype": "property",
-          "name": "brandClass",
-          "type": "{string}",
-          "class": "Component.RadButton",
-          "subprops": [
-            {
-              "name": "'brand'",
-              "description": ""
-            }
-          ],
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 175,
-          "description": "<p>Handle binding brand and link related css class names</p>\n",
-          "itemtype": "property",
-          "name": "classNameBindings",
-          "type": "{Array}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 166,
-          "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
-          "itemtype": "property",
-          "name": "classNames",
-          "type": "{Array}",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 71,
-          "description": "<p>Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.</p>\n",
-          "itemtype": "property",
-          "name": "link",
-          "type": "{Boolean}",
-          "default": "false",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 184,
-          "description": "<p>Button DOM element</p>\n",
-          "itemtype": "property",
-          "name": "tagName",
-          "type": "{string}",
-          "default": "'button'",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 86,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagaction",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 79,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagcategory",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 109,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagcd",
-          "type": "{Object}",
-          "default": "null",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 116,
-          "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
-          "itemtype": "property",
-          "name": "taghover",
-          "type": "{Boolean}",
-          "default": "false",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 93,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.</p>\n",
-          "itemtype": "property",
-          "name": "taglabel",
-          "type": "{string}",
-          "default": "null",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 123,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagonce",
-          "type": "{Boolean}",
-          "default": "false",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 102,
-          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
-          "itemtype": "property",
-          "name": "tagvalue",
-          "type": "{string}",
-          "default": "''",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 191,
-          "description": "<p>Include type button for usability.</p>\n",
-          "itemtype": "property",
-          "name": "type",
-          "type": "{string}",
-          "default": "'button'",
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        }
-      ],
-      "event": [
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 202,
-          "description": "<p>The <code>mouseDown</code> event is used for some utility/housekeeping methods because\nwe use the <code>click</code> event to pass in actions.</p>\n<p>Handle setting the outline on this element to <code>none</code> because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!</p>\n<p>Handle checking for a tagging category and if one exists, fire a tag.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
-          "itemtype": "event",
-          "name": "mouseDown",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        },
-        {
-          "file": "addon/components/rad-button/component.js",
-          "line": 233,
-          "description": "<p>The <code>mouseEnter</code> checks for a tagging category and hover flag. If they're\npresent a tag is fired.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code>\nTODO: Only include this if Tagging feature is enabled</p>\n",
-          "itemtype": "event",
-          "name": "mouseEnter",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadButton",
-          "srcFileId": "addon_components_rad-button_component.js"
-        }
-      ],
-      "srcFileId": "addon_components_rad-button_component.js"
-    },
     "Component.RadCard.Body": {
       "name": "Component.RadCard.Body",
       "shortname": "Component.RadCard.Body",
@@ -3469,293 +2712,6 @@
       ],
       "srcFileId": "addon_components_rad-popover_component.js"
     },
-    "Component.RadState": {
-      "name": "Component.RadState",
-      "shortname": "Component.RadState",
-      "classitems": [
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 59,
-          "description": "<p>Actions hash</p>\n",
-          "itemtype": "property",
-          "name": "actions",
-          "type": "{Object}",
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        },
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 50,
-          "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
-          "itemtype": "property",
-          "name": "active",
-          "type": "{Boolean}",
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        },
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 65,
-          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
-          "itemtype": "method",
-          "name": "closeModal",
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        },
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 72,
-          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
-          "itemtype": "method",
-          "name": "openModal",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        },
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 80,
-          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
-          "itemtype": "method",
-          "name": "toggleState",
-          "params": [
-            {
-              "name": "state",
-              "description": "<p>State to set active to</p>\n",
-              "type": "Boolean"
-            }
-          ],
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        }
-      ],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-state/component.js",
-      "line": 4,
-      "description": "<p>Component that can be used for tracking state changes with modals or drawers.\nWrap either in one of these and use the yielded state and actions to handle\nshowing/hiding/controlling your component.</p>\n<p>Useful mainly for demonstration/documentation purposes, but also handy for\nwhen you don't have a convenient place to store state (particularly during\nearly development stages). It's also kind of nice for not cluttering up your\nparent scope with a bunch of extra state and actions you might not want to\nhang onto. Go nuts!</p>\n<h2>Usage</h2>\n<p>Instances of <code>rad-state</code> yield an <code>active</code> property and a hash of <code>actions</code>\nfor manipulating that state: <code>open</code>, <code>close</code>, and <code>toggleState</code>.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>state stateActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>bank<span class=\"token operator\">-</span>vault\n    isOpen<span class=\"token operator\">=</span>state\n    closeVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>close\n    openVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>open<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Or for a smipler toggling implementation:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>switchState switchActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>light<span class=\"token operator\">-</span><span class=\"token keyword\">switch</span> isOn<span class=\"token operator\">=</span>switchState toggleSwitch<span class=\"token operator\">=</span>switchActions<span class=\"token punctuation\">.</span>toggleState<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>The actions in the actions hash have already been yielded via the action\nhelper, so it is not necessary to continue using that helper when passing\nactions into child components as properties (but you totally still can if\nyou would prefer to.</p>\n",
-      "is_constructor": 1,
-      "extends": "Ember.Component",
-      "method": [
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 65,
-          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
-          "itemtype": "method",
-          "name": "closeModal",
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        },
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 72,
-          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
-          "itemtype": "method",
-          "name": "openModal",
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        },
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 80,
-          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
-          "itemtype": "method",
-          "name": "toggleState",
-          "params": [
-            {
-              "name": "state",
-              "description": "<p>State to set active to</p>\n",
-              "type": "Boolean"
-            }
-          ],
-          "return": {
-            "description": "",
-            "type": "Undefined"
-          },
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        }
-      ],
-      "property": [
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 59,
-          "description": "<p>Actions hash</p>\n",
-          "itemtype": "property",
-          "name": "actions",
-          "type": "{Object}",
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        },
-        {
-          "file": "addon/components/rad-state/component.js",
-          "line": 50,
-          "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
-          "itemtype": "property",
-          "name": "active",
-          "type": "{Boolean}",
-          "class": "Component.RadState",
-          "srcFileId": "addon_components_rad-state_component.js"
-        }
-      ],
-      "event": [],
-      "srcFileId": "addon_components_rad-state_component.js"
-    },
-    "Component.RadSVG": {
-      "name": "Component.RadSVG",
-      "shortname": "Component.RadSVG",
-      "classitems": [
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 36,
-          "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
-          "itemtype": "property",
-          "name": "attributeBindings",
-          "type": "{Array}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 50,
-          "description": "<p>Bound classNames: <code>svgId</code></p>\n",
-          "itemtype": "property",
-          "name": "classNameBindings",
-          "type": "{Array}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 44,
-          "description": "<p>Class names: <code>rad-svg</code></p>\n",
-          "itemtype": "property",
-          "name": "classNames",
-          "type": "{Array}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 19,
-          "description": "<p>File path to svg definitions file</p>\n",
-          "itemtype": "property",
-          "name": "filePath",
-          "type": "{string}",
-          "default": "assets/svg-defs.svg",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 26,
-          "description": "<p>The id of the svg.</p>\n",
-          "itemtype": "property",
-          "name": "svgId",
-          "type": "{string}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 56,
-          "description": "<p>SVG DOM element</p>\n",
-          "itemtype": "property",
-          "name": "tagName",
-          "type": "{string}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        }
-      ],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-svg/component.js",
-      "line": 4,
-      "description": "<p>Core component for rendering svg icons. Expects an svg id as <code>svgId</code>.</p>\n<h4>Usage:</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">\"bubbles\"</span> classNames<span class=\"token operator\">=</span><span class=\"token string\">\"radical\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
-      "is_constructor": 1,
-      "extends": "Ember.Component",
-      "method": [],
-      "property": [
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 36,
-          "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
-          "itemtype": "property",
-          "name": "attributeBindings",
-          "type": "{Array}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 50,
-          "description": "<p>Bound classNames: <code>svgId</code></p>\n",
-          "itemtype": "property",
-          "name": "classNameBindings",
-          "type": "{Array}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 44,
-          "description": "<p>Class names: <code>rad-svg</code></p>\n",
-          "itemtype": "property",
-          "name": "classNames",
-          "type": "{Array}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 19,
-          "description": "<p>File path to svg definitions file</p>\n",
-          "itemtype": "property",
-          "name": "filePath",
-          "type": "{string}",
-          "default": "assets/svg-defs.svg",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 26,
-          "description": "<p>The id of the svg.</p>\n",
-          "itemtype": "property",
-          "name": "svgId",
-          "type": "{string}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        },
-        {
-          "file": "addon/components/rad-svg/component.js",
-          "line": 56,
-          "description": "<p>SVG DOM element</p>\n",
-          "itemtype": "property",
-          "name": "tagName",
-          "type": "{string}",
-          "class": "Component.RadSVG",
-          "srcFileId": "addon_components_rad-svg_component.js"
-        }
-      ],
-      "event": [],
-      "srcFileId": "addon_components_rad-svg_component.js"
-    },
     "Component.RadTabs.Content": {
       "name": "Component.RadTabs.Content",
       "shortname": "Component.RadTabs.Content",
@@ -4952,6 +3908,1070 @@
       ],
       "srcFileId": "addon_components_rad-tooltip_component.js"
     },
+    "Component.RadAlert": {
+      "name": "Component.RadAlert",
+      "shortname": "Component.RadAlert",
+      "classitems": [
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 138,
+          "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
+          "itemtype": "method",
+          "name": "_selfDestruct",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 157,
+          "description": "<p>Actions hash</p>\n",
+          "itemtype": "property",
+          "name": "actions",
+          "type": "{Object}",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 106,
+          "description": "<p>Attribute bindings applied to the component.</p>\n",
+          "itemtype": "property",
+          "name": "attributeBindings",
+          "type": "{Array}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 45,
+          "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
+          "itemtype": "property",
+          "name": "brand",
+          "default": "''",
+          "type": "{string}",
+          "access": "public",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 84,
+          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+          "itemtype": "property",
+          "name": "brandClass",
+          "type": "{string}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "subprops": [
+            {
+              "name": "'brand'",
+              "description": ""
+            }
+          ],
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 53,
+          "description": "<p>Whether this alert can be dismissed via the close button in the upper right\ncorner. Defaults to true. Adds an interactive close button to the alert.</p>\n<p><strong>Usage:</strong>\nOverride by passing <code>false</code> into this param in your handlebars template:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Standard template content goes here <span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+          "itemtype": "property",
+          "name": "canDismiss",
+          "type": "{boolean}",
+          "default": "true",
+          "access": "public",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 123,
+          "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
+          "itemtype": "property",
+          "name": "classNameBindings",
+          "type": "{Array}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 115,
+          "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
+          "itemtype": "property",
+          "name": "classNames",
+          "type": "{Array}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 163,
+          "description": "<p>A proxy action for the selfDestruct method</p>\n",
+          "itemtype": "method",
+          "name": "dismiss",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 72,
+          "description": "<p>Contains optional action that is executed when the alert is dismissed.\nThis action will be executed before the alert is destroyed.</p>\n",
+          "itemtype": "property",
+          "name": "onDismiss",
+          "type": "{function}",
+          "default": "() => {}",
+          "access": "public",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 95,
+          "description": "<p>A++ accessibility. Tells a screen this component is an alert.</p>\n",
+          "itemtype": "property",
+          "name": "role",
+          "type": "{string}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        }
+      ],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-alert.js",
+      "line": 5,
+      "description": "<p>Multi-use alerts for in-page error messaging, pop-up alerts, notifications,\nand more.</p>\n<h3>Usage</h3>\n<h4>1. Basic usage</h4>\n<p>Alerts accept a <code>brand</code> property to change the alert color.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Even hunks were boys once<span class=\"token punctuation\">.</span> Pretty little boy hunks<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"secondary\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>If you're raking the leaves and it gets all over your driveway<span class=\"token punctuation\">,</span> just hose it off dummy<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"success\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>You have smelly body parts<span class=\"token operator\">?</span> Smelly under your arms<span class=\"token operator\">?</span> In the armpits<span class=\"token operator\">?</span> Just… just put some vinegar on it<span class=\"token operator\">!</span> Why didn't you think <span class=\"token keyword\">of</span> that<span class=\"token operator\">?</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"info\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>I'll be brack<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"warning\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Life comes <span class=\"token keyword\">from</span> eggs<span class=\"token punctuation\">.</span> Not just <span class=\"token keyword\">for</span> omelettes<span class=\"token punctuation\">,</span> ya dingus<span class=\"token punctuation\">,</span> you could make a baby boy or a baby girl too<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"danger\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Go to bed early you doofus<span class=\"token punctuation\">,</span> 'cause when you're sleeping there's no lonely times<span class=\"token punctuation\">,</span> just dreams<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-alert brand=\"primary\"}}Even hunks were boys once. Pretty little boy hunks!{{/rad-alert}}\n{{#rad-alert brand=\"secondary\"}}If you're raking the leaves and it gets all over your driveway, just hose it off dummy.{{/rad-alert}}\n{{#rad-alert brand=\"success\"}}You have smelly body parts? Smelly under your arms? In the armpits? Just… just put some vinegar on it! Why didn't you think of that?{{/rad-alert}}\n{{#rad-alert brand=\"info\"}}I'll be brack.{{/rad-alert}}\n{{#rad-alert brand=\"warning\"}}Life comes from eggs. Not just for omelettes, ya dingus, you could make a baby boy or a baby girl too.{{/rad-alert}}\n{{#rad-alert brand=\"danger\"}}Go to bed early you doofus, 'cause when you're sleeping there's no lonely times, just dreams.{{/rad-alert}}</p>\n<h4>2. Dismissing</h4>\n<p>By default alerts are dismissible. You can disable this by passing a\n<code>canDismiss</code> property.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Try to dismiss <span class=\"token keyword\">this</span><span class=\"token punctuation\">,</span> ya dingus<span class=\"token punctuation\">.</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-alert brand=\"primary\" canDismiss=false}}Try to dismiss this, ya dingus.{{/rad-alert}}</p>\n<p>When alerts are dismissed they also fire an <code>onDismiss</code> action.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> onDismiss<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"handleDismiss\"</span><span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Dismiss me<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "is_constructor": 1,
+      "extends": "Ember.Component",
+      "method": [
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 138,
+          "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
+          "itemtype": "method",
+          "name": "_selfDestruct",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 163,
+          "description": "<p>A proxy action for the selfDestruct method</p>\n",
+          "itemtype": "method",
+          "name": "dismiss",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        }
+      ],
+      "property": [
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 157,
+          "description": "<p>Actions hash</p>\n",
+          "itemtype": "property",
+          "name": "actions",
+          "type": "{Object}",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 106,
+          "description": "<p>Attribute bindings applied to the component.</p>\n",
+          "itemtype": "property",
+          "name": "attributeBindings",
+          "type": "{Array}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 45,
+          "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
+          "itemtype": "property",
+          "name": "brand",
+          "default": "''",
+          "type": "{string}",
+          "access": "public",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 84,
+          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+          "itemtype": "property",
+          "name": "brandClass",
+          "type": "{string}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "subprops": [
+            {
+              "name": "'brand'",
+              "description": ""
+            }
+          ],
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 53,
+          "description": "<p>Whether this alert can be dismissed via the close button in the upper right\ncorner. Defaults to true. Adds an interactive close button to the alert.</p>\n<p><strong>Usage:</strong>\nOverride by passing <code>false</code> into this param in your handlebars template:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Standard template content goes here <span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+          "itemtype": "property",
+          "name": "canDismiss",
+          "type": "{boolean}",
+          "default": "true",
+          "access": "public",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 123,
+          "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
+          "itemtype": "property",
+          "name": "classNameBindings",
+          "type": "{Array}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 115,
+          "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
+          "itemtype": "property",
+          "name": "classNames",
+          "type": "{Array}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 72,
+          "description": "<p>Contains optional action that is executed when the alert is dismissed.\nThis action will be executed before the alert is destroyed.</p>\n",
+          "itemtype": "property",
+          "name": "onDismiss",
+          "type": "{function}",
+          "default": "() => {}",
+          "access": "public",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        },
+        {
+          "file": "addon/components/rad-alert.js",
+          "line": 95,
+          "description": "<p>A++ accessibility. Tells a screen this component is an alert.</p>\n",
+          "itemtype": "property",
+          "name": "role",
+          "type": "{string}",
+          "access": "private",
+          "tagname": "",
+          "class": "Component.RadAlert",
+          "srcFileId": "addon_components_rad-alert.js"
+        }
+      ],
+      "event": [],
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    "Component.RadButton": {
+      "name": "Component.RadButton",
+      "shortname": "Component.RadButton",
+      "classitems": [
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 33,
+          "description": "<p>Internal method that handles firiing a tag with or without custom dimensions.</p>\n",
+          "itemtype": "method",
+          "name": "_fireTag",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 56,
+          "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
+          "itemtype": "property",
+          "name": "aria-describedby",
+          "type": "{string}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 148,
+          "description": "<p>ALLLLLLLLLLL the attributes you might need.\nNOTE: <code>role</code> should not be bound here. You can set the role of a button\nby passing an <a href=\"http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole\">ariaRole</a> prop.</p>\n",
+          "itemtype": "property",
+          "name": "attributeBindings",
+          "type": "{Array}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 64,
+          "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
+          "itemtype": "property",
+          "name": "brand",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 134,
+          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+          "itemtype": "property",
+          "name": "brandClass",
+          "type": "{string}",
+          "class": "Component.RadButton",
+          "subprops": [
+            {
+              "name": "'brand'",
+              "description": ""
+            }
+          ],
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 175,
+          "description": "<p>Handle binding brand and link related css class names</p>\n",
+          "itemtype": "property",
+          "name": "classNameBindings",
+          "type": "{Array}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 166,
+          "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
+          "itemtype": "property",
+          "name": "classNames",
+          "type": "{Array}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 71,
+          "description": "<p>Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.</p>\n",
+          "itemtype": "property",
+          "name": "link",
+          "type": "{Boolean}",
+          "default": "false",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 202,
+          "description": "<p>The <code>mouseDown</code> event is used for some utility/housekeeping methods because\nwe use the <code>click</code> event to pass in actions.</p>\n<p>Handle setting the outline on this element to <code>none</code> because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!</p>\n<p>Handle checking for a tagging category and if one exists, fire a tag.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
+          "itemtype": "event",
+          "name": "mouseDown",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 233,
+          "description": "<p>The <code>mouseEnter</code> checks for a tagging category and hover flag. If they're\npresent a tag is fired.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code>\nTODO: Only include this if Tagging feature is enabled</p>\n",
+          "itemtype": "event",
+          "name": "mouseEnter",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 184,
+          "description": "<p>Button DOM element</p>\n",
+          "itemtype": "property",
+          "name": "tagName",
+          "type": "{string}",
+          "default": "'button'",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 86,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagaction",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 79,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagcategory",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 109,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagcd",
+          "type": "{Object}",
+          "default": "null",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 116,
+          "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
+          "itemtype": "property",
+          "name": "taghover",
+          "type": "{Boolean}",
+          "default": "false",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 93,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.</p>\n",
+          "itemtype": "property",
+          "name": "taglabel",
+          "type": "{string}",
+          "default": "null",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 123,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagonce",
+          "type": "{Boolean}",
+          "default": "false",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 102,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagvalue",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 191,
+          "description": "<p>Include type button for usability.</p>\n",
+          "itemtype": "property",
+          "name": "type",
+          "type": "{string}",
+          "default": "'button'",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        }
+      ],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-button.js",
+      "line": 6,
+      "description": "<p>The <code>rad-button</code> component is used for all user interaction targets in Ember\nRadical. The component handles a number of housekeeping tasks including:</p>\n<ul>\n<li>Outline suppression only on clicks</li>\n<li>Tag firing when enabled</li>\n<li>Aria and html attributes</li>\n</ul>\n<p>{{#rad-button}}Core Button{{/rad-button}}</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>link</code></td>\n<td>boolean</td>\n<td><code>false</code></td>\n<td>Toggles the <code>.btn-link</code> class, making the button look and act like a link</td>\n</tr>\n<tr>\n<td><code>brand</code></td>\n<td>{'primary', 'secondary', 'info' etc. }</td>\n<td><code>null</code></td>\n<td>Toggles brand class for a branded button</td>\n</tr>\n</tbody>\n</table>\n",
+      "is_constructor": 1,
+      "extends": "Ember.Component",
+      "method": [
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 33,
+          "description": "<p>Internal method that handles firiing a tag with or without custom dimensions.</p>\n",
+          "itemtype": "method",
+          "name": "_fireTag",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        }
+      ],
+      "property": [
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 56,
+          "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
+          "itemtype": "property",
+          "name": "aria-describedby",
+          "type": "{string}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 148,
+          "description": "<p>ALLLLLLLLLLL the attributes you might need.\nNOTE: <code>role</code> should not be bound here. You can set the role of a button\nby passing an <a href=\"http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole\">ariaRole</a> prop.</p>\n",
+          "itemtype": "property",
+          "name": "attributeBindings",
+          "type": "{Array}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 64,
+          "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
+          "itemtype": "property",
+          "name": "brand",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 134,
+          "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+          "itemtype": "property",
+          "name": "brandClass",
+          "type": "{string}",
+          "class": "Component.RadButton",
+          "subprops": [
+            {
+              "name": "'brand'",
+              "description": ""
+            }
+          ],
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 175,
+          "description": "<p>Handle binding brand and link related css class names</p>\n",
+          "itemtype": "property",
+          "name": "classNameBindings",
+          "type": "{Array}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 166,
+          "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
+          "itemtype": "property",
+          "name": "classNames",
+          "type": "{Array}",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 71,
+          "description": "<p>Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.</p>\n",
+          "itemtype": "property",
+          "name": "link",
+          "type": "{Boolean}",
+          "default": "false",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 184,
+          "description": "<p>Button DOM element</p>\n",
+          "itemtype": "property",
+          "name": "tagName",
+          "type": "{string}",
+          "default": "'button'",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 86,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagaction",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 79,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagcategory",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 109,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagcd",
+          "type": "{Object}",
+          "default": "null",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 116,
+          "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
+          "itemtype": "property",
+          "name": "taghover",
+          "type": "{Boolean}",
+          "default": "false",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 93,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.</p>\n",
+          "itemtype": "property",
+          "name": "taglabel",
+          "type": "{string}",
+          "default": "null",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 123,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagonce",
+          "type": "{Boolean}",
+          "default": "false",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 102,
+          "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
+          "itemtype": "property",
+          "name": "tagvalue",
+          "type": "{string}",
+          "default": "''",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 191,
+          "description": "<p>Include type button for usability.</p>\n",
+          "itemtype": "property",
+          "name": "type",
+          "type": "{string}",
+          "default": "'button'",
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        }
+      ],
+      "event": [
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 202,
+          "description": "<p>The <code>mouseDown</code> event is used for some utility/housekeeping methods because\nwe use the <code>click</code> event to pass in actions.</p>\n<p>Handle setting the outline on this element to <code>none</code> because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!</p>\n<p>Handle checking for a tagging category and if one exists, fire a tag.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
+          "itemtype": "event",
+          "name": "mouseDown",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        },
+        {
+          "file": "addon/components/rad-button.js",
+          "line": 233,
+          "description": "<p>The <code>mouseEnter</code> checks for a tagging category and hover flag. If they're\npresent a tag is fired.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code>\nTODO: Only include this if Tagging feature is enabled</p>\n",
+          "itemtype": "event",
+          "name": "mouseEnter",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadButton",
+          "srcFileId": "addon_components_rad-button.js"
+        }
+      ],
+      "srcFileId": "addon_components_rad-button.js"
+    },
+    "Component.RadState": {
+      "name": "Component.RadState",
+      "shortname": "Component.RadState",
+      "classitems": [
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 67,
+          "description": "<p>Actions hash</p>\n",
+          "itemtype": "property",
+          "name": "actions",
+          "type": "{Object}",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 50,
+          "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
+          "itemtype": "property",
+          "name": "active",
+          "type": "{Boolean}",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 73,
+          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
+          "itemtype": "method",
+          "name": "closeModal",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 80,
+          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
+          "itemtype": "method",
+          "name": "openModal",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 56,
+          "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
+          "itemtype": "property",
+          "name": "tagName",
+          "type": "{string}",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 88,
+          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
+          "itemtype": "method",
+          "name": "toggleState",
+          "params": [
+            {
+              "name": "state",
+              "description": "<p>State to set active to</p>\n",
+              "type": "Boolean"
+            }
+          ],
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        }
+      ],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-state.js",
+      "line": 4,
+      "description": "<p>Component that can be used for tracking state changes with modals or drawers.\nWrap either in one of these and use the yielded state and actions to handle\nshowing/hiding/controlling your component.</p>\n<p>Useful mainly for demonstration/documentation purposes, but also handy for\nwhen you don't have a convenient place to store state (particularly during\nearly development stages). It's also kind of nice for not cluttering up your\nparent scope with a bunch of extra state and actions you might not want to\nhang onto. Go nuts!</p>\n<h2>Usage</h2>\n<p>Instances of <code>rad-state</code> yield an <code>active</code> property and a hash of <code>actions</code>\nfor manipulating that state: <code>open</code>, <code>close</code>, and <code>toggleState</code>.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>state stateActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>bank<span class=\"token operator\">-</span>vault\n    isOpen<span class=\"token operator\">=</span>state\n    closeVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>close\n    openVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>open<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Or for a smipler toggling implementation:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>switchState switchActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>light<span class=\"token operator\">-</span><span class=\"token keyword\">switch</span> isOn<span class=\"token operator\">=</span>switchState toggleSwitch<span class=\"token operator\">=</span>switchActions<span class=\"token punctuation\">.</span>toggleState<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>The actions in the actions hash have already been yielded via the action\nhelper, so it is not necessary to continue using that helper when passing\nactions into child components as properties (but you totally still can if\nyou would prefer to.</p>\n",
+      "is_constructor": 1,
+      "extends": "Ember.Component",
+      "method": [
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 73,
+          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
+          "itemtype": "method",
+          "name": "closeModal",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 80,
+          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
+          "itemtype": "method",
+          "name": "openModal",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 88,
+          "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
+          "itemtype": "method",
+          "name": "toggleState",
+          "params": [
+            {
+              "name": "state",
+              "description": "<p>State to set active to</p>\n",
+              "type": "Boolean"
+            }
+          ],
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        }
+      ],
+      "property": [
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 67,
+          "description": "<p>Actions hash</p>\n",
+          "itemtype": "property",
+          "name": "actions",
+          "type": "{Object}",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 50,
+          "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
+          "itemtype": "property",
+          "name": "active",
+          "type": "{Boolean}",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        },
+        {
+          "file": "addon/components/rad-state.js",
+          "line": 56,
+          "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
+          "itemtype": "property",
+          "name": "tagName",
+          "type": "{string}",
+          "class": "Component.RadState",
+          "srcFileId": "addon_components_rad-state.js"
+        }
+      ],
+      "event": [],
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    "Component.RadSVG": {
+      "name": "Component.RadSVG",
+      "shortname": "Component.RadSVG",
+      "classitems": [
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 36,
+          "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+          "itemtype": "property",
+          "name": "attributeBindings",
+          "type": "{Array}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 50,
+          "description": "<p>Bound classNames: <code>svgId</code></p>\n",
+          "itemtype": "property",
+          "name": "classNameBindings",
+          "type": "{Array}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 44,
+          "description": "<p>Class names: <code>rad-svg</code></p>\n",
+          "itemtype": "property",
+          "name": "classNames",
+          "type": "{Array}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 19,
+          "description": "<p>File path to svg definitions file</p>\n",
+          "itemtype": "property",
+          "name": "filePath",
+          "type": "{string}",
+          "default": "assets/svg-defs.svg",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 26,
+          "description": "<p>The id of the svg.</p>\n",
+          "itemtype": "property",
+          "name": "svgId",
+          "type": "{string}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 56,
+          "description": "<p>SVG DOM element</p>\n",
+          "itemtype": "property",
+          "name": "tagName",
+          "type": "{string}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        }
+      ],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-svg.js",
+      "line": 4,
+      "description": "<p>Core component for rendering svg icons. Expects an svg id as <code>svgId</code>.</p>\n<h4>Usage:</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">\"bubbles\"</span> classNames<span class=\"token operator\">=</span><span class=\"token string\">\"radical\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+      "is_constructor": 1,
+      "extends": "Ember.Component",
+      "method": [],
+      "property": [
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 36,
+          "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+          "itemtype": "property",
+          "name": "attributeBindings",
+          "type": "{Array}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 50,
+          "description": "<p>Bound classNames: <code>svgId</code></p>\n",
+          "itemtype": "property",
+          "name": "classNameBindings",
+          "type": "{Array}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 44,
+          "description": "<p>Class names: <code>rad-svg</code></p>\n",
+          "itemtype": "property",
+          "name": "classNames",
+          "type": "{Array}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 19,
+          "description": "<p>File path to svg definitions file</p>\n",
+          "itemtype": "property",
+          "name": "filePath",
+          "type": "{string}",
+          "default": "assets/svg-defs.svg",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 26,
+          "description": "<p>The id of the svg.</p>\n",
+          "itemtype": "property",
+          "name": "svgId",
+          "type": "{string}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        },
+        {
+          "file": "addon/components/rad-svg.js",
+          "line": 56,
+          "description": "<p>SVG DOM element</p>\n",
+          "itemtype": "property",
+          "name": "tagName",
+          "type": "{string}",
+          "class": "Component.RadSVG",
+          "srcFileId": "addon_components_rad-svg.js"
+        }
+      ],
+      "event": [],
+      "srcFileId": "addon_components_rad-svg.js"
+    },
     "Eq": {
       "name": "Eq",
       "shortname": "Eq",
@@ -5436,7 +5456,7 @@
       "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 33,
       "description": "<p>Internal method that handles firiing a tag with or without custom dimensions.</p>\n",
       "itemtype": "method",
@@ -5446,7 +5466,7 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-modal/component.js",
@@ -5500,18 +5520,6 @@
       "srcFileId": "addon_components_rad-tabs_content_component.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 129,
-      "description": "<p>Handle showing tooltip content</p>\n",
-      "itemtype": "method",
-      "name": "_hideContent",
-      "return": {
-        "description": "undefined"
-      },
-      "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
-    },
-    {
       "file": "addon/components/rad-popover/component.js",
       "line": 140,
       "description": "<p>Handle showing tooltip content</p>\n",
@@ -5522,6 +5530,18 @@
       },
       "class": "Component.RadPopover",
       "srcFileId": "addon_components_rad-popover_component.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip/component.js",
+      "line": 129,
+      "description": "<p>Handle showing tooltip content</p>\n",
+      "itemtype": "method",
+      "name": "_hideContent",
+      "return": {
+        "description": "undefined"
+      },
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip_component.js"
     },
     {
       "file": "addon/components/rad-modal/component.js",
@@ -5535,7 +5555,7 @@
       "srcFileId": "addon_components_rad-modal_component.js"
     },
     {
-      "file": "addon/components/rad-alert/component.js",
+      "file": "addon/components/rad-alert.js",
       "line": 138,
       "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
       "itemtype": "method",
@@ -5545,7 +5565,7 @@
         "type": "Undefined"
       },
       "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-popover/component.js",
@@ -5583,34 +5603,14 @@
       "srcFileId": "addon_components_rad-modal_component.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 59,
+      "file": "addon/components/rad-state.js",
+      "line": 67,
       "description": "<p>Actions hash</p>\n",
       "itemtype": "property",
       "name": "actions",
       "type": "{Object}",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 130,
-      "description": "<p>Actions</p>\n",
-      "itemtype": "property",
-      "name": "actions",
-      "type": "{Object}",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown_component.js"
-    },
-    {
-      "file": "addon/components/rad-alert/component.js",
-      "line": 157,
-      "description": "<p>Actions hash</p>\n",
-      "itemtype": "property",
-      "name": "actions",
-      "type": "{Object}",
-      "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-drawer/component.js",
@@ -5623,14 +5623,34 @@
       "srcFileId": "addon_components_rad-drawer_component.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
+      "file": "addon/components/rad-alert.js",
+      "line": 157,
+      "description": "<p>Actions hash</p>\n",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 130,
+      "description": "<p>Actions</p>\n",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
       "line": 50,
       "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
       "itemtype": "property",
       "name": "active",
       "type": "{Boolean}",
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-tabs/content/component.js",
@@ -5675,14 +5695,20 @@
       "srcFileId": "addon_components_rad-tooltip_title_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
-      "line": 56,
-      "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
+      "file": "addon/components/rad-popover/component.js",
+      "line": 92,
+      "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
       "itemtype": "property",
       "name": "aria-describedby",
       "type": "{string}",
-      "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "class": "Component.RadPopover",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-popover_component.js"
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
@@ -5701,14 +5727,14 @@
       "srcFileId": "addon_components_rad-tooltip_component.js"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
-      "line": 55,
-      "description": "<p>Unique string generated by parent <code>rad-popover</code> Used for 508 attrs. Is\nbound to id here and <code>aria-describedby</code> on the popover title.</p>\n",
+      "file": "addon/components/rad-button.js",
+      "line": 56,
+      "description": "<p>508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.</p>\n",
       "itemtype": "property",
       "name": "aria-describedby",
       "type": "{string}",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content_component.js"
+      "class": "Component.RadButton",
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-tooltip/content/component.js",
@@ -5722,20 +5748,14 @@
       "srcFileId": "addon_components_rad-tooltip_content_component.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 92,
-      "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
+      "file": "addon/components/rad-popover/content/component.js",
+      "line": 55,
+      "description": "<p>Unique string generated by parent <code>rad-popover</code> Used for 508 attrs. Is\nbound to id here and <code>aria-describedby</code> on the popover title.</p>\n",
       "itemtype": "property",
       "name": "aria-describedby",
       "type": "{string}",
-      "class": "Component.RadPopover",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content_component.js"
     },
     {
       "file": "addon/components/rad-dropdown/target/component.js",
@@ -5785,16 +5805,6 @@
       "srcFileId": "addon_components_rad-drawer_component.js"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
-      "line": 75,
-      "description": "<p>The <code>aria</code> role of this tooltip. Improves usability.</p>\n",
-      "itemtype": "property",
-      "name": "ariaRole",
-      "type": "{string}",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content_component.js"
-    },
-    {
       "file": "addon/components/rad-tabs/content/component.js",
       "line": 59,
       "description": "<p>Aria role <code>tabpanel</code> is bound for A++ accessibility.</p>\n",
@@ -5806,76 +5816,14 @@
       "srcFileId": "addon_components_rad-tabs_content_component.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 27,
-      "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
-    },
-    {
-      "file": "addon/components/rad-alert/component.js",
-      "line": 106,
-      "description": "<p>Attribute bindings applied to the component.</p>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "access": "private",
-      "tagname": "",
-      "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 101,
-      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
-    },
-    {
-      "file": "addon/components/rad-tabs/content/component.js",
-      "line": 66,
-      "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n<li><code>_hidden</code>: to hide this tab if it is not selected or if prop hidden is true</li>\n</ul>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadTabs.Content",
-      "srcFileId": "addon_components_rad-tabs_content_component.js"
-    },
-    {
-      "file": "addon/components/rad-drawer/target/component.js",
-      "line": 43,
-      "description": "<p>Bind <code>aria-expanded</code> and <code>aria-controls</code> to the root element;\nBind modified <code>dataTest</code> to <code>data-test</code> attr</p>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadDrawer.Target",
-      "srcFileId": "addon_components_rad-drawer_target_component.js"
-    },
-    {
       "file": "addon/components/rad-popover/content/component.js",
-      "line": 81,
-      "description": "<p>Handle binding <code>hidden</code> and <code>aria-hidden</code> for A++ usability :thumbsup:</p>\n",
+      "line": 75,
+      "description": "<p>The <code>aria</code> role of this tooltip. Improves usability.</p>\n",
       "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
+      "name": "ariaRole",
+      "type": "{string}",
       "class": "Component.RadPopover.Content",
       "srcFileId": "addon_components_rad-popover_content_component.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 98,
-      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown_component.js"
     },
     {
       "file": "addon/components/rad-dropdown/target/component.js",
@@ -5888,14 +5836,54 @@
       "srcFileId": "addon_components_rad-dropdown_target_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-popover/component.js",
+      "line": 101,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover_component.js"
+    },
+    {
+      "file": "addon/components/rad-popover/content/component.js",
+      "line": 81,
+      "description": "<p>Handle binding <code>hidden</code> and <code>aria-hidden</code> for A++ usability :thumbsup:</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-button.js",
       "line": 148,
       "description": "<p>ALLLLLLLLLLL the attributes you might need.\nNOTE: <code>role</code> should not be bound here. You can set the role of a button\nby passing an <a href=\"http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole\">ariaRole</a> prop.</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
+    },
+    {
+      "file": "addon/components/rad-svg.js",
+      "line": 36,
+      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content/component.js",
+      "line": 27,
+      "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content_component.js"
     },
     {
       "file": "addon/components/rad-tabs/component.js",
@@ -5908,14 +5896,46 @@
       "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
-      "file": "addon/components/rad-svg/component.js",
-      "line": 36,
-      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "file": "addon/components/rad-drawer/component.js",
+      "line": 150,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg_component.js"
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 98,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert.js",
+      "line": 106,
+      "description": "<p>Attribute bindings applied to the component.</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    {
+      "file": "addon/components/rad-tabs/content/component.js",
+      "line": 66,
+      "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n<li><code>_hidden</code>: to hide this tab if it is not selected or if prop hidden is true</li>\n</ul>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadTabs.Content",
+      "srcFileId": "addon_components_rad-tabs_content_component.js"
     },
     {
       "file": "addon/components/rad-drawer/content/component.js",
@@ -5928,14 +5948,14 @@
       "srcFileId": "addon_components_rad-drawer_content_component.js"
     },
     {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 150,
-      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "file": "addon/components/rad-drawer/target/component.js",
+      "line": 43,
+      "description": "<p>Bind <code>aria-expanded</code> and <code>aria-controls</code> to the root element;\nBind modified <code>dataTest</code> to <code>data-test</code> attr</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadDrawer",
-      "srcFileId": "addon_components_rad-drawer_component.js"
+      "class": "Component.RadDrawer.Target",
+      "srcFileId": "addon_components_rad-drawer_target_component.js"
     },
     {
       "file": "addon/components/rad-modal/component.js",
@@ -5949,15 +5969,26 @@
       "srcFileId": "addon_components_rad-modal_component.js"
     },
     {
-      "file": "addon/components/rad-card/component.js",
-      "line": 30,
-      "description": "<p>Pass a brand to use to style the component and it's child components.</p>\n",
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 56,
+      "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-button.js",
+      "line": 64,
+      "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
       "itemtype": "property",
       "name": "brand",
       "type": "{string}",
       "default": "''",
-      "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "class": "Component.RadButton",
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
@@ -5971,15 +6002,28 @@
       "srcFileId": "addon_components_rad-tooltip_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
-      "line": 64,
-      "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
+      "file": "addon/components/rad-alert.js",
+      "line": 45,
+      "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "default": "''",
+      "type": "{string}",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    {
+      "file": "addon/components/rad-card/component.js",
+      "line": 30,
+      "description": "<p>Pass a brand to use to style the component and it's child components.</p>\n",
       "itemtype": "property",
       "name": "brand",
       "type": "{string}",
       "default": "''",
-      "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card_component.js"
     },
     {
       "file": "addon/components/rad-modal/header/component.js",
@@ -5992,30 +6036,6 @@
       "srcFileId": "addon_components_rad-modal_header_component.js"
     },
     {
-      "file": "addon/components/rad-alert/component.js",
-      "line": 45,
-      "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
-      "itemtype": "property",
-      "name": "brand",
-      "default": "''",
-      "type": "{string}",
-      "access": "public",
-      "tagname": "",
-      "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 56,
-      "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
-      "itemtype": "property",
-      "name": "brand",
-      "type": "{String}",
-      "default": "''",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown_component.js"
-    },
-    {
       "file": "addon/components/rad-card/component.js",
       "line": 41,
       "description": "<p>Computed css class for the brand bound to the component.</p>\n",
@@ -6024,24 +6044,6 @@
       "type": "{String}",
       "class": "Component.RadCard",
       "srcFileId": "addon_components_rad-card_component.js"
-    },
-    {
-      "file": "addon/components/rad-alert/component.js",
-      "line": 84,
-      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
-      "itemtype": "property",
-      "name": "brandClass",
-      "type": "{string}",
-      "access": "private",
-      "tagname": "",
-      "class": "Component.RadAlert",
-      "subprops": [
-        {
-          "name": "'brand'",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-alert_component.js"
     },
     {
       "file": "addon/components/rad-modal/header/component.js",
@@ -6060,7 +6062,25 @@
       "srcFileId": "addon_components_rad-modal_header_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-alert.js",
+      "line": 84,
+      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{string}",
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "subprops": [
+        {
+          "name": "'brand'",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    {
+      "file": "addon/components/rad-button.js",
       "line": 134,
       "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
       "itemtype": "property",
@@ -6073,29 +6093,7 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-button_component.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 59,
-      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
-      "itemtype": "property",
-      "name": "buttonStyle",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 63,
-      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
-      "itemtype": "property",
-      "name": "buttonStyle",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-tabs/component.js",
@@ -6129,7 +6127,29 @@
       "srcFileId": "addon_components_rad-drawer_component.js"
     },
     {
-      "file": "addon/components/rad-alert/component.js",
+      "file": "addon/components/rad-tooltip/component.js",
+      "line": 59,
+      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip_component.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 63,
+      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
+    },
+    {
+      "file": "addon/components/rad-alert.js",
       "line": 53,
       "description": "<p>Whether this alert can be dismissed via the close button in the upper right\ncorner. Defaults to true. Adds an interactive close button to the alert.</p>\n<p><strong>Usage:</strong>\nOverride by passing <code>false</code> into this param in your handlebars template:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>alert canDismiss<span class=\"token operator\">=</span><span class=\"token boolean\">false</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Standard template content goes here <span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>alert<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
       "itemtype": "property",
@@ -6139,69 +6159,7 @@
       "access": "public",
       "tagname": "",
       "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
-    },
-    {
-      "file": "addon/components/rad-drawer/target/component.js",
-      "line": 59,
-      "description": "<p>Bind <code>link</code> to <code>!useButtonStyle</code></p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadDrawer.Target",
-      "srcFileId": "addon_components_rad-drawer_target_component.js"
-    },
-    {
-      "file": "addon/components/rad-svg/component.js",
-      "line": 50,
-      "description": "<p>Bound classNames: <code>svgId</code></p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg_component.js"
-    },
-    {
-      "file": "addon/components/rad-card/component.js",
-      "line": 55,
-      "description": "<p>Bind props to classes on the root component element.</p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
-    },
-    {
-      "file": "addon/components/rad-button/component.js",
-      "line": 175,
-      "description": "<p>Handle binding brand and link related css class names</p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
-    },
-    {
-      "file": "addon/components/rad-alert/component.js",
-      "line": 123,
-      "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "access": "private",
-      "tagname": "",
-      "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
-    },
-    {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 78,
-      "description": "<p>Handle binding brand and basic related css class names</p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header_component.js"
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-popover/content/component.js",
@@ -6214,56 +6172,96 @@
       "srcFileId": "addon_components_rad-popover_content_component.js"
     },
     {
-      "file": "addon/components/rad-card/footer/component.js",
-      "line": 14,
-      "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
+      "file": "addon/components/rad-card/component.js",
+      "line": 55,
+      "description": "<p>Bind props to classes on the root component element.</p>\n",
       "itemtype": "property",
-      "name": "classNames",
+      "name": "classNameBindings",
       "type": "{Array}",
-      "class": "Component.RadCard.Footer",
-      "srcFileId": "addon_components_rad-card_footer_component.js"
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card_component.js"
     },
     {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 105,
-      "description": "<p>Bind <code>rad-dropdown</code></p>\n",
+      "file": "addon/components/rad-alert.js",
+      "line": 123,
+      "description": "<p>A set of dynamic classes whose output is bound to the associated values\non the component.</p>\n",
       "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown_component.js"
-    },
-    {
-      "file": "addon/components/rad-svg/component.js",
-      "line": 44,
-      "description": "<p>Class names: <code>rad-svg</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg_component.js"
-    },
-    {
-      "file": "addon/components/rad-alert/component.js",
-      "line": 115,
-      "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
-      "itemtype": "property",
-      "name": "classNames",
+      "name": "classNameBindings",
       "type": "{Array}",
       "access": "private",
       "tagname": "",
       "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
-      "file": "addon/components/rad-tooltip/title/component.js",
-      "line": 58,
-      "description": "<p>Handle binding standard core class name <code>tooltip-title</code> and <code>basic-b</code>\nbound for display purposes</p>\n",
+      "file": "addon/components/rad-svg.js",
+      "line": 50,
+      "description": "<p>Bound classNames: <code>svgId</code></p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 78,
+      "description": "<p>Handle binding brand and basic related css class names</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-button.js",
+      "line": 175,
+      "description": "<p>Handle binding brand and link related css class names</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadButton",
+      "srcFileId": "addon_components_rad-button.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/target/component.js",
+      "line": 59,
+      "description": "<p>Bind <code>link</code> to <code>!useButtonStyle</code></p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadDrawer.Target",
+      "srcFileId": "addon_components_rad-drawer_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/component.js",
+      "line": 133,
+      "description": "<p>Bind <code>rad-drawer</code> to component</p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadTooltip.Title",
-      "srcFileId": "addon_components_rad-tooltip_title_component.js"
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer_component.js"
+    },
+    {
+      "file": "addon/components/rad-popover/content/component.js",
+      "line": 87,
+      "description": "<p>Bind wrapping classname <code>popover-content</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-tabs/component.js",
+      "line": 147,
+      "description": "<p>Class names: <code>rad-tabs</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadTabs",
+      "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
       "file": "addon/components/rad-tabs/content/component.js",
@@ -6276,14 +6274,34 @@
       "srcFileId": "addon_components_rad-tabs_content_component.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 108,
-      "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
+      "file": "addon/components/rad-button.js",
+      "line": 166,
+      "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "class": "Component.RadButton",
+      "srcFileId": "addon_components_rad-button.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/target/component.js",
+      "line": 53,
+      "description": "<p>Bind <code>drawer-target</code> and <code>basic-b</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDrawer.Target",
+      "srcFileId": "addon_components_rad-drawer_target_component.js"
+    },
+    {
+      "file": "addon/components/rad-card/title/component.js",
+      "line": 14,
+      "description": "<p>Bind standard core class: <code>card-title</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Title",
+      "srcFileId": "addon_components_rad-card_title_component.js"
     },
     {
       "file": "addon/components/rad-dropdown/target/component.js",
@@ -6296,14 +6314,26 @@
       "srcFileId": "addon_components_rad-dropdown_target_component.js"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 84,
-      "description": "<p>Bind class names</p>\n",
+      "file": "addon/components/rad-alert.js",
+      "line": 115,
+      "description": "<p>Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.</p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header_component.js"
+      "access": "private",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    {
+      "file": "addon/components/rad-card/body/component.js",
+      "line": 14,
+      "description": "<p>Bind standard core class: <code>card-body</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Body",
+      "srcFileId": "addon_components_rad-card_body_component.js"
     },
     {
       "file": "addon/components/rad-tooltip/content/component.js",
@@ -6316,14 +6346,34 @@
       "srcFileId": "addon_components_rad-tooltip_content_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
-      "line": 166,
-      "description": "<p>Bind standard core classname for component: <code>rad-button</code></p>\n",
+      "file": "addon/components/rad-tooltip/title/component.js",
+      "line": 58,
+      "description": "<p>Handle binding standard core class name <code>tooltip-title</code> and <code>basic-b</code>\nbound for display purposes</p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "class": "Component.RadTooltip.Title",
+      "srcFileId": "addon_components_rad-tooltip_title_component.js"
+    },
+    {
+      "file": "addon/components/rad-popover/component.js",
+      "line": 108,
+      "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 84,
+      "description": "<p>Bind class names</p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
@@ -6337,46 +6387,6 @@
       "srcFileId": "addon_components_rad-tooltip_component.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 33,
-      "description": "<p>Bind <code>dropdown-content</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
-    },
-    {
-      "file": "addon/components/rad-card/body/component.js",
-      "line": 14,
-      "description": "<p>Bind standard core class: <code>card-body</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadCard.Body",
-      "srcFileId": "addon_components_rad-card_body_component.js"
-    },
-    {
-      "file": "addon/components/rad-popover/content/component.js",
-      "line": 87,
-      "description": "<p>Bind wrapping classname <code>popover-content</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content_component.js"
-    },
-    {
-      "file": "addon/components/rad-card/title/component.js",
-      "line": 14,
-      "description": "<p>Bind standard core class: <code>card-title</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadCard.Title",
-      "srcFileId": "addon_components_rad-card_title_component.js"
-    },
-    {
       "file": "addon/components/rad-card/component.js",
       "line": 49,
       "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
@@ -6387,24 +6397,14 @@
       "srcFileId": "addon_components_rad-card_component.js"
     },
     {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 133,
-      "description": "<p>Bind <code>rad-drawer</code> to component</p>\n",
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 105,
+      "description": "<p>Bind <code>rad-dropdown</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadDrawer",
-      "srcFileId": "addon_components_rad-drawer_component.js"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 147,
-      "description": "<p>Class names: <code>rad-tabs</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadTabs",
-      "srcFileId": "addon_components_rad-tabs_component.js"
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown_component.js"
     },
     {
       "file": "addon/components/rad-drawer/content/component.js",
@@ -6417,33 +6417,34 @@
       "srcFileId": "addon_components_rad-drawer_content_component.js"
     },
     {
-      "file": "addon/components/rad-drawer/target/component.js",
-      "line": 53,
-      "description": "<p>Bind <code>drawer-target</code> and <code>basic-b</code></p>\n",
+      "file": "addon/components/rad-dropdown/content/component.js",
+      "line": 33,
+      "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadDrawer.Target",
-      "srcFileId": "addon_components_rad-drawer_target_component.js"
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content_component.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 132,
-      "description": "<p>Closure action passed into the modal. Is event delegated to the modal\nbackground for close on click (unless 'hideBackground' is true)</p>\n",
+      "file": "addon/components/rad-card/footer/component.js",
+      "line": 14,
+      "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
       "itemtype": "property",
-      "name": "closeModal",
-      "type": "{function}",
-      "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Footer",
+      "srcFileId": "addon_components_rad-card_footer_component.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 65,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
-      "itemtype": "method",
-      "name": "closeModal",
-      "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "file": "addon/components/rad-svg.js",
+      "line": 44,
+      "description": "<p>Class names: <code>rad-svg</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg.js"
     },
     {
       "file": "addon/components/rad-modal/header/component.js",
@@ -6455,6 +6456,25 @@
       "default": "() => {}",
       "class": "Component.RadModal.Header",
       "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 73,
+      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
+      "itemtype": "method",
+      "name": "closeModal",
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-modal/component.js",
+      "line": 132,
+      "description": "<p>Closure action passed into the modal. Is event delegated to the modal\nbackground for close on click (unless 'hideBackground' is true)</p>\n",
+      "itemtype": "property",
+      "name": "closeModal",
+      "type": "{function}",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal_component.js"
     },
     {
       "file": "addon/utils/listeners.js",
@@ -6507,22 +6527,6 @@
       "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 81,
-      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
-      "itemtype": "property",
-      "name": "describedby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-dropdown_component.js"
-    },
-    {
       "file": "addon/utils/arias.js",
       "line": 17,
       "description": "<p>Method for generating a unique string to use for binding aria-describedby\nattributes. Returns a prefix with elementID</p>\n",
@@ -6537,17 +6541,20 @@
       "srcFileId": "addon_utils_arias.js"
     },
     {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 161,
-      "description": "<p>The component's <code>didReceiveAttrs</code> hook. Allows udpates from external state\nto adjust the <code>hidden</code> state of a <code>rad-drawer</code> instance.</p>\n",
-      "itemtype": "event",
-      "name": "didReceiveAttrs",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadDrawer",
-      "srcFileId": "addon_components_rad-drawer_component.js"
+      "file": "addon/components/rad-dropdown/component.js",
+      "line": 81,
+      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
+      "itemtype": "property",
+      "name": "describedby",
+      "type": "{string}",
+      "class": "Component.RadDropdown",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_component.js"
     },
     {
       "file": "addon/components/rad-popover/component.js",
@@ -6574,6 +6581,19 @@
       },
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal_component.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/component.js",
+      "line": 161,
+      "description": "<p>The component's <code>didReceiveAttrs</code> hook. Allows udpates from external state\nto adjust the <code>hidden</code> state of a <code>rad-drawer</code> instance.</p>\n",
+      "itemtype": "event",
+      "name": "didReceiveAttrs",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer_component.js"
     },
     {
       "file": "addon/components/rad-popover/content/component.js",
@@ -6611,7 +6631,7 @@
       "srcFileId": "addon_components_rad-tabs_content_component.js"
     },
     {
-      "file": "addon/components/rad-alert/component.js",
+      "file": "addon/components/rad-alert.js",
       "line": 163,
       "description": "<p>A proxy action for the selfDestruct method</p>\n",
       "itemtype": "method",
@@ -6621,7 +6641,7 @@
         "type": "Undefined"
       },
       "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-dropdown/target/component.js",
@@ -6680,7 +6700,7 @@
       "srcFileId": "addon_components_rad-drawer_component.js"
     },
     {
-      "file": "addon/components/rad-svg/component.js",
+      "file": "addon/components/rad-svg.js",
       "line": 19,
       "description": "<p>File path to svg definitions file</p>\n",
       "itemtype": "property",
@@ -6688,7 +6708,7 @@
       "type": "{string}",
       "default": "assets/svg-defs.svg",
       "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg_component.js"
+      "srcFileId": "addon_components_rad-svg.js"
     },
     {
       "file": "addon/services/tagging.js",
@@ -6749,6 +6769,15 @@
       "srcFileId": "addon_components_rad-popover_component.js"
     },
     {
+      "file": "addon/components/rad-tooltip/component.js",
+      "line": 162,
+      "description": "<p>Hide content on focusOut</p>\n",
+      "itemtype": "event",
+      "name": "focusOut",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip_component.js"
+    },
+    {
       "file": "addon/components/rad-popover/component.js",
       "line": 188,
       "description": "<p>Hide content on focusOut</p>\n",
@@ -6759,23 +6788,35 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 162,
-      "description": "<p>Hide content on focusOut</p>\n",
-      "itemtype": "event",
-      "name": "focusOut",
-      "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip/content/component.js",
-      "line": 30,
-      "description": "<p>Display status of the tooltip. Is bound to the properties <code>aria-hidden</code> for\nbetter usability and to handle css of show/hide. Is also bound to html5\n<code>hidden</code> attribute.</p>\n",
+      "line": 91,
+      "description": "<p>State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
       "type": "{Boolean}",
       "default": "true",
-      "class": "Component.RadTooltip.Content",
-      "srcFileId": "addon_components_rad-tooltip_content_component.js"
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip_component.js"
+    },
+    {
+      "file": "addon/components/rad-tabs/content/component.js",
+      "line": 44,
+      "description": "<p>Whether this tab should be hidden from view. Useful for situations where\na tab needs to exist in a particular place in the tab ordering but may\nnot have the data it needs to display information at the time when\n<code>registerTab</code> is invoked. This allows you to make sure your tab can be\nhidden while preserving its place in the list.</p>\n",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "class": "Component.RadTabs.Content",
+      "srcFileId": "addon_components_rad-tabs_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-popover/component.js",
+      "line": 114,
+      "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover_component.js"
     },
     {
       "file": "addon/components/rad-dropdown/component.js",
@@ -6789,15 +6830,15 @@
       "srcFileId": "addon_components_rad-dropdown_component.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 91,
-      "description": "<p>State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
+      "file": "addon/components/rad-tooltip/content/component.js",
+      "line": 30,
+      "description": "<p>Display status of the tooltip. Is bound to the properties <code>aria-hidden</code> for\nbetter usability and to handle css of show/hide. Is also bound to html5\n<code>hidden</code> attribute.</p>\n",
       "itemtype": "property",
       "name": "hidden",
       "type": "{Boolean}",
       "default": "true",
-      "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "class": "Component.RadTooltip.Content",
+      "srcFileId": "addon_components_rad-tooltip_content_component.js"
     },
     {
       "file": "addon/components/rad-popover/content/component.js",
@@ -6820,27 +6861,6 @@
       "default": "true",
       "class": "Component.RadDrawer",
       "srcFileId": "addon_components_rad-drawer_component.js"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 114,
-      "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
-      "itemtype": "property",
-      "name": "hidden",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
-    },
-    {
-      "file": "addon/components/rad-tabs/content/component.js",
-      "line": 44,
-      "description": "<p>Whether this tab should be hidden from view. Useful for situations where\na tab needs to exist in a particular place in the tab ordering but may\nnot have the data it needs to display information at the time when\n<code>registerTab</code> is invoked. This allows you to make sure your tab can be\nhidden while preserving its place in the list.</p>\n",
-      "itemtype": "property",
-      "name": "hidden",
-      "type": "{Boolean}",
-      "class": "Component.RadTabs.Content",
-      "srcFileId": "addon_components_rad-tabs_content_component.js"
     },
     {
       "file": "addon/components/rad-dropdown/content/component.js",
@@ -6930,6 +6950,19 @@
       "srcFileId": "addon_components_rad-drawer_component.js"
     },
     {
+      "file": "addon/components/rad-popover/content/component.js",
+      "line": 119,
+      "description": "<p>Handle binding passed <code>aria-describedby</code> as this component's <code>elementId</code> on\ninit.</p>\n",
+      "itemtype": "event",
+      "name": "init",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content_component.js"
+    },
+    {
       "file": "addon/components/rad-tooltip/content/component.js",
       "line": 61,
       "description": "<p>Log warning if <code>aria-describedby</code> is not passed in.</p>\n",
@@ -6943,35 +6976,17 @@
       "srcFileId": "addon_components_rad-tooltip_content_component.js"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
-      "line": 118,
-      "description": "<p>Handle registering with the tabs container on int by firing <code>registerTab</code>\nclosure action with this tab's data.</p>\n",
-      "itemtype": "event",
-      "name": "init",
-      "class": "Component.RadTabs.Content",
-      "srcFileId": "addon_components_rad-tabs_content_component.js"
-    },
-    {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 99,
-      "description": "<p>Set id of component to aria-labelledby on init for usability</p>\n",
-      "itemtype": "event",
-      "name": "init",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header_component.js"
-    },
-    {
-      "file": "addon/components/rad-popover/content/component.js",
-      "line": 119,
-      "description": "<p>Handle binding passed <code>aria-describedby</code> as this component's <code>elementId</code> on\ninit.</p>\n",
-      "itemtype": "event",
+      "file": "addon/components/rad-modal/component.js",
+      "line": 350,
+      "description": "<p>Make sure to run the full <code>_handleOpen</code> setup on <code>init</code>, as the conditions\nin <code>didReceiveAttrs</code> will not cause it to run because the default value of\n<code>_visible</code> will eval to false.</p>\n",
+      "itemtype": "method",
       "name": "init",
       "return": {
         "description": "",
         "type": "Undefined"
       },
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content_component.js"
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal_component.js"
     },
     {
       "file": "addon/components/rad-tabs/component.js",
@@ -6987,17 +7002,22 @@
       "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 350,
-      "description": "<p>Make sure to run the full <code>_handleOpen</code> setup on <code>init</code>, as the conditions\nin <code>didReceiveAttrs</code> will not cause it to run because the default value of\n<code>_visible</code> will eval to false.</p>\n",
-      "itemtype": "method",
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 99,
+      "description": "<p>Set id of component to aria-labelledby on init for usability</p>\n",
+      "itemtype": "event",
       "name": "init",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-tabs/content/component.js",
+      "line": 118,
+      "description": "<p>Handle registering with the tabs container on int by firing <code>registerTab</code>\nclosure action with this tab's data.</p>\n",
+      "itemtype": "event",
+      "name": "init",
+      "class": "Component.RadTabs.Content",
+      "srcFileId": "addon_components_rad-tabs_content_component.js"
     },
     {
       "file": "addon/components/rad-tabs/content/component.js",
@@ -7041,7 +7061,7 @@
       "srcFileId": "addon_components_rad-dropdown_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 71,
       "description": "<p>Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.</p>\n",
       "itemtype": "property",
@@ -7049,10 +7069,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 202,
       "description": "<p>The <code>mouseDown</code> event is used for some utility/housekeeping methods because\nwe use the <code>click</code> event to pass in actions.</p>\n<p>Handle setting the outline on this element to <code>none</code> because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!</p>\n<p>Handle checking for a tagging category and if one exists, fire a tag.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
       "itemtype": "event",
@@ -7062,16 +7082,7 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 167,
-      "description": "<p>Show content on mouse enter</p>\n",
-      "itemtype": "event",
-      "name": "mouseEnter",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
@@ -7083,7 +7094,16 @@
       "srcFileId": "addon_components_rad-tooltip_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-popover/component.js",
+      "line": 167,
+      "description": "<p>Show content on mouse enter</p>\n",
+      "itemtype": "event",
+      "name": "mouseEnter",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover_component.js"
+    },
+    {
+      "file": "addon/components/rad-button.js",
       "line": 233,
       "description": "<p>The <code>mouseEnter</code> checks for a tagging category and hover flag. If they're\npresent a tag is fired.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code>\nTODO: Only include this if Tagging feature is enabled</p>\n",
       "itemtype": "event",
@@ -7093,7 +7113,7 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
@@ -7125,7 +7145,7 @@
       "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
-      "file": "addon/components/rad-alert/component.js",
+      "file": "addon/components/rad-alert.js",
       "line": 72,
       "description": "<p>Contains optional action that is executed when the alert is dismissed.\nThis action will be executed before the alert is destroyed.</p>\n",
       "itemtype": "property",
@@ -7135,7 +7155,7 @@
       "access": "public",
       "tagname": "",
       "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
@@ -7169,8 +7189,8 @@
       "srcFileId": "addon_components_rad-modal_component.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 72,
+      "file": "addon/components/rad-state.js",
+      "line": 80,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
       "itemtype": "method",
       "name": "openModal",
@@ -7179,18 +7199,7 @@
         "type": "Undefined"
       },
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 57,
-      "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
-      "itemtype": "property",
-      "name": "position",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-popover/content/component.js",
@@ -7202,6 +7211,17 @@
       "default": "''",
       "class": "Component.RadPopover.Content",
       "srcFileId": "addon_components_rad-popover_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-popover/component.js",
+      "line": 57,
+      "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
+      "itemtype": "property",
+      "name": "position",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover_component.js"
     },
     {
       "file": "addon/services/tagging.js",
@@ -7251,7 +7271,7 @@
       "srcFileId": "addon_components_rad-modal_component.js"
     },
     {
-      "file": "addon/components/rad-alert/component.js",
+      "file": "addon/components/rad-alert.js",
       "line": 95,
       "description": "<p>A++ accessibility. Tells a screen this component is an alert.</p>\n",
       "itemtype": "property",
@@ -7260,7 +7280,7 @@
       "access": "private",
       "tagname": "",
       "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert_component.js"
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-tabs/component.js",
@@ -7314,17 +7334,6 @@
       "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
-      "line": 41,
-      "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
-      "itemtype": "property",
-      "name": "size",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content_component.js"
-    },
-    {
       "file": "addon/components/rad-modal/component.js",
       "line": 184,
       "description": "<p>The size of the modal to display. The default size caps the width of the\nmodal at 60% of the browser's viewport. Additional sizes available are:</p>\n<ul>\n<li><code>'small'</code> (30% on large, 45% on medium)</li>\n<li><code>'medium'</code> (45% on large, 60% on medium)</li>\n<li><code>'full'</code> (100% on large and medium)</li>\n</ul>\n<p>Modals will always render at 100% on mobile/small screen view.</p>\n",
@@ -7347,6 +7356,17 @@
       "srcFileId": "addon_components_rad-popover_component.js"
     },
     {
+      "file": "addon/components/rad-popover/content/component.js",
+      "line": 41,
+      "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
+      "itemtype": "property",
+      "name": "size",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content_component.js"
+    },
+    {
       "file": "addon/components/rad-drawer/target/component.js",
       "line": 25,
       "description": "<p>Name of icon to display. Removes icon from display if value is falsy.</p>\n",
@@ -7358,14 +7378,14 @@
       "srcFileId": "addon_components_rad-drawer_target_component.js"
     },
     {
-      "file": "addon/components/rad-svg/component.js",
+      "file": "addon/components/rad-svg.js",
       "line": 26,
       "description": "<p>The id of the svg.</p>\n",
       "itemtype": "property",
       "name": "svgId",
       "type": "{string}",
       "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg_component.js"
+      "srcFileId": "addon_components_rad-svg.js"
     },
     {
       "file": "addon/components/rad-tabs/content/component.js",
@@ -7389,37 +7409,6 @@
       "srcFileId": "addon_components_rad-tabs_component.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 122,
-      "description": "<p>Component element: div</p>\n",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
-    },
-    {
-      "file": "addon/components/rad-button/component.js",
-      "line": 184,
-      "description": "<p>Button DOM element</p>\n",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "default": "'button'",
-      "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
-    },
-    {
-      "file": "addon/components/rad-popover/content/component.js",
-      "line": 109,
-      "description": "<p>Remove wrapping ember element for subcomponent, it's not needed.</p>\n",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content_component.js"
-    },
-    {
       "file": "addon/components/rad-tooltip/content/component.js",
       "line": 51,
       "description": "<p><code>div</code> DOM element</p>\n",
@@ -7430,14 +7419,14 @@
       "srcFileId": "addon_components_rad-tooltip_content_component.js"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 90,
-      "description": "<p>Wrapping <code>&lt;header&gt;</code></p>\n",
+      "file": "addon/components/rad-popover/component.js",
+      "line": 122,
+      "description": "<p>Component element: div</p>\n",
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header_component.js"
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover_component.js"
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
@@ -7451,17 +7440,58 @@
       "srcFileId": "addon_components_rad-tooltip_component.js"
     },
     {
-      "file": "addon/components/rad-svg/component.js",
+      "file": "addon/components/rad-popover/content/component.js",
+      "line": 109,
+      "description": "<p>Remove wrapping ember element for subcomponent, it's not needed.</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content_component.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 56,
+      "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-button.js",
+      "line": 184,
+      "description": "<p>Button DOM element</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'button'",
+      "class": "Component.RadButton",
+      "srcFileId": "addon_components_rad-button.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 90,
+      "description": "<p>Wrapping <code>&lt;header&gt;</code></p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
+    },
+    {
+      "file": "addon/components/rad-svg.js",
       "line": 56,
       "description": "<p>SVG DOM element</p>\n",
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
       "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg_component.js"
+      "srcFileId": "addon_components_rad-svg.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 86,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -7469,10 +7499,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 79,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -7480,10 +7510,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 109,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -7491,17 +7521,7 @@
       "type": "{Object}",
       "default": "null",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
-    },
-    {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 51,
-      "description": "<p>Pass a <code>(hash)</code> of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:</p>\n<p><code>(hash category='Tag Category' action='Tag Action' label='Tag Label')</code></p>\n",
-      "itemtype": "property",
-      "name": "tagclose",
-      "type": "{[type]}",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-modal/component.js",
@@ -7512,6 +7532,16 @@
       "type": "{Object}",
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal_component.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header/component.js",
+      "line": 51,
+      "description": "<p>Pass a <code>(hash)</code> of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:</p>\n<p><code>(hash category='Tag Category' action='Tag Action' label='Tag Label')</code></p>\n",
+      "itemtype": "property",
+      "name": "tagclose",
+      "type": "{[type]}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header_component.js"
     },
     {
       "file": "addon/components/rad-tooltip/title/component.js",
@@ -7525,7 +7555,7 @@
       "srcFileId": "addon_components_rad-tooltip_title_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 116,
       "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
       "itemtype": "property",
@@ -7533,10 +7563,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 93,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.</p>\n",
       "itemtype": "property",
@@ -7544,10 +7574,10 @@
       "type": "{string}",
       "default": "null",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 123,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -7555,10 +7585,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 102,
       "description": "<p>Tagging property. See <code>one-tag</code> for tagging documentation.</p>\n",
       "itemtype": "property",
@@ -7566,7 +7596,7 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-drawer/component.js",
@@ -7591,8 +7621,8 @@
       "srcFileId": "addon_components_rad-drawer_component.js"
     },
     {
-      "file": "addon/components/rad-state/component.js",
-      "line": 80,
+      "file": "addon/components/rad-state.js",
+      "line": 88,
       "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
       "itemtype": "method",
       "name": "toggleState",
@@ -7608,7 +7638,7 @@
         "type": "Undefined"
       },
       "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state_component.js"
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-popover/content/component.js",
@@ -7620,7 +7650,7 @@
       "srcFileId": "addon_components_rad-popover_content_component.js"
     },
     {
-      "file": "addon/components/rad-button/component.js",
+      "file": "addon/components/rad-button.js",
       "line": 191,
       "description": "<p>Include type button for usability.</p>\n",
       "itemtype": "property",
@@ -7628,7 +7658,7 @@
       "type": "{string}",
       "default": "'button'",
       "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button_component.js"
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/utils/listeners.js",
