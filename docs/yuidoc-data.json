@@ -570,8 +570,8 @@
       "plugin_for": [],
       "extension_for": [],
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 6,
-      "description": "A fully accessible tooltip component. The `rad-tooltip` component can be\nused by itself or in block form as a parent of the title/content\nsubcomponents which represent the title/trigger text to show the\ntooltip and the content to be revealed within the tooltip, respectively.\n\n### Usage\n\n#### 1. Simple invocation\n```handlebars\n{{rad-tooltip Title=\"Hover me\" Content=\"For some rad information\"}}\n```\n\n{{rad-tooltip Title=\"Hover me\" Content=\"For some rad information\"}}\n\n#### 2. Block form using contextual components\n```handlebars\n{{#rad-tooltip as |components|}}\n  {{#components.title}}Hover me{{/components.title}}\n  {{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}\n```\n\n{{#rad-tooltip as |components|}}\n  {{#components.title}}Hover me{{/components.title}}\n  {{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}\n\n#### 3. Combine the use of attrs and contextual components.\n```handlebars\n{{#rad-tooltip Title=\"Hover me\" as |components|}}\n  {{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}\n```\n\n{{#rad-tooltip as |components|}}\n  {{#components.title}}Hover me{{/components.title}}\n  {{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}\n\n#### 4. Turn the title into a button with `buttonStyle` and pass a\n`brand` to change the color of the button.\n```handlebars\n{{rad-tooltip buttonStyle=true brand=\"primary\" Title=\"Hover me\" Content=\"For some rad information\"}}\n```\n\n{{rad-tooltip buttonStyle=true brand=\"primary\" Title=\"Hover me\" Content=\"For some rad information\"}}",
+      "line": 7,
+      "description": "A fully accessible tooltip component. The `rad-tooltip` component can be\nused by itself or in block form as a parent of the title/content\nsubcomponents which represent the title/trigger text to show the\ntooltip and the content to be revealed within the tooltip, respectively.\n\n### Usage\n\n#### 1. Simple invocation\n```glimmer\n{{rad-tooltip Title=\"Hover me\" Content=\"For some rad information that is really really long\"}}\n```\n\n#### 2. Block form using contextual components\n```glimmer\n{{#rad-tooltip as |components|}}\n  {{#components.title}}Hover me{{/components.title}}\n  {{#components.content}}\n    {{rad-svg svgId='x'}} For some really rad information!\n  {{/components.content}}\n{{/rad-tooltip}}\n```\n\n#### 3. Combine the use of attrs and contextual components.\n```glimmer\n{{#rad-tooltip Title=\"Hover me\" as |components|}}\n  {{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}\n```\n\n#### 4. Turn the title into a button with `buttonStyle` and pass a\n`brand` to change the color of the button.\n```glimmer\n{{rad-tooltip buttonStyle=true brand=\"primary\" Title=\"Hover me\" Content=\"For some rad information\"}}\n```",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -2453,7 +2453,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 63,
+      "line": 52,
       "description": "Adds a brand class to the target as btn-{brand}",
       "itemtype": "property",
       "name": "brand",
@@ -2463,7 +2463,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 70,
+      "line": 59,
       "description": "Whether or not to style the target as a link or a button",
       "itemtype": "property",
       "name": "buttonStyle",
@@ -2473,7 +2473,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 77,
+      "line": 66,
       "description": "Available hook that is called on hide of the tooltip",
       "itemtype": "property",
       "name": "onHide",
@@ -2482,7 +2482,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 83,
+      "line": 72,
       "description": "Available hook that is called on show of the tooltip",
       "itemtype": "property",
       "name": "onShow",
@@ -2491,7 +2491,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 93,
+      "line": 82,
       "description": "Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the `aria-describedby` attr of the tooltip\nhover target and the `id` of the actual tooltip content",
       "itemtype": "property",
       "name": "aria-describedby",
@@ -2506,7 +2506,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 102,
+      "line": 91,
       "description": "State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
       "itemtype": "property",
       "name": "hidden",
@@ -2516,7 +2516,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 114,
+      "line": 103,
       "description": "Core component class for targeting element when necessary",
       "itemtype": "property",
       "name": "classNames",
@@ -2526,7 +2526,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 121,
+      "line": 110,
       "description": "Tooltips should almost aways be inline spans.",
       "itemtype": "property",
       "name": "tagName",
@@ -2536,7 +2536,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 131,
+      "line": 120,
       "description": "Handle showing tooltip content",
       "itemtype": "method",
       "name": "_showContent",
@@ -2547,7 +2547,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 140,
+      "line": 129,
       "description": "Handle showing tooltip content",
       "itemtype": "method",
       "name": "_hideContent",
@@ -2558,7 +2558,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 152,
+      "line": 141,
       "description": "Show content on mouse enter",
       "itemtype": "event",
       "name": "mouseEnter",
@@ -2566,7 +2566,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 159,
+      "line": 148,
       "description": "Hide content on mouse leave",
       "itemtype": "event",
       "name": "mouseLeave",
@@ -2574,7 +2574,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 166,
+      "line": 155,
       "description": "Show content on focus",
       "itemtype": "event",
       "name": "focusIn",
@@ -2582,7 +2582,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/component.js",
-      "line": 173,
+      "line": 162,
       "description": "Hide content on focusOut",
       "itemtype": "event",
       "name": "focusOut",
