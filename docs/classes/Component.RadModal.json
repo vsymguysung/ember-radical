@@ -3,19 +3,30 @@
   "shortname": "Component.RadModal",
   "classitems": [
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 198,
+      "file": "addon/components/rad-modal.js",
+      "line": 208,
       "description": "<p>Pass a string for simple text modal header. If the modal should have no\nheader, pass null to this property. This will ensure that <code>aria-labelledby</code>\nis <em>not</em> bound to the modal instance (because there is no header to label\nthe modal).</p>\n",
       "itemtype": "property",
       "name": "Header",
       "type": "{string}",
       "default": "''",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 248,
+      "file": "addon/components/rad-modal.js",
+      "line": 247,
+      "description": "<p>Determines if the modal is currently <em>active</em>, which means that the modal\nhas been opened/closed. Note that this is different from <em>visible</em>. Due to\ntransition time, a modal can be <em>active</em> but not yet <em>visible</em> to the user.\nSeperate props are required for tracking active vs visible to allow the\ncss animations to trigger.</p>\n",
+      "itemtype": "property",
+      "name": "_active",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 282,
       "description": "<p>Handle modal cleanup here:</p>\n<ul>\n<li>Unfreeze body</li>\n<li>Remove 'active' class from modal elements to hide them if still in DOM</li>\n<li>Return focus to last active element unless disabled (for better\nusability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleClose",
@@ -24,11 +35,11 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 288,
+      "file": "addon/components/rad-modal.js",
+      "line": 327,
       "description": "<p>Handle modal open work here:</p>\n<ul>\n<li>Freeze the body so that scrolling inside the modal doesn't jank up the\nscreen</li>\n<li>Add 'active' class to modal elements, if the modal is already in DOM this\nwill make it visible</li>\n<li>Set private reference to currently active DOM element so we can return\nfocus to it when the modal closes (for usability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleOpen",
@@ -37,75 +48,113 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 224,
+      "file": "addon/components/rad-modal.js",
+      "line": 258,
       "description": "<p>Private reference to the last focused element in the DOM before the modal\nwas opened. This is used to make the experience for keyboard users not\nterrible.</p>\n",
       "itemtype": "property",
       "name": "_lastFocusedElement",
       "type": "{Object}",
       "default": "undefined",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 234,
+      "file": "addon/components/rad-modal.js",
+      "line": 268,
       "description": "<p>Determines if the modal should be rendered in the template. This is not\nequivalent to <code>open</code>. In order for CSS transitions to work properly, the\nmodal must be rendered in the DOM when the class that applies the\ntransition is added to/removed from the modal.</p>\n",
       "itemtype": "property",
       "name": "_visible",
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 161,
+      "file": "addon/components/rad-modal.js",
+      "line": 152,
       "description": "<p>CSS transitions the modal on open. Accepts 'left', 'right', 'bottom', 'top'.</p>\n",
       "itemtype": "property",
       "name": "animateFrom",
       "type": "{String}",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 143,
+      "file": "addon/components/rad-modal.js",
+      "line": 134,
       "description": "<p>If a modal should not have a visible header, pass a label for the modal\nusing this property. It will be bound to a hidden div with the correct\naria attrs so that we're rocking A+ accessibility all day every day.</p>\n",
       "itemtype": "property",
       "name": "ariaHeader",
       "type": "{string}",
       "default": "''",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 152,
+      "file": "addon/components/rad-modal.js",
+      "line": 143,
       "description": "<p>Unless autoFocus is toggled to false, the modal will store a\nreference to whatever element is currently active in the dom and return\nfocus to that element when the modal closes.</p>\n",
       "itemtype": "property",
       "name": "autoFocus",
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 132,
+      "file": "addon/components/rad-modal.js",
+      "line": 158,
+      "description": "<p>Controls display of the modal header close button. Is defaulted to true and\ncan be set to false in order to suppress the header close button.</p>\n",
+      "itemtype": "property",
+      "name": "closeButton",
+      "type": "{!Boolean}",
+      "passed": "",
+      "optional": 1,
+      "default": "true",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 168,
+      "description": "<p>Controls the SVG Id of the close button.</p>\n",
+      "itemtype": "property",
+      "name": "closeIcon",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'close'",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 233,
       "description": "<p>Closure action passed into the modal. Is event delegated to the modal\nbackground for close on click (unless 'hideBackground' is true)</p>\n",
       "itemtype": "property",
       "name": "closeModal",
       "type": "{function}",
+      "passed": "",
+      "optional": 1,
+      "closure": "",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 333,
+      "file": "addon/components/rad-modal.js",
+      "line": 395,
+      "description": "<p>When modal is inserted into DOM, check if it should be open by default, if\nso we need to call <code>_handleOpen</code> manually to open it.</p>\n",
+      "itemtype": "method",
+      "name": "didInsertElement",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 378,
       "description": "<p>Whenever this component receives attrs check if the <code>open</code> prop matches the\ntemplate status. If not, call the handlers for open/close</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -114,67 +163,54 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 350,
-      "description": "<p>Make sure to run the full <code>_handleOpen</code> setup on <code>init</code>, as the conditions\nin <code>didReceiveAttrs</code> will not cause it to run because the default value of\n<code>_visible</code> will eval to false.</p>\n",
-      "itemtype": "method",
-      "name": "init",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 167,
+      "file": "addon/components/rad-modal.js",
+      "line": 177,
       "description": "<p>Flag used to handle showing and hiding the modal. This property\nshould be passed in by a component/service+controller that controls the\nstate of the modal.</p>\n",
       "itemtype": "property",
       "name": "open",
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 176,
+      "file": "addon/components/rad-modal.js",
+      "line": 186,
       "description": "<p>Determines if the modal should be removed from the DOM when it is closed.\nThis is to help performance on the beefier modals.</p>\n",
       "itemtype": "property",
       "name": "removeFromDomOnClose",
       "default": "false",
       "type": "{Boolean}",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 184,
+      "file": "addon/components/rad-modal.js",
+      "line": 194,
       "description": "<p>The size of the modal to display. The default size caps the width of the\nmodal at 60% of the browser's viewport. Additional sizes available are:</p>\n<ul>\n<li><code>'small'</code> (30% on large, 45% on medium)</li>\n<li><code>'medium'</code> (45% on large, 60% on medium)</li>\n<li><code>'full'</code> (100% on large and medium)</li>\n</ul>\n<p>Modals will always render at 100% on mobile/small screen view.</p>\n",
       "itemtype": "property",
       "name": "size",
       "type": "{string}",
       "default": "''",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 208,
+      "file": "addon/components/rad-modal.js",
+      "line": 218,
       "description": "<p>Pass a <code>(hash)</code> of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:\n<code>(hash category='Tag Category' action='Tag Action' label='Tag Label')</code></p>\n",
       "itemtype": "property",
       "name": "tagclose",
       "type": "{Object}",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 364,
+      "file": "addon/components/rad-modal.js",
+      "line": 418,
       "description": "<p>willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.</p>\n<p><strong>NOTE:</strong> This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.</p>\n",
       "itemtype": "event",
       "name": "willDestroyElement",
@@ -183,22 +219,22 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-modal/component.js",
-  "line": 24,
-  "description": "<h3>Ember Radical DDAU Modal</h3>\n<p>Triggering modal open and close is handled using a data point to represent\nthe open state instead of an event listener on body filtering for some\nidentifier. This state should be handled by a data level service (could\nalso be a route or component).</p>\n<h4>Usage:</h4>\n<p><strong>With Basic Header:</strong></p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>modal open<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">.</span>modalActive Header<span class=\"token operator\">=</span><span class=\"token string\">'This is the modal title'</span> closeModal<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"closeModal\"</span> target<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>This is a totally rad modal<span class=\"token operator\">!</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>modal<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p><strong>With Full/Custom Header:</strong></p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>modal open<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">.</span>modalActive closeModal<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"closeModal\"</span> target<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">)</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Modal Header Subcomponent<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>header<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token operator\">&lt;</span>h3<span class=\"token operator\">></span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">\"sparkles\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span> It Just Works™<span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>h3<span class=\"token operator\">></span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>header<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>I will be yielded inside <span class=\"token keyword\">of</span> the modal body<span class=\"token operator\">!</span> Don't worry about adding\n  padding to me<span class=\"token punctuation\">,</span> the modal has 30px padding all around<span class=\"token punctuation\">.</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>modal<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p><strong>With No Header:</strong>\nEven if you don't want or need a header for your modal, <em>some form of header\ntext is required for 508 compliance</em>.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>modal open<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">.</span>modalActive ariaHeader<span class=\"token operator\">=</span><span class=\"token string\">'This is the puppy modal'</span> closeModal<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"closeModal\"</span> target<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>Imagine several cute puppy images and<span class=\"token operator\">/</span>or gifs here<span class=\"token punctuation\">.</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>header<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Note that <code>open</code>, <code>closeAction</code> and some form of a header are all required.</p>\n<h4>Data Down</h4>\n<p>A boolean data point <code>open</code> must be passed into this component. This\ndata point represents the state of the modal and must be controlled by some\nparent context (a Service, Controller or some parent component). DO NOT\nMUTATE THIS DATA POINT IN THIS COMPONENT!</p>\n<p>When following DDAU this component will automagically rerender whenever the\n<code>open</code> state of your component changes because it is <strong>passed down</strong> as\ndata. This removes the need for observers and event listeners (🙌 🙌 🙌) and\nallows us to programmatically open and close the modal based purely on user\nactions &amp;&amp; application data/state.</p>\n<p>When <code>open</code> is truthy, the template will add a class <code>active</code> to the modal's\n<code>&lt;div&gt;</code>s. This class toggles visibility and fades in the modal using a CSS\ntransition. (The <code>aria-hidden</code> attribute is used to control actual visbility\nfor all users/browsers and screen readers; <code>active</code> is purely presentational)</p>\n<h4>Actions Up</h4>\n<p>Provide a closure action to the component as <code>closeModal</code>. This action will\nbe automagically attached to the gray modal background. Whenever a user\nclicks the background, that action will relay the event to your parent\ncontext. You can then reliably handle whatever closing logic needs to happen\nand mutate your modal's <code>open</code> state on the parent context. This update will\nflow back down into the component and make the necessary changes to 'close'\nthe modal.</p>\n<h4>Yielded Data</h4>\n<p>This component will yield:</p>\n<ul>\n<li>A <code>components</code> hash which you can use to directly invoke the <code>header</code>\nsubcomponent for situations where you need more than just text in your\nmodal header. You can reference in your template as:\n<code>\\{{#components.header}}Some text and elements here\\{{/components.header}}</code></li>\n<li>The <code>open</code> state of the modal, in case something in your header or modal\nbody needs access to this state.</li>\n</ul>\n<h4>Configurations</h4>\n<p>The component can be configured with the following flags:</p>\n<ul>\n<li><code>animateFrom</code>: If you would like the modal to animate in, use this property\nto set up an animation direction; \"left\", \"right\", \"top\", or \"bottom\".</li>\n<li><code>autoFocus</code>: set to false to prevent the modal from refocusing\nthe last element that was active in the DOM before the modal as opened.</li>\n<li><code>removeFromDomOnClose</code>: While you normally may wish to control whether\nyour modal is being rendered at all via external logic, there are cases\nwhere you may be using the modal (e.g. in a wizard-like user flow) where\nyou may want to have the modal destroy itself when it closes. Use this\nproperty if you want this kind of behavior.</li>\n<li><code>size</code>: Default size of the modal is 60% of browser width on desktop. You\nmay optionally choose <code>small</code> (30%), <code>medium</code> (45%), or <code>full</code> (100%).\nModals are always full-width on small screen sizes.</li>\n</ul>\n<h5>TODO:</h5>\n<ul>\n<li>Explore/Document how to handle having multiple modals of the same type? One\nmodal with dynamic content? or multiple modals with modal ids?</li>\n<li>Handle returning focus to the modal when a user tabs focus outside of the\nmodal. Start with Bootstrap modals (which accomplish this). Can it be done\nwithout event listeners?</li>\n</ul>\n",
+  "file": "addon/components/rad-modal.js",
+  "line": 9,
+  "description": "<h3>Ember Radical DDAU Modal</h3>\n<p>Triggering modal open and close is handled using a data point to represent\nthe open state instead of an event listener on body filtering for some\nidentifier. This state should be handled by a data level service (could\nalso be a route or component).</p>\n<h4>Usage:</h4>\n<p><strong>With Basic Header:</strong></p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>modal\n  open<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">.</span>modalActive\n  Header<span class=\"token operator\">=</span><span class=\"token string\">'This is the modal title'</span>\n  closeModal<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">'closeModal'</span> target<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>This is a totally rad modal<span class=\"token operator\">!</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>modal<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p><strong>With Full/Custom Header:</strong></p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>modal\n  open<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">.</span>modalActive\n  closeModal<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"closeModal\"</span> target<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">)</span>\n  <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">!</span> Modal Header Subcomponent<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>header<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token operator\">&lt;</span>h3<span class=\"token operator\">></span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">\"sparkles\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span> It Just Works™<span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>h3<span class=\"token operator\">></span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>header<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>I will be yielded inside <span class=\"token keyword\">of</span> the modal body<span class=\"token operator\">!</span> Don't worry about adding\n  padding to me<span class=\"token punctuation\">,</span> the modal has 30px padding all around<span class=\"token punctuation\">.</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>modal<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p><strong>With No Header:</strong>\nEven if you don't want or need a header for your modal, <em>some form of header\ntext is required for 508 compliance</em>.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>modal\n  open<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">.</span>modalActive\n  ariaHeader<span class=\"token operator\">=</span><span class=\"token string\">'This is the puppy modal'</span>\n  closeModal<span class=\"token operator\">=</span><span class=\"token punctuation\">(</span>action <span class=\"token string\">\"closeModal\"</span> target<span class=\"token operator\">=</span>someService<span class=\"token punctuation\">)</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>Imagine several cute puppy images and<span class=\"token operator\">/</span>or gifs here<span class=\"token punctuation\">.</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>header<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Note that <code>open</code>, <code>closeAction</code> and some form of a header are all required.</p>\n<h4>Data Down</h4>\n<p>A boolean data point <code>open</code> must be passed into this component. This\ndata point represents the state of the modal and must be controlled by some\nparent context (a Service, Controller or some parent component). DO NOT\nMUTATE THIS DATA POINT IN THIS COMPONENT!</p>\n<p>When following DDAU this component will automagically rerender whenever the\n<code>open</code> state of your component changes because it is <strong>passed down</strong> as\ndata. This removes the need for observers and event listeners (🙌 🙌 🙌) and\nallows us to programmatically open and close the modal based purely on user\nactions &amp;&amp; application data/state.</p>\n<p>When <code>open</code> is truthy, the template will add a class <code>active</code> to the modal's\n<code>&lt;div&gt;</code>s. This class toggles visibility and fades in the modal using a CSS\ntransition. (The <code>aria-hidden</code> attribute is used to control actual visbility\nfor all users/browsers and screen readers; <code>active</code> is purely presentational)</p>\n<h4>Actions Up</h4>\n<p>Provide a closure action to the component as <code>closeModal</code>. This action will\nbe automagically attached to the gray modal background. Whenever a user\nclicks the background, that action will relay the event to your parent\ncontext. You can then reliably handle whatever closing logic needs to happen\nand mutate your modal's <code>open</code> state on the parent context. This update will\nflow back down into the component and make the necessary changes to 'close'\nthe modal.</p>\n<h4>Yielded Data</h4>\n<p>This component will yield:</p>\n<ul>\n<li>A <code>components</code> hash which you can use to directly invoke the <code>header</code>\nsubcomponent for situations where you need more than just text in your\nmodal header. You can reference in your template as:\n<code>\\{{#components.header}}Some text and elements here\\{{/components.header}}</code></li>\n<li>The <code>open</code> state of the modal, in case something in your header or modal\nbody needs access to this state.</li>\n</ul>\n<h4>Configurations</h4>\n<p>The component can be configured with the following flags:</p>\n<ul>\n<li><code>animateFrom</code>: If you would like the modal to animate in, use this property\nto set up an animation direction; \"left\", \"right\", \"top\", or \"bottom\".</li>\n<li><code>autoFocus</code>: set to false to prevent the modal from refocusing\nthe last element that was active in the DOM before the modal as opened.</li>\n<li><code>closeButton</code>: Controls display of the header close button. Set to false to\nhide close button.</li>\n<li><code>removeFromDomOnClose</code>: While you normally may wish to control whether\nyour modal is being rendered at all via external logic, there are cases\nwhere you may be using the modal (e.g. in a wizard-like user flow) where\nyou may want to have the modal destroy itself when it closes. Use this\nproperty if you want this kind of behavior.</li>\n<li><code>size</code>: Default size of the modal is 60% of browser width on desktop. You\nmay optionally choose <code>small</code> (30%), <code>medium</code> (45%), or <code>full</code> (100%).\nModals are always full-width on small screen sizes.</li>\n</ul>\n<h4>Non-Dismissable Modal</h4>\n<p>Create a modal that cannot be dismissed on click of the modal background by\nnot passing a <code>closeModal</code> closure <em>(Modal components are set up with a no op\n<code>closeModal</code> action by default)</em>. Note that although not required, it's\nsuggested to pass <code>closeButton=false</code> to suppress display of the close button\nbecause it won't do anything.</p>\n<h5>TODO:</h5>\n<ul>\n<li>Explore/Document how to handle having multiple modals of the same type? One\nmodal with dynamic content? or multiple modals with modal ids?</li>\n<li>Handle returning focus to the modal when a user tabs focus outside of the\nmodal. Start with Bootstrap modals (which accomplish this). Can it be done\nwithout event listeners?</li>\n</ul>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 248,
+      "file": "addon/components/rad-modal.js",
+      "line": 282,
       "description": "<p>Handle modal cleanup here:</p>\n<ul>\n<li>Unfreeze body</li>\n<li>Remove 'active' class from modal elements to hide them if still in DOM</li>\n<li>Return focus to last active element unless disabled (for better\nusability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleClose",
@@ -207,11 +243,11 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 288,
+      "file": "addon/components/rad-modal.js",
+      "line": 327,
       "description": "<p>Handle modal open work here:</p>\n<ul>\n<li>Freeze the body so that scrolling inside the modal doesn't jank up the\nscreen</li>\n<li>Add 'active' class to modal elements, if the modal is already in DOM this\nwill make it visible</li>\n<li>Set private reference to currently active DOM element so we can return\nfocus to it when the modal closes (for usability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleOpen",
@@ -220,146 +256,182 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 350,
-      "description": "<p>Make sure to run the full <code>_handleOpen</code> setup on <code>init</code>, as the conditions\nin <code>didReceiveAttrs</code> will not cause it to run because the default value of\n<code>_visible</code> will eval to false.</p>\n",
+      "file": "addon/components/rad-modal.js",
+      "line": 395,
+      "description": "<p>When modal is inserted into DOM, check if it should be open by default, if\nso we need to call <code>_handleOpen</code> manually to open it.</p>\n",
       "itemtype": "method",
-      "name": "init",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
+      "name": "didInsertElement",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     }
   ],
   "property": [
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 198,
+      "file": "addon/components/rad-modal.js",
+      "line": 208,
       "description": "<p>Pass a string for simple text modal header. If the modal should have no\nheader, pass null to this property. This will ensure that <code>aria-labelledby</code>\nis <em>not</em> bound to the modal instance (because there is no header to label\nthe modal).</p>\n",
       "itemtype": "property",
       "name": "Header",
       "type": "{string}",
       "default": "''",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 224,
+      "file": "addon/components/rad-modal.js",
+      "line": 247,
+      "description": "<p>Determines if the modal is currently <em>active</em>, which means that the modal\nhas been opened/closed. Note that this is different from <em>visible</em>. Due to\ntransition time, a modal can be <em>active</em> but not yet <em>visible</em> to the user.\nSeperate props are required for tracking active vs visible to allow the\ncss animations to trigger.</p>\n",
+      "itemtype": "property",
+      "name": "_active",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 258,
       "description": "<p>Private reference to the last focused element in the DOM before the modal\nwas opened. This is used to make the experience for keyboard users not\nterrible.</p>\n",
       "itemtype": "property",
       "name": "_lastFocusedElement",
       "type": "{Object}",
       "default": "undefined",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 234,
+      "file": "addon/components/rad-modal.js",
+      "line": 268,
       "description": "<p>Determines if the modal should be rendered in the template. This is not\nequivalent to <code>open</code>. In order for CSS transitions to work properly, the\nmodal must be rendered in the DOM when the class that applies the\ntransition is added to/removed from the modal.</p>\n",
       "itemtype": "property",
       "name": "_visible",
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 161,
+      "file": "addon/components/rad-modal.js",
+      "line": 152,
       "description": "<p>CSS transitions the modal on open. Accepts 'left', 'right', 'bottom', 'top'.</p>\n",
       "itemtype": "property",
       "name": "animateFrom",
       "type": "{String}",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 143,
+      "file": "addon/components/rad-modal.js",
+      "line": 134,
       "description": "<p>If a modal should not have a visible header, pass a label for the modal\nusing this property. It will be bound to a hidden div with the correct\naria attrs so that we're rocking A+ accessibility all day every day.</p>\n",
       "itemtype": "property",
       "name": "ariaHeader",
       "type": "{string}",
       "default": "''",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 152,
+      "file": "addon/components/rad-modal.js",
+      "line": 143,
       "description": "<p>Unless autoFocus is toggled to false, the modal will store a\nreference to whatever element is currently active in the dom and return\nfocus to that element when the modal closes.</p>\n",
       "itemtype": "property",
       "name": "autoFocus",
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 132,
+      "file": "addon/components/rad-modal.js",
+      "line": 158,
+      "description": "<p>Controls display of the modal header close button. Is defaulted to true and\ncan be set to false in order to suppress the header close button.</p>\n",
+      "itemtype": "property",
+      "name": "closeButton",
+      "type": "{!Boolean}",
+      "passed": "",
+      "optional": 1,
+      "default": "true",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 168,
+      "description": "<p>Controls the SVG Id of the close button.</p>\n",
+      "itemtype": "property",
+      "name": "closeIcon",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'close'",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 233,
       "description": "<p>Closure action passed into the modal. Is event delegated to the modal\nbackground for close on click (unless 'hideBackground' is true)</p>\n",
       "itemtype": "property",
       "name": "closeModal",
       "type": "{function}",
+      "passed": "",
+      "optional": 1,
+      "closure": "",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 167,
+      "file": "addon/components/rad-modal.js",
+      "line": 177,
       "description": "<p>Flag used to handle showing and hiding the modal. This property\nshould be passed in by a component/service+controller that controls the\nstate of the modal.</p>\n",
       "itemtype": "property",
       "name": "open",
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 176,
+      "file": "addon/components/rad-modal.js",
+      "line": 186,
       "description": "<p>Determines if the modal should be removed from the DOM when it is closed.\nThis is to help performance on the beefier modals.</p>\n",
       "itemtype": "property",
       "name": "removeFromDomOnClose",
       "default": "false",
       "type": "{Boolean}",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 184,
+      "file": "addon/components/rad-modal.js",
+      "line": 194,
       "description": "<p>The size of the modal to display. The default size caps the width of the\nmodal at 60% of the browser's viewport. Additional sizes available are:</p>\n<ul>\n<li><code>'small'</code> (30% on large, 45% on medium)</li>\n<li><code>'medium'</code> (45% on large, 60% on medium)</li>\n<li><code>'full'</code> (100% on large and medium)</li>\n</ul>\n<p>Modals will always render at 100% on mobile/small screen view.</p>\n",
       "itemtype": "property",
       "name": "size",
       "type": "{string}",
       "default": "''",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 208,
+      "file": "addon/components/rad-modal.js",
+      "line": 218,
       "description": "<p>Pass a <code>(hash)</code> of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:\n<code>(hash category='Tag Category' action='Tag Action' label='Tag Label')</code></p>\n",
       "itemtype": "property",
       "name": "tagclose",
       "type": "{Object}",
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     }
   ],
   "event": [
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 333,
+      "file": "addon/components/rad-modal.js",
+      "line": 378,
       "description": "<p>Whenever this component receives attrs check if the <code>open</code> prop matches the\ntemplate status. If not, call the handlers for open/close</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -368,11 +440,11 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 364,
+      "file": "addon/components/rad-modal.js",
+      "line": 418,
       "description": "<p>willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.</p>\n<p><strong>NOTE:</strong> This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.</p>\n",
       "itemtype": "event",
       "name": "willDestroyElement",
@@ -381,8 +453,8 @@
         "type": "Undefined"
       },
       "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal_component.js"
+      "srcFileId": "addon_components_rad-modal.js"
     }
   ],
-  "srcFileId": "addon_components_rad-modal_component.js"
+  "srcFileId": "addon_components_rad-modal.js"
 }

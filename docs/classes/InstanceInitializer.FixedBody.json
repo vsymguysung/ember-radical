@@ -1,0 +1,45 @@
+{
+  "name": "InstanceInitializer.FixedBody",
+  "shortname": "InstanceInitializer.FixedBody",
+  "classitems": [
+    {
+      "file": "addon/instance-initializers/fixed-body.js",
+      "line": 10,
+      "itemtype": "method",
+      "name": "initialize",
+      "static": 1,
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "InstanceInitializer.FixedBody",
+      "srcFileId": "addon_instance-initializers_fixed-body.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/instance-initializers/fixed-body.js",
+  "line": 2,
+  "description": "<p>This initializer handles sniffing the current browser's scrollbar width. This\nis used by modals to handle freezing the body on open, but can be used by\nany fixed width element that needs to freeze the body using the class\n<code>.fixed-scroll-padding-element</code>.</p>\n",
+  "is_constructor": 1,
+  "method": [
+    {
+      "file": "addon/instance-initializers/fixed-body.js",
+      "line": 10,
+      "itemtype": "method",
+      "name": "initialize",
+      "static": 1,
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "InstanceInitializer.FixedBody",
+      "srcFileId": "addon_instance-initializers_fixed-body.js"
+    }
+  ],
+  "property": [],
+  "event": [],
+  "srcFileId": "addon_instance-initializers_fixed-body.js"
+}

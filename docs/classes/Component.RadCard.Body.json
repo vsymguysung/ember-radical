@@ -3,37 +3,37 @@
   "shortname": "Component.RadCard.Body",
   "classitems": [
     {
-      "file": "addon/components/rad-card/body/component.js",
+      "file": "addon/components/rad-card/body.js",
       "line": 14,
       "description": "<p>Bind standard core class: <code>card-body</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadCard.Body",
-      "srcFileId": "addon_components_rad-card_body_component.js"
+      "srcFileId": "addon_components_rad-card_body.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-card/body/component.js",
+  "file": "addon/components/rad-card/body.js",
   "line": 4,
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [],
   "property": [
     {
-      "file": "addon/components/rad-card/body/component.js",
+      "file": "addon/components/rad-card/body.js",
       "line": 14,
       "description": "<p>Bind standard core class: <code>card-body</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadCard.Body",
-      "srcFileId": "addon_components_rad-card_body_component.js"
+      "srcFileId": "addon_components_rad-card_body.js"
     }
   ],
   "event": [],
-  "srcFileId": "addon_components_rad-card_body_component.js"
+  "srcFileId": "addon_components_rad-card_body.js"
 }

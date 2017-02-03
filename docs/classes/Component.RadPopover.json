@@ -3,7 +3,7 @@
   "shortname": "Component.RadPopover",
   "classitems": [
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 140,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -12,10 +12,10 @@
         "description": "undefined"
       },
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 132,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -24,10 +24,10 @@
         "description": "undefined"
       },
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 92,
       "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
       "itemtype": "property",
@@ -40,30 +40,30 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 101,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 108,
       "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 152,
       "description": "<p>Checks for a position prop value; if none was supplied, set a default\nof <code>bottom</code></p>\n",
       "itemtype": "event",
@@ -73,28 +73,28 @@
         "type": "Undefined"
       },
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 181,
       "description": "<p>Show content on focus</p>\n",
       "itemtype": "event",
       "name": "focusIn",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 188,
       "description": "<p>Hide content on focusOut</p>\n",
       "itemtype": "event",
       "name": "focusOut",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 114,
       "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
@@ -102,28 +102,28 @@
       "type": "{Boolean}",
       "default": "true",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 167,
       "description": "<p>Show content on mouse enter</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 174,
       "description": "<p>Hide content on mouse leave</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 57,
       "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
       "itemtype": "property",
@@ -131,10 +131,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 74,
       "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
       "itemtype": "property",
@@ -142,31 +142,31 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 122,
       "description": "<p>Component element: div</p>\n",
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-popover/component.js",
+  "file": "addon/components/rad-popover.js",
   "line": 8,
   "description": "<p>Popover tooltips to Make UI Great Again.™</p>\n<p>Use this component along with the subcomponent <code>rad-popover.content</code> to\ncreate popovers(super fancy tooltips). This component works by using mouse\nand focus events on <strong>this</strong> wrapping element.</p>\n<h4>Sample Usage:</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>popover <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hover me<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>button<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content position<span class=\"token operator\">=</span><span class=\"token string\">\"top\"</span> size<span class=\"token operator\">=</span><span class=\"token string\">\"small\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>Lorem ipsum dolor sit amet<span class=\"token punctuation\">,</span> consectetur adipisicing elit<span class=\"token punctuation\">,</span> sed <span class=\"token keyword\">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua<span class=\"token punctuation\">.</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>popover<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<h4>Configuration Properties</h4>\n<p>A set of configuration properties can be passed into the child <code>\\{{rad-popover/content}}</code>\ncomponent to control how its appearance. Here is a brief overview:</p>\n<ul>\n<li><code>position</code>: Where the tooltip is positioned relative to anchor element:\n<ul>\n<li><code>top</code></li>\n<li><code>bottom</code></li>\n<li><code>left</code></li>\n<li><code>right</code></li>\n<li><code>bottom-left</code></li>\n<li><code>bottom-right</code></li>\n</ul>\n</li>\n<li><code>size</code>: Preset width of the tooltip:\n<ul>\n<li><code>small</code></li>\n<li><code>medium</code></li>\n<li><code>large</code></li>\n</ul>\n</li>\n</ul>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\">\nFor full documentation<span class=\"token punctuation\">,</span> see the <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>cross<span class=\"token operator\">-</span>link <span class=\"token keyword\">class</span><span class=\"token operator\">=</span><span class=\"token string\">\"Component.CorePopover\"</span> item<span class=\"token operator\">=</span><span class=\"token string\">\"position\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>position property<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>cross<span class=\"token operator\">-</span>link<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span> and the <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>cross<span class=\"token operator\">-</span>link <span class=\"token keyword\">class</span><span class=\"token operator\">=</span><span class=\"token string\">\"Component.CorePopover\"</span> item<span class=\"token operator\">=</span><span class=\"token string\">\"size\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>size property<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>cross<span class=\"token operator\">-</span>link<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">.</span>\n</code></pre>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 140,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -175,10 +175,10 @@
         "description": "undefined"
       },
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 132,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -187,12 +187,12 @@
         "description": "undefined"
       },
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     }
   ],
   "property": [
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 92,
       "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
       "itemtype": "property",
@@ -205,30 +205,30 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 101,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 108,
       "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 114,
       "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
@@ -236,10 +236,10 @@
       "type": "{Boolean}",
       "default": "true",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 57,
       "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
       "itemtype": "property",
@@ -247,10 +247,10 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 74,
       "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
       "itemtype": "property",
@@ -258,22 +258,22 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 122,
       "description": "<p>Component element: div</p>\n",
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     }
   ],
   "event": [
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 152,
       "description": "<p>Checks for a position prop value; if none was supplied, set a default\nof <code>bottom</code></p>\n",
       "itemtype": "event",
@@ -283,44 +283,44 @@
         "type": "Undefined"
       },
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 181,
       "description": "<p>Show content on focus</p>\n",
       "itemtype": "event",
       "name": "focusIn",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 188,
       "description": "<p>Hide content on focusOut</p>\n",
       "itemtype": "event",
       "name": "focusOut",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 167,
       "description": "<p>Show content on mouse enter</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
+      "file": "addon/components/rad-popover.js",
       "line": 174,
       "description": "<p>Hide content on mouse leave</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",
       "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover_component.js"
+      "srcFileId": "addon_components_rad-popover.js"
     }
   ],
-  "srcFileId": "addon_components_rad-popover_component.js"
+  "srcFileId": "addon_components_rad-popover.js"
 }

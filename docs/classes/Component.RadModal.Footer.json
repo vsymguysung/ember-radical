@@ -1,0 +1,60 @@
+{
+  "name": "Component.RadModal.Footer",
+  "shortname": "Component.RadModal.Footer",
+  "classitems": [
+    {
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 14,
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "default": "['modal-footer']",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
+    },
+    {
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 20,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'footer'",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/components/rad-modal/footer.js",
+  "line": 4,
+  "description": "<p>Simple wrapper for creating a modal footer.</p>\n",
+  "is_constructor": 1,
+  "extends": "Ember.Component",
+  "method": [],
+  "property": [
+    {
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 14,
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "default": "['modal-footer']",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
+    },
+    {
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 20,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'footer'",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
+    }
+  ],
+  "event": [],
+  "srcFileId": "addon_components_rad-modal_footer.js"
+}

@@ -3,28 +3,49 @@
   "shortname": "Component.RadDropdown.Content",
   "classitems": [
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 27,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 39,
       "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
       "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 33,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 54,
+      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 48,
       "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 17,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 18,
+      "description": "<p>Adds <code>dropdown-menu</code> class which removes padding in order to show\ndropdown menu items.</p>\n",
+      "itemtype": "property",
+      "name": "dropdownMenu",
+      "type": "{Boolean}",
+      "passed": "",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 29,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -36,14 +57,14 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-dropdown/content/component.js",
+  "file": "addon/components/rad-dropdown/content.js",
   "line": 7,
   "description": "<p>Core dropdown content component</p>\n",
   "is_constructor": 1,
@@ -51,28 +72,49 @@
   "method": [],
   "property": [
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 27,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 39,
       "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
       "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 33,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 54,
+      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 48,
       "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 17,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 18,
+      "description": "<p>Adds <code>dropdown-menu</code> class which removes padding in order to show\ndropdown menu items.</p>\n",
+      "itemtype": "property",
+      "name": "dropdownMenu",
+      "type": "{Boolean}",
+      "passed": "",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 29,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -84,9 +126,9 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-dropdown_content_component.js"
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     }
   ],
   "event": [],
-  "srcFileId": "addon_components_rad-dropdown_content_component.js"
+  "srcFileId": "addon_components_rad-dropdown_content.js"
 }

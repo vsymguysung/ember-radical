@@ -3,7 +3,7 @@
   "shortname": "Component.RadCard",
   "classitems": [
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 30,
       "description": "<p>Pass a brand to use to style the component and it's child components.</p>\n",
       "itemtype": "property",
@@ -11,44 +11,44 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 41,
       "description": "<p>Computed css class for the brand bound to the component.</p>\n",
       "itemtype": "property",
       "name": "brandClass",
       "type": "{String}",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 55,
       "description": "<p>Bind props to classes on the root component element.</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 49,
       "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-card/component.js",
+  "file": "addon/components/rad-card.js",
   "line": 5,
   "description": "<p>Core card.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>card <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>title<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Card title<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>title<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>body<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Card body<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>body<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>footer<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Card footer<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>footer<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>card<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-card as |components|}}\n{{#components.title}}Party Time{{/components.title}}\n{{#components.body}}<img src=\"http://i.giphy.com/125RIkH7IluIpy.gif\"/>{{/components.body}}\n{{/rad-card}}</p>\n",
   "is_constructor": 1,
@@ -56,7 +56,7 @@
   "method": [],
   "property": [
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 30,
       "description": "<p>Pass a brand to use to style the component and it's child components.</p>\n",
       "itemtype": "property",
@@ -64,39 +64,39 @@
       "type": "{string}",
       "default": "''",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 41,
       "description": "<p>Computed css class for the brand bound to the component.</p>\n",
       "itemtype": "property",
       "name": "brandClass",
       "type": "{String}",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 55,
       "description": "<p>Bind props to classes on the root component element.</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-card/component.js",
+      "file": "addon/components/rad-card.js",
       "line": 49,
       "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card_component.js"
+      "srcFileId": "addon_components_rad-card.js"
     }
   ],
   "event": [],
-  "srcFileId": "addon_components_rad-card_component.js"
+  "srcFileId": "addon_components_rad-card.js"
 }

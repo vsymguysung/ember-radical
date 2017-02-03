@@ -1,8 +1,8 @@
 {
   "project": {},
   "files": {
-    "addon/components/rad-card/body/component.js": {
-      "name": "addon/components/rad-card/body/component.js",
+    "addon/components/rad-card/body.js": {
+      "name": "addon/components/rad-card/body.js",
       "modules": {},
       "classes": {
         "Component.RadCard.Body": 1
@@ -10,8 +10,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-card/footer/component.js": {
-      "name": "addon/components/rad-card/footer/component.js",
+    "addon/components/rad-card/footer.js": {
+      "name": "addon/components/rad-card/footer.js",
       "modules": {},
       "classes": {
         "Component.RadCard.Footer": 1
@@ -19,8 +19,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-card/title/component.js": {
-      "name": "addon/components/rad-card/title/component.js",
+    "addon/components/rad-card/title.js": {
+      "name": "addon/components/rad-card/title.js",
       "modules": {},
       "classes": {
         "Component.RadCard.Title": 1
@@ -28,17 +28,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-card/component.js": {
-      "name": "addon/components/rad-card/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadCard": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-drawer/content/component.js": {
-      "name": "addon/components/rad-drawer/content/component.js",
+    "addon/components/rad-drawer/content.js": {
+      "name": "addon/components/rad-drawer/content.js",
       "modules": {},
       "classes": {
         "Component.RadDrawer.Content": 1
@@ -46,8 +37,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-drawer/target/component.js": {
-      "name": "addon/components/rad-drawer/target/component.js",
+    "addon/components/rad-drawer/target.js": {
+      "name": "addon/components/rad-drawer/target.js",
       "modules": {},
       "classes": {
         "Component.RadDrawer.Target": 1
@@ -55,17 +46,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-drawer/component.js": {
-      "name": "addon/components/rad-drawer/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadDrawer": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-dropdown/content/component.js": {
-      "name": "addon/components/rad-dropdown/content/component.js",
+    "addon/components/rad-dropdown/content.js": {
+      "name": "addon/components/rad-dropdown/content.js",
       "modules": {},
       "classes": {
         "Component.RadDropdown.Content": 1
@@ -73,8 +55,17 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-dropdown/target/component.js": {
-      "name": "addon/components/rad-dropdown/target/component.js",
+    "addon/components/rad-dropdown/menu-item.js": {
+      "name": "addon/components/rad-dropdown/menu-item.js",
+      "modules": {},
+      "classes": {
+        "Component.RadDropdown.MenuItem": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-dropdown/target.js": {
+      "name": "addon/components/rad-dropdown/target.js",
       "modules": {},
       "classes": {
         "Component.RadDropdown.Target": 1
@@ -82,17 +73,17 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-dropdown/component.js": {
-      "name": "addon/components/rad-dropdown/component.js",
+    "addon/components/rad-modal/footer.js": {
+      "name": "addon/components/rad-modal/footer.js",
       "modules": {},
       "classes": {
-        "Component.RadDropdown": 1
+        "Component.RadModal.Footer": 1
       },
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-modal/header/component.js": {
-      "name": "addon/components/rad-modal/header/component.js",
+    "addon/components/rad-modal/header.js": {
+      "name": "addon/components/rad-modal/header.js",
       "modules": {},
       "classes": {
         "Component.RadModal.Header": 1
@@ -100,17 +91,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-modal/component.js": {
-      "name": "addon/components/rad-modal/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadModal": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-popover/content/component.js": {
-      "name": "addon/components/rad-popover/content/component.js",
+    "addon/components/rad-popover/content.js": {
+      "name": "addon/components/rad-popover/content.js",
       "modules": {},
       "classes": {
         "Component.RadPopover.Content": 1
@@ -118,17 +100,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-popover/component.js": {
-      "name": "addon/components/rad-popover/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadPopover": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-tabs/content/component.js": {
-      "name": "addon/components/rad-tabs/content/component.js",
+    "addon/components/rad-tabs/content.js": {
+      "name": "addon/components/rad-tabs/content.js",
       "modules": {},
       "classes": {
         "Component.RadTabs.Content": 1
@@ -136,17 +109,8 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-tabs/component.js": {
-      "name": "addon/components/rad-tabs/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadTabs": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-tooltip/content/component.js": {
-      "name": "addon/components/rad-tooltip/content/component.js",
+    "addon/components/rad-tooltip/content.js": {
+      "name": "addon/components/rad-tooltip/content.js",
       "modules": {},
       "classes": {
         "Component.RadTooltip.Content": 1
@@ -154,20 +118,11 @@
       "fors": {},
       "namespaces": {}
     },
-    "addon/components/rad-tooltip/title/component.js": {
-      "name": "addon/components/rad-tooltip/title/component.js",
+    "addon/components/rad-tooltip/title.js": {
+      "name": "addon/components/rad-tooltip/title.js",
       "modules": {},
       "classes": {
         "Component.RadTooltip.Title": 1
-      },
-      "fors": {},
-      "namespaces": {}
-    },
-    "addon/components/rad-tooltip/component.js": {
-      "name": "addon/components/rad-tooltip/component.js",
-      "modules": {},
-      "classes": {
-        "Component.RadTooltip": 1
       },
       "fors": {},
       "namespaces": {}
@@ -190,6 +145,51 @@
       "fors": {},
       "namespaces": {}
     },
+    "addon/components/rad-card.js": {
+      "name": "addon/components/rad-card.js",
+      "modules": {},
+      "classes": {
+        "Component.RadCard": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-drawer.js": {
+      "name": "addon/components/rad-drawer.js",
+      "modules": {},
+      "classes": {
+        "Component.RadDrawer": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-dropdown.js": {
+      "name": "addon/components/rad-dropdown.js",
+      "modules": {},
+      "classes": {
+        "Component.RadDropdown": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-modal.js": {
+      "name": "addon/components/rad-modal.js",
+      "modules": {},
+      "classes": {
+        "Component.RadModal": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-popover.js": {
+      "name": "addon/components/rad-popover.js",
+      "modules": {},
+      "classes": {
+        "Component.RadPopover": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
     "addon/components/rad-state.js": {
       "name": "addon/components/rad-state.js",
       "modules": {},
@@ -208,11 +208,38 @@
       "fors": {},
       "namespaces": {}
     },
+    "addon/components/rad-tabs.js": {
+      "name": "addon/components/rad-tabs.js",
+      "modules": {},
+      "classes": {
+        "Component.RadTabs": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/components/rad-tooltip.js": {
+      "name": "addon/components/rad-tooltip.js",
+      "modules": {},
+      "classes": {
+        "Component.RadTooltip": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
     "addon/helpers/eq.js": {
       "name": "addon/helpers/eq.js",
       "modules": {},
       "classes": {
         "Eq": 1
+      },
+      "fors": {},
+      "namespaces": {}
+    },
+    "addon/instance-initializers/fixed-body.js": {
+      "name": "addon/instance-initializers/fixed-body.js",
+      "modules": {},
+      "classes": {
+        "InstanceInitializer.FixedBody": 1
       },
       "fors": {},
       "namespaces": {}
@@ -264,7 +291,7 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-card/body/component.js",
+      "file": "addon/components/rad-card/body.js",
       "line": 4,
       "is_constructor": 1,
       "extends": "Ember.Component"
@@ -277,7 +304,7 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-card/footer/component.js",
+      "file": "addon/components/rad-card/footer.js",
       "line": 4,
       "is_constructor": 1,
       "extends": "Ember.Component"
@@ -290,22 +317,8 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-card/title/component.js",
+      "file": "addon/components/rad-card/title.js",
       "line": 4,
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "Component.RadCard": {
-      "name": "Component.RadCard",
-      "shortname": "Component.RadCard",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-card/component.js",
-      "line": 5,
-      "description": "Core card.\n\n```handlebars\n{{#rad-card as |components|}}\n  {{#components.title}}Card title{{/components.title}}\n  {{#components.body}}Card body{{/components.body}}\n  {{#components.footer}}Card footer{{/components.footer}}\n{{/rad-card}}\n```\n\n{{#rad-card as |components|}}\n  {{#components.title}}Party Time{{/components.title}}\n  {{#components.body}}<img src=\"http://i.giphy.com/125RIkH7IluIpy.gif\"/>{{/components.body}}\n{{/rad-card}}",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -317,7 +330,7 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-drawer/content/component.js",
+      "file": "addon/components/rad-drawer/content.js",
       "line": 6,
       "description": "Core drawer content component",
       "is_constructor": 1,
@@ -331,25 +344,11 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-drawer/target/component.js",
+      "file": "addon/components/rad-drawer/target.js",
       "line": 6,
       "description": "Core drawer target component",
       "is_constructor": 1,
       "extends": "Component.CoreButton"
-    },
-    "Component.RadDrawer": {
-      "name": "Component.RadDrawer",
-      "shortname": "Component.RadDrawer",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 6,
-      "description": "Fully accessible expandable drawer/expandable content component.\nThe `rad-drawer` component is the parent container for a set of `target` and\n`content` subcomponents, which represent the title/trigger text to open the\ndrawer and the content to be revealed within the drawer, respectively.\n\n## Usage\n\nThere are two ways to use `rad-drawer`'s subcomponents:\n\n### 1. Simple invocation via attrs\n\nIf you only have simple text (or pre-determined text/HTML within a variable)\nto yield, you can simply use the `Target` and `Content` attrs on `rad-drawer` to auto-invoke the subcomponents, like so:\n\n```glimmer\n{{rad-drawer\n  Target='Click to read more about puppies'\n  Content='Imagine five paragraphs about puppies instead of this one sentence.'}}\n```\n\nThis is the easiest and quickest way to create an instance of `rad-drawer`.\n\n### 2. Full invocation via contextual components\n\nIf you have more complex needs in terms of the text/html/template code\nthat needs to exist in either the `target` or `content` subcomponents,\n`rad-drawer` yields contextual components for both which you can access\ndirectly within the block invocation of `rad-drawer`.\n\n```glimmer\n{{#rad-drawer as |components|}}\n  {{#components.target}}\n    <h2>This is a very large drawer that will be hard to not see</h2>\n  {{/components.target}}\n  {{#components.content}}\n    <img src=\"https://media.giphy.com/media/6Bfnhb5jQqvny/giphy.gif\" alt=\"\" />\n  {{/components.content}}\n{{/rad-drawer}}\n```\n\nYou can also combine the use of attrs and contextual components:\n\n```glimmer\n{{#rad-drawer Target='Click me! Come on, do it!' as |components|}}\n  {{#components.content}}\n    <img src=\"https://media.giphy.com/media/RDG5Q86EJiNTG/giphy.gif\" alt=\"\" />\n  {{/components.content}}\n{{/rad-drawer}}\n```\n\nAdditionally, the open/closed state of a `rad-drawer` can be updated from\nan external state source. This can be very useful for situations where you\nwant another user interaction to trigger a drawer to open, or for setting\na drawer to be open by default. For example, you may wish to use a button to\nautomatically expand or collapse all core drawer instances at once.\n\n```handlebars\n{{#rad-button click=(action 'changeSomeProp')}}Toggle Drawer{{/rad-button}}\n\n{{rad-drawer Target='Hello' Content='I am open now' externalToggle=someProp}}\n```\n\n{{#rad-state as |state stateActions|}}\n  {{#rad-button click=(action stateActions.toggleState)}}Toggle Drawer{{/rad-button}}\n  {{rad-drawer Target='Hello' Content='I am open now' externalToggle=state}}\n{{/rad-state}}\n\n`rad-drawer` will still continue to function normally with this property\npassed in, but it gives you the ability to control it externally.\n\n## Properties\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`externalToggle` | boolean | false | Pass in any other property to cause `rad-drawer` to update when that property updates\n`icon` | string/boolean | 'arrow-down2' | Specifies which SVG icon to show in the `target`. Hides the icon if set to `false`\n`buttonStyle` | boolean | false | Whether to style the `target` to look like a button\n\n## A++ Accessibility Features\n\n- Drawer target auto-binds `aria-controls` to the value of the component ID\n- Drawer target auto-binds `aria-expanded` to the expanded/collapsed state\n- Show/hide of `content` is managed through `aria-hidden` attr",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
     },
     "Component.RadDropdown.Content": {
       "name": "Component.RadDropdown.Content",
@@ -359,11 +358,25 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-dropdown/content/component.js",
+      "file": "addon/components/rad-dropdown/content.js",
       "line": 7,
       "description": "Core dropdown content component",
       "is_constructor": 1,
       "extends": "Ember.Component"
+    },
+    "Component.RadDropdown.MenuItem": {
+      "name": "Component.RadDropdown.MenuItem",
+      "shortname": "Component.RadDropdown.MenuItem",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 4,
+      "description": "Core dropdown menu item",
+      "is_constructor": 1,
+      "extends": "Ember.CoreButton"
     },
     "Component.RadDropdown.Target": {
       "name": "Component.RadDropdown.Target",
@@ -373,23 +386,23 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-dropdown/target/component.js",
+      "file": "addon/components/rad-dropdown/target.js",
       "line": 7,
       "description": "Core dropdown target component",
       "is_constructor": 1,
       "extends": "Component.CoreButton"
     },
-    "Component.RadDropdown": {
-      "name": "Component.RadDropdown",
-      "shortname": "Component.RadDropdown",
+    "Component.RadModal.Footer": {
+      "name": "Component.RadModal.Footer",
+      "shortname": "Component.RadModal.Footer",
       "classitems": [],
       "plugins": [],
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 8,
-      "description": "Core dropdown component.\n\nWelcome friend, if you're looking for a button/link that opens a dropdown\nyou've come to the right place.\n\n## Usage\n\n### 1. Simple invocation. It's so easy. Just pass a Target and Content prop\nand you've got a totally rad dropdown.\n```glimmer\n{{rad-dropdown Target=\"Open me!\" Content=\"Hey, what's up?\"}}\n```\n\n### 2. Simple target with custom content. Use the Content contextual\ncomponent to add custom content to the dropdown.\n```handlebars\n{{#rad-dropdown Target=\"Open me!\" as |components|}}\n  {{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}\n```\n\n### 3. Customize both the dropdown target and content.\n```glimmer\n{{#rad-dropdown as |components|}}\n  {{#components.target}}Open me!{{/components.target}}\n  {{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}\n```\n\n### 4. Turn the target into a button with `buttonStyle=true` and pass a\n`brand` to change the color button.\n```handlebars\n{{rad-dropdown buttonStyle=true brand=\"primary\" Target=\"Open me!\" Content=\"Hey, what's up?\"}}\n```\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`buttonStyle` | boolean | false | Whether to style the `target` to look like a button\n`brand` | string | '' | The brand class to use to style the `target`",
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 4,
+      "description": "Simple wrapper for creating a modal footer.",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -401,23 +414,9 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-modal/header/component.js",
+      "file": "addon/components/rad-modal/header.js",
       "line": 5,
-      "description": "Used to handle rendering a header for an Ember Radical Modal. Should always\nbe accessed via the `Header` prop or `components` hash of `rad-modal`.\n\n### Accessibility\n\nThe Core Modal Header always receives an `aria-labelledby` attribute from\nits parent modal, which it uses to set up as its own `elementId` to ensure\nthat screen readers are able to correctly associate the modal header with the\nmodal that it labels. Some form of a Header is always required for instances\nof Core Modal to ensure that they are properly labelled.\n\n#### Configurations\n- `brand`: When accessing the header subcomponent in block form, you can use\n  this property to access and apply standard branding classes to the header,\n  e.g. `\"primary\"` or `\"secondary\"`.",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "Component.RadModal": {
-      "name": "Component.RadModal",
-      "shortname": "Component.RadModal",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-modal/component.js",
-      "line": 24,
-      "description": "### Ember Radical DDAU Modal\nTriggering modal open and close is handled using a data point to represent\nthe open state instead of an event listener on body filtering for some\nidentifier. This state should be handled by a data level service (could\nalso be a route or component).\n\n#### Usage:\n\n**With Basic Header:**\n```handlebars\n{{#rad-modal open=someService.modalActive Header='This is the modal title' closeModal=(action \"closeModal\" target=someService)}}\n  <p>This is a totally rad modal!</p>\n{{/rad-modal}}\n```\n\n**With Full/Custom Header:**\n```handlebars\n{{#rad-modal open=someService.modalActive closeModal=(action \"closeModal\" target=someService) as |components|}}\n  {{! Modal Header Subcomponent}}\n  {{#components.header}}\n    <h3>{{rad-svg svgId=\"sparkles\"}} It Just Works™</h3>\n  {{/components.header}}\n  <p>I will be yielded inside of the modal body! Don't worry about adding\n  padding to me, the modal has 30px padding all around.</p>\n{{/rad-modal}}\n```\n\n**With No Header:**\nEven if you don't want or need a header for your modal, _some form of header\ntext is required for 508 compliance_.\n\n```handlebars\n{{#rad-modal open=someService.modalActive ariaHeader='This is the puppy modal' closeModal=(action \"closeModal\" target=someService)}}\n  <p>Imagine several cute puppy images and/or gifs here.</p>\n{{/components.header}}\n```\n\nNote that `open`, `closeAction` and some form of a header are all required.\n\n#### Data Down\nA boolean data point `open` must be passed into this component. This\ndata point represents the state of the modal and must be controlled by some\nparent context (a Service, Controller or some parent component). DO NOT\nMUTATE THIS DATA POINT IN THIS COMPONENT!\n\nWhen following DDAU this component will automagically rerender whenever the\n`open` state of your component changes because it is **passed down** as\ndata. This removes the need for observers and event listeners (🙌 🙌 🙌) and\nallows us to programmatically open and close the modal based purely on user\nactions && application data/state.\n\nWhen `open` is truthy, the template will add a class `active` to the modal's\n`<div>`s. This class toggles visibility and fades in the modal using a CSS\ntransition. (The `aria-hidden` attribute is used to control actual visbility\nfor all users/browsers and screen readers; `active` is purely presentational)\n\n#### Actions Up\nProvide a closure action to the component as `closeModal`. This action will\nbe automagically attached to the gray modal background. Whenever a user\nclicks the background, that action will relay the event to your parent\ncontext. You can then reliably handle whatever closing logic needs to happen\nand mutate your modal's `open` state on the parent context. This update will\nflow back down into the component and make the necessary changes to \"close\"\nthe modal.\n\n#### Yielded Data\nThis component will yield:\n\n- A `components` hash which you can use to directly invoke the `header`\n  subcomponent for situations where you need more than just text in your\n  modal header. You can reference in your template as:\n  `{{#components.header}}Some text and elements here{{/components.header}}`\n- The `open` state of the modal, in case something in your header or modal\n  body needs access to this state.\n\n#### Configurations\nThe component can be configured with the following flags:\n\n- `animateFrom`: If you would like the modal to animate in, use this property\n  to set up an animation direction; \"left\", \"right\", \"top\", or \"bottom\".\n- `autoFocus`: set to false to prevent the modal from refocusing\n  the last element that was active in the DOM before the modal as opened.\n- `removeFromDomOnClose`: While you normally may wish to control whether\n  your modal is being rendered at all via external logic, there are cases\n  where you may be using the modal (e.g. in a wizard-like user flow) where\n  you may want to have the modal destroy itself when it closes. Use this\n  property if you want this kind of behavior.\n- `size`: Default size of the modal is 60% of browser width on desktop. You\n  may optionally choose `small` (30%), `medium` (45%), or `full` (100%).\n  Modals are always full-width on small screen sizes.\n\n##### TODO:\n- Explore/Document how to handle having multiple modals of the same type? One\n  modal with dynamic content? or multiple modals with modal ids?\n- Handle returning focus to the modal when a user tabs focus outside of the\n  modal. Start with Bootstrap modals (which accomplish this). Can it be done\n  without event listeners?",
+      "description": "Used to handle rendering a header for an Ember Radical Modal. Should always\nbe accessed via the `Header` prop or `components` hash of `rad-modal`.\n\n### Accessibility\n\nThis component should only be used as a contextual component within a\n`core-modal` instance. The parent `core-modal` handles setting the `elementId`\nof this component to match an `aria-labelledby` on the parent modal.\nThis ensures that screen readers are able to correctly associate the modal\nheader with the modal that it labels. Some form of a Header is always\nrequired for instances of Core Modal to ensure that they are properly\nlabelled.\n\n#### Configurations\n- `brand`: When accessing the header subcomponent in block form, you can use\n  this property to access and apply standard branding classes to the header,\n  e.g. `\"primary\"` or `\"secondary\"` .\n- `closeButton`: Controls display of the header close button. Set to false to\n  hide close button.\n- `tagClose`: Pass an object of tagging data to have a tag event fired on\n  click of header close button",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -429,23 +428,9 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 9,
       "description": "Popover tooltips to Make UI Great Again.™\nChild component to wrap the popover content.",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "Component.RadPopover": {
-      "name": "Component.RadPopover",
-      "shortname": "Component.RadPopover",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-popover/component.js",
-      "line": 8,
-      "description": "Popover tooltips to Make UI Great Again.™\n\nUse this component along with the subcomponent `rad-popover.content` to\ncreate popovers(super fancy tooltips). This component works by using mouse\nand focus events on **this** wrapping element.\n\n#### Sample Usage:\n\n```handlebars\n{{#rad-popover as |components|}}\n  {{#components.target}}Hover me{{/rad-button}}\n  {{#components.content position=\"top\" size=\"small\"}}\n    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n  {{/components.content}}\n{{/rad-popover}}\n```\n\n#### Configuration Properties\n\nA set of configuration properties can be passed into the child `{{rad-popover/content}}`\ncomponent to control how its appearance. Here is a brief overview:\n\n- `position`: Where the tooltip is positioned relative to anchor element:\n   - `top`\n   - `bottom`\n   - `left`\n   - `right`\n   - `bottom-left`\n   - `bottom-right`\n- `size`: Preset width of the tooltip:\n   - `small`\n   - `medium`\n   - `large`\n\n```glimmer\n\nFor full documentation, see the {{cross-link class=\"Component.CorePopover\" item=\"position\"}}position property{{/cross-link}} and the {{cross-link class=\"Component.CorePopover\" item=\"size\"}}size property{{/cross-link}}.\n```",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -457,23 +442,9 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 5,
       "description": "This component is yielded by the `rad-tabs` component. The `activeId` and\nactions `registerTab` and `updateTab` are privately bound for internal use.\n\nOn init each tab will register itself with the `rad-tabs` wrapping container,\npassing all its data. The `rad-tabs` container uses this to build out the\ntab buttons.\n\n```handlebars\n{{#rad-tabs defaultTab=\"dumpsterShrimp\" as |components|}}\n  {{#components.content label=\"Shrimp\" elementId=\"dumpsterShrimp\" tabDataTest=\"a-nifty-tab-button\"}}\n    BRINGO! There's some pretty good lil' shrimpers in here, lets check it out.\n  {{/components.content}}\n{{/rad-tabs}}\n```\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`label` | string | null | Text label of the tab button for this panel\n`elementId` | string | null | Set a specific id for this component when using container `defaultTab`\n`tabDataTest` | string | null | `data-test` for the tab button",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
-    },
-    "Component.RadTabs": {
-      "name": "Component.RadTabs",
-      "shortname": "Component.RadTabs",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 8,
-      "description": "A++ Accessible tabs. The `rad-tabs` component is the parent container for\na given set of tabs and handles managing the active state of the tabs and tab\npanels. The `rad-tabs` component yields a `content` contextual component\ninside of the `components` hash.\n\n#### Usage\n\n```handlebars\n{{#rad-tabs as |components|}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n  {{#components.content label=\"Fresh Water\"}}\n    Boy I sure did work up a thirst after eating all them shramps. Time to\n    wash it down with a cool glass of marina water.\n  {{/components.content}}\n{{/rad-tabs}}\n```\n\nYou can include any number of `components.content` contextual components.\n_(However keep in mind that adding too many `content` components may result in\nthe tab labels becoming unreadable depending on the space alotted for\ndisplaying them.)_\n\nYou can also specify a default tab by setting the `defaultTab` parameter to\nmatch one of content components' HTML id property:\n\n```handlebars\n{{#rad-tabs defaultTab=\"shrimpers\" as |components|}}\n  {{#components.content label=\"Shrimp\" elementId=\"shrimpers\"}}\n    BRINGO! There's some pretty good lil' shrimpers in here, lets check it out.\n  {{/components.content}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n{{/rad-tabs}}\n```\n\n### Controlled Tabs\nIf you need to programatically open tabs within your application you can\ncreate a controlled instance of `rad-tabs` by specifying the `activeId` for\nthe component. This means that you need to track the `activeId` in a parent\ncomponent or service and pass it down into the controlled tab instance. To do\nthis pass an `onChange` closure into the component. It will be called with\nthe `elementId` of the selected tab any time a user changes tabs.\n\nTODO: Template && JS Examples\n\nConfiguration | Type | Default | Description\n--- | --- | ---\n`activeId` | string | null | The `elementId` of the tab that should be opened\n`buttonStyle` | boolean | true | Set to false for tab buttons without primary background-color\n`defaultTab` | string | null | Tab to render shown by default\n`onChange` | function | null | Optional closure that will be called when any tab is opened\n`scrollOnClick` | boolean | false | Set to true to scroll page to top on tab click\n`scrollTarget` | jQuery selector | 'body, html' | Specify scroll animation target\n\n### A++ Accessibility\n- Tabs have `aria-controls` set to the `elementId` of the `tabpanel` they show.\n- Tabs have `role=tab` for role identification\n- Tabs are instances of `rad-button` for keyboard access\n- Show/hide of tabs and panels are managed through `aria-hidden` attr\n\n### Feature Notes:\n- The tab list is a flexbox container with flex-grow 1 for each tab. This auto\n  magically grows the tabs to fill the entire width of tab container.",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -485,7 +456,7 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-tooltip/content/component.js",
+      "file": "addon/components/rad-tooltip/content.js",
       "line": 4,
       "description": "CoreTooltip subcomponent for inner content. Requires properties `hidden` and\n`aria-describedby` yielded by `rad-tooltip`.\n\nProperties | Default | Description\n--- | --- | ---\naria-describedby | '' | REQUIRED Used to bind id to tooltip title `aria-describedby` attr\nhidden | true | Boolean that toggles `aria-hidden` attribute to handle show/hide of content",
       "is_constructor": 1,
@@ -499,25 +470,11 @@
       "extensions": [],
       "plugin_for": [],
       "extension_for": [],
-      "file": "addon/components/rad-tooltip/title/component.js",
+      "file": "addon/components/rad-tooltip/title.js",
       "line": 17,
       "description": "CoreTooltip subcomponent extends the `CoreButton` component. Requires\n`aria-describedby` to bind to html attribute.\n\nProperties | Default | Description\n--- | --- | ---\naria-describedby | '' | REQUIRED Used to bind html `aria-describedby` attribute to tooltip content id\nbasic | `true` | Button `basic` class status. Pass false for a button style target\nlink | `true` | Button `link` class status. Pass false to suppress link styles",
       "is_constructor": 1,
       "extends": "Component.CoreButton"
-    },
-    "Component.RadTooltip": {
-      "name": "Component.RadTooltip",
-      "shortname": "Component.RadTooltip",
-      "classitems": [],
-      "plugins": [],
-      "extensions": [],
-      "plugin_for": [],
-      "extension_for": [],
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 7,
-      "description": "A fully accessible tooltip component. The `rad-tooltip` component can be\nused by itself or in block form as a parent of the title/content\nsubcomponents which represent the title/trigger text to show the\ntooltip and the content to be revealed within the tooltip, respectively.\n\n### Usage\n\n#### 1. Simple invocation\n```glimmer\n{{rad-tooltip Title=\"Hover me\" Content=\"For some rad information that is really really long\"}}\n```\n\n#### 2. Block form using contextual components\n```glimmer\n{{#rad-tooltip as |components|}}\n  {{#components.title}}Hover me{{/components.title}}\n  {{#components.content}}\n    {{rad-svg svgId='x'}} For some really rad information!\n  {{/components.content}}\n{{/rad-tooltip}}\n```\n\n#### 3. Combine the use of attrs and contextual components.\n```glimmer\n{{#rad-tooltip Title=\"Hover me\" as |components|}}\n  {{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}\n```\n\n#### 4. Turn the title into a button with `buttonStyle` and pass a\n`brand` to change the color of the button.\n```glimmer\n{{rad-tooltip buttonStyle=true brand=\"primary\" Title=\"Hover me\" Content=\"For some rad information\"}}\n```",
-      "is_constructor": 1,
-      "extends": "Ember.Component"
     },
     "Component.RadAlert": {
       "name": "Component.RadAlert",
@@ -544,6 +501,76 @@
       "file": "addon/components/rad-button.js",
       "line": 6,
       "description": "The `rad-button` component is used for all user interaction targets in Ember\nRadical. The component handles a number of housekeeping tasks including:\n- Outline suppression only on clicks\n- Tag firing when enabled\n- Aria and html attributes\n\n{{#rad-button}}Core Button{{/rad-button}}\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`link` | boolean | `false` | Toggles the `.btn-link` class, making the button look and act like a link\n`brand` | {'primary', 'secondary', 'info' etc. } | `null` | Toggles brand class for a branded button",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "Component.RadCard": {
+      "name": "Component.RadCard",
+      "shortname": "Component.RadCard",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-card.js",
+      "line": 5,
+      "description": "Core card.\n\n```handlebars\n{{#rad-card as |components|}}\n  {{#components.title}}Card title{{/components.title}}\n  {{#components.body}}Card body{{/components.body}}\n  {{#components.footer}}Card footer{{/components.footer}}\n{{/rad-card}}\n```\n\n{{#rad-card as |components|}}\n  {{#components.title}}Party Time{{/components.title}}\n  {{#components.body}}<img src=\"http://i.giphy.com/125RIkH7IluIpy.gif\"/>{{/components.body}}\n{{/rad-card}}",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "Component.RadDrawer": {
+      "name": "Component.RadDrawer",
+      "shortname": "Component.RadDrawer",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-drawer.js",
+      "line": 6,
+      "description": "Fully accessible expandable drawer/expandable content component.\nThe `rad-drawer` component is the parent container for a set of `target` and\n`content` subcomponents, which represent the title/trigger text to open the\ndrawer and the content to be revealed within the drawer, respectively.\n\n## Usage\n\nThere are two ways to use `rad-drawer`'s subcomponents:\n\n### 1. Simple invocation via attrs\n\nIf you only have simple text (or pre-determined text/HTML within a variable)\nto yield, you can simply use the `Target` and `Content` attrs on `rad-drawer` to auto-invoke the subcomponents, like so:\n\n```glimmer\n{{rad-drawer\n  Target='Click to read more about puppies'\n  Content='Imagine five paragraphs about puppies instead of this one sentence.'}}\n```\n\nThis is the easiest and quickest way to create an instance of `rad-drawer`.\n\n### 2. Full invocation via contextual components\n\nIf you have more complex needs in terms of the text/html/template code\nthat needs to exist in either the `target` or `content` subcomponents,\n`rad-drawer` yields contextual components for both which you can access\ndirectly within the block invocation of `rad-drawer`.\n\n```glimmer\n{{#rad-drawer as |components|}}\n  {{#components.target}}\n    <h2>This is a very large drawer that will be hard to not see</h2>\n  {{/components.target}}\n  {{#components.content}}\n    <img src=\"https://media.giphy.com/media/6Bfnhb5jQqvny/giphy.gif\" alt=\"\" />\n  {{/components.content}}\n{{/rad-drawer}}\n```\n\nYou can also combine the use of attrs and contextual components:\n\n```glimmer\n{{#rad-drawer Target='Click me! Come on, do it!' as |components|}}\n  {{#components.content}}\n    <img src=\"https://media.giphy.com/media/RDG5Q86EJiNTG/giphy.gif\" alt=\"\" />\n  {{/components.content}}\n{{/rad-drawer}}\n```\n\nAdditionally, the open/closed state of a `rad-drawer` can be updated from\nan external state source. This can be very useful for situations where you\nwant another user interaction to trigger a drawer to open, or for setting\na drawer to be open by default. For example, you may wish to use a button to\nautomatically expand or collapse all core drawer instances at once.\n\n```handlebars\n{{#rad-button click=(action 'changeSomeProp')}}Toggle Drawer{{/rad-button}}\n\n{{rad-drawer Target='Hello' Content='I am open now' externalToggle=someProp}}\n```\n\n{{#rad-state as |state stateActions|}}\n  {{#rad-button click=(action stateActions.toggleState)}}Toggle Drawer{{/rad-button}}\n  {{rad-drawer Target='Hello' Content='I am open now' externalToggle=state}}\n{{/rad-state}}\n\n`rad-drawer` will still continue to function normally with this property\npassed in, but it gives you the ability to control it externally.\n\n## Properties\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`externalToggle` | boolean | false | Pass in any other property to cause `rad-drawer` to update when that property updates\n`icon` | string/boolean | 'arrow-down' | Specifies which SVG icon to show in the `target`. Hides the icon if set to `false`\n`buttonStyle` | boolean | false | Whether to style the `target` to look like a button\n\n## A++ Accessibility Features\n\n- Drawer target auto-binds `aria-controls` to the value of the component ID\n- Drawer target auto-binds `aria-expanded` to the expanded/collapsed state\n- Show/hide of `content` is managed through `aria-hidden` attr",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "Component.RadDropdown": {
+      "name": "Component.RadDropdown",
+      "shortname": "Component.RadDropdown",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-dropdown.js",
+      "line": 8,
+      "description": "Core dropdown component.\n\nWelcome friend, if you're looking for a button/link that opens a dropdown\nyou've come to the right place.\n\n## Usage\n\n### 1. Simple invocation. It's so easy. Just pass a Target and Content prop\nand you've got a totally rad dropdown.\n```glimmer\n{{rad-dropdown Target=\"Open me!\" Content=\"Hey, what's up?\"}}\n```\n\n### 2. Simple target with custom content. Use the Content contextual\ncomponent to add custom content to the dropdown.\n```handlebars\n{{#rad-dropdown Target=\"Open me!\" as |components|}}\n  {{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}\n```\n\n### 3. Customize both the dropdown target and content.\n```glimmer\n{{#rad-dropdown as |components|}}\n  {{#components.target}}Open me!{{/components.target}}\n  {{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}\n```\n\n### 4. Turn the target into a button with `buttonStyle=true` and pass a\n`brand` to change the color button.\n```handlebars\n{{rad-dropdown buttonStyle=true brand=\"primary\" Target=\"Open me!\" Content=\"Hey, what's up?\"}}\n```\n\n### 5. Use as a dropdown menu with menu items\n\n```glimmer\n{{#rad-dropdown dropdownMenu=true brand=\"primary\" buttonStyle=true as |components|}}\n  {{#components.target}}\n    Open me! {{rad-svg svgId=\"arrow-down\"}}\n  {{/components.target}}\n  {{#components.content}}\n    {{#components.menu-item}}Option 1{{/components.menu-item}}\n    {{#components.menu-item}}Option 2{{/components.menu-item}}\n  {{/components.content}}\n{{/rad-dropdown}}\n```\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`buttonStyle` | boolean | false | Whether to style the `target` to look like a button\n`brand` | string | '' | The brand class to use to style the `target`",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "Component.RadModal": {
+      "name": "Component.RadModal",
+      "shortname": "Component.RadModal",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-modal.js",
+      "line": 9,
+      "description": "### Ember Radical DDAU Modal\nTriggering modal open and close is handled using a data point to represent\nthe open state instead of an event listener on body filtering for some\nidentifier. This state should be handled by a data level service (could\nalso be a route or component).\n\n#### Usage:\n\n**With Basic Header:**\n```handlebars\n{{#rad-modal\n  open=someService.modalActive\n  Header='This is the modal title'\n  closeModal=(action 'closeModal' target=someService)}}\n  <p>This is a totally rad modal!</p>\n{{/rad-modal}}\n```\n\n**With Full/Custom Header:**\n```handlebars\n{{#rad-modal\n  open=someService.modalActive\n  closeModal=(action \"closeModal\" target=someService)\n  as |components|}}\n  {{! Modal Header Subcomponent}}\n  {{#components.header}}\n    <h3>{{rad-svg svgId=\"sparkles\"}} It Just Works™</h3>\n  {{/components.header}}\n  <p>I will be yielded inside of the modal body! Don't worry about adding\n  padding to me, the modal has 30px padding all around.</p>\n{{/rad-modal}}\n```\n\n**With No Header:**\nEven if you don't want or need a header for your modal, _some form of header\ntext is required for 508 compliance_.\n\n```handlebars\n{{#rad-modal\n  open=someService.modalActive\n  ariaHeader='This is the puppy modal'\n  closeModal=(action \"closeModal\" target=someService)}}\n  <p>Imagine several cute puppy images and/or gifs here.</p>\n{{/components.header}}\n```\n\nNote that `open`, `closeAction` and some form of a header are all required.\n\n#### Data Down\nA boolean data point `open` must be passed into this component. This\ndata point represents the state of the modal and must be controlled by some\nparent context (a Service, Controller or some parent component). DO NOT\nMUTATE THIS DATA POINT IN THIS COMPONENT!\n\nWhen following DDAU this component will automagically rerender whenever the\n`open` state of your component changes because it is **passed down** as\ndata. This removes the need for observers and event listeners (🙌 🙌 🙌) and\nallows us to programmatically open and close the modal based purely on user\nactions && application data/state.\n\nWhen `open` is truthy, the template will add a class `active` to the modal's\n`<div>`s. This class toggles visibility and fades in the modal using a CSS\ntransition. (The `aria-hidden` attribute is used to control actual visbility\nfor all users/browsers and screen readers; `active` is purely presentational)\n\n#### Actions Up\nProvide a closure action to the component as `closeModal`. This action will\nbe automagically attached to the gray modal background. Whenever a user\nclicks the background, that action will relay the event to your parent\ncontext. You can then reliably handle whatever closing logic needs to happen\nand mutate your modal's `open` state on the parent context. This update will\nflow back down into the component and make the necessary changes to \"close\"\nthe modal.\n\n#### Yielded Data\nThis component will yield:\n\n- A `components` hash which you can use to directly invoke the `header`\n  subcomponent for situations where you need more than just text in your\n  modal header. You can reference in your template as:\n  `{{#components.header}}Some text and elements here{{/components.header}}`\n- The `open` state of the modal, in case something in your header or modal\n  body needs access to this state.\n\n#### Configurations\nThe component can be configured with the following flags:\n\n- `animateFrom`: If you would like the modal to animate in, use this property\n  to set up an animation direction; \"left\", \"right\", \"top\", or \"bottom\".\n- `autoFocus`: set to false to prevent the modal from refocusing\n  the last element that was active in the DOM before the modal as opened.\n- `closeButton`: Controls display of the header close button. Set to false to\n  hide close button.\n- `removeFromDomOnClose`: While you normally may wish to control whether\n  your modal is being rendered at all via external logic, there are cases\n  where you may be using the modal (e.g. in a wizard-like user flow) where\n  you may want to have the modal destroy itself when it closes. Use this\n  property if you want this kind of behavior.\n- `size`: Default size of the modal is 60% of browser width on desktop. You\n  may optionally choose `small` (30%), `medium` (45%), or `full` (100%).\n  Modals are always full-width on small screen sizes.\n\n#### Non-Dismissable Modal\nCreate a modal that cannot be dismissed on click of the modal background by\nnot passing a `closeModal` closure _(Modal components are set up with a no op\n`closeModal` action by default)_. Note that although not required, it's\nsuggested to pass `closeButton=false` to suppress display of the close button\nbecause it won't do anything.\n\n##### TODO:\n- Explore/Document how to handle having multiple modals of the same type? One\n  modal with dynamic content? or multiple modals with modal ids?\n- Handle returning focus to the modal when a user tabs focus outside of the\n  modal. Start with Bootstrap modals (which accomplish this). Can it be done\n  without event listeners?",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "Component.RadPopover": {
+      "name": "Component.RadPopover",
+      "shortname": "Component.RadPopover",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-popover.js",
+      "line": 8,
+      "description": "Popover tooltips to Make UI Great Again.™\n\nUse this component along with the subcomponent `rad-popover.content` to\ncreate popovers(super fancy tooltips). This component works by using mouse\nand focus events on **this** wrapping element.\n\n#### Sample Usage:\n\n```handlebars\n{{#rad-popover as |components|}}\n  {{#components.target}}Hover me{{/rad-button}}\n  {{#components.content position=\"top\" size=\"small\"}}\n    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n  {{/components.content}}\n{{/rad-popover}}\n```\n\n#### Configuration Properties\n\nA set of configuration properties can be passed into the child `{{rad-popover/content}}`\ncomponent to control how its appearance. Here is a brief overview:\n\n- `position`: Where the tooltip is positioned relative to anchor element:\n   - `top`\n   - `bottom`\n   - `left`\n   - `right`\n   - `bottom-left`\n   - `bottom-right`\n- `size`: Preset width of the tooltip:\n   - `small`\n   - `medium`\n   - `large`\n\n```glimmer\n\nFor full documentation, see the {{cross-link class=\"Component.CorePopover\" item=\"position\"}}position property{{/cross-link}} and the {{cross-link class=\"Component.CorePopover\" item=\"size\"}}size property{{/cross-link}}.\n```",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -575,6 +602,34 @@
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
+    "Component.RadTabs": {
+      "name": "Component.RadTabs",
+      "shortname": "Component.RadTabs",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-tabs.js",
+      "line": 8,
+      "description": "A++ Accessible tabs. The `rad-tabs` component is the parent container for\na given set of tabs and handles managing the active state of the tabs and tab\npanels. The `rad-tabs` component yields a `content` contextual component\ninside of the `components` hash.\n\n#### Usage\n\n```handlebars\n{{#rad-tabs as |components|}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n  {{#components.content label=\"Fresh Water\"}}\n    Boy I sure did work up a thirst after eating all them shramps. Time to\n    wash it down with a cool glass of marina water.\n  {{/components.content}}\n{{/rad-tabs}}\n```\n\nYou can include any number of `components.content` contextual components.\n_(However keep in mind that adding too many `content` components may result in\nthe tab labels becoming unreadable depending on the space alotted for\ndisplaying them.)_\n\nYou can also specify a default tab by setting the `defaultTab` parameter to\nmatch one of content components' HTML id property:\n\n```handlebars\n{{#rad-tabs defaultTab=\"shrimpers\" as |components|}}\n  {{#components.content label=\"Shrimp\" elementId=\"shrimpers\"}}\n    BRINGO! There's some pretty good lil' shrimpers in here, lets check it out.\n  {{/components.content}}\n  {{#components.content label=\"Delgrango's\"}}\n    This is my favorite resaurant at the marinara, name of Delgrango's\n  {{/components.content}}\n{{/rad-tabs}}\n```\n\n### Controlled Tabs\nIf you need to programatically open tabs within your application you can\ncreate a controlled instance of `rad-tabs` by specifying the `activeId` for\nthe component. This means that you need to track the `activeId` in a parent\ncomponent or service and pass it down into the controlled tab instance. To do\nthis pass an `onChange` closure into the component. It will be called with\nthe `elementId` of the selected tab any time a user changes tabs.\n\nTODO: Template && JS Examples\n\nConfiguration | Type | Default | Description\n--- | --- | ---\n`activeId` | string | null | The `elementId` of the tab that should be opened\n`buttonStyle` | boolean | true | Set to false for tab buttons without primary background-color\n`defaultTab` | string | null | Tab to render shown by default\n`onChange` | function | null | Optional closure that will be called when any tab is opened\n`scrollOnClick` | boolean | false | Set to true to scroll page to top on tab click\n`scrollTarget` | jQuery selector | 'body, html' | Specify scroll animation target\n\n### A++ Accessibility\n- Tabs have `aria-controls` set to the `elementId` of the `tabpanel` they show.\n- Tabs have `role=tab` for role identification\n- Tabs are instances of `rad-button` for keyboard access\n- Show/hide of tabs and panels are managed through `aria-hidden` attr\n\n### Feature Notes:\n- The tab list is a flexbox container with flex-grow 1 for each tab. This auto\n  magically grows the tabs to fill the entire width of tab container.",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
+    "Component.RadTooltip": {
+      "name": "Component.RadTooltip",
+      "shortname": "Component.RadTooltip",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/components/rad-tooltip.js",
+      "line": 7,
+      "description": "A fully accessible tooltip component. The `rad-tooltip` component can be\nused by itself or in block form as a parent of the title/content\nsubcomponents which represent the title/trigger text to show the\ntooltip and the content to be revealed within the tooltip, respectively.\n\n### Usage\n\n#### 1. Simple invocation\n```glimmer\n{{rad-tooltip Title=\"Hover me\" Content=\"For some rad information that is really really long\"}}\n```\n\n#### 2. Block form using contextual components\n```glimmer\n{{#rad-tooltip as |components|}}\n  {{#components.title}}Hover me{{/components.title}}\n  {{#components.content}}\n    {{rad-svg svgId='close'}} For some really rad information!\n  {{/components.content}}\n{{/rad-tooltip}}\n```\n\n#### 3. Combine the use of attrs and contextual components.\n```glimmer\n{{#rad-tooltip Title=\"Hover me\" as |components|}}\n  {{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}\n```\n\n#### 4. Turn the title into a button with `buttonStyle` and pass a\n`brand` to change the color of the button.\n```glimmer\n{{rad-tooltip buttonStyle=true brand=\"primary\" Title=\"Hover me\" Content=\"For some rad information\"}}\n```",
+      "is_constructor": 1,
+      "extends": "Ember.Component"
+    },
     "Eq": {
       "name": "Eq",
       "shortname": "Eq",
@@ -597,6 +652,19 @@
         "description": "",
         "type": "Boolean"
       }
+    },
+    "InstanceInitializer.FixedBody": {
+      "name": "InstanceInitializer.FixedBody",
+      "shortname": "InstanceInitializer.FixedBody",
+      "classitems": [],
+      "plugins": [],
+      "extensions": [],
+      "plugin_for": [],
+      "extension_for": [],
+      "file": "addon/instance-initializers/fixed-body.js",
+      "line": 2,
+      "description": "This initializer handles sniffing the current browser's scrollbar width. This\nis used by modals to handle freezing the body on open, but can be used by\nany fixed width element that needs to freeze the body using the class\n`.fixed-scroll-padding-element`.",
+      "is_constructor": 1
     },
     "Tagging": {
       "name": "Tagging",
@@ -663,7 +731,7 @@
   "elements": {},
   "classitems": [
     {
-      "file": "addon/components/rad-card/body/component.js",
+      "file": "addon/components/rad-card/body.js",
       "line": 14,
       "description": "Bind standard core class: `card-body`",
       "itemtype": "property",
@@ -672,7 +740,7 @@
       "class": "Component.RadCard.Body"
     },
     {
-      "file": "addon/components/rad-card/footer/component.js",
+      "file": "addon/components/rad-card/footer.js",
       "line": 14,
       "description": "Bind standard core class: `card-footer`",
       "itemtype": "property",
@@ -681,7 +749,7 @@
       "class": "Component.RadCard.Footer"
     },
     {
-      "file": "addon/components/rad-card/title/component.js",
+      "file": "addon/components/rad-card/title.js",
       "line": 14,
       "description": "Bind standard core class: `card-title`",
       "itemtype": "property",
@@ -690,44 +758,7 @@
       "class": "Component.RadCard.Title"
     },
     {
-      "file": "addon/components/rad-card/component.js",
-      "line": 30,
-      "description": "Pass a brand to use to style the component and it's child components.",
-      "itemtype": "property",
-      "name": "brand",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadCard"
-    },
-    {
-      "file": "addon/components/rad-card/component.js",
-      "line": 41,
-      "description": "Computed css class for the brand bound to the component.",
-      "itemtype": "property",
-      "name": "brandClass",
-      "type": "{String}",
-      "class": "Component.RadCard"
-    },
-    {
-      "file": "addon/components/rad-card/component.js",
-      "line": 49,
-      "description": "Bind standard core class: `card-footer`",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadCard"
-    },
-    {
-      "file": "addon/components/rad-card/component.js",
-      "line": 55,
-      "description": "Bind props to classes on the root component element.",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadCard"
-    },
-    {
-      "file": "addon/components/rad-drawer/content/component.js",
+      "file": "addon/components/rad-drawer/content.js",
       "line": 17,
       "description": "String representation of boolean state for `aria` attrs.",
       "itemtype": "property",
@@ -742,7 +773,7 @@
       ]
     },
     {
-      "file": "addon/components/rad-drawer/content/component.js",
+      "file": "addon/components/rad-drawer/content.js",
       "line": 27,
       "description": "Bind `aria-hidden` for A+ usability\nBind `data-test` attr to modified `dataTest` value",
       "itemtype": "property",
@@ -751,7 +782,7 @@
       "class": "Component.RadDrawer.Content"
     },
     {
-      "file": "addon/components/rad-drawer/content/component.js",
+      "file": "addon/components/rad-drawer/content.js",
       "line": 34,
       "description": "Bind `dropdown-content`",
       "itemtype": "property",
@@ -760,7 +791,7 @@
       "class": "Component.RadDrawer.Content"
     },
     {
-      "file": "addon/components/rad-drawer/target/component.js",
+      "file": "addon/components/rad-drawer/target.js",
       "line": 18,
       "description": "Display the target content as a button instead of a plain link. Passed in\nfrom the parent `rad-drawer`.",
       "itemtype": "property",
@@ -769,7 +800,7 @@
       "class": "Component.RadDrawer.Target"
     },
     {
-      "file": "addon/components/rad-drawer/target/component.js",
+      "file": "addon/components/rad-drawer/target.js",
       "line": 25,
       "description": "Name of icon to display. Removes icon from display if value is falsy.",
       "itemtype": "property",
@@ -779,7 +810,7 @@
       "class": "Component.RadDrawer.Target"
     },
     {
-      "file": "addon/components/rad-drawer/target/component.js",
+      "file": "addon/components/rad-drawer/target.js",
       "line": 32,
       "description": "String representation of boolean state for `aria` attrs.",
       "itemtype": "property",
@@ -794,7 +825,7 @@
       ]
     },
     {
-      "file": "addon/components/rad-drawer/target/component.js",
+      "file": "addon/components/rad-drawer/target.js",
       "line": 43,
       "description": "Bind `aria-expanded` and `aria-controls` to the root element;\nBind modified `dataTest` to `data-test` attr",
       "itemtype": "property",
@@ -803,7 +834,7 @@
       "class": "Component.RadDrawer.Target"
     },
     {
-      "file": "addon/components/rad-drawer/target/component.js",
+      "file": "addon/components/rad-drawer/target.js",
       "line": 53,
       "description": "Bind `drawer-target` and `basic-b`",
       "itemtype": "property",
@@ -812,7 +843,7 @@
       "class": "Component.RadDrawer.Target"
     },
     {
-      "file": "addon/components/rad-drawer/target/component.js",
+      "file": "addon/components/rad-drawer/target.js",
       "line": 59,
       "description": "Bind `link` to `!useButtonStyle`",
       "itemtype": "property",
@@ -821,121 +852,18 @@
       "class": "Component.RadDrawer.Target"
     },
     {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 100,
-      "description": "By default, the `target` subcomponent will display as a plain link. If you\nwould like it to display as a button, set this to `true`.",
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 18,
+      "description": "Adds `dropdown-menu` class which removes padding in order to show\ndropdown menu items.",
       "itemtype": "property",
-      "name": "buttonStyle",
+      "name": "dropdownMenu",
       "type": "{Boolean}",
-      "class": "Component.RadDrawer"
+      "passed": "",
+      "class": "Component.RadDropdown.Content"
     },
     {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 107,
-      "description": "Allow for external controls to update the open/closed state of a `rad-drawer`",
-      "itemtype": "property",
-      "name": "externalToggle",
-      "type": "{Boolean}",
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 113,
-      "description": "If you want to use a different SVG icon from the default on your `target`,\nspecify it by name/id here. If you don't want to display an icon\nat all, pass `false` into this property",
-      "itemtype": "property",
-      "name": "icon",
-      "type": "{string|Boolean}",
-      "default": "'arrow-down2'",
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 126,
-      "description": "Unique id for binding `aria-controls` in subcomponents",
-      "itemtype": "property",
-      "name": "ariaId",
-      "type": "{string}",
-      "class": "Component.RadDrawer",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 133,
-      "description": "Bind `rad-drawer` to component",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 139,
-      "description": "State boolean for display of the drawer content. Is toggled true/false to\nhandle show/hide. Updated in `toggleHidden`",
-      "itemtype": "property",
-      "name": "hidden",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 150,
-      "description": "Auto-binds `data-test` attributes",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 161,
-      "description": "The component's `didReceiveAttrs` hook. Allows udpates from external state\nto adjust the `hidden` state of a `rad-drawer` instance.",
-      "itemtype": "event",
-      "name": "didReceiveAttrs",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 184,
-      "description": "Actions Hash",
-      "itemtype": "property",
-      "name": "actions",
-      "type": "{Object}",
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-drawer/component.js",
-      "line": 190,
-      "description": "Toggle internal hidden property. Pass state boolean if specific state is needed.",
-      "itemtype": "method",
-      "name": "toggleHidden",
-      "params": [
-        {
-          "name": "evt",
-          "description": "Event object",
-          "type": "Object"
-        },
-        {
-          "name": "state",
-          "description": "Specific state to set",
-          "type": "Boolean",
-          "optional": true
-        }
-      ],
-      "class": "Component.RadDrawer"
-    },
-    {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 17,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 29,
       "description": "String representation of boolean state for `aria` attrs.",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -949,8 +877,8 @@
       ]
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 27,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 39,
       "description": "Bind `aria-hidden` for A+ usability",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -958,8 +886,8 @@
       "class": "Component.RadDropdown.Content"
     },
     {
-      "file": "addon/components/rad-dropdown/content/component.js",
-      "line": 33,
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 48,
       "description": "Bind `dropdown-content`",
       "itemtype": "property",
       "name": "classNames",
@@ -967,7 +895,46 @@
       "class": "Component.RadDropdown.Content"
     },
     {
-      "file": "addon/components/rad-dropdown/target/component.js",
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 54,
+      "description": "Binds `dropdown-menu` class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Content"
+    },
+    {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 14,
+      "description": "Binds `dropdown-item` class",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.MenuItem"
+    },
+    {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 20,
+      "description": "Override default click behavior and close the dropdown",
+      "itemtype": "event",
+      "name": "click",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown.MenuItem"
+    },
+    {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 29,
+      "description": "Closure action that hides the dropdown",
+      "itemtype": "property",
+      "name": "hide",
+      "closure": "",
+      "class": "Component.RadDropdown.MenuItem"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target.js",
       "line": 17,
       "description": "Ember fun: Attribute bindings require a value to bind on.",
       "itemtype": "property",
@@ -976,7 +943,7 @@
       "class": "Component.RadDropdown.Target"
     },
     {
-      "file": "addon/components/rad-dropdown/target/component.js",
+      "file": "addon/components/rad-dropdown/target.js",
       "line": 23,
       "description": "String representation of boolean state for `aria` attrs.",
       "itemtype": "property",
@@ -991,7 +958,7 @@
       ]
     },
     {
-      "file": "addon/components/rad-dropdown/target/component.js",
+      "file": "addon/components/rad-dropdown/target.js",
       "line": 33,
       "description": "Bind `aria-haspopup` and `aria-expanded` for A+ usability",
       "itemtype": "property",
@@ -1000,7 +967,7 @@
       "class": "Component.RadDropdown.Target"
     },
     {
-      "file": "addon/components/rad-dropdown/target/component.js",
+      "file": "addon/components/rad-dropdown/target.js",
       "line": 39,
       "description": "Bind `dropdown-target`",
       "itemtype": "property",
@@ -1009,164 +976,97 @@
       "class": "Component.RadDropdown.Target"
     },
     {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 56,
-      "description": "Adds a brand class to the target as btn-{brand}",
-      "itemtype": "property",
-      "name": "brand",
-      "type": "{String}",
-      "default": "''",
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 63,
-      "description": "Whether or not to style the target as a link or a button",
-      "itemtype": "property",
-      "name": "buttonStyle",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 73,
-      "description": "State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
-      "itemtype": "property",
-      "name": "hidden",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 81,
-      "description": "Unique string used to handle setting up aria roles for A++ usability.",
-      "itemtype": "property",
-      "name": "describedby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 88,
-      "description": "Unique string used to handle setting up aria roles for A++ usability.",
-      "itemtype": "property",
-      "name": "labelledby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 98,
-      "description": "Auto-binds `data-test` attributes",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 105,
-      "description": "Bind `rad-dropdown`",
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 14,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadDropdown"
+      "default": "['modal-footer']",
+      "class": "Component.RadModal.Footer"
     },
     {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 114,
-      "description": "Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.",
-      "itemtype": "method",
-      "name": "willDestroyElement",
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 130,
-      "description": "Actions",
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 20,
       "itemtype": "property",
-      "name": "actions",
-      "type": "{Object}",
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 136,
-      "description": "Handle the showing of the dropdown",
-      "itemtype": "method",
-      "name": "show",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown/component.js",
-      "line": 151,
-      "description": "Handle the hiding of the dropdown",
-      "itemtype": "method",
-      "name": "hide",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 29,
-      "description": "Action closure passed in to modal. Is mounted to the modal background for\nclose on click (unless 'hideBackground' is true)",
-      "itemtype": "property",
-      "name": "closeModal",
-      "type": "{function}",
-      "default": "() => {}",
-      "class": "Component.RadModal.Header"
-    },
-    {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 39,
-      "description": "Property bound to component id for usability",
-      "itemtype": "property",
-      "name": "aria-labelledby",
+      "name": "tagName",
       "type": "{string}",
+      "default": "'footer'",
+      "class": "Component.RadModal.Footer"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 36,
+      "description": "The elementId of this component must be set to match the `aria-labelledby`\nof the parent component. This is handled through the contextual component\nsetup of `core-modal`",
+      "itemtype": "property",
+      "name": "elementId",
+      "type": "{string}",
+      "passed": "Component.RadModal",
+      "required": 1,
       "class": "Component.RadModal.Header"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
+      "file": "addon/components/rad-modal/header.js",
       "line": 45,
       "description": "If you want that header to have some pop",
       "itemtype": "property",
       "name": "brand",
-      "type": "{string}",
+      "type": "{?string}",
+      "passed": "",
+      "optional": 1,
+      "default": "null",
       "class": "Component.RadModal.Header"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 51,
+      "file": "addon/components/rad-modal/header.js",
+      "line": 54,
+      "description": "Controls display of the modal header close button. Is defaulted to true and\ncan be set to false in order to suppress the header close button.",
+      "itemtype": "property",
+      "name": "closeButton",
+      "type": "{!Boolean}",
+      "passed": "",
+      "optional": 1,
+      "default": "true",
+      "class": "Component.RadModal.Header"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 64,
+      "description": "Controls the SVG Id of the close button.",
+      "itemtype": "property",
+      "name": "closeIcon",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'close'",
+      "class": "Component.RadModal.Header"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 73,
       "description": "Pass a `(hash)` of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:\n\n`(hash category=\"Tag Category\" action=\"Tag Action\" label=\"Tag Label\")`",
       "itemtype": "property",
       "name": "tagclose",
-      "type": "{[type]}",
+      "type": "{?Object}",
+      "passed": "",
+      "optional": 1,
+      "default": "null",
       "class": "Component.RadModal.Header"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 68,
+      "file": "addon/components/rad-modal/header.js",
+      "line": 88,
+      "description": "Closure action bound to header close button.",
+      "itemtype": "property",
+      "name": "closeModal",
+      "type": "{function}",
+      "passed": "",
+      "optional": 1,
+      "closure": "",
+      "class": "Component.RadModal.Header"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 100,
       "description": "Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names",
       "itemtype": "property",
       "name": "brandClass",
@@ -1174,215 +1074,41 @@
       "class": "Component.RadModal.Header",
       "subprops": [
         {
-          "name": "'brand'",
-          "description": ""
+          "name": "brand",
+          "description": "",
+          "type": "String"
         }
       ]
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 78,
-      "description": "Handle binding brand and basic related css class names",
+      "file": "addon/components/rad-modal/header.js",
+      "line": 110,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
+      "default": "['brandClass', 'brandClass:branded']",
       "class": "Component.RadModal.Header"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 84,
-      "description": "Bind class names",
+      "file": "addon/components/rad-modal/header.js",
+      "line": 116,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "default": "['modal-header']",
       "class": "Component.RadModal.Header"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 90,
-      "description": "Wrapping `<header>`",
+      "file": "addon/components/rad-modal/header.js",
+      "line": 122,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
+      "default": "'header'",
       "class": "Component.RadModal.Header"
     },
     {
-      "file": "addon/components/rad-modal/header/component.js",
-      "line": 99,
-      "description": "Set id of component to aria-labelledby on init for usability",
-      "itemtype": "event",
-      "name": "init",
-      "class": "Component.RadModal.Header"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 132,
-      "description": "Closure action passed into the modal. Is event delegated to the modal\nbackground for close on click (unless 'hideBackground' is true)",
-      "itemtype": "property",
-      "name": "closeModal",
-      "type": "{function}",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 143,
-      "description": "If a modal should not have a visible header, pass a label for the modal\nusing this property. It will be bound to a hidden div with the correct\naria attrs so that we're rocking A+ accessibility all day every day.",
-      "itemtype": "property",
-      "name": "ariaHeader",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 152,
-      "description": "Unless autoFocus is toggled to false, the modal will store a\nreference to whatever element is currently active in the dom and return\nfocus to that element when the modal closes.",
-      "itemtype": "property",
-      "name": "autoFocus",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 161,
-      "description": "CSS transitions the modal on open. Accepts 'left', 'right', 'bottom', 'top'.",
-      "itemtype": "property",
-      "name": "animateFrom",
-      "type": "{String}",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 167,
-      "description": "Flag used to handle showing and hiding the modal. This property\nshould be passed in by a component/service+controller that controls the\nstate of the modal.",
-      "itemtype": "property",
-      "name": "open",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 176,
-      "description": "Determines if the modal should be removed from the DOM when it is closed.\nThis is to help performance on the beefier modals.",
-      "itemtype": "property",
-      "name": "removeFromDomOnClose",
-      "default": "false",
-      "type": "{Boolean}",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 184,
-      "description": "The size of the modal to display. The default size caps the width of the\nmodal at 60% of the browser's viewport. Additional sizes available are:\n\n- `\"small\"` (30% on large, 45% on medium)\n- `\"medium\"` (45% on large, 60% on medium)\n- `\"full\"` (100% on large and medium)\n\nModals will always render at 100% on mobile/small screen view.",
-      "itemtype": "property",
-      "name": "size",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 198,
-      "description": "Pass a string for simple text modal header. If the modal should have no\nheader, pass null to this property. This will ensure that `aria-labelledby`\nis _not_ bound to the modal instance (because there is no header to label\nthe modal).",
-      "itemtype": "property",
-      "name": "Header",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 208,
-      "description": "Pass a `(hash)` of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:\n`(hash category=\"Tag Category\" action=\"Tag Action\" label=\"Tag Label\")`",
-      "itemtype": "property",
-      "name": "tagclose",
-      "type": "{Object}",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 224,
-      "description": "Private reference to the last focused element in the DOM before the modal\nwas opened. This is used to make the experience for keyboard users not\nterrible.",
-      "itemtype": "property",
-      "name": "_lastFocusedElement",
-      "type": "{Object}",
-      "default": "undefined",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 234,
-      "description": "Determines if the modal should be rendered in the template. This is not\nequivalent to `open`. In order for CSS transitions to work properly, the\nmodal must be rendered in the DOM when the class that applies the\ntransition is added to/removed from the modal.",
-      "itemtype": "property",
-      "name": "_visible",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 248,
-      "description": "Handle modal cleanup here:\n\n- Unfreeze body\n- Remove 'active' class from modal elements to hide them if still in DOM\n- Return focus to last active element unless disabled (for better\n  usability)",
-      "itemtype": "method",
-      "name": "_handleClose",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 288,
-      "description": "Handle modal open work here:\n\n* Freeze the body so that scrolling inside the modal doesn't jank up the\n  screen\n* Add 'active' class to modal elements, if the modal is already in DOM this\n  will make it visible\n* Set private reference to currently active DOM element so we can return\n  focus to it when the modal closes (for usability)",
-      "itemtype": "method",
-      "name": "_handleOpen",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 333,
-      "description": "Whenever this component receives attrs check if the `open` prop matches the\ntemplate status. If not, call the handlers for open/close",
-      "itemtype": "event",
-      "name": "didReceiveAttrs",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 350,
-      "description": "Make sure to run the full `_handleOpen` setup on `init`, as the conditions\nin `didReceiveAttrs` will not cause it to run because the default value of\n`_visible` will eval to false.",
-      "itemtype": "method",
-      "name": "init",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-modal/component.js",
-      "line": 364,
-      "description": "willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.\n\n**NOTE:** This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.",
-      "itemtype": "event",
-      "name": "willDestroyElement",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal"
-    },
-    {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 24,
       "description": "The position that the tooltip is created in relative to its anchor element.\nValid options are:\n- `\"top\"`\n- `\"bottom\"`\n- `\"left\"`\n- `\"right\"`\n- `\"bottom-left\"`\n- `\"bottom-right\"`\n\nDefaults to `\"bottom\"` if no value is supplied.",
       "itemtype": "property",
@@ -1392,7 +1118,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 41,
       "description": "The size of the tooltip itself. A list of preset sizes available are:\n- `\"small\"`\n- `\"medium\"`\n- `\"large\"`\n- `\"x-large\"`\n\nDefaults to `\"medium\"` if no value is supplied.",
       "itemtype": "property",
@@ -1402,7 +1128,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 55,
       "description": "Unique string generated by parent `rad-popover` Used for 508 attrs. Is\nbound to id here and `aria-describedby` on the popover title.",
       "itemtype": "property",
@@ -1411,7 +1137,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 62,
       "description": "Display status of the popover. Is bound to the properties `aria-hidden` for\nbetter usability and to handle css of show/hide. Is also bound to html5\n`hidden` attribute.",
       "itemtype": "property",
@@ -1421,7 +1147,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 75,
       "description": "The `aria` role of this tooltip. Improves usability.",
       "itemtype": "property",
@@ -1430,7 +1156,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 81,
       "description": "Handle binding `hidden` and `aria-hidden` for A++ usability :thumbsup:",
       "itemtype": "property",
@@ -1439,7 +1165,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 87,
       "description": "Bind wrapping classname `popover-content`",
       "itemtype": "property",
@@ -1448,7 +1174,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 93,
       "description": "Bind size and position props",
       "itemtype": "property",
@@ -1457,7 +1183,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 99,
       "description": "Computed prop returning **strings** for boolean of hidden. This is done so\nthat `aria-hidden` is always present on component and displays either \"true\"\nor \"false\". (Binding boolean removes `aria-hidden` entirely when hidden is\ntrue)",
       "itemtype": "property",
@@ -1473,7 +1199,7 @@
       ]
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 109,
       "description": "Remove wrapping ember element for subcomponent, it's not needed.",
       "itemtype": "property",
@@ -1482,7 +1208,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 119,
       "description": "Handle binding passed `aria-describedby` as this component's `elementId` on\ninit.",
       "itemtype": "event",
@@ -1494,7 +1220,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 136,
       "description": "Handle checking component width against window width on render. If overflowing\nreset the width of the popover to prevent overflow",
       "itemtype": "event",
@@ -1506,7 +1232,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/content/component.js",
+      "file": "addon/components/rad-popover/content.js",
       "line": 178,
       "description": "Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n`rad-popover` element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.",
       "itemtype": "event",
@@ -1514,145 +1240,7 @@
       "class": "Component.RadPopover.Content"
     },
     {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 57,
-      "description": "The position that the tooltip is created in relative to its anchor element.\nValid options are:\n- `\"top\"`\n- `\"bottom\"`\n- `\"left\"`\n- `\"right\"`\n- `\"bottom-left\"`\n- `\"bottom-right\"`\n\nDefaults to `\"bottom\"` if no value is supplied.",
-      "itemtype": "property",
-      "name": "position",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 74,
-      "description": "The size of the tooltip itself. A list of preset sizes available are:\n- `\"small\"`\n- `\"medium\"`\n- `\"large\"`\n- `\"x-large\"`\n\nDefaults to `\"medium\"` if no value is supplied.",
-      "itemtype": "property",
-      "name": "size",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 92,
-      "description": "Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the `aria-describedby` attr of the popover\nhover target and the `id` of the actual popover content",
-      "itemtype": "property",
-      "name": "aria-describedby",
-      "type": "{string}",
-      "class": "Component.RadPopover",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 101,
-      "description": "Auto-binds `data-test` attributes",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 108,
-      "description": "Bind standard core class: `rad-popover`",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 114,
-      "description": "State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
-      "itemtype": "property",
-      "name": "hidden",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 122,
-      "description": "Component element: div",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 132,
-      "description": "Handle showing tooltip content",
-      "itemtype": "method",
-      "name": "_showContent",
-      "return": {
-        "description": "undefined"
-      },
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 140,
-      "description": "Handle showing tooltip content",
-      "itemtype": "method",
-      "name": "_hideContent",
-      "return": {
-        "description": "undefined"
-      },
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 152,
-      "description": "Checks for a position prop value; if none was supplied, set a default\nof `bottom`",
-      "itemtype": "event",
-      "name": "didReceiveAttrs",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 167,
-      "description": "Show content on mouse enter",
-      "itemtype": "event",
-      "name": "mouseEnter",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 174,
-      "description": "Hide content on mouse leave",
-      "itemtype": "event",
-      "name": "mouseLeave",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 181,
-      "description": "Show content on focus",
-      "itemtype": "event",
-      "name": "focusIn",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover/component.js",
-      "line": 188,
-      "description": "Hide content on focusOut",
-      "itemtype": "event",
-      "name": "focusOut",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 36,
       "description": "The id of the currently active tab in the scope of the rad-tabs component.\nThis is provided privately in the `rad-tabs` yield hash.",
       "itemtype": "property",
@@ -1662,7 +1250,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 44,
       "description": "Whether this tab should be hidden from view. Useful for situations where\na tab needs to exist in a particular place in the tab ordering but may\nnot have the data it needs to display information at the time when\n`registerTab` is invoked. This allows you to make sure your tab can be\nhidden while preserving its place in the list.",
       "itemtype": "property",
@@ -1671,7 +1259,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 59,
       "description": "Aria role `tabpanel` is bound for A++ accessibility.",
       "itemtype": "property",
@@ -1681,7 +1269,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 66,
       "description": "Bound attributes:\n- `data-test`: for precise testing identification\n- `_hidden`: to hide this tab if it is not selected or if prop hidden is true",
       "itemtype": "property",
@@ -1690,7 +1278,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 74,
       "description": "Class names: `tabs-content`",
       "itemtype": "property",
@@ -1699,7 +1287,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 80,
       "description": "Computed `_hidden` accounts for whether the tab is selected (by checking\n`activeId`) && if this tab has been flagged to be hidden with property\n`hidden`",
       "itemtype": "property",
@@ -1723,7 +1311,7 @@
       ]
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 96,
       "description": "The button label text of this tab. This will be passed up via a closure\naction to the containing `rad-tabs` component.",
       "itemtype": "property",
@@ -1733,7 +1321,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 105,
       "description": "Use this attribute to place a custom data-test attribute on the tab button\nfor this tab. This will allow easier, specific/direct targeting of clicking\nthis tab in automated testing.",
       "itemtype": "property",
@@ -1742,7 +1330,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 118,
       "description": "Handle registering with the tabs container on int by firing `registerTab`\nclosure action with this tab's data.",
       "itemtype": "event",
@@ -1750,7 +1338,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/content/component.js",
+      "file": "addon/components/rad-tabs/content.js",
       "line": 136,
       "description": "Actions Up: When something changes in this component we need to let the\ncontainer tabs know by firing the `updateTab` closure action with this\ntabs changed data.\n\n_(Currently the only change we're notifying on is the `hidden` prop)_",
       "itemtype": "event",
@@ -1758,172 +1346,7 @@
       "class": "Component.RadTabs.Content"
     },
     {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 85,
-      "description": "The elementId of the currently opened tab. This determines which tab is active and\nwhich tab's content to display. If this is empty, no tabs are open.",
-      "itemtype": "property",
-      "name": "activeId",
-      "type": "{String}",
-      "default": "''",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 93,
-      "description": "Pass false to use tab style without primary color tabs.",
-      "itemtype": "property",
-      "name": "buttonStyle",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 100,
-      "description": "The optional elementId of the tab that should be shown by default. This is\nuseful for cases where the user has come into a page and is expecting one\nof the tabs to be shown by default.",
-      "itemtype": "property",
-      "name": "defaultTab",
-      "type": "{String}",
-      "default": "''",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 109,
-      "description": "Optional closure action that will be called whenever a tab is opened with\nthe id of that tab. Use this to create a controlled tabs instance.",
-      "itemtype": "property",
-      "name": "onChange",
-      "type": "{function}",
-      "default": "null",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 117,
-      "description": "Whether the page should scroll the tab context back to the top when one of\nthe tabs is clicked. This can be a nice convenience for usabilitee.",
-      "itemtype": "property",
-      "name": "scrollOnClick",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 125,
-      "description": "What the target of the `scrollOnClick` behavior should be. By default,\nthe entire page/body scrolls, however if this instance of `rad-tabs` is\ncontained within a modal or some other scrollable sub-container, it may\nbe more desirable to execute a scroll against that instead of the entire\npage. Simply pass a standard jQuery-like selector in as a string.",
-      "itemtype": "property",
-      "name": "scrollTarget",
-      "type": "{string}",
-      "default": "'body, html'",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 140,
-      "description": "Bound attributes:\n- `data-test`: for precise testing identification",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 147,
-      "description": "Class names: `rad-tabs`",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 153,
-      "description": "List of tabs to display. This is iterated through in the template to\nrendered the buttons that are used to change tabs.",
-      "itemtype": "property",
-      "name": "tabList",
-      "type": "{Array.<Object>}",
-      "default": "null",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 165,
-      "description": "Internal method that can be used with a `run.once` call to only add new tabs\nonce per run loop. Simply iterates through `_tabsToCreate` and pushes them\ninto the `tabList`. This is needed to prevent multiple renders in a single\nrun loop when all of the `content` subcomponents register themselves with\nthe container during init.",
-      "itemtype": "method",
-      "name": "_createTabsList",
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 183,
-      "description": "When the component initializes, we set the `tabList` property to an array.\nThis prevents multiple instances of rad-tabs on a given page from\ninheriting the same tabList array through prototype inheritance.",
-      "itemtype": "event",
-      "name": "init",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 208,
-      "description": "Action to show a tab. Set `activeId` to the passed elementId. `activeId`\nis passed down to children content components",
-      "itemtype": "method",
-      "name": "showTab",
-      "params": [
-        {
-          "name": "elementId",
-          "description": "HTML id of the tab to show",
-          "type": "String"
-        }
-      ],
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 230,
-      "description": "Closure action passed to content subcomponents that is called on init.\nEach child tab will register itself with this container. To ensure the\ntabList is only updated once per render, we proxy new tabs to the\n`_tabsToCreate` array and then push all of them to `tabList` using a\n`run.once` call to `_createTabsList`",
-      "itemtype": "method",
-      "name": "registerTab",
-      "params": [
-        {
-          "name": "tab",
-          "description": "Object model of tab to be registered",
-          "type": "Object"
-        }
-      ],
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tabs/component.js",
-      "line": 244,
-      "description": "Closure action passed to content subcomponents that is called whenever\na tab has updated in a way this container needs to know of. Currently\nthis is only when a tab's `hidden` status changes.",
-      "itemtype": "method",
-      "name": "updateTab",
-      "params": [
-        {
-          "name": "tab",
-          "description": "",
-          "type": "Object",
-          "props": [
-            {
-              "name": "elementId",
-              "description": "HTML id of tab to update",
-              "type": "String"
-            },
-            {
-              "name": "hidden",
-              "description": "Hidden status of changed tab",
-              "type": "Boolean"
-            }
-          ]
-        }
-      ],
-      "class": "Component.RadTabs"
-    },
-    {
-      "file": "addon/components/rad-tooltip/content/component.js",
+      "file": "addon/components/rad-tooltip/content.js",
       "line": 21,
       "description": "Unique string generated by parent `rad-tooltip` Used for 508 attrs. Is\nbound to id here and `aria-describedby` on the tooltip title. Is bound\nto id in `init` call.",
       "itemtype": "property",
@@ -1933,7 +1356,7 @@
       "class": "Component.RadTooltip.Content"
     },
     {
-      "file": "addon/components/rad-tooltip/content/component.js",
+      "file": "addon/components/rad-tooltip/content.js",
       "line": 30,
       "description": "Display status of the tooltip. Is bound to the properties `aria-hidden` for\nbetter usability and to handle css of show/hide. Is also bound to html5\n`hidden` attribute.",
       "itemtype": "property",
@@ -1943,7 +1366,7 @@
       "class": "Component.RadTooltip.Content"
     },
     {
-      "file": "addon/components/rad-tooltip/content/component.js",
+      "file": "addon/components/rad-tooltip/content.js",
       "line": 43,
       "description": "Handle binding standard core class names: `jsTooltipTarget` && `tooltip-content`\n`jsTooltipTarget` is being used for css positioning. Do we want to pass that\ndirectly instead? probably.",
       "itemtype": "property",
@@ -1952,7 +1375,7 @@
       "class": "Component.RadTooltip.Content"
     },
     {
-      "file": "addon/components/rad-tooltip/content/component.js",
+      "file": "addon/components/rad-tooltip/content.js",
       "line": 51,
       "description": "`div` DOM element",
       "itemtype": "property",
@@ -1961,7 +1384,7 @@
       "class": "Component.RadTooltip.Content"
     },
     {
-      "file": "addon/components/rad-tooltip/content/component.js",
+      "file": "addon/components/rad-tooltip/content.js",
       "line": 61,
       "description": "Log warning if `aria-describedby` is not passed in.",
       "itemtype": "event",
@@ -1973,7 +1396,7 @@
       "class": "Component.RadTooltip.Content"
     },
     {
-      "file": "addon/components/rad-tooltip/content/component.js",
+      "file": "addon/components/rad-tooltip/content.js",
       "line": 70,
       "description": "On render validate that the tooltip content is not overflowing the window.\nIf it is, chop off the overflow.\n\nIf you need to override this event, be sure to call `this._super();`",
       "itemtype": "event",
@@ -1985,7 +1408,7 @@
       "class": "Component.RadTooltip.Content"
     },
     {
-      "file": "addon/components/rad-tooltip/title/component.js",
+      "file": "addon/components/rad-tooltip/title.js",
       "line": 35,
       "description": "Unique string generated by parent `rad-tooltip` Used for 508 attrs. Is\nbound to the `aria-describedby` attr.",
       "itemtype": "property",
@@ -1994,7 +1417,7 @@
       "class": "Component.RadTooltip.Title"
     },
     {
-      "file": "addon/components/rad-tooltip/title/component.js",
+      "file": "addon/components/rad-tooltip/title.js",
       "line": 46,
       "description": "Tooltips are tagged on hover by default. `CoreButton` will check this flag\nand the existence of `tagcategory` on mouseEnter. This means if you need\nto fire a tag on hover, you only have to pass `tagcategory`.",
       "itemtype": "property",
@@ -2004,150 +1427,13 @@
       "class": "Component.RadTooltip.Title"
     },
     {
-      "file": "addon/components/rad-tooltip/title/component.js",
+      "file": "addon/components/rad-tooltip/title.js",
       "line": 58,
       "description": "Handle binding standard core class name `tooltip-title` and `basic-b`\nbound for display purposes",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
       "class": "Component.RadTooltip.Title"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 52,
-      "description": "Adds a brand class to the target as btn-{brand}",
-      "itemtype": "property",
-      "name": "brand",
-      "type": "{String}",
-      "default": "''",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 59,
-      "description": "Whether or not to style the target as a link or a button",
-      "itemtype": "property",
-      "name": "buttonStyle",
-      "type": "{Boolean}",
-      "default": "false",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 66,
-      "description": "Available hook that is called on hide of the tooltip",
-      "itemtype": "property",
-      "name": "onHide",
-      "type": "{function}",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 72,
-      "description": "Available hook that is called on show of the tooltip",
-      "itemtype": "property",
-      "name": "onShow",
-      "type": "{function}",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 82,
-      "description": "Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the `aria-describedby` attr of the tooltip\nhover target and the `id` of the actual tooltip content",
-      "itemtype": "property",
-      "name": "aria-describedby",
-      "type": "{string}",
-      "class": "Component.RadTooltip",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 91,
-      "description": "State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
-      "itemtype": "property",
-      "name": "hidden",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 103,
-      "description": "Core component class for targeting element when necessary",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "default": "['rad-tooltip']",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 110,
-      "description": "Tooltips should almost aways be inline spans.",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "default": "span",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 120,
-      "description": "Handle showing tooltip content",
-      "itemtype": "method",
-      "name": "_showContent",
-      "return": {
-        "description": "undefined"
-      },
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 129,
-      "description": "Handle showing tooltip content",
-      "itemtype": "method",
-      "name": "_hideContent",
-      "return": {
-        "description": "undefined"
-      },
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 141,
-      "description": "Show content on mouse enter",
-      "itemtype": "event",
-      "name": "mouseEnter",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 148,
-      "description": "Hide content on mouse leave",
-      "itemtype": "event",
-      "name": "mouseLeave",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 155,
-      "description": "Show content on focus",
-      "itemtype": "event",
-      "name": "focusIn",
-      "class": "Component.RadTooltip"
-    },
-    {
-      "file": "addon/components/rad-tooltip/component.js",
-      "line": 162,
-      "description": "Hide content on focusOut",
-      "itemtype": "event",
-      "name": "focusOut",
-      "class": "Component.RadTooltip"
     },
     {
       "file": "addon/components/rad-alert.js",
@@ -2207,48 +1493,32 @@
       "line": 95,
       "description": "A++ accessibility. Tells a screen this component is an alert.",
       "itemtype": "property",
-      "name": "role",
+      "name": "ariaRole",
       "type": "{string}",
-      "access": "private",
-      "tagname": "",
+      "default": "'alert'",
       "class": "Component.RadAlert"
     },
     {
       "file": "addon/components/rad-alert.js",
       "line": 106,
-      "description": "Attribute bindings applied to the component.",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "access": "private",
-      "tagname": "",
-      "class": "Component.RadAlert"
-    },
-    {
-      "file": "addon/components/rad-alert.js",
-      "line": 115,
-      "description": "Static class names applied to the component that must always exist. This\nreally should not need to be overridden or extended.",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "access": "private",
-      "tagname": "",
+      "default": "['rad-alert']",
       "class": "Component.RadAlert"
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 123,
-      "description": "A set of dynamic classes whose output is bound to the associated values\non the component.",
+      "line": 112,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
-      "access": "private",
-      "tagname": "",
+      "default": "['brandClass']",
       "class": "Component.RadAlert"
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 138,
+      "line": 122,
       "description": "Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.",
       "itemtype": "method",
       "name": "_selfDestruct",
@@ -2260,7 +1530,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 157,
+      "line": 141,
       "description": "Actions hash",
       "itemtype": "property",
       "name": "actions",
@@ -2269,7 +1539,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 163,
+      "line": 147,
       "description": "A proxy action for the selfDestruct method",
       "itemtype": "method",
       "name": "dismiss",
@@ -2294,25 +1564,16 @@
     {
       "file": "addon/components/rad-button.js",
       "line": 56,
-      "description": "508 compliance/accessibility attribute that allows for unique identifiers\nto be assigned to interaction targets and link them to the results of that\ninteraction so that screen readers know how to associate the two.",
-      "itemtype": "property",
-      "name": "aria-describedby",
-      "type": "{string}",
-      "class": "Component.RadButton"
-    },
-    {
-      "file": "addon/components/rad-button.js",
-      "line": 64,
       "description": "Pass a brand to have `btn-${brand}` class applied",
       "itemtype": "property",
       "name": "brand",
-      "type": "{string}",
-      "default": "''",
+      "type": "{?string}",
+      "default": "null",
       "class": "Component.RadButton"
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 71,
+      "line": 63,
       "description": "Pass true to create a button that looks and behaves like a link. This is\nuseful for creating accessible interaction targets.",
       "itemtype": "property",
       "name": "link",
@@ -2322,7 +1583,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 79,
+      "line": 71,
       "description": "Tagging property. See `one-tag` for tagging documentation.",
       "itemtype": "property",
       "name": "tagcategory",
@@ -2332,7 +1593,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 86,
+      "line": 78,
       "description": "Tagging property. See `one-tag` for tagging documentation.",
       "itemtype": "property",
       "name": "tagaction",
@@ -2342,7 +1603,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 93,
+      "line": 85,
       "description": "Tagging property. See `one-tag` for tagging documentation. Set to undefined\nso the tagging service will properly correct an un-passed value.",
       "itemtype": "property",
       "name": "taglabel",
@@ -2352,7 +1613,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 102,
+      "line": 94,
       "description": "Tagging property. See `one-tag` for tagging documentation.",
       "itemtype": "property",
       "name": "tagvalue",
@@ -2362,7 +1623,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 109,
+      "line": 101,
       "description": "Tagging property. See `one-tag` for tagging documentation.",
       "itemtype": "property",
       "name": "tagcd",
@@ -2372,7 +1633,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 116,
+      "line": 108,
       "description": "Tagging property. Handles firing a tag on hover when true.",
       "itemtype": "property",
       "name": "taghover",
@@ -2382,7 +1643,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 123,
+      "line": 115,
       "description": "Tagging property. See `one-tag` for tagging documentation.",
       "itemtype": "property",
       "name": "tagonce",
@@ -2392,7 +1653,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 134,
+      "line": 126,
       "description": "Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names",
       "itemtype": "property",
       "name": "brandClass",
@@ -2407,7 +1668,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 148,
+      "line": 140,
       "description": "ALLLLLLLLLLL the attributes you might need.\nNOTE: `role` should not be bound here. You can set the role of a button\nby passing an [ariaRole](http://emberjs.com/api/classes/Ember.Component.html#property_ariaRole) prop.",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -2416,7 +1677,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 166,
+      "line": 158,
       "description": "Bind standard core classname for component: `rad-button`",
       "itemtype": "property",
       "name": "classNames",
@@ -2425,7 +1686,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 175,
+      "line": 167,
       "description": "Handle binding brand and link related css class names",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -2434,7 +1695,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 184,
+      "line": 176,
       "description": "Button DOM element",
       "itemtype": "property",
       "name": "tagName",
@@ -2444,7 +1705,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 191,
+      "line": 183,
       "description": "Include type button for usability.",
       "itemtype": "property",
       "name": "type",
@@ -2454,7 +1715,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 202,
+      "line": 194,
       "description": "The `mouseDown` event is used for some utility/housekeeping methods because\nwe use the `click` event to pass in actions.\n\nHandle setting the outline on this element to `none` because we know this\nevent is only triggered by actual mouse clicks. Keyboard events don't trigger\nit, which is a convenient way to know we're good to hide the outline and\nmaintain usability for keyboard users. A++ accessibility!\n\nHandle checking for a tagging category and if one exists, fire a tag.\n\nIf you need to override this event, be sure to call `this._super();`",
       "itemtype": "event",
       "name": "mouseDown",
@@ -2466,7 +1727,7 @@
     },
     {
       "file": "addon/components/rad-button.js",
-      "line": 233,
+      "line": 225,
       "description": "The `mouseEnter` checks for a tagging category and hover flag. If they're\npresent a tag is fired.\n\nIf you need to override this event, be sure to call `this._super();`\nTODO: Only include this if Tagging feature is enabled",
       "itemtype": "event",
       "name": "mouseEnter",
@@ -2475,6 +1736,642 @@
         "type": "Undefined"
       },
       "class": "Component.RadButton"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 30,
+      "description": "Pass a brand to use to style the component and it's child components.",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 41,
+      "description": "Computed css class for the brand bound to the component.",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{String}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 49,
+      "description": "Bind standard core class: `card-footer`",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 55,
+      "description": "Bind props to classes on the root component element.",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 100,
+      "description": "By default, the `target` subcomponent will display as a plain link. If you\nwould like it to display as a button, set this to `true`.",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 107,
+      "description": "Allow for external controls to update the open/closed state of a `rad-drawer`",
+      "itemtype": "property",
+      "name": "externalToggle",
+      "type": "{Boolean}",
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 113,
+      "description": "If you want to use a different SVG icon from the default on your `target`,\nspecify it by name/id here. If you don't want to display an icon\nat all, pass `false` into this property",
+      "itemtype": "property",
+      "name": "icon",
+      "type": "{string|Boolean}",
+      "default": "'arrow-down'",
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 126,
+      "description": "Unique id for binding `aria-controls` in subcomponents",
+      "itemtype": "property",
+      "name": "ariaId",
+      "type": "{string}",
+      "class": "Component.RadDrawer",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 133,
+      "description": "Bind `rad-drawer` to component",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 139,
+      "description": "State boolean for display of the drawer content. Is toggled true/false to\nhandle show/hide. Updated in `toggleHidden`",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 150,
+      "description": "Auto-binds `data-test` attributes",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 161,
+      "description": "The component's `didReceiveAttrs` hook. Allows udpates from external state\nto adjust the `hidden` state of a `rad-drawer` instance.",
+      "itemtype": "event",
+      "name": "didReceiveAttrs",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 184,
+      "description": "Actions Hash",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 190,
+      "description": "Toggle internal hidden property. Pass state boolean if specific state is needed.",
+      "itemtype": "method",
+      "name": "toggleHidden",
+      "params": [
+        {
+          "name": "evt",
+          "description": "Event object",
+          "type": "Object"
+        },
+        {
+          "name": "state",
+          "description": "Specific state to set",
+          "type": "Boolean",
+          "optional": true
+        }
+      ],
+      "class": "Component.RadDrawer"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 70,
+      "description": "Adds a brand class to the target as btn-{brand}",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{String}",
+      "passed": "",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 77,
+      "description": "Whether or not to style the target as a link or a button",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "passed": "",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 84,
+      "description": "Whether or not to treat the dropdown content component as a dropdown menu",
+      "itemtype": "property",
+      "name": "dropdownMenu",
+      "type": "{Boolean}",
+      "default": "false",
+      "passed": "",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 92,
+      "description": "Fires when the dropdown is closed",
+      "itemtype": "property",
+      "name": "onHide",
+      "closure": "",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 98,
+      "description": "Fires when the dropdown is opened",
+      "itemtype": "property",
+      "name": "onShow",
+      "closure": "",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 107,
+      "description": "State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 115,
+      "description": "Unique string used to handle setting up aria roles for A++ usability.",
+      "itemtype": "property",
+      "name": "describedby",
+      "type": "{string}",
+      "class": "Component.RadDropdown",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 122,
+      "description": "Unique string used to handle setting up aria roles for A++ usability.",
+      "itemtype": "property",
+      "name": "labelledby",
+      "type": "{string}",
+      "class": "Component.RadDropdown",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 132,
+      "description": "Auto-binds `data-test` attributes",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 139,
+      "description": "Bind `rad-dropdown`",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 148,
+      "description": "Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.",
+      "itemtype": "method",
+      "name": "willDestroyElement",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 164,
+      "description": "Actions",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 170,
+      "description": "Handle the showing of the dropdown. This will pass on any arguments you\npass to it in the action.",
+      "itemtype": "method",
+      "name": "show",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 186,
+      "description": "Handle the hiding of the dropdown. This will pass on any arguments you\npass to it in the action.",
+      "itemtype": "method",
+      "name": "hide",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 134,
+      "description": "If a modal should not have a visible header, pass a label for the modal\nusing this property. It will be bound to a hidden div with the correct\naria attrs so that we're rocking A+ accessibility all day every day.",
+      "itemtype": "property",
+      "name": "ariaHeader",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 143,
+      "description": "Unless autoFocus is toggled to false, the modal will store a\nreference to whatever element is currently active in the dom and return\nfocus to that element when the modal closes.",
+      "itemtype": "property",
+      "name": "autoFocus",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 152,
+      "description": "CSS transitions the modal on open. Accepts 'left', 'right', 'bottom', 'top'.",
+      "itemtype": "property",
+      "name": "animateFrom",
+      "type": "{String}",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 158,
+      "description": "Controls display of the modal header close button. Is defaulted to true and\ncan be set to false in order to suppress the header close button.",
+      "itemtype": "property",
+      "name": "closeButton",
+      "type": "{!Boolean}",
+      "passed": "",
+      "optional": 1,
+      "default": "true",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 168,
+      "description": "Controls the SVG Id of the close button.",
+      "itemtype": "property",
+      "name": "closeIcon",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'close'",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 177,
+      "description": "Flag used to handle showing and hiding the modal. This property\nshould be passed in by a component/service+controller that controls the\nstate of the modal.",
+      "itemtype": "property",
+      "name": "open",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 186,
+      "description": "Determines if the modal should be removed from the DOM when it is closed.\nThis is to help performance on the beefier modals.",
+      "itemtype": "property",
+      "name": "removeFromDomOnClose",
+      "default": "false",
+      "type": "{Boolean}",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 194,
+      "description": "The size of the modal to display. The default size caps the width of the\nmodal at 60% of the browser's viewport. Additional sizes available are:\n\n- `\"small\"` (30% on large, 45% on medium)\n- `\"medium\"` (45% on large, 60% on medium)\n- `\"full\"` (100% on large and medium)\n\nModals will always render at 100% on mobile/small screen view.",
+      "itemtype": "property",
+      "name": "size",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 208,
+      "description": "Pass a string for simple text modal header. If the modal should have no\nheader, pass null to this property. This will ensure that `aria-labelledby`\nis _not_ bound to the modal instance (because there is no header to label\nthe modal).",
+      "itemtype": "property",
+      "name": "Header",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 218,
+      "description": "Pass a `(hash)` of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:\n`(hash category=\"Tag Category\" action=\"Tag Action\" label=\"Tag Label\")`",
+      "itemtype": "property",
+      "name": "tagclose",
+      "type": "{Object}",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 233,
+      "description": "Closure action passed into the modal. Is event delegated to the modal\nbackground for close on click (unless 'hideBackground' is true)",
+      "itemtype": "property",
+      "name": "closeModal",
+      "type": "{function}",
+      "passed": "",
+      "optional": 1,
+      "closure": "",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 247,
+      "description": "Determines if the modal is currently _active_, which means that the modal\nhas been opened/closed. Note that this is different from _visible_. Due to\ntransition time, a modal can be _active_ but not yet _visible_ to the user.\nSeperate props are required for tracking active vs visible to allow the\ncss animations to trigger.",
+      "itemtype": "property",
+      "name": "_active",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 258,
+      "description": "Private reference to the last focused element in the DOM before the modal\nwas opened. This is used to make the experience for keyboard users not\nterrible.",
+      "itemtype": "property",
+      "name": "_lastFocusedElement",
+      "type": "{Object}",
+      "default": "undefined",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 268,
+      "description": "Determines if the modal should be rendered in the template. This is not\nequivalent to `open`. In order for CSS transitions to work properly, the\nmodal must be rendered in the DOM when the class that applies the\ntransition is added to/removed from the modal.",
+      "itemtype": "property",
+      "name": "_visible",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 282,
+      "description": "Handle modal cleanup here:\n\n- Unfreeze body\n- Remove 'active' class from modal elements to hide them if still in DOM\n- Return focus to last active element unless disabled (for better\n  usability)",
+      "itemtype": "method",
+      "name": "_handleClose",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 327,
+      "description": "Handle modal open work here:\n\n* Freeze the body so that scrolling inside the modal doesn't jank up the\n  screen\n* Add 'active' class to modal elements, if the modal is already in DOM this\n  will make it visible\n* Set private reference to currently active DOM element so we can return\n  focus to it when the modal closes (for usability)",
+      "itemtype": "method",
+      "name": "_handleOpen",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 378,
+      "description": "Whenever this component receives attrs check if the `open` prop matches the\ntemplate status. If not, call the handlers for open/close",
+      "itemtype": "event",
+      "name": "didReceiveAttrs",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 395,
+      "description": "When modal is inserted into DOM, check if it should be open by default, if\nso we need to call `_handleOpen` manually to open it.",
+      "itemtype": "method",
+      "name": "didInsertElement",
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 418,
+      "description": "willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.\n\n**NOTE:** This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.",
+      "itemtype": "event",
+      "name": "willDestroyElement",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadModal"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 57,
+      "description": "The position that the tooltip is created in relative to its anchor element.\nValid options are:\n- `\"top\"`\n- `\"bottom\"`\n- `\"left\"`\n- `\"right\"`\n- `\"bottom-left\"`\n- `\"bottom-right\"`\n\nDefaults to `\"bottom\"` if no value is supplied.",
+      "itemtype": "property",
+      "name": "position",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 74,
+      "description": "The size of the tooltip itself. A list of preset sizes available are:\n- `\"small\"`\n- `\"medium\"`\n- `\"large\"`\n- `\"x-large\"`\n\nDefaults to `\"medium\"` if no value is supplied.",
+      "itemtype": "property",
+      "name": "size",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 92,
+      "description": "Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the `aria-describedby` attr of the popover\nhover target and the `id` of the actual popover content",
+      "itemtype": "property",
+      "name": "aria-describedby",
+      "type": "{string}",
+      "class": "Component.RadPopover",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 101,
+      "description": "Auto-binds `data-test` attributes",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 108,
+      "description": "Bind standard core class: `rad-popover`",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 114,
+      "description": "State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 122,
+      "description": "Component element: div",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 132,
+      "description": "Handle showing tooltip content",
+      "itemtype": "method",
+      "name": "_showContent",
+      "return": {
+        "description": "undefined"
+      },
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 140,
+      "description": "Handle showing tooltip content",
+      "itemtype": "method",
+      "name": "_hideContent",
+      "return": {
+        "description": "undefined"
+      },
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 152,
+      "description": "Checks for a position prop value; if none was supplied, set a default\nof `bottom`",
+      "itemtype": "event",
+      "name": "didReceiveAttrs",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 167,
+      "description": "Show content on mouse enter",
+      "itemtype": "event",
+      "name": "mouseEnter",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 174,
+      "description": "Hide content on mouse leave",
+      "itemtype": "event",
+      "name": "mouseLeave",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 181,
+      "description": "Show content on focus",
+      "itemtype": "event",
+      "name": "focusIn",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 188,
+      "description": "Hide content on focusOut",
+      "itemtype": "event",
+      "name": "focusOut",
+      "class": "Component.RadPopover"
     },
     {
       "file": "addon/components/rad-state.js",
@@ -2596,6 +2493,320 @@
       "name": "tagName",
       "type": "{string}",
       "class": "Component.RadSVG"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 85,
+      "description": "The elementId of the currently opened tab. This determines which tab is active and\nwhich tab's content to display. If this is empty, no tabs are open.",
+      "itemtype": "property",
+      "name": "activeId",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 93,
+      "description": "Pass false to use tab style without primary color tabs.",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 100,
+      "description": "The optional elementId of the tab that should be shown by default. This is\nuseful for cases where the user has come into a page and is expecting one\nof the tabs to be shown by default.",
+      "itemtype": "property",
+      "name": "defaultTab",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 109,
+      "description": "Optional closure action that will be called whenever a tab is opened with\nthe id of that tab. Use this to create a controlled tabs instance.",
+      "itemtype": "property",
+      "name": "onChange",
+      "type": "{function}",
+      "default": "null",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 117,
+      "description": "Whether the page should scroll the tab context back to the top when one of\nthe tabs is clicked. This can be a nice convenience for usabilitee.",
+      "itemtype": "property",
+      "name": "scrollOnClick",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 125,
+      "description": "What the target of the `scrollOnClick` behavior should be. By default,\nthe entire page/body scrolls, however if this instance of `rad-tabs` is\ncontained within a modal or some other scrollable sub-container, it may\nbe more desirable to execute a scroll against that instead of the entire\npage. Simply pass a standard jQuery-like selector in as a string.",
+      "itemtype": "property",
+      "name": "scrollTarget",
+      "type": "{string}",
+      "default": "'body, html'",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 140,
+      "description": "Bound attributes:\n- `data-test`: for precise testing identification",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 147,
+      "description": "Class names: `rad-tabs`",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 153,
+      "description": "List of tabs to display. This is iterated through in the template to\nrendered the buttons that are used to change tabs.",
+      "itemtype": "property",
+      "name": "tabList",
+      "type": "{Array.<Object>}",
+      "default": "null",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 165,
+      "description": "Internal method that can be used with a `run.once` call to only add new tabs\nonce per run loop. Simply iterates through `_tabsToCreate` and pushes them\ninto the `tabList`. This is needed to prevent multiple renders in a single\nrun loop when all of the `content` subcomponents register themselves with\nthe container during init.",
+      "itemtype": "method",
+      "name": "_createTabsList",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 183,
+      "description": "When the component initializes, we set the `tabList` property to an array.\nThis prevents multiple instances of rad-tabs on a given page from\ninheriting the same tabList array through prototype inheritance.",
+      "itemtype": "event",
+      "name": "init",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 208,
+      "description": "Action to show a tab. Set `activeId` to the passed elementId. `activeId`\nis passed down to children content components",
+      "itemtype": "method",
+      "name": "showTab",
+      "params": [
+        {
+          "name": "elementId",
+          "description": "HTML id of the tab to show",
+          "type": "String"
+        }
+      ],
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 230,
+      "description": "Closure action passed to content subcomponents that is called on init.\nEach child tab will register itself with this container. To ensure the\ntabList is only updated once per render, we proxy new tabs to the\n`_tabsToCreate` array and then push all of them to `tabList` using a\n`run.once` call to `_createTabsList`",
+      "itemtype": "method",
+      "name": "registerTab",
+      "params": [
+        {
+          "name": "tab",
+          "description": "Object model of tab to be registered",
+          "type": "Object"
+        }
+      ],
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 244,
+      "description": "Closure action passed to content subcomponents that is called whenever\na tab has updated in a way this container needs to know of. Currently\nthis is only when a tab's `hidden` status changes.",
+      "itemtype": "method",
+      "name": "updateTab",
+      "params": [
+        {
+          "name": "tab",
+          "description": "",
+          "type": "Object",
+          "props": [
+            {
+              "name": "elementId",
+              "description": "HTML id of tab to update",
+              "type": "String"
+            },
+            {
+              "name": "hidden",
+              "description": "Hidden status of changed tab",
+              "type": "Boolean"
+            }
+          ]
+        }
+      ],
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 52,
+      "description": "Adds a brand class to the target as btn-{brand}",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 59,
+      "description": "Whether or not to style the target as a link or a button",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "default": "false",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 66,
+      "description": "Available hook that is called on hide of the tooltip",
+      "itemtype": "property",
+      "name": "onHide",
+      "type": "{function}",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 72,
+      "description": "Available hook that is called on show of the tooltip",
+      "itemtype": "property",
+      "name": "onShow",
+      "type": "{function}",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 82,
+      "description": "Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the `aria-describedby` attr of the tooltip\nhover target and the `id` of the actual tooltip content",
+      "itemtype": "property",
+      "name": "aria-describedby",
+      "type": "{string}",
+      "class": "Component.RadTooltip",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ]
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 91,
+      "description": "State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 103,
+      "description": "Core component class for targeting element when necessary",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "default": "['rad-tooltip']",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 110,
+      "description": "Tooltips should almost aways be inline spans.",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "span",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 120,
+      "description": "Handle showing tooltip content",
+      "itemtype": "method",
+      "name": "_showContent",
+      "return": {
+        "description": "undefined"
+      },
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 129,
+      "description": "Handle showing tooltip content",
+      "itemtype": "method",
+      "name": "_hideContent",
+      "return": {
+        "description": "undefined"
+      },
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 141,
+      "description": "Show content on mouse enter",
+      "itemtype": "event",
+      "name": "mouseEnter",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 148,
+      "description": "Hide content on mouse leave",
+      "itemtype": "event",
+      "name": "mouseLeave",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 155,
+      "description": "Show content on focus",
+      "itemtype": "event",
+      "name": "focusIn",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 162,
+      "description": "Hide content on focusOut",
+      "itemtype": "event",
+      "name": "focusOut",
+      "class": "Component.RadTooltip"
+    },
+    {
+      "file": "addon/instance-initializers/fixed-body.js",
+      "line": 10,
+      "itemtype": "method",
+      "name": "initialize",
+      "static": 1,
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "InstanceInitializer.FixedBody"
     },
     {
       "file": "addon/services/tagging.js",
@@ -2763,5 +2974,78 @@
       "class": "Utils.Listeners"
     }
   ],
-  "warnings": []
+  "warnings": [
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-dropdown/content.js:18"
+    },
+    {
+      "message": "unknown tag: closure",
+      "line": " addon/components/rad-dropdown/menu-item.js:29"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal/header.js:36"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal/header.js:45"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal/header.js:54"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal/header.js:64"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal/header.js:73"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal/header.js:88"
+    },
+    {
+      "message": "unknown tag: closure",
+      "line": " addon/components/rad-modal/header.js:88"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-dropdown.js:70"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-dropdown.js:77"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-dropdown.js:84"
+    },
+    {
+      "message": "unknown tag: closure",
+      "line": " addon/components/rad-dropdown.js:92"
+    },
+    {
+      "message": "unknown tag: closure",
+      "line": " addon/components/rad-dropdown.js:98"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal.js:158"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal.js:168"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-modal.js:233"
+    },
+    {
+      "message": "unknown tag: closure",
+      "line": " addon/components/rad-modal.js:233"
+    }
+  ]
 }

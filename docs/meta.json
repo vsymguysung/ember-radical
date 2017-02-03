@@ -53,11 +53,19 @@
       "type": "classes"
     },
     {
+      "name": "Component.RadDropdown.MenuItem",
+      "type": "classes"
+    },
+    {
       "name": "Component.RadDropdown.Target",
       "type": "classes"
     },
     {
       "name": "Component.RadModal",
+      "type": "classes"
+    },
+    {
+      "name": "Component.RadModal.Footer",
       "type": "classes"
     },
     {
@@ -102,6 +110,10 @@
     },
     {
       "name": "Eq",
+      "type": "classes"
+    },
+    {
+      "name": "InstanceInitializer.FixedBody",
       "type": "classes"
     },
     {

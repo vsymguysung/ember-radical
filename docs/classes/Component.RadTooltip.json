@@ -3,7 +3,7 @@
   "shortname": "Component.RadTooltip",
   "classitems": [
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 129,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -12,10 +12,10 @@
         "description": "undefined"
       },
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 120,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -24,10 +24,10 @@
         "description": "undefined"
       },
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 82,
       "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the tooltip\nhover target and the <code>id</code> of the actual tooltip content</p>\n",
       "itemtype": "property",
@@ -40,10 +40,10 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 52,
       "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
       "itemtype": "property",
@@ -51,10 +51,10 @@
       "type": "{String}",
       "default": "''",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 59,
       "description": "<p>Whether or not to style the target as a link or a button</p>\n",
       "itemtype": "property",
@@ -62,10 +62,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 103,
       "description": "<p>Core component class for targeting element when necessary</p>\n",
       "itemtype": "property",
@@ -73,28 +73,28 @@
       "type": "{Array}",
       "default": "['rad-tooltip']",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 155,
       "description": "<p>Show content on focus</p>\n",
       "itemtype": "event",
       "name": "focusIn",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 162,
       "description": "<p>Hide content on focusOut</p>\n",
       "itemtype": "event",
       "name": "focusOut",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 91,
       "description": "<p>State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
@@ -102,48 +102,48 @@
       "type": "{Boolean}",
       "default": "true",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 141,
       "description": "<p>Show content on mouse enter</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 148,
       "description": "<p>Hide content on mouse leave</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 66,
       "description": "<p>Available hook that is called on hide of the tooltip</p>\n",
       "itemtype": "property",
       "name": "onHide",
       "type": "{function}",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 72,
       "description": "<p>Available hook that is called on show of the tooltip</p>\n",
       "itemtype": "property",
       "name": "onShow",
       "type": "{function}",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 110,
       "description": "<p>Tooltips should almost aways be inline spans.</p>\n",
       "itemtype": "property",
@@ -151,21 +151,21 @@
       "type": "{string}",
       "default": "span",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     }
   ],
   "plugins": [],
   "extensions": [],
   "plugin_for": [],
   "extension_for": [],
-  "file": "addon/components/rad-tooltip/component.js",
+  "file": "addon/components/rad-tooltip.js",
   "line": 7,
-  "description": "<p>A fully accessible tooltip component. The <code>rad-tooltip</code> component can be\nused by itself or in block form as a parent of the title/content\nsubcomponents which represent the title/trigger text to show the\ntooltip and the content to be revealed within the tooltip, respectively.</p>\n<h3>Usage</h3>\n<h4>1. Simple invocation</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>tooltip Title<span class=\"token operator\">=</span><span class=\"token string\">\"Hover me\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"For some rad information that is really really long\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{rad-tooltip Title=\"Hover me\" Content=\"For some rad information that is really really long\"}}</p>\n<h4>2. Block form using contextual components</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>tooltip <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>title<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hover me<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>title<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">'x'</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span> For some really rad information<span class=\"token operator\">!</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>tooltip<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-tooltip as |components|}}\n{{#components.title}}Hover me{{/components.title}}\n{{#components.content}}\n{{rad-svg svgId='x'}} For some really rad information!\n{{/components.content}}\n{{/rad-tooltip}}</p>\n<h4>3. Combine the use of attrs and contextual components.</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>tooltip Title<span class=\"token operator\">=</span><span class=\"token string\">\"Hover me\"</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>For some rad information<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>tooltip<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-tooltip Title=\"Hover me\" as |components|}}\n{{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}</p>\n<h4>4. Turn the title into a button with <code>buttonStyle</code> and pass a</h4>\n<p><code>brand</code> to change the color of the button.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>tooltip buttonStyle<span class=\"token operator\">=</span><span class=\"token boolean\">true</span> brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> Title<span class=\"token operator\">=</span><span class=\"token string\">\"Hover me\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"For some rad information\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
+  "description": "<p>A fully accessible tooltip component. The <code>rad-tooltip</code> component can be\nused by itself or in block form as a parent of the title/content\nsubcomponents which represent the title/trigger text to show the\ntooltip and the content to be revealed within the tooltip, respectively.</p>\n<h3>Usage</h3>\n<h4>1. Simple invocation</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>tooltip Title<span class=\"token operator\">=</span><span class=\"token string\">\"Hover me\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"For some rad information that is really really long\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{rad-tooltip Title=\"Hover me\" Content=\"For some rad information that is really really long\"}}</p>\n<h4>2. Block form using contextual components</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>tooltip <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>title<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hover me<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>title<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">'close'</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span> For some really rad information<span class=\"token operator\">!</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>tooltip<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-tooltip as |components|}}\n{{#components.title}}Hover me{{/components.title}}\n{{#components.content}}\n{{rad-svg svgId='close'}} For some really rad information!\n{{/components.content}}\n{{/rad-tooltip}}</p>\n<h4>3. Combine the use of attrs and contextual components.</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>tooltip Title<span class=\"token operator\">=</span><span class=\"token string\">\"Hover me\"</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>For some rad information<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>tooltip<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-tooltip Title=\"Hover me\" as |components|}}\n{{#components.content}}For some rad information{{/components.content}}\n{{/rad-tooltip}}</p>\n<h4>4. Turn the title into a button with <code>buttonStyle</code> and pass a</h4>\n<p><code>brand</code> to change the color of the button.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>tooltip buttonStyle<span class=\"token operator\">=</span><span class=\"token boolean\">true</span> brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> Title<span class=\"token operator\">=</span><span class=\"token string\">\"Hover me\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"For some rad information\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 129,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -174,10 +174,10 @@
         "description": "undefined"
       },
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 120,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
@@ -186,12 +186,12 @@
         "description": "undefined"
       },
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     }
   ],
   "property": [
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 82,
       "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the tooltip\nhover target and the <code>id</code> of the actual tooltip content</p>\n",
       "itemtype": "property",
@@ -204,10 +204,10 @@
           "description": ""
         }
       ],
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 52,
       "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
       "itemtype": "property",
@@ -215,10 +215,10 @@
       "type": "{String}",
       "default": "''",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 59,
       "description": "<p>Whether or not to style the target as a link or a button</p>\n",
       "itemtype": "property",
@@ -226,10 +226,10 @@
       "type": "{Boolean}",
       "default": "false",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 103,
       "description": "<p>Core component class for targeting element when necessary</p>\n",
       "itemtype": "property",
@@ -237,10 +237,10 @@
       "type": "{Array}",
       "default": "['rad-tooltip']",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 91,
       "description": "<p>State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
@@ -248,30 +248,30 @@
       "type": "{Boolean}",
       "default": "true",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 66,
       "description": "<p>Available hook that is called on hide of the tooltip</p>\n",
       "itemtype": "property",
       "name": "onHide",
       "type": "{function}",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 72,
       "description": "<p>Available hook that is called on show of the tooltip</p>\n",
       "itemtype": "property",
       "name": "onShow",
       "type": "{function}",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 110,
       "description": "<p>Tooltips should almost aways be inline spans.</p>\n",
       "itemtype": "property",
@@ -279,46 +279,46 @@
       "type": "{string}",
       "default": "span",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     }
   ],
   "event": [
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 155,
       "description": "<p>Show content on focus</p>\n",
       "itemtype": "event",
       "name": "focusIn",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 162,
       "description": "<p>Hide content on focusOut</p>\n",
       "itemtype": "event",
       "name": "focusOut",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 141,
       "description": "<p>Show content on mouse enter</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/component.js",
+      "file": "addon/components/rad-tooltip.js",
       "line": 148,
       "description": "<p>Hide content on mouse leave</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",
       "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip_component.js"
+      "srcFileId": "addon_components_rad-tooltip.js"
     }
   ],
-  "srcFileId": "addon_components_rad-tooltip_component.js"
+  "srcFileId": "addon_components_rad-tooltip.js"
 }
