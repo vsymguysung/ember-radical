@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 80,
+      "line": 103,
       "description": "<p>Computed <code>_hidden</code> accounts for whether the tab is selected (by checking\n<code>activeId</code>) &amp;&amp; if this tab has been flagged to be hidden with property\n<code>hidden</code></p>\n",
       "itemtype": "property",
       "name": "_hidden",
@@ -29,7 +29,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 36,
+      "line": 70,
       "description": "<p>The id of the currently active tab in the scope of the rad-tabs component.\nThis is provided privately in the <code>rad-tabs</code> yield hash.</p>\n",
       "itemtype": "property",
       "name": "activeId",
@@ -40,7 +40,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 59,
+      "line": 82,
       "description": "<p>Aria role <code>tabpanel</code> is bound for A++ accessibility.</p>\n",
       "itemtype": "property",
       "name": "ariaRole",
@@ -51,7 +51,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 66,
+      "line": 89,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n<li><code>_hidden</code>: to hide this tab if it is not selected or if prop hidden is true</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -61,7 +61,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 74,
+      "line": 97,
       "description": "<p>Class names: <code>tabs-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -71,7 +71,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 136,
+      "line": 141,
       "description": "<p>Actions Up: When something changes in this component we need to let the\ncontainer tabs know by firing the <code>updateTab</code> closure action with this\ntabs changed data.</p>\n<p><em>(Currently the only change we're notifying on is the <code>hidden</code> prop)</em></p>\n",
       "itemtype": "event",
       "name": "didUpdateAttrs",
@@ -80,17 +80,20 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 44,
+      "line": 30,
       "description": "<p>Whether this tab should be hidden from view. Useful for situations where\na tab needs to exist in a particular place in the tab ordering but may\nnot have the data it needs to display information at the time when\n<code>registerTab</code> is invoked. This allows you to make sure your tab can be\nhidden while preserving its place in the list.</p>\n",
       "itemtype": "property",
       "name": "hidden",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
       "type": "{Boolean}",
       "class": "Component.RadTabs.Content",
       "srcFileId": "addon_components_rad-tabs_content.js"
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 118,
+      "line": 123,
       "description": "<p>Handle registering with the tabs container on int by firing <code>registerTab</code>\nclosure action with this tab's data.</p>\n",
       "itemtype": "event",
       "name": "init",
@@ -99,10 +102,13 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 96,
+      "line": 43,
       "description": "<p>The button label text of this tab. This will be passed up via a closure\naction to the containing <code>rad-tabs</code> component.</p>\n",
       "itemtype": "property",
       "name": "label",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
       "type": "{String}",
       "default": "''",
       "class": "Component.RadTabs.Content",
@@ -110,11 +116,15 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 105,
-      "description": "<p>Use this attribute to place a custom data-test attribute on the tab button\nfor this tab. This will allow easier, specific/direct targeting of clicking\nthis tab in automated testing.</p>\n",
+      "line": 54,
+      "description": "<p>Use this attribute to place a custom <code>data-test</code> attribute on the tab button\nfor this tab. This will allow easier, specific/direct targeting of clicking\nthis tab in automated testing.</p>\n",
       "itemtype": "property",
       "name": "tabDataTest",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
       "type": "{string}",
+      "default": "''",
       "class": "Component.RadTabs.Content",
       "srcFileId": "addon_components_rad-tabs_content.js"
     }
@@ -125,14 +135,14 @@
   "extension_for": [],
   "file": "addon/components/rad-tabs/content.js",
   "line": 5,
-  "description": "<p>This component is yielded by the <code>rad-tabs</code> component. The <code>activeId</code> and\nactions <code>registerTab</code> and <code>updateTab</code> are privately bound for internal use.</p>\n<p>On init each tab will register itself with the <code>rad-tabs</code> wrapping container,\npassing all its data. The <code>rad-tabs</code> container uses this to build out the\ntab buttons.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>tabs defaultTab<span class=\"token operator\">=</span><span class=\"token string\">\"dumpsterShrimp\"</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content label<span class=\"token operator\">=</span><span class=\"token string\">\"Shrimp\"</span> elementId<span class=\"token operator\">=</span><span class=\"token string\">\"dumpsterShrimp\"</span> tabDataTest<span class=\"token operator\">=</span><span class=\"token string\">\"a-nifty-tab-button\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    BRINGO<span class=\"token operator\">!</span> There<span class=\"token string\">'s some pretty good lil'</span> shrimpers <span class=\"token keyword\">in</span> here<span class=\"token punctuation\">,</span> lets check it out<span class=\"token punctuation\">.</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>tabs<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>label</code></td>\n<td>string</td>\n<td>null</td>\n<td>Text label of the tab button for this panel</td>\n</tr>\n<tr>\n<td><code>elementId</code></td>\n<td>string</td>\n<td>null</td>\n<td>Set a specific id for this component when using container <code>defaultTab</code></td>\n</tr>\n<tr>\n<td><code>tabDataTest</code></td>\n<td>string</td>\n<td>null</td>\n<td><code>data-test</code> for the tab button</td>\n</tr>\n</tbody>\n</table>\n",
+  "description": "<p>This component is yielded by the <code>rad-tabs</code> component. The <code>activeId</code> and\nactions <code>registerTab</code> and <code>updateTab</code> are privately bound for internal use.</p>\n<p>On init each tab will register itself with the <code>rad-tabs</code> wrapping container,\npassing all its data. The <code>rad-tabs</code> container uses this to build out the\ntab buttons.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>tabs defaultTab<span class=\"token operator\">=</span><span class=\"token string\">\"dumpsterShrimp\"</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content label<span class=\"token operator\">=</span><span class=\"token string\">\"Shrimp\"</span> elementId<span class=\"token operator\">=</span><span class=\"token string\">\"dumpsterShrimp\"</span> tabDataTest<span class=\"token operator\">=</span><span class=\"token string\">\"a-nifty-tab-button\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    BRINGO<span class=\"token operator\">!</span> There<span class=\"token string\">'s some pretty good lil'</span> shrimpers <span class=\"token keyword\">in</span> here<span class=\"token punctuation\">,</span> lets check it out<span class=\"token punctuation\">.</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>tabs<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [],
   "property": [
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 80,
+      "line": 103,
       "description": "<p>Computed <code>_hidden</code> accounts for whether the tab is selected (by checking\n<code>activeId</code>) &amp;&amp; if this tab has been flagged to be hidden with property\n<code>hidden</code></p>\n",
       "itemtype": "property",
       "name": "_hidden",
@@ -157,7 +167,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 36,
+      "line": 70,
       "description": "<p>The id of the currently active tab in the scope of the rad-tabs component.\nThis is provided privately in the <code>rad-tabs</code> yield hash.</p>\n",
       "itemtype": "property",
       "name": "activeId",
@@ -168,7 +178,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 59,
+      "line": 82,
       "description": "<p>Aria role <code>tabpanel</code> is bound for A++ accessibility.</p>\n",
       "itemtype": "property",
       "name": "ariaRole",
@@ -179,7 +189,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 66,
+      "line": 89,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n<li><code>_hidden</code>: to hide this tab if it is not selected or if prop hidden is true</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -189,7 +199,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 74,
+      "line": 97,
       "description": "<p>Class names: <code>tabs-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -199,20 +209,26 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 44,
+      "line": 30,
       "description": "<p>Whether this tab should be hidden from view. Useful for situations where\na tab needs to exist in a particular place in the tab ordering but may\nnot have the data it needs to display information at the time when\n<code>registerTab</code> is invoked. This allows you to make sure your tab can be\nhidden while preserving its place in the list.</p>\n",
       "itemtype": "property",
       "name": "hidden",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
       "type": "{Boolean}",
       "class": "Component.RadTabs.Content",
       "srcFileId": "addon_components_rad-tabs_content.js"
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 96,
+      "line": 43,
       "description": "<p>The button label text of this tab. This will be passed up via a closure\naction to the containing <code>rad-tabs</code> component.</p>\n",
       "itemtype": "property",
       "name": "label",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
       "type": "{String}",
       "default": "''",
       "class": "Component.RadTabs.Content",
@@ -220,11 +236,15 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 105,
-      "description": "<p>Use this attribute to place a custom data-test attribute on the tab button\nfor this tab. This will allow easier, specific/direct targeting of clicking\nthis tab in automated testing.</p>\n",
+      "line": 54,
+      "description": "<p>Use this attribute to place a custom <code>data-test</code> attribute on the tab button\nfor this tab. This will allow easier, specific/direct targeting of clicking\nthis tab in automated testing.</p>\n",
       "itemtype": "property",
       "name": "tabDataTest",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
       "type": "{string}",
+      "default": "''",
       "class": "Component.RadTabs.Content",
       "srcFileId": "addon_components_rad-tabs_content.js"
     }
@@ -232,7 +252,7 @@
   "event": [
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 136,
+      "line": 141,
       "description": "<p>Actions Up: When something changes in this component we need to let the\ncontainer tabs know by firing the <code>updateTab</code> closure action with this\ntabs changed data.</p>\n<p><em>(Currently the only change we're notifying on is the <code>hidden</code> prop)</em></p>\n",
       "itemtype": "event",
       "name": "didUpdateAttrs",
@@ -241,7 +261,7 @@
     },
     {
       "file": "addon/components/rad-tabs/content.js",
-      "line": 118,
+      "line": 123,
       "description": "<p>Handle registering with the tabs container on int by firing <code>registerTab</code>\nclosure action with this tab's data.</p>\n",
       "itemtype": "event",
       "name": "init",
