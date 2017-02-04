@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 164,
+      "line": 149,
       "description": "<p>Actions</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -14,7 +14,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 132,
+      "line": 117,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -24,7 +24,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 70,
+      "line": 69,
       "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
       "itemtype": "property",
       "name": "brand",
@@ -35,7 +35,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 77,
+      "line": 76,
       "description": "<p>Whether or not to style the target as a link or a button</p>\n",
       "itemtype": "property",
       "name": "buttonStyle",
@@ -46,7 +46,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 139,
+      "line": 124,
       "description": "<p>Bind <code>rad-dropdown</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -56,23 +56,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 115,
-      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
-      "itemtype": "property",
-      "name": "describedby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 84,
+      "line": 83,
       "description": "<p>Whether or not to treat the dropdown content component as a dropdown menu</p>\n",
       "itemtype": "property",
       "name": "dropdownMenu",
@@ -84,7 +68,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 107,
+      "line": 106,
       "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -95,7 +79,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 186,
+      "line": 171,
       "description": "<p>Handle the hiding of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "hide",
@@ -108,23 +92,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 122,
-      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
-      "itemtype": "property",
-      "name": "labelledby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 92,
+      "line": 91,
       "description": "<p>Fires when the dropdown is closed</p>\n",
       "itemtype": "property",
       "name": "onHide",
@@ -134,7 +102,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 98,
+      "line": 97,
       "description": "<p>Fires when the dropdown is opened</p>\n",
       "itemtype": "property",
       "name": "onShow",
@@ -144,7 +112,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 170,
+      "line": 155,
       "description": "<p>Handle the showing of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "show",
@@ -157,7 +125,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 148,
+      "line": 133,
       "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
       "itemtype": "method",
       "name": "willDestroyElement",
@@ -170,14 +138,14 @@
   "plugin_for": [],
   "extension_for": [],
   "file": "addon/components/rad-dropdown.js",
-  "line": 8,
+  "line": 7,
   "description": "<p>Core dropdown component.</p>\n<p>Welcome friend, if you're looking for a button/link that opens a dropdown\nyou've come to the right place.</p>\n<h2>Usage</h2>\n<h3>1. Simple invocation. It's so easy. Just pass a Target and Content prop</h3>\n<p>and you've got a totally rad dropdown.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>dropdown Target<span class=\"token operator\">=</span><span class=\"token string\">\"Open me!\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"Hey, what's up?\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{rad-dropdown Target=\"Open me!\" Content=\"Hey, what's up?\"}}</p>\n<h3>2. Simple target with custom content. Use the Content contextual</h3>\n<p>component to add custom content to the dropdown.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>dropdown Target<span class=\"token operator\">=</span><span class=\"token string\">\"Open me!\"</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hey<span class=\"token punctuation\">,</span> what's up<span class=\"token operator\">?</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>dropdown<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<h3>3. Customize both the dropdown target and content.</h3>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>dropdown <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Open me<span class=\"token operator\">!</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hey<span class=\"token punctuation\">,</span> what's up<span class=\"token operator\">?</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>dropdown<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-dropdown as |components|}}\n{{#components.target}}Open me!{{/components.target}}\n{{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}</p>\n<h3>4. Turn the target into a button with <code>buttonStyle=true</code> and pass a</h3>\n<p><code>brand</code> to change the color button.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>dropdown buttonStyle<span class=\"token operator\">=</span><span class=\"token boolean\">true</span> brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> Target<span class=\"token operator\">=</span><span class=\"token string\">\"Open me!\"</span> Content<span class=\"token operator\">=</span><span class=\"token string\">\"Hey, what's up?\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<h3>5. Use as a dropdown menu with menu items</h3>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>dropdown dropdownMenu<span class=\"token operator\">=</span><span class=\"token boolean\">true</span> brand<span class=\"token operator\">=</span><span class=\"token string\">\"primary\"</span> buttonStyle<span class=\"token operator\">=</span><span class=\"token boolean\">true</span> <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    Open me<span class=\"token operator\">!</span> <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>rad<span class=\"token operator\">-</span>svg svgId<span class=\"token operator\">=</span><span class=\"token string\">\"arrow-down\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>menu<span class=\"token operator\">-</span>item<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Option <span class=\"token number\">1</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>menu<span class=\"token operator\">-</span>item<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>menu<span class=\"token operator\">-</span>item<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Option <span class=\"token number\">2</span><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>menu<span class=\"token operator\">-</span>item<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>dropdown<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>{{#rad-dropdown dropdownMenu=true brand=\"primary\" buttonStyle=true as |components|}}\n{{#components.target}}\nOpen me! {{rad-svg svgId=\"arrow-down\"}}\n{{/components.target}}\n{{#components.content}}\n{{#components.menu-item}}Option 1{{/components.menu-item}}\n{{#components.menu-item}}Option 2{{/components.menu-item}}\n{{/components.content}}\n{{/rad-dropdown}}</p>\n<table>\n<thead>\n<tr>\n<th>Configuration</th>\n<th>Type</th>\n<th>Default</th>\n<th>Description</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td><code>buttonStyle</code></td>\n<td>boolean</td>\n<td>false</td>\n<td>Whether to style the <code>target</code> to look like a button</td>\n</tr>\n<tr>\n<td><code>brand</code></td>\n<td>string</td>\n<td>''</td>\n<td>The brand class to use to style the <code>target</code></td>\n</tr>\n</tbody>\n</table>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 186,
+      "line": 171,
       "description": "<p>Handle the hiding of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "hide",
@@ -190,7 +158,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 170,
+      "line": 155,
       "description": "<p>Handle the showing of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "show",
@@ -203,7 +171,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 148,
+      "line": 133,
       "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
       "itemtype": "method",
       "name": "willDestroyElement",
@@ -214,7 +182,7 @@
   "property": [
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 164,
+      "line": 149,
       "description": "<p>Actions</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -224,7 +192,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 132,
+      "line": 117,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -234,7 +202,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 70,
+      "line": 69,
       "description": "<p>Adds a brand class to the target as btn-{brand}</p>\n",
       "itemtype": "property",
       "name": "brand",
@@ -245,7 +213,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 77,
+      "line": 76,
       "description": "<p>Whether or not to style the target as a link or a button</p>\n",
       "itemtype": "property",
       "name": "buttonStyle",
@@ -256,7 +224,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 139,
+      "line": 124,
       "description": "<p>Bind <code>rad-dropdown</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -266,23 +234,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 115,
-      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
-      "itemtype": "property",
-      "name": "describedby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 84,
+      "line": 83,
       "description": "<p>Whether or not to treat the dropdown content component as a dropdown menu</p>\n",
       "itemtype": "property",
       "name": "dropdownMenu",
@@ -294,7 +246,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 107,
+      "line": 106,
       "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -305,23 +257,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 122,
-      "description": "<p>Unique string used to handle setting up aria roles for A++ usability.</p>\n",
-      "itemtype": "property",
-      "name": "labelledby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 92,
+      "line": 91,
       "description": "<p>Fires when the dropdown is closed</p>\n",
       "itemtype": "property",
       "name": "onHide",
@@ -331,7 +267,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 98,
+      "line": 97,
       "description": "<p>Fires when the dropdown is opened</p>\n",
       "itemtype": "property",
       "name": "onShow",

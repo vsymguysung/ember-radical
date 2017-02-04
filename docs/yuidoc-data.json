@@ -541,7 +541,7 @@
       "plugin_for": [],
       "extension_for": [],
       "file": "addon/components/rad-dropdown.js",
-      "line": 8,
+      "line": 7,
       "description": "Core dropdown component.\n\nWelcome friend, if you're looking for a button/link that opens a dropdown\nyou've come to the right place.\n\n## Usage\n\n### 1. Simple invocation. It's so easy. Just pass a Target and Content prop\nand you've got a totally rad dropdown.\n```glimmer\n{{rad-dropdown Target=\"Open me!\" Content=\"Hey, what's up?\"}}\n```\n\n### 2. Simple target with custom content. Use the Content contextual\ncomponent to add custom content to the dropdown.\n```handlebars\n{{#rad-dropdown Target=\"Open me!\" as |components|}}\n  {{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}\n```\n\n### 3. Customize both the dropdown target and content.\n```glimmer\n{{#rad-dropdown as |components|}}\n  {{#components.target}}Open me!{{/components.target}}\n  {{#components.content}}Hey, what's up?{{/components.content}}\n{{/rad-dropdown}}\n```\n\n### 4. Turn the target into a button with `buttonStyle=true` and pass a\n`brand` to change the color button.\n```handlebars\n{{rad-dropdown buttonStyle=true brand=\"primary\" Target=\"Open me!\" Content=\"Hey, what's up?\"}}\n```\n\n### 5. Use as a dropdown menu with menu items\n\n```glimmer\n{{#rad-dropdown dropdownMenu=true brand=\"primary\" buttonStyle=true as |components|}}\n  {{#components.target}}\n    Open me! {{rad-svg svgId=\"arrow-down\"}}\n  {{/components.target}}\n  {{#components.content}}\n    {{#components.menu-item}}Option 1{{/components.menu-item}}\n    {{#components.menu-item}}Option 2{{/components.menu-item}}\n  {{/components.content}}\n{{/rad-dropdown}}\n```\n\nConfiguration | Type | Default | Description\n--- | --- | --- | ---\n`buttonStyle` | boolean | false | Whether to style the `target` to look like a button\n`brand` | string | '' | The brand class to use to style the `target`",
       "is_constructor": 1,
       "extends": "Ember.Component"
@@ -1046,7 +1046,7 @@
       "description": "Pass a `(hash)` of tagging properties when you need to bind a tag fire to\nclose of the modal. Expects syntax:\n\n`(hash category=\"Tag Category\" action=\"Tag Action\" label=\"Tag Label\")`",
       "itemtype": "property",
       "name": "tagclose",
-      "type": "{?Object}",
+      "type": "{Object}",
       "passed": "",
       "optional": 1,
       "default": "null",
@@ -1937,7 +1937,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 70,
+      "line": 69,
       "description": "Adds a brand class to the target as btn-{brand}",
       "itemtype": "property",
       "name": "brand",
@@ -1947,7 +1947,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 77,
+      "line": 76,
       "description": "Whether or not to style the target as a link or a button",
       "itemtype": "property",
       "name": "buttonStyle",
@@ -1957,7 +1957,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 84,
+      "line": 83,
       "description": "Whether or not to treat the dropdown content component as a dropdown menu",
       "itemtype": "property",
       "name": "dropdownMenu",
@@ -1968,7 +1968,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 92,
+      "line": 91,
       "description": "Fires when the dropdown is closed",
       "itemtype": "property",
       "name": "onHide",
@@ -1977,7 +1977,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 98,
+      "line": 97,
       "description": "Fires when the dropdown is opened",
       "itemtype": "property",
       "name": "onShow",
@@ -1986,7 +1986,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 107,
+      "line": 106,
       "description": "State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
       "itemtype": "property",
       "name": "hidden",
@@ -1996,37 +1996,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 115,
-      "description": "Unique string used to handle setting up aria roles for A++ usability.",
-      "itemtype": "property",
-      "name": "describedby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 122,
-      "description": "Unique string used to handle setting up aria roles for A++ usability.",
-      "itemtype": "property",
-      "name": "labelledby",
-      "type": "{string}",
-      "class": "Component.RadDropdown",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ]
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 132,
+      "line": 117,
       "description": "Auto-binds `data-test` attributes",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -2035,7 +2005,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 139,
+      "line": 124,
       "description": "Bind `rad-dropdown`",
       "itemtype": "property",
       "name": "classNames",
@@ -2044,7 +2014,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 148,
+      "line": 133,
       "description": "Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.",
       "itemtype": "method",
       "name": "willDestroyElement",
@@ -2052,7 +2022,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 164,
+      "line": 149,
       "description": "Actions",
       "itemtype": "property",
       "name": "actions",
@@ -2061,7 +2031,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 170,
+      "line": 155,
       "description": "Handle the showing of the dropdown. This will pass on any arguments you\npass to it in the action.",
       "itemtype": "method",
       "name": "show",
@@ -2073,7 +2043,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 186,
+      "line": 171,
       "description": "Handle the hiding of the dropdown. This will pass on any arguments you\npass to it in the action.",
       "itemtype": "method",
       "name": "hide",
@@ -2571,6 +2541,18 @@
     {
       "file": "addon/components/rad-tabs.js",
       "line": 93,
+      "description": "Whether the content pane subcomponents should take on the appearance of\na `rad-card`.",
+      "itemtype": "property",
+      "name": "card",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
+      "type": "{Boolean}",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 103,
       "description": "The optional elementId of the tab that should be shown by default. This is\nuseful for cases where the user has come into a page and is expecting one\nof the tabs to be shown by default.",
       "itemtype": "property",
       "name": "defaultTab",
@@ -2583,7 +2565,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 104,
+      "line": 114,
       "description": "Optional closure action that will be called whenever a tab is opened with\nthe id of that tab. Use this to create a controlled tabs instance.",
       "itemtype": "property",
       "name": "onChange",
@@ -2596,7 +2578,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 114,
+      "line": 124,
       "description": "Whether the page should scroll the tab context back to the top when one of\nthe tabs is clicked. This can be a nice convenience for usabilitee.",
       "itemtype": "property",
       "name": "scrollOnClick",
@@ -2609,7 +2591,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 124,
+      "line": 134,
       "description": "What the target of the `scrollOnClick` behavior should be. By default,\nthe entire page/body scrolls, however if this instance of `rad-tabs` is\ncontained within a modal or some other scrollable sub-container, it may\nbe more desirable to execute a scroll against that instead of the entire\npage. Simply pass a standard jQuery-like selector in as a string.",
       "itemtype": "property",
       "name": "scrollTarget",
@@ -2622,7 +2604,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 141,
+      "line": 151,
       "description": "Bound attributes:\n- `data-test`: for precise testing identification",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -2631,7 +2613,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 148,
+      "line": 158,
       "description": "Class names: `rad-tabs`",
       "itemtype": "property",
       "name": "classNames",
@@ -2640,7 +2622,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 154,
+      "line": 164,
       "description": "List of tabs to display. This is iterated through in the template to\nrendered the buttons that are used to change tabs.",
       "itemtype": "property",
       "name": "tabList",
@@ -2650,7 +2632,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 166,
+      "line": 176,
       "description": "Internal method that can be used with a `run.once` call to only add new tabs\nonce per run loop. Simply iterates through `_tabsToCreate` and pushes them\ninto the `tabList`. This is needed to prevent multiple renders in a single\nrun loop when all of the `content` subcomponents register themselves with\nthe container during init.",
       "itemtype": "method",
       "name": "_createTabsList",
@@ -2658,7 +2640,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 184,
+      "line": 194,
       "description": "When the component initializes, we set the `tabList` property to an array.\nThis prevents multiple instances of rad-tabs on a given page from\ninheriting the same tabList array through prototype inheritance.",
       "itemtype": "event",
       "name": "init",
@@ -2670,7 +2652,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 209,
+      "line": 219,
       "description": "Action to show a tab. Set `activeId` to the passed elementId. `activeId`\nis passed down to children content components",
       "itemtype": "method",
       "name": "showTab",
@@ -2685,7 +2667,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 231,
+      "line": 241,
       "description": "Closure action passed to content subcomponents that is called on init.\nEach child tab will register itself with this container. To ensure the\ntabList is only updated once per render, we proxy new tabs to the\n`_tabsToCreate` array and then push all of them to `tabList` using a\n`run.once` call to `_createTabsList`",
       "itemtype": "method",
       "name": "registerTab",
@@ -2700,7 +2682,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 245,
+      "line": 255,
       "description": "Closure action passed to content subcomponents that is called whenever\na tab has updated in a way this container needs to know of. Currently\nthis is only when a tab's `hidden` status changes.",
       "itemtype": "method",
       "name": "updateTab",
@@ -3131,23 +3113,23 @@
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-dropdown.js:70"
+      "line": " addon/components/rad-dropdown.js:69"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-dropdown.js:77"
+      "line": " addon/components/rad-dropdown.js:76"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-dropdown.js:84"
+      "line": " addon/components/rad-dropdown.js:83"
     },
     {
       "message": "unknown tag: closure",
-      "line": " addon/components/rad-dropdown.js:92"
+      "line": " addon/components/rad-dropdown.js:91"
     },
     {
       "message": "unknown tag: closure",
-      "line": " addon/components/rad-dropdown.js:98"
+      "line": " addon/components/rad-dropdown.js:97"
     },
     {
       "message": "unknown tag: passed",
@@ -3179,7 +3161,7 @@
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-tabs.js:104"
+      "line": " addon/components/rad-tabs.js:103"
     },
     {
       "message": "unknown tag: passed",
@@ -3188,6 +3170,10 @@
     {
       "message": "unknown tag: passed",
       "line": " addon/components/rad-tabs.js:124"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-tabs.js:134"
     }
   ]
 }
