@@ -416,7 +416,7 @@
       "extension_for": [],
       "file": "addon/components/rad-modal/header.js",
       "line": 5,
-      "description": "Used to handle rendering a header for an Ember Radical Modal. Should always\nbe accessed via the `Header` prop or `components` hash of `rad-modal`.\n\n### Accessibility\n\nThis component should only be used as a contextual component within a\n`core-modal` instance. The parent `core-modal` handles setting the `elementId`\nof this component to match an `aria-labelledby` on the parent modal.\nThis ensures that screen readers are able to correctly associate the modal\nheader with the modal that it labels. Some form of a Header is always\nrequired for instances of Core Modal to ensure that they are properly\nlabelled.\n\n#### Configurations\n- `brand`: When accessing the header subcomponent in block form, you can use\n  this property to access and apply standard branding classes to the header,\n  e.g. `\"primary\"` or `\"secondary\"` .\n- `closeButton`: Controls display of the header close button. Set to false to\n  hide close button.\n- `tagClose`: Pass an object of tagging data to have a tag event fired on\n  click of header close button",
+      "description": "Used to handle rendering a header for an Ember Radical Modal. Should always\nbe accessed via the `Header` prop or `components` hash of `rad-modal`.\n\n### Accessibility\n\nThis component should only be used as a contextual component within a\n`rad-modal` instance. The parent `rad-modal` handles setting the `elementId`\nof this component to match an `aria-labelledby` on the parent modal.\nThis ensures that screen readers are able to correctly associate the modal\nheader with the modal that it labels. Some form of a Header is always\nrequired for instances of Core Modal to ensure that they are properly\nlabelled.\n\n#### Configurations\n- `brand`: When accessing the header subcomponent in block form, you can use\n  this property to access and apply standard branding classes to the header,\n  e.g. `\"primary\"` or `\"secondary\"` .\n- `closeButton`: Controls display of the header close button. Set to false to\n  hide close button.\n- `tagClose`: Pass an object of tagging data to have a tag event fired on\n  click of header close button",
       "is_constructor": 1,
       "extends": "Ember.Component"
     },
@@ -996,7 +996,7 @@
     {
       "file": "addon/components/rad-modal/header.js",
       "line": 36,
-      "description": "The elementId of this component must be set to match the `aria-labelledby`\nof the parent component. This is handled through the contextual component\nsetup of `core-modal`",
+      "description": "The elementId of this component must be set to match the `aria-labelledby`\nof the parent component. This is handled through the contextual component\nsetup of `rad-modal`",
       "itemtype": "property",
       "name": "elementId",
       "type": "{string}",

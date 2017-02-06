@@ -94,7 +94,7 @@
     {
       "file": "addon/components/rad-modal/header.js",
       "line": 36,
-      "description": "<p>The elementId of this component must be set to match the <code>aria-labelledby</code>\nof the parent component. This is handled through the contextual component\nsetup of <code>core-modal</code></p>\n",
+      "description": "<p>The elementId of this component must be set to match the <code>aria-labelledby</code>\nof the parent component. This is handled through the contextual component\nsetup of <code>rad-modal</code></p>\n",
       "itemtype": "property",
       "name": "elementId",
       "type": "{string}",
@@ -133,7 +133,7 @@
   "extension_for": [],
   "file": "addon/components/rad-modal/header.js",
   "line": 5,
-  "description": "<p>Used to handle rendering a header for an Ember Radical Modal. Should always\nbe accessed via the <code>Header</code> prop or <code>components</code> hash of <code>rad-modal</code>.</p>\n<h3>Accessibility</h3>\n<p>This component should only be used as a contextual component within a\n<code>core-modal</code> instance. The parent <code>core-modal</code> handles setting the <code>elementId</code>\nof this component to match an <code>aria-labelledby</code> on the parent modal.\nThis ensures that screen readers are able to correctly associate the modal\nheader with the modal that it labels. Some form of a Header is always\nrequired for instances of Core Modal to ensure that they are properly\nlabelled.</p>\n<h4>Configurations</h4>\n<ul>\n<li><code>brand</code>: When accessing the header subcomponent in block form, you can use\nthis property to access and apply standard branding classes to the header,\ne.g. <code>'primary'</code> or <code>'secondary'</code> .</li>\n<li><code>closeButton</code>: Controls display of the header close button. Set to false to\nhide close button.</li>\n<li><code>tagClose</code>: Pass an object of tagging data to have a tag event fired on\nclick of header close button</li>\n</ul>\n",
+  "description": "<p>Used to handle rendering a header for an Ember Radical Modal. Should always\nbe accessed via the <code>Header</code> prop or <code>components</code> hash of <code>rad-modal</code>.</p>\n<h3>Accessibility</h3>\n<p>This component should only be used as a contextual component within a\n<code>rad-modal</code> instance. The parent <code>rad-modal</code> handles setting the <code>elementId</code>\nof this component to match an <code>aria-labelledby</code> on the parent modal.\nThis ensures that screen readers are able to correctly associate the modal\nheader with the modal that it labels. Some form of a Header is always\nrequired for instances of Core Modal to ensure that they are properly\nlabelled.</p>\n<h4>Configurations</h4>\n<ul>\n<li><code>brand</code>: When accessing the header subcomponent in block form, you can use\nthis property to access and apply standard branding classes to the header,\ne.g. <code>'primary'</code> or <code>'secondary'</code> .</li>\n<li><code>closeButton</code>: Controls display of the header close button. Set to false to\nhide close button.</li>\n<li><code>tagClose</code>: Pass an object of tagging data to have a tag event fired on\nclick of header close button</li>\n</ul>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [],
@@ -230,7 +230,7 @@
     {
       "file": "addon/components/rad-modal/header.js",
       "line": 36,
-      "description": "<p>The elementId of this component must be set to match the <code>aria-labelledby</code>\nof the parent component. This is handled through the contextual component\nsetup of <code>core-modal</code></p>\n",
+      "description": "<p>The elementId of this component must be set to match the <code>aria-labelledby</code>\nof the parent component. This is handled through the contextual component\nsetup of <code>rad-modal</code></p>\n",
       "itemtype": "property",
       "name": "elementId",
       "type": "{string}",
