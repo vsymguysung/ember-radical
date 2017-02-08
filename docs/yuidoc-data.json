@@ -735,7 +735,25 @@
       "line": 14,
       "description": "Bind standard core class: `card-body`",
       "itemtype": "property",
-      "name": "classNames",
+      "name": "cardBodyClassNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Body"
+    },
+    {
+      "file": "addon/components/rad-card/body.js",
+      "line": 24,
+      "description": "Bound attributes:\n- `data-test`: for precise testing identification",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadCard.Body"
+    },
+    {
+      "file": "addon/components/rad-card/body.js",
+      "line": 31,
+      "description": "Bind props to classes on the root component element.",
+      "itemtype": "property",
+      "name": "classNameBindings",
       "type": "{Array}",
       "class": "Component.RadCard.Body"
     },
@@ -744,7 +762,25 @@
       "line": 14,
       "description": "Bind standard core class: `card-footer`",
       "itemtype": "property",
-      "name": "classNames",
+      "name": "cardFooterClassNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Footer"
+    },
+    {
+      "file": "addon/components/rad-card/footer.js",
+      "line": 24,
+      "description": "Bound attributes:\n- `data-test`: for precise testing identification",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadCard.Footer"
+    },
+    {
+      "file": "addon/components/rad-card/footer.js",
+      "line": 31,
+      "description": "Bind props to classes on the root component element.",
+      "itemtype": "property",
+      "name": "classNameBindings",
       "type": "{Array}",
       "class": "Component.RadCard.Footer"
     },
@@ -753,7 +789,25 @@
       "line": 14,
       "description": "Bind standard core class: `card-title`",
       "itemtype": "property",
-      "name": "classNames",
+      "name": "cardTitleClassNames",
+      "type": "{Array}",
+      "class": "Component.RadCard.Title"
+    },
+    {
+      "file": "addon/components/rad-card/title.js",
+      "line": 24,
+      "description": "Bound attributes:\n- `data-test`: for precise testing identification",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadCard.Title"
+    },
+    {
+      "file": "addon/components/rad-card/title.js",
+      "line": 31,
+      "description": "Bind props to classes on the root component element.",
+      "itemtype": "property",
+      "name": "classNameBindings",
       "type": "{Array}",
       "class": "Component.RadCard.Title"
     },
@@ -1797,7 +1851,52 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 41,
+      "line": 37,
+      "description": "Custom className(s) to use on the body subcomponent's root element",
+      "itemtype": "property",
+      "name": "cardBodyClassNames",
+      "type": "{string}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 43,
+      "description": "Custom className(s) to use on `rad-card`'s root element",
+      "itemtype": "property",
+      "name": "cardClassNames",
+      "type": "{string}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 49,
+      "description": "Custom className(s) to use on the footer subcomponent's root element",
+      "itemtype": "property",
+      "name": "cardFooterClassNames",
+      "type": "{string}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 55,
+      "description": "Custom className(s) to use on the title subcomponent's root element",
+      "itemtype": "property",
+      "name": "cardTitleClassNames",
+      "type": "{string}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 65,
+      "description": "Bound attributes:\n- `data-test`: for precise testing identification",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadCard"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 72,
       "description": "Computed css class for the brand bound to the component.",
       "itemtype": "property",
       "name": "brandClass",
@@ -1806,7 +1905,7 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 49,
+      "line": 80,
       "description": "Bind standard core class: `card-footer`",
       "itemtype": "property",
       "name": "classNames",
@@ -1815,7 +1914,7 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 55,
+      "line": 86,
       "description": "Bind props to classes on the root component element.",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -2243,7 +2342,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 418,
+      "line": 420,
       "description": "willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.\n\n**NOTE:** This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.",
       "itemtype": "event",
       "name": "willDestroyElement",
@@ -2541,6 +2640,19 @@
     {
       "file": "addon/components/rad-tabs.js",
       "line": 93,
+      "description": "Class name(s) to use when utilizing tabs in a \"button style\"\nimplementation.",
+      "itemtype": "property",
+      "name": "buttonStyleClassNames",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
+      "type": "{String}",
+      "default": "'button-style'",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 103,
       "description": "Whether the content pane subcomponents should take on the appearance of\na `rad-card`.",
       "itemtype": "property",
       "name": "card",
@@ -2552,7 +2664,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 103,
+      "line": 113,
       "description": "The optional elementId of the tab that should be shown by default. This is\nuseful for cases where the user has come into a page and is expecting one\nof the tabs to be shown by default.",
       "itemtype": "property",
       "name": "defaultTab",
@@ -2565,7 +2677,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 114,
+      "line": 124,
       "description": "Optional closure action that will be called whenever a tab is opened with\nthe id of that tab. Use this to create a controlled tabs instance.",
       "itemtype": "property",
       "name": "onChange",
@@ -2578,7 +2690,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 124,
+      "line": 134,
       "description": "Whether the page should scroll the tab context back to the top when one of\nthe tabs is clicked. This can be a nice convenience for usabilitee.",
       "itemtype": "property",
       "name": "scrollOnClick",
@@ -2591,20 +2703,53 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 134,
+      "line": 144,
       "description": "What the target of the `scrollOnClick` behavior should be. By default,\nthe entire page/body scrolls, however if this instance of `rad-tabs` is\ncontained within a modal or some other scrollable sub-container, it may\nbe more desirable to execute a scroll against that instead of the entire\npage. Simply pass a standard jQuery-like selector in as a string.",
       "itemtype": "property",
       "name": "scrollTarget",
       "passed": "",
       "access": "public",
       "tagname": "",
-      "type": "{string}",
+      "type": "{String}",
       "default": "'body, html'",
       "class": "Component.RadTabs"
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 151,
+      "line": 157,
+      "description": "Class name(s) to apply to the tab `<button>` elements.",
+      "itemtype": "property",
+      "name": "tabButtonClassNames",
+      "type": "{string}",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 163,
+      "description": "Class name(s) to use for the individual tab `<li>` elements.",
+      "itemtype": "property",
+      "name": "tabClassNames",
+      "passed": "",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 171,
+      "description": "Class name(s) to use on the enclosing tabs `<ul>` element.",
+      "itemtype": "property",
+      "name": "tabListClassNames",
+      "passed": "",
+      "access": "public",
+      "tagname": "",
+      "type": "{String}",
+      "default": "''",
+      "class": "Component.RadTabs"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 184,
       "description": "Bound attributes:\n- `data-test`: for precise testing identification",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -2613,7 +2758,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 158,
+      "line": 191,
       "description": "Class names: `rad-tabs`",
       "itemtype": "property",
       "name": "classNames",
@@ -2622,7 +2767,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 164,
+      "line": 197,
       "description": "List of tabs to display. This is iterated through in the template to\nrendered the buttons that are used to change tabs.",
       "itemtype": "property",
       "name": "tabList",
@@ -2632,7 +2777,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 176,
+      "line": 209,
       "description": "Internal method that can be used with a `run.once` call to only add new tabs\nonce per run loop. Simply iterates through `_tabsToCreate` and pushes them\ninto the `tabList`. This is needed to prevent multiple renders in a single\nrun loop when all of the `content` subcomponents register themselves with\nthe container during init.",
       "itemtype": "method",
       "name": "_createTabsList",
@@ -2640,7 +2785,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 194,
+      "line": 227,
       "description": "When the component initializes, we set the `tabList` property to an array.\nThis prevents multiple instances of rad-tabs on a given page from\ninheriting the same tabList array through prototype inheritance.",
       "itemtype": "event",
       "name": "init",
@@ -2652,7 +2797,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 219,
+      "line": 252,
       "description": "Action to show a tab. Set `activeId` to the passed elementId. `activeId`\nis passed down to children content components",
       "itemtype": "method",
       "name": "showTab",
@@ -2667,7 +2812,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 241,
+      "line": 274,
       "description": "Closure action passed to content subcomponents that is called on init.\nEach child tab will register itself with this container. To ensure the\ntabList is only updated once per render, we proxy new tabs to the\n`_tabsToCreate` array and then push all of them to `tabList` using a\n`run.once` call to `_createTabsList`",
       "itemtype": "method",
       "name": "registerTab",
@@ -2682,7 +2827,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 255,
+      "line": 288,
       "description": "Closure action passed to content subcomponents that is called whenever\na tab has updated in a way this container needs to know of. Currently\nthis is only when a tab's `hidden` status changes.",
       "itemtype": "method",
       "name": "updateTab",
@@ -3165,7 +3310,7 @@
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-tabs.js:114"
+      "line": " addon/components/rad-tabs.js:113"
     },
     {
       "message": "unknown tag: passed",
@@ -3174,6 +3319,18 @@
     {
       "message": "unknown tag: passed",
       "line": " addon/components/rad-tabs.js:134"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-tabs.js:144"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-tabs.js:163"
+    },
+    {
+      "message": "unknown tag: passed",
+      "line": " addon/components/rad-tabs.js:171"
     }
   ]
 }

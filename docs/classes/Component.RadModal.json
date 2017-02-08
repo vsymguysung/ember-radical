@@ -210,7 +210,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 418,
+      "line": 420,
       "description": "<p>willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.</p>\n<p><strong>NOTE:</strong> This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.</p>\n",
       "itemtype": "event",
       "name": "willDestroyElement",
@@ -444,7 +444,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 418,
+      "line": 420,
       "description": "<p>willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.</p>\n<p><strong>NOTE:</strong> This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.</p>\n",
       "itemtype": "event",
       "name": "willDestroyElement",
