@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 129,
+      "line": 155,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
       "name": "_hideContent",
@@ -16,7 +16,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 120,
+      "line": 146,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
       "name": "_showContent",
@@ -28,7 +28,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 82,
+      "line": 102,
       "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the tooltip\nhover target and the <code>id</code> of the actual tooltip content</p>\n",
       "itemtype": "property",
       "name": "aria-describedby",
@@ -66,7 +66,17 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 103,
+      "line": 111,
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "default": "['hidden::active']",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 129,
       "description": "<p>Core component class for targeting element when necessary</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -77,7 +87,19 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 155,
+      "line": 82,
+      "itemtype": "property",
+      "name": "contentComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-tooltip/content'",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 181,
       "description": "<p>Show content on focus</p>\n",
       "itemtype": "event",
       "name": "focusIn",
@@ -86,7 +108,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 162,
+      "line": 188,
       "description": "<p>Hide content on focusOut</p>\n",
       "itemtype": "event",
       "name": "focusOut",
@@ -95,7 +117,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 91,
+      "line": 117,
       "description": "<p>State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -106,7 +128,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 141,
+      "line": 167,
       "description": "<p>Show content on mouse enter</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
@@ -115,7 +137,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 148,
+      "line": 174,
       "description": "<p>Hide content on mouse leave</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",
@@ -144,12 +166,24 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 110,
+      "line": 136,
       "description": "<p>Tooltips should almost aways be inline spans.</p>\n",
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
       "default": "span",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 90,
+      "itemtype": "property",
+      "name": "titleComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-tooltip/title'",
       "class": "Component.RadTooltip",
       "srcFileId": "addon_components_rad-tooltip.js"
     }
@@ -166,7 +200,7 @@
   "method": [
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 129,
+      "line": 155,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
       "name": "_hideContent",
@@ -178,7 +212,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 120,
+      "line": 146,
       "description": "<p>Handle showing tooltip content</p>\n",
       "itemtype": "method",
       "name": "_showContent",
@@ -192,7 +226,7 @@
   "property": [
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 82,
+      "line": 102,
       "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the tooltip\nhover target and the <code>id</code> of the actual tooltip content</p>\n",
       "itemtype": "property",
       "name": "aria-describedby",
@@ -230,7 +264,17 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 103,
+      "line": 111,
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "default": "['hidden::active']",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 129,
       "description": "<p>Core component class for targeting element when necessary</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -241,7 +285,19 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 91,
+      "line": 82,
+      "itemtype": "property",
+      "name": "contentComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-tooltip/content'",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 117,
       "description": "<p>State boolean for display of the tooltip content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -272,7 +328,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 110,
+      "line": 136,
       "description": "<p>Tooltips should almost aways be inline spans.</p>\n",
       "itemtype": "property",
       "name": "tagName",
@@ -280,12 +336,24 @@
       "default": "span",
       "class": "Component.RadTooltip",
       "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 90,
+      "itemtype": "property",
+      "name": "titleComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-tooltip/title'",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
     }
   ],
   "event": [
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 155,
+      "line": 181,
       "description": "<p>Show content on focus</p>\n",
       "itemtype": "event",
       "name": "focusIn",
@@ -294,7 +362,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 162,
+      "line": 188,
       "description": "<p>Hide content on focusOut</p>\n",
       "itemtype": "event",
       "name": "focusOut",
@@ -303,7 +371,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 141,
+      "line": 167,
       "description": "<p>Show content on mouse enter</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
@@ -312,7 +380,7 @@
     },
     {
       "file": "addon/components/rad-tooltip.js",
-      "line": 148,
+      "line": 174,
       "description": "<p>Hide content on mouse leave</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",

@@ -57,7 +57,7 @@
   "line": 7,
   "description": "<p>Core dropdown target component</p>\n",
   "is_constructor": 1,
-  "extends": "Component.CoreButton",
+  "extends": "Component.RadButton",
   "method": [],
   "property": [
     {

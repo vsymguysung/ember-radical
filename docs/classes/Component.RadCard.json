@@ -4,11 +4,23 @@
   "classitems": [
     {
       "file": "addon/components/rad-card.js",
-      "line": 65,
+      "line": 93,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 65,
+      "itemtype": "property",
+      "name": "bodyComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-card/body'",
       "class": "Component.RadCard",
       "srcFileId": "addon_components_rad-card.js"
     },
@@ -25,7 +37,7 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 72,
+      "line": 100,
       "description": "<p>Computed css class for the brand bound to the component.</p>\n",
       "itemtype": "property",
       "name": "brandClass",
@@ -75,7 +87,7 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 86,
+      "line": 114,
       "description": "<p>Bind props to classes on the root component element.</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -85,11 +97,35 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 80,
+      "line": 108,
       "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 73,
+      "itemtype": "property",
+      "name": "footerComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-card/footer'",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 81,
+      "itemtype": "property",
+      "name": "titleComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-card/title'",
       "class": "Component.RadCard",
       "srcFileId": "addon_components_rad-card.js"
     }
@@ -107,11 +143,23 @@
   "property": [
     {
       "file": "addon/components/rad-card.js",
-      "line": 65,
+      "line": 93,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 65,
+      "itemtype": "property",
+      "name": "bodyComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-card/body'",
       "class": "Component.RadCard",
       "srcFileId": "addon_components_rad-card.js"
     },
@@ -128,7 +176,7 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 72,
+      "line": 100,
       "description": "<p>Computed css class for the brand bound to the component.</p>\n",
       "itemtype": "property",
       "name": "brandClass",
@@ -178,7 +226,7 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 86,
+      "line": 114,
       "description": "<p>Bind props to classes on the root component element.</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -188,11 +236,35 @@
     },
     {
       "file": "addon/components/rad-card.js",
-      "line": 80,
+      "line": 108,
       "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 73,
+      "itemtype": "property",
+      "name": "footerComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-card/footer'",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 81,
+      "itemtype": "property",
+      "name": "titleComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-card/title'",
       "class": "Component.RadCard",
       "srcFileId": "addon_components_rad-card.js"
     }

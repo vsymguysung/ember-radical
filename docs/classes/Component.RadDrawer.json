@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 184,
+      "line": 210,
       "description": "<p>Actions Hash</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -14,7 +14,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 126,
+      "line": 146,
       "description": "<p>Unique id for binding <code>aria-controls</code> in subcomponents</p>\n",
       "itemtype": "property",
       "name": "ariaId",
@@ -30,7 +30,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 150,
+      "line": 176,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -50,7 +50,17 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 133,
+      "line": 153,
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "default": "['hidden::active']",
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 159,
       "description": "<p>Bind <code>rad-drawer</code> to component</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -60,7 +70,19 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 161,
+      "line": 126,
+      "itemtype": "property",
+      "name": "contentComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-drawer/content'",
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 187,
       "description": "<p>The component's <code>didReceiveAttrs</code> hook. Allows udpates from external state\nto adjust the <code>hidden</code> state of a <code>rad-drawer</code> instance.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -83,7 +105,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 139,
+      "line": 165,
       "description": "<p>State boolean for display of the drawer content. Is toggled true/false to\nhandle show/hide. Updated in <code>toggleHidden</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -105,7 +127,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 190,
+      "line": 216,
       "description": "<p>Toggle internal hidden property. Pass state boolean if specific state is needed.</p>\n",
       "itemtype": "method",
       "name": "toggleHidden",
@@ -138,7 +160,7 @@
   "method": [
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 190,
+      "line": 216,
       "description": "<p>Toggle internal hidden property. Pass state boolean if specific state is needed.</p>\n",
       "itemtype": "method",
       "name": "toggleHidden",
@@ -162,7 +184,7 @@
   "property": [
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 184,
+      "line": 210,
       "description": "<p>Actions Hash</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -172,7 +194,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 126,
+      "line": 146,
       "description": "<p>Unique id for binding <code>aria-controls</code> in subcomponents</p>\n",
       "itemtype": "property",
       "name": "ariaId",
@@ -188,7 +210,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 150,
+      "line": 176,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -208,11 +230,33 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 133,
+      "line": 153,
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "default": "['hidden::active']",
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 159,
       "description": "<p>Bind <code>rad-drawer</code> to component</p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 126,
+      "itemtype": "property",
+      "name": "contentComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-drawer/content'",
       "class": "Component.RadDrawer",
       "srcFileId": "addon_components_rad-drawer.js"
     },
@@ -228,7 +272,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 139,
+      "line": 165,
       "description": "<p>State boolean for display of the drawer content. Is toggled true/false to\nhandle show/hide. Updated in <code>toggleHidden</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -252,7 +296,7 @@
   "event": [
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 161,
+      "line": 187,
       "description": "<p>The component's <code>didReceiveAttrs</code> hook. Allows udpates from external state\nto adjust the <code>hidden</code> state of a <code>rad-drawer</code> instance.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",

@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 209,
+      "line": 221,
       "description": "<p>Internal method that can be used with a <code>run.once</code> call to only add new tabs\nonce per run loop. Simply iterates through <code>_tabsToCreate</code> and pushes them\ninto the <code>tabList</code>. This is needed to prevent multiple renders in a single\nrun loop when all of the <code>content</code> subcomponents register themselves with\nthe container during init.</p>\n",
       "itemtype": "method",
       "name": "_createTabsList",
@@ -27,7 +27,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 184,
+      "line": 196,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -78,11 +78,23 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 191,
+      "line": 203,
       "description": "<p>Class names: <code>rad-tabs</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "class": "Component.RadTabs",
+      "srcFileId": "addon_components_rad-tabs.js"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 184,
+      "itemtype": "property",
+      "name": "contentComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-tabs/content'",
       "class": "Component.RadTabs",
       "srcFileId": "addon_components_rad-tabs.js"
     },
@@ -102,7 +114,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 227,
+      "line": 239,
       "description": "<p>When the component initializes, we set the <code>tabList</code> property to an array.\nThis prevents multiple instances of rad-tabs on a given page from\ninheriting the same tabList array through prototype inheritance.</p>\n",
       "itemtype": "event",
       "name": "init",
@@ -129,7 +141,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 274,
+      "line": 286,
       "description": "<p>Closure action passed to content subcomponents that is called on init.\nEach child tab will register itself with this container. To ensure the\ntabList is only updated once per render, we proxy new tabs to the\n<code>_tabsToCreate</code> array and then push all of them to <code>tabList</code> using a\n<code>run.once</code> call to <code>_createTabsList</code></p>\n",
       "itemtype": "method",
       "name": "registerTab",
@@ -173,7 +185,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 252,
+      "line": 264,
       "description": "<p>Action to show a tab. Set <code>activeId</code> to the passed elementId. <code>activeId</code>\nis passed down to children content components</p>\n",
       "itemtype": "method",
       "name": "showTab",
@@ -211,7 +223,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 197,
+      "line": 209,
       "description": "<p>List of tabs to display. This is iterated through in the template to\nrendered the buttons that are used to change tabs.</p>\n",
       "itemtype": "property",
       "name": "tabList",
@@ -236,7 +248,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 288,
+      "line": 300,
       "description": "<p>Closure action passed to content subcomponents that is called whenever\na tab has updated in a way this container needs to know of. Currently\nthis is only when a tab's <code>hidden</code> status changes.</p>\n",
       "itemtype": "method",
       "name": "updateTab",
@@ -275,7 +287,7 @@
   "method": [
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 209,
+      "line": 221,
       "description": "<p>Internal method that can be used with a <code>run.once</code> call to only add new tabs\nonce per run loop. Simply iterates through <code>_tabsToCreate</code> and pushes them\ninto the <code>tabList</code>. This is needed to prevent multiple renders in a single\nrun loop when all of the <code>content</code> subcomponents register themselves with\nthe container during init.</p>\n",
       "itemtype": "method",
       "name": "_createTabsList",
@@ -284,7 +296,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 274,
+      "line": 286,
       "description": "<p>Closure action passed to content subcomponents that is called on init.\nEach child tab will register itself with this container. To ensure the\ntabList is only updated once per render, we proxy new tabs to the\n<code>_tabsToCreate</code> array and then push all of them to <code>tabList</code> using a\n<code>run.once</code> call to <code>_createTabsList</code></p>\n",
       "itemtype": "method",
       "name": "registerTab",
@@ -300,7 +312,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 252,
+      "line": 264,
       "description": "<p>Action to show a tab. Set <code>activeId</code> to the passed elementId. <code>activeId</code>\nis passed down to children content components</p>\n",
       "itemtype": "method",
       "name": "showTab",
@@ -316,7 +328,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 288,
+      "line": 300,
       "description": "<p>Closure action passed to content subcomponents that is called whenever\na tab has updated in a way this container needs to know of. Currently\nthis is only when a tab's <code>hidden</code> status changes.</p>\n",
       "itemtype": "method",
       "name": "updateTab",
@@ -360,7 +372,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 184,
+      "line": 196,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -411,11 +423,23 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 191,
+      "line": 203,
       "description": "<p>Class names: <code>rad-tabs</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
+      "class": "Component.RadTabs",
+      "srcFileId": "addon_components_rad-tabs.js"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 184,
+      "itemtype": "property",
+      "name": "contentComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-tabs/content'",
       "class": "Component.RadTabs",
       "srcFileId": "addon_components_rad-tabs.js"
     },
@@ -499,7 +523,7 @@
     },
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 197,
+      "line": 209,
       "description": "<p>List of tabs to display. This is iterated through in the template to\nrendered the buttons that are used to change tabs.</p>\n",
       "itemtype": "property",
       "name": "tabList",
@@ -526,7 +550,7 @@
   "event": [
     {
       "file": "addon/components/rad-tabs.js",
-      "line": 227,
+      "line": 239,
       "description": "<p>When the component initializes, we set the <code>tabList</code> property to an array.\nThis prevents multiple instances of rad-tabs on a given page from\ninheriting the same tabList array through prototype inheritance.</p>\n",
       "itemtype": "event",
       "name": "init",

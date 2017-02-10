@@ -44,7 +44,7 @@
   "line": 4,
   "description": "<p>Core dropdown menu item</p>\n",
   "is_constructor": 1,
-  "extends": "Ember.CoreButton",
+  "extends": "Ember.RadButton",
   "method": [],
   "property": [
     {

@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 43,
+      "line": 44,
       "description": "<p>Bind <code>aria-expanded</code> and <code>aria-controls</code> to the root element;\nBind modified <code>dataTest</code> to <code>data-test</code> attr</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -15,7 +15,7 @@
     {
       "file": "addon/components/rad-drawer/target.js",
       "line": 18,
-      "description": "<p>Display the target content as a button instead of a plain link. Passed in\nfrom the parent <code>rad-drawer</code>.</p>\n",
+      "description": "<p>Display the target content as a button instead of a plain link. Passed in\nfrom the parent <code>rad-drawer</code> and ultimately updates the <code>link</code>\nproperty on <code>rad-button</code>.</p>\n",
       "itemtype": "property",
       "name": "buttonStyle",
       "type": "{Boolean}",
@@ -24,17 +24,7 @@
     },
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 59,
-      "description": "<p>Bind <code>link</code> to <code>!useButtonStyle</code></p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadDrawer.Target",
-      "srcFileId": "addon_components_rad-drawer_target.js"
-    },
-    {
-      "file": "addon/components/rad-drawer/target.js",
-      "line": 53,
+      "line": 54,
       "description": "<p>Bind <code>drawer-target</code> and <code>basic-b</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -44,7 +34,7 @@
     },
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 32,
+      "line": 33,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "expanded",
@@ -60,7 +50,7 @@
     },
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 25,
+      "line": 26,
       "description": "<p>Name of icon to display. Removes icon from display if value is falsy.</p>\n",
       "itemtype": "property",
       "name": "suppressIcon",
@@ -78,12 +68,12 @@
   "line": 6,
   "description": "<p>Core drawer target component</p>\n",
   "is_constructor": 1,
-  "extends": "Component.CoreButton",
+  "extends": "Component.RadButton",
   "method": [],
   "property": [
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 43,
+      "line": 44,
       "description": "<p>Bind <code>aria-expanded</code> and <code>aria-controls</code> to the root element;\nBind modified <code>dataTest</code> to <code>data-test</code> attr</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -94,7 +84,7 @@
     {
       "file": "addon/components/rad-drawer/target.js",
       "line": 18,
-      "description": "<p>Display the target content as a button instead of a plain link. Passed in\nfrom the parent <code>rad-drawer</code>.</p>\n",
+      "description": "<p>Display the target content as a button instead of a plain link. Passed in\nfrom the parent <code>rad-drawer</code> and ultimately updates the <code>link</code>\nproperty on <code>rad-button</code>.</p>\n",
       "itemtype": "property",
       "name": "buttonStyle",
       "type": "{Boolean}",
@@ -103,17 +93,7 @@
     },
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 59,
-      "description": "<p>Bind <code>link</code> to <code>!useButtonStyle</code></p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadDrawer.Target",
-      "srcFileId": "addon_components_rad-drawer_target.js"
-    },
-    {
-      "file": "addon/components/rad-drawer/target.js",
-      "line": 53,
+      "line": 54,
       "description": "<p>Bind <code>drawer-target</code> and <code>basic-b</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -123,7 +103,7 @@
     },
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 32,
+      "line": 33,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "expanded",
@@ -139,7 +119,7 @@
     },
     {
       "file": "addon/components/rad-drawer/target.js",
-      "line": 25,
+      "line": 26,
       "description": "<p>Name of icon to display. Removes icon from display if value is falsy.</p>\n",
       "itemtype": "property",
       "name": "suppressIcon",
