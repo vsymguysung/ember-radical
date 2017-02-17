@@ -949,6 +949,14 @@
       "class": "Component.RadDropdown.Content"
     },
     {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 64,
+      "description": "Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n`rad-popover` element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.",
+      "itemtype": "event",
+      "name": "touchEnd",
+      "class": "Component.RadDropdown.Content"
+    },
+    {
       "file": "addon/components/rad-dropdown/menu-item.js",
       "line": 14,
       "description": "Binds `dropdown-item` class",

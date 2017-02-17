@@ -58,6 +58,15 @@
         }
       ],
       "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 64,
+      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
+      "itemtype": "event",
+      "name": "touchEnd",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     }
   ],
   "plugins": [],
@@ -129,6 +138,16 @@
       "srcFileId": "addon_components_rad-dropdown_content.js"
     }
   ],
-  "event": [],
+  "event": [
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 64,
+      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
+      "itemtype": "event",
+      "name": "touchEnd",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    }
+  ],
   "srcFileId": "addon_components_rad-dropdown_content.js"
 }
