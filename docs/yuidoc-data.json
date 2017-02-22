@@ -968,7 +968,7 @@
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
       "line": 20,
-      "description": "Override default click behavior and close the dropdown",
+      "description": "Placeholder closure action for click events. If no value is passed in it\nwill just call `_super` from the original `RadButton` class and then call\nthe `hide` closure action.",
       "itemtype": "event",
       "name": "click",
       "return": {
@@ -979,11 +979,23 @@
     },
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 29,
+      "line": 28,
       "description": "Closure action that hides the dropdown",
       "itemtype": "property",
       "name": "hide",
       "closure": "",
+      "class": "Component.RadDropdown.MenuItem"
+    },
+    {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 38,
+      "description": "When attributes are received, if a prop exists for click, we assume that\nsome custom behavior has been passed in. However, this custom behavior will\noverride our default behavior of closing the dropdown menus when a menu\nitem is clicked, which is bad.\n\nSo, we will compare the new value of `click` with an old value that we\nmanually store. If they are not equal, we set up a new method that calls\nsuper, runs the new behavior, and then runs the passed-in hide action. This\nalso works well for setting up default click behavior when no click action\nis passed in, as the initial value of click is a dummy closure.\n\nThis method is then stored on both the `click` and `_click` properties so\nthat it can be used by default for clicks, and so that it is preserved\nfor comparison if/when a new action is passed in. Because we compare the\nold and new values, the method creation and setting should really only\nevaluate the first time attributes are passed in unless the user is doing\nsome crazy dynamic action switching, and even if they are, we have that\ncase covered here.\n\nThis is also useful to safeguard against unnecessary repeated sets if OTHER\npassed properties (like branding or classNames/class or whatever else) get\nupdated even if the click action doesn't change.",
+      "itemtype": "event",
+      "name": "didReceiveAttrs",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
       "class": "Component.RadDropdown.MenuItem"
     },
     {
@@ -3445,7 +3457,7 @@
     },
     {
       "message": "unknown tag: closure",
-      "line": " addon/components/rad-dropdown/menu-item.js:29"
+      "line": " addon/components/rad-dropdown/menu-item.js:28"
     },
     {
       "message": "unknown tag: passed",
