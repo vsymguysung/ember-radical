@@ -70,7 +70,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 134,
+      "line": 126,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",
@@ -250,7 +250,7 @@
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 134,
+      "line": 126,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",

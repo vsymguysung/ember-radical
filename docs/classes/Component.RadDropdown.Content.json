@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 39,
+      "line": 56,
       "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -14,8 +14,8 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 54,
-      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true</p>\n",
+      "line": 71,
+      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true. Also\nbinds the positional class to the container</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -24,7 +24,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 48,
+      "line": 65,
       "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -45,7 +45,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 29,
+      "line": 46,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -61,7 +61,14 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 64,
+      "line": 26,
+      "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 82,
       "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",
@@ -82,7 +89,7 @@
   "property": [
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 39,
+      "line": 56,
       "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -92,8 +99,8 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 54,
-      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true</p>\n",
+      "line": 71,
+      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true. Also\nbinds the positional class to the container</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -102,7 +109,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 48,
+      "line": 65,
       "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -123,7 +130,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 29,
+      "line": 46,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -141,7 +148,7 @@
   "event": [
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 64,
+      "line": 82,
       "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",

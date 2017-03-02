@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 153,
+      "line": 171,
       "description": "<p>Stored reference to <code>run.later</code> created in <code>mouseLeave</code> that will close any\nopen dropdown. Is used in <code>mouseEnter</code> to cancel auto close.</p>\n",
       "itemtype": "property",
       "name": "_autoCloseRunLater",
@@ -15,7 +15,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 195,
+      "line": 213,
       "description": "<p>When the dropdown is opened, bind an event listener that will close it if\nthe user clicks anywhere other than the dropdown.</p>\n",
       "itemtype": "method",
       "name": "_bindDropdownListeners",
@@ -26,7 +26,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 212,
+      "line": 230,
       "description": "<p>Remove click listener from body. Used to DRY up our cleanup code in the\nsupported click and mouse out close liseners.</p>\n",
       "itemtype": "method",
       "name": "_unbindClickListener",
@@ -37,7 +37,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 274,
+      "line": 292,
       "description": "<p>Actions</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -47,7 +47,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 172,
+      "line": 190,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -92,7 +92,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 179,
+      "line": 197,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -102,7 +102,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 185,
+      "line": 203,
       "description": "<p>Bind <code>rad-dropdown</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -112,7 +112,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 126,
+      "line": 144,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",
@@ -136,7 +136,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 161,
+      "line": 179,
       "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -147,7 +147,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 300,
+      "line": 318,
       "description": "<p>Handle the hiding of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "hide",
@@ -160,7 +160,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 142,
+      "line": 160,
       "itemtype": "property",
       "name": "menuItemComponent",
       "type": "{string}",
@@ -172,7 +172,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 243,
+      "line": 261,
       "description": "<p>Check for an auto-close timer when user mouses into dropdown and cancel it\nif it exists.</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
@@ -181,7 +181,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 256,
+      "line": 274,
       "description": "<p>When user mouses out of the dropdown start an auto close timer to close\ndropdown after 2.5 seconds. Is canceled using <code>mouseEnter</code> if user mouses\nback into dropdown.</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",
@@ -197,24 +197,38 @@
       "closure": "",
       "passed": "",
       "optional": 1,
+      "type": "{Function}",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 115,
+      "line": 116,
       "description": "<p>Fires when the dropdown is opened</p>\n",
       "itemtype": "property",
       "name": "onShow",
       "closure": "",
       "passed": "",
       "optional": 1,
+      "type": "{Function}",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 280,
+      "line": 124,
+      "description": "<p>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.\nValid options are:</p>\n<ul>\n<li><code>'left'</code></li>\n<li><code>'top'</code></li>\n<li><code>'right'</code></li>\n<li><code>'top right'</code></li>\n</ul>\n<p>Defaults to <code>'left'</code> if no value is supplied.</p>\n",
+      "itemtype": "property",
+      "name": "position",
+      "type": "{String}",
+      "passed": "",
+      "default": "'left'",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 298,
       "description": "<p>Handle the showing of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "show",
@@ -227,7 +241,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 225,
+      "line": 243,
       "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
       "itemtype": "method",
       "name": "willDestroyElement",
@@ -247,7 +261,7 @@
   "method": [
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 195,
+      "line": 213,
       "description": "<p>When the dropdown is opened, bind an event listener that will close it if\nthe user clicks anywhere other than the dropdown.</p>\n",
       "itemtype": "method",
       "name": "_bindDropdownListeners",
@@ -258,7 +272,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 212,
+      "line": 230,
       "description": "<p>Remove click listener from body. Used to DRY up our cleanup code in the\nsupported click and mouse out close liseners.</p>\n",
       "itemtype": "method",
       "name": "_unbindClickListener",
@@ -269,7 +283,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 300,
+      "line": 318,
       "description": "<p>Handle the hiding of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "hide",
@@ -282,7 +296,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 280,
+      "line": 298,
       "description": "<p>Handle the showing of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
       "itemtype": "method",
       "name": "show",
@@ -295,7 +309,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 225,
+      "line": 243,
       "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
       "itemtype": "method",
       "name": "willDestroyElement",
@@ -306,7 +320,7 @@
   "property": [
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 153,
+      "line": 171,
       "description": "<p>Stored reference to <code>run.later</code> created in <code>mouseLeave</code> that will close any\nopen dropdown. Is used in <code>mouseEnter</code> to cancel auto close.</p>\n",
       "itemtype": "property",
       "name": "_autoCloseRunLater",
@@ -317,7 +331,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 274,
+      "line": 292,
       "description": "<p>Actions</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -327,7 +341,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 172,
+      "line": 190,
       "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -372,7 +386,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 179,
+      "line": 197,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -382,7 +396,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 185,
+      "line": 203,
       "description": "<p>Bind <code>rad-dropdown</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -392,7 +406,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 126,
+      "line": 144,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",
@@ -416,7 +430,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 161,
+      "line": 179,
       "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
@@ -427,7 +441,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 142,
+      "line": 160,
       "itemtype": "property",
       "name": "menuItemComponent",
       "type": "{string}",
@@ -446,18 +460,32 @@
       "closure": "",
       "passed": "",
       "optional": 1,
+      "type": "{Function}",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 115,
+      "line": 116,
       "description": "<p>Fires when the dropdown is opened</p>\n",
       "itemtype": "property",
       "name": "onShow",
       "closure": "",
       "passed": "",
       "optional": 1,
+      "type": "{Function}",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 124,
+      "description": "<p>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.\nValid options are:</p>\n<ul>\n<li><code>'left'</code></li>\n<li><code>'top'</code></li>\n<li><code>'right'</code></li>\n<li><code>'top right'</code></li>\n</ul>\n<p>Defaults to <code>'left'</code> if no value is supplied.</p>\n",
+      "itemtype": "property",
+      "name": "position",
+      "type": "{String}",
+      "passed": "",
+      "default": "'left'",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
     }
@@ -465,7 +493,7 @@
   "event": [
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 243,
+      "line": 261,
       "description": "<p>Check for an auto-close timer when user mouses into dropdown and cancel it\nif it exists.</p>\n",
       "itemtype": "event",
       "name": "mouseEnter",
@@ -474,7 +502,7 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 256,
+      "line": 274,
       "description": "<p>When user mouses out of the dropdown start an auto close timer to close\ndropdown after 2.5 seconds. Is canceled using <code>mouseEnter</code> if user mouses\nback into dropdown.</p>\n",
       "itemtype": "event",
       "name": "mouseLeave",
