@@ -809,17 +809,17 @@
         },
         {
           "file": "addon/components/rad-dropdown/content.js",
-          "line": 26,
-          "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
+          "line": 81,
+          "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-dropdown</code> element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.</p>\n",
+          "itemtype": "event",
+          "name": "touchEnd",
           "class": "Component.RadDropdown.Content",
           "srcFileId": "addon_components_rad-dropdown_content.js"
         },
         {
           "file": "addon/components/rad-dropdown/content.js",
-          "line": 82,
-          "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
-          "itemtype": "event",
-          "name": "touchEnd",
+          "line": 26,
+          "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
           "class": "Component.RadDropdown.Content",
           "srcFileId": "addon_components_rad-dropdown_content.js"
         }
@@ -896,8 +896,8 @@
       "event": [
         {
           "file": "addon/components/rad-dropdown/content.js",
-          "line": 82,
-          "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
+          "line": 81,
+          "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-dropdown</code> element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.</p>\n",
           "itemtype": "event",
           "name": "touchEnd",
           "class": "Component.RadDropdown.Content",
@@ -3409,7 +3409,7 @@
         },
         {
           "file": "addon/components/rad-drawer.js",
-          "line": 126,
+          "line": 134,
           "itemtype": "property",
           "name": "contentComponent",
           "type": "{string}",
@@ -3589,7 +3589,7 @@
         },
         {
           "file": "addon/components/rad-drawer.js",
-          "line": 126,
+          "line": 134,
           "itemtype": "property",
           "name": "contentComponent",
           "type": "{string}",
@@ -3680,7 +3680,7 @@
           "line": 230,
           "description": "<p>Remove click listener from body. Used to DRY up our cleanup code in the\nsupported click and mouse out close liseners.</p>\n",
           "itemtype": "method",
-          "name": "_unbindClickListener",
+          "name": "_unbindDropdownListeners",
           "access": "protected",
           "tagname": "",
           "class": "Component.RadDropdown",
@@ -3811,13 +3811,13 @@
         },
         {
           "file": "addon/components/rad-dropdown.js",
-          "line": 160,
+          "line": 152,
           "itemtype": "property",
           "name": "menuItemComponent",
           "type": "{string}",
           "passed": "",
           "optional": 1,
-          "default": "'rad-dropdown/target'",
+          "default": "'rad-dropdown/menu-item'",
           "class": "Component.RadDropdown",
           "srcFileId": "addon_components_rad-dropdown.js"
         },
@@ -3926,7 +3926,7 @@
           "line": 230,
           "description": "<p>Remove click listener from body. Used to DRY up our cleanup code in the\nsupported click and mouse out close liseners.</p>\n",
           "itemtype": "method",
-          "name": "_unbindClickListener",
+          "name": "_unbindDropdownListeners",
           "access": "protected",
           "tagname": "",
           "class": "Component.RadDropdown",
@@ -4092,13 +4092,13 @@
         },
         {
           "file": "addon/components/rad-dropdown.js",
-          "line": 160,
+          "line": 152,
           "itemtype": "property",
           "name": "menuItemComponent",
           "type": "{string}",
           "passed": "",
           "optional": 1,
-          "default": "'rad-dropdown/target'",
+          "default": "'rad-dropdown/menu-item'",
           "class": "Component.RadDropdown",
           "srcFileId": "addon_components_rad-dropdown.js"
         },
@@ -4697,31 +4697,55 @@
       "classitems": [
         {
           "file": "addon/components/rad-popover.js",
-          "line": 166,
-          "description": "<p>Handle showing tooltip content</p>\n",
+          "line": 171,
+          "description": "<p>When the popover is opened, bind an event listener that will close it if\nthe user touches anywhere other than the popover.</p>\n",
+          "itemtype": "method",
+          "name": "_bindPopoverListeners",
+          "access": "protected",
+          "tagname": "",
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 160,
+          "description": "<p>Handle hiding tooltip content; unbind touch event listeners, unbind escape\nkey listener, set hidden state to true.</p>\n",
           "itemtype": "method",
           "name": "_hideContent",
           "return": {
-            "description": "undefined"
+            "description": "",
+            "type": "Undefined"
           },
           "class": "Component.RadPopover",
           "srcFileId": "addon_components_rad-popover.js"
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 158,
-          "description": "<p>Handle showing tooltip content</p>\n",
+          "line": 188,
+          "description": "<p>Handle showing tooltip content; bind an event listener for mobile for\ntouch events that occur outside of the popover, set hidden state to false</p>\n",
           "itemtype": "method",
           "name": "_showContent",
           "return": {
-            "description": "undefined"
+            "description": "",
+            "type": "Undefined"
           },
           "class": "Component.RadPopover",
           "srcFileId": "addon_components_rad-popover.js"
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 112,
+          "line": 199,
+          "description": "<p>Remove mouseleave and touchend listeners from body. Used to DRY up our\ncleanup code in the supported mouseleave and touchend close liseners.</p>\n",
+          "itemtype": "method",
+          "name": "_unbindClickListener",
+          "access": "protected",
+          "tagname": "",
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 114,
           "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
           "itemtype": "property",
           "name": "aria-describedby",
@@ -4737,7 +4761,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 121,
+          "line": 123,
           "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
           "itemtype": "property",
           "name": "attributeBindings",
@@ -4747,7 +4771,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 128,
+          "line": 130,
           "itemtype": "property",
           "name": "classNameBindings",
           "type": "{Array}",
@@ -4757,7 +4781,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 134,
+          "line": 136,
           "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
           "itemtype": "property",
           "name": "classNames",
@@ -4767,7 +4791,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 92,
+          "line": 94,
           "itemtype": "property",
           "name": "contentComponent",
           "type": "{string}",
@@ -4779,7 +4803,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 178,
+          "line": 212,
           "description": "<p>Checks for a position prop value; if none was supplied, set a default\nof <code>bottom</code></p>\n",
           "itemtype": "event",
           "name": "didReceiveAttrs",
@@ -4792,7 +4816,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 207,
+          "line": 240,
           "description": "<p>Show content on focus</p>\n",
           "itemtype": "event",
           "name": "focusIn",
@@ -4801,7 +4825,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 214,
+          "line": 247,
           "description": "<p>Hide content on focusOut</p>\n",
           "itemtype": "event",
           "name": "focusOut",
@@ -4810,7 +4834,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 140,
+          "line": 142,
           "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
           "itemtype": "property",
           "name": "hidden",
@@ -4821,7 +4845,20 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 193,
+          "line": 273,
+          "description": "<p>Proxy action for the {{c-l '_hideContent'}} method.</p>\n",
+          "itemtype": "method",
+          "name": "hide",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 254,
           "description": "<p>Show content on mouse enter</p>\n",
           "itemtype": "event",
           "name": "mouseEnter",
@@ -4830,7 +4867,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 200,
+          "line": 261,
           "description": "<p>Hide content on mouse leave</p>\n",
           "itemtype": "event",
           "name": "mouseLeave",
@@ -4839,7 +4876,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 57,
+          "line": 59,
           "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
           "itemtype": "property",
           "name": "position",
@@ -4850,7 +4887,20 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 74,
+          "line": 281,
+          "description": "<p>Proxy action for the {{c-l '_showContent'}} method.</p>\n",
+          "itemtype": "method",
+          "name": "show",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 76,
           "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
           "itemtype": "property",
           "name": "size",
@@ -4861,7 +4911,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 148,
+          "line": 150,
           "description": "<p>Component element: div</p>\n",
           "itemtype": "property",
           "name": "tagName",
@@ -4871,13 +4921,22 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 100,
+          "line": 102,
           "itemtype": "property",
           "name": "targetComponent",
           "type": "{string}",
           "passed": "",
           "optional": 1,
           "default": "'rad-button'",
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 223,
+          "description": "<p>Safety first!\nIf we leave the page without closing the popover we don't want to orphan\nlisteners.</p>\n",
+          "itemtype": "method",
+          "name": "willDestroyElement",
           "class": "Component.RadPopover",
           "srcFileId": "addon_components_rad-popover.js"
         }
@@ -4887,32 +4946,91 @@
       "plugin_for": [],
       "extension_for": [],
       "file": "addon/components/rad-popover.js",
-      "line": 8,
+      "line": 10,
       "description": "<p>Popover tooltips to Make UI Great Again.™</p>\n<p>Use this component along with the subcomponent <code>rad-popover.content</code> to\ncreate popovers(super fancy tooltips). This component works by using mouse\nand focus events on <strong>this</strong> wrapping element.</p>\n<h4>Sample Usage:</h4>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>popover <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>components<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>target<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>Hover me<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>button<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#components<span class=\"token punctuation\">.</span>content position<span class=\"token operator\">=</span><span class=\"token string\">\"top\"</span> size<span class=\"token operator\">=</span><span class=\"token string\">\"small\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n    <span class=\"token operator\">&lt;</span>p<span class=\"token operator\">></span>Lorem ipsum dolor sit amet<span class=\"token punctuation\">,</span> consectetur adipisicing elit<span class=\"token punctuation\">,</span> sed <span class=\"token keyword\">do</span> eiusmod tempor incididunt ut labore et dolore magna aliqua<span class=\"token punctuation\">.</span><span class=\"token operator\">&lt;</span><span class=\"token operator\">/</span>p<span class=\"token operator\">></span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>components<span class=\"token punctuation\">.</span>content<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>popover<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<h4>Configuration Properties</h4>\n<p>A set of configuration properties can be passed into the child <code>\\{{rad-popover/content}}</code>\ncomponent to control how its appearance. Here is a brief overview:</p>\n<ul>\n<li><code>position</code>: Where the tooltip is positioned relative to anchor element:\n<ul>\n<li><code>top</code></li>\n<li><code>bottom</code></li>\n<li><code>left</code></li>\n<li><code>right</code></li>\n<li><code>bottom-left</code></li>\n<li><code>bottom-right</code></li>\n</ul>\n</li>\n<li><code>size</code>: Preset width of the tooltip:\n<ul>\n<li><code>small</code></li>\n<li><code>medium</code></li>\n<li><code>large</code></li>\n</ul>\n</li>\n</ul>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\">\nFor full documentation<span class=\"token punctuation\">,</span> see the <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>cross<span class=\"token operator\">-</span>link <span class=\"token keyword\">class</span><span class=\"token operator\">=</span><span class=\"token string\">\"Component.CorePopover\"</span> item<span class=\"token operator\">=</span><span class=\"token string\">\"position\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>position property<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>cross<span class=\"token operator\">-</span>link<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span> and the <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>cross<span class=\"token operator\">-</span>link <span class=\"token keyword\">class</span><span class=\"token operator\">=</span><span class=\"token string\">\"Component.CorePopover\"</span> item<span class=\"token operator\">=</span><span class=\"token string\">\"size\"</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>size property<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>cross<span class=\"token operator\">-</span>link<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">.</span>\n</code></pre>\n",
       "is_constructor": 1,
       "extends": "Ember.Component",
       "method": [
         {
           "file": "addon/components/rad-popover.js",
-          "line": 166,
-          "description": "<p>Handle showing tooltip content</p>\n",
+          "line": 171,
+          "description": "<p>When the popover is opened, bind an event listener that will close it if\nthe user touches anywhere other than the popover.</p>\n",
+          "itemtype": "method",
+          "name": "_bindPopoverListeners",
+          "access": "protected",
+          "tagname": "",
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 160,
+          "description": "<p>Handle hiding tooltip content; unbind touch event listeners, unbind escape\nkey listener, set hidden state to true.</p>\n",
           "itemtype": "method",
           "name": "_hideContent",
           "return": {
-            "description": "undefined"
+            "description": "",
+            "type": "Undefined"
           },
           "class": "Component.RadPopover",
           "srcFileId": "addon_components_rad-popover.js"
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 158,
-          "description": "<p>Handle showing tooltip content</p>\n",
+          "line": 188,
+          "description": "<p>Handle showing tooltip content; bind an event listener for mobile for\ntouch events that occur outside of the popover, set hidden state to false</p>\n",
           "itemtype": "method",
           "name": "_showContent",
           "return": {
-            "description": "undefined"
+            "description": "",
+            "type": "Undefined"
           },
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 199,
+          "description": "<p>Remove mouseleave and touchend listeners from body. Used to DRY up our\ncleanup code in the supported mouseleave and touchend close liseners.</p>\n",
+          "itemtype": "method",
+          "name": "_unbindClickListener",
+          "access": "protected",
+          "tagname": "",
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 273,
+          "description": "<p>Proxy action for the {{c-l '_hideContent'}} method.</p>\n",
+          "itemtype": "method",
+          "name": "hide",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 281,
+          "description": "<p>Proxy action for the {{c-l '_showContent'}} method.</p>\n",
+          "itemtype": "method",
+          "name": "show",
+          "return": {
+            "description": "",
+            "type": "Undefined"
+          },
+          "class": "Component.RadPopover",
+          "srcFileId": "addon_components_rad-popover.js"
+        },
+        {
+          "file": "addon/components/rad-popover.js",
+          "line": 223,
+          "description": "<p>Safety first!\nIf we leave the page without closing the popover we don't want to orphan\nlisteners.</p>\n",
+          "itemtype": "method",
+          "name": "willDestroyElement",
           "class": "Component.RadPopover",
           "srcFileId": "addon_components_rad-popover.js"
         }
@@ -4920,7 +5038,7 @@
       "property": [
         {
           "file": "addon/components/rad-popover.js",
-          "line": 112,
+          "line": 114,
           "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
           "itemtype": "property",
           "name": "aria-describedby",
@@ -4936,7 +5054,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 121,
+          "line": 123,
           "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
           "itemtype": "property",
           "name": "attributeBindings",
@@ -4946,7 +5064,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 128,
+          "line": 130,
           "itemtype": "property",
           "name": "classNameBindings",
           "type": "{Array}",
@@ -4956,7 +5074,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 134,
+          "line": 136,
           "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
           "itemtype": "property",
           "name": "classNames",
@@ -4966,7 +5084,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 92,
+          "line": 94,
           "itemtype": "property",
           "name": "contentComponent",
           "type": "{string}",
@@ -4978,7 +5096,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 140,
+          "line": 142,
           "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
           "itemtype": "property",
           "name": "hidden",
@@ -4989,7 +5107,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 57,
+          "line": 59,
           "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
           "itemtype": "property",
           "name": "position",
@@ -5000,7 +5118,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 74,
+          "line": 76,
           "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
           "itemtype": "property",
           "name": "size",
@@ -5011,7 +5129,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 148,
+          "line": 150,
           "description": "<p>Component element: div</p>\n",
           "itemtype": "property",
           "name": "tagName",
@@ -5021,7 +5139,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 100,
+          "line": 102,
           "itemtype": "property",
           "name": "targetComponent",
           "type": "{string}",
@@ -5035,7 +5153,7 @@
       "event": [
         {
           "file": "addon/components/rad-popover.js",
-          "line": 178,
+          "line": 212,
           "description": "<p>Checks for a position prop value; if none was supplied, set a default\nof <code>bottom</code></p>\n",
           "itemtype": "event",
           "name": "didReceiveAttrs",
@@ -5048,7 +5166,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 207,
+          "line": 240,
           "description": "<p>Show content on focus</p>\n",
           "itemtype": "event",
           "name": "focusIn",
@@ -5057,7 +5175,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 214,
+          "line": 247,
           "description": "<p>Hide content on focusOut</p>\n",
           "itemtype": "event",
           "name": "focusOut",
@@ -5066,7 +5184,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 193,
+          "line": 254,
           "description": "<p>Show content on mouse enter</p>\n",
           "itemtype": "event",
           "name": "mouseEnter",
@@ -5075,7 +5193,7 @@
         },
         {
           "file": "addon/components/rad-popover.js",
-          "line": 200,
+          "line": 261,
           "description": "<p>Hide content on mouse leave</p>\n",
           "itemtype": "event",
           "name": "mouseLeave",
@@ -6903,6 +7021,17 @@
       "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
+      "file": "addon/components/rad-popover.js",
+      "line": 171,
+      "description": "<p>When the popover is opened, bind an event listener that will close it if\nthe user touches anywhere other than the popover.</p>\n",
+      "itemtype": "method",
+      "name": "_bindPopoverListeners",
+      "access": "protected",
+      "tagname": "",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
       "file": "addon/components/rad-tabs.js",
       "line": 221,
       "description": "<p>Internal method that can be used with a <code>run.once</code> call to only add new tabs\nonce per run loop. Simply iterates through <code>_tabsToCreate</code> and pushes them\ninto the <code>tabList</code>. This is needed to prevent multiple renders in a single\nrun loop when all of the <code>content</code> subcomponents register themselves with\nthe container during init.</p>\n",
@@ -6976,6 +7105,19 @@
       "srcFileId": "addon_components_rad-tabs_content.js"
     },
     {
+      "file": "addon/components/rad-popover.js",
+      "line": 160,
+      "description": "<p>Handle hiding tooltip content; unbind touch event listeners, unbind escape\nkey listener, set hidden state to true.</p>\n",
+      "itemtype": "method",
+      "name": "_hideContent",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
       "file": "addon/components/rad-tooltip.js",
       "line": 155,
       "description": "<p>Handle showing tooltip content</p>\n",
@@ -6986,18 +7128,6 @@
       },
       "class": "Component.RadTooltip",
       "srcFileId": "addon_components_rad-tooltip.js"
-    },
-    {
-      "file": "addon/components/rad-popover.js",
-      "line": 166,
-      "description": "<p>Handle showing tooltip content</p>\n",
-      "itemtype": "method",
-      "name": "_hideContent",
-      "return": {
-        "description": "undefined"
-      },
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-modal.js",
@@ -7037,13 +7167,25 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 158,
-      "description": "<p>Handle showing tooltip content</p>\n",
+      "line": 188,
+      "description": "<p>Handle showing tooltip content; bind an event listener for mobile for\ntouch events that occur outside of the popover, set hidden state to false</p>\n",
       "itemtype": "method",
       "name": "_showContent",
       "return": {
-        "description": "undefined"
+        "description": "",
+        "type": "Undefined"
       },
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 199,
+      "description": "<p>Remove mouseleave and touchend listeners from body. Used to DRY up our\ncleanup code in the supported mouseleave and touchend close liseners.</p>\n",
+      "itemtype": "method",
+      "name": "_unbindClickListener",
+      "access": "protected",
+      "tagname": "",
       "class": "Component.RadPopover",
       "srcFileId": "addon_components_rad-popover.js"
     },
@@ -7052,7 +7194,7 @@
       "line": 230,
       "description": "<p>Remove click listener from body. Used to DRY up our cleanup code in the\nsupported click and mouse out close liseners.</p>\n",
       "itemtype": "method",
-      "name": "_unbindClickListener",
+      "name": "_unbindDropdownListeners",
       "access": "protected",
       "tagname": "",
       "class": "Component.RadDropdown",
@@ -7068,16 +7210,6 @@
       "default": "false",
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal.js"
-    },
-    {
-      "file": "addon/components/rad-alert.js",
-      "line": 141,
-      "description": "<p>Actions hash</p>\n",
-      "itemtype": "property",
-      "name": "actions",
-      "type": "{Object}",
-      "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
@@ -7108,6 +7240,16 @@
       "type": "{Object}",
       "class": "Component.RadState",
       "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-alert.js",
+      "line": 141,
+      "description": "<p>Actions hash</p>\n",
+      "itemtype": "property",
+      "name": "actions",
+      "type": "{Object}",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-state.js",
@@ -7155,6 +7297,43 @@
       "srcFileId": "addon_components_rad-modal.js"
     },
     {
+      "file": "addon/components/rad-tooltip/content.js",
+      "line": 21,
+      "description": "<p>Unique string generated by parent <code>rad-tooltip</code> Used for 508 attrs. Is\nbound to id here and <code>aria-describedby</code> on the tooltip title. Is bound\nto id in <code>init</code> call.</p>\n",
+      "itemtype": "property",
+      "name": "aria-describedby",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadTooltip.Content",
+      "srcFileId": "addon_components_rad-tooltip_content.js"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 114,
+      "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
+      "itemtype": "property",
+      "name": "aria-describedby",
+      "type": "{string}",
+      "class": "Component.RadPopover",
+      "subprops": [
+        {
+          "name": "elementId",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip/title.js",
+      "line": 35,
+      "description": "<p>Unique string generated by parent <code>rad-tooltip</code> Used for 508 attrs. Is\nbound to the <code>aria-describedby</code> attr.</p>\n",
+      "itemtype": "property",
+      "name": "aria-describedby",
+      "type": "{string}",
+      "class": "Component.RadTooltip.Title",
+      "srcFileId": "addon_components_rad-tooltip_title.js"
+    },
+    {
       "file": "addon/components/rad-tooltip.js",
       "line": 102,
       "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the tooltip\nhover target and the <code>id</code> of the actual tooltip content</p>\n",
@@ -7171,22 +7350,6 @@
       "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-popover.js",
-      "line": 112,
-      "description": "<p>Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the <code>aria-describedby</code> attr of the popover\nhover target and the <code>id</code> of the actual popover content</p>\n",
-      "itemtype": "property",
-      "name": "aria-describedby",
-      "type": "{string}",
-      "class": "Component.RadPopover",
-      "subprops": [
-        {
-          "name": "elementId",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-popover.js"
-    },
-    {
       "file": "addon/components/rad-popover/content.js",
       "line": 55,
       "description": "<p>Unique string generated by parent <code>rad-popover</code> Used for 508 attrs. Is\nbound to id here and <code>aria-describedby</code> on the popover title.</p>\n",
@@ -7195,27 +7358,6 @@
       "type": "{string}",
       "class": "Component.RadPopover.Content",
       "srcFileId": "addon_components_rad-popover_content.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip/content.js",
-      "line": 21,
-      "description": "<p>Unique string generated by parent <code>rad-tooltip</code> Used for 508 attrs. Is\nbound to id here and <code>aria-describedby</code> on the tooltip title. Is bound\nto id in <code>init</code> call.</p>\n",
-      "itemtype": "property",
-      "name": "aria-describedby",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadTooltip.Content",
-      "srcFileId": "addon_components_rad-tooltip_content.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip/title.js",
-      "line": 35,
-      "description": "<p>Unique string generated by parent <code>rad-tooltip</code> Used for 508 attrs. Is\nbound to the <code>aria-describedby</code> attr.</p>\n",
-      "itemtype": "property",
-      "name": "aria-describedby",
-      "type": "{string}",
-      "class": "Component.RadTooltip.Title",
-      "srcFileId": "addon_components_rad-tooltip_title.js"
     },
     {
       "file": "addon/components/rad-dropdown/target.js",
@@ -7287,34 +7429,24 @@
       "srcFileId": "addon_components_rad-alert.js"
     },
     {
-      "file": "addon/components/rad-tabs.js",
-      "line": 196,
+      "file": "addon/components/rad-card.js",
+      "line": 93,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadTabs",
-      "srcFileId": "addon_components_rad-tabs.js"
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-svg.js",
-      "line": 36,
-      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "file": "addon/components/rad-popover.js",
+      "line": 123,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg.js"
-    },
-    {
-      "file": "addon/components/rad-card/title.js",
-      "line": 24,
-      "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadCard.Title",
-      "srcFileId": "addon_components_rad-card_title.js"
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
@@ -7327,14 +7459,14 @@
       "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
-      "file": "addon/components/rad-dropdown/target.js",
-      "line": 33,
-      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability</p>\n",
+      "file": "addon/components/rad-drawer/target.js",
+      "line": 44,
+      "description": "<p>Bind <code>aria-expanded</code> and <code>aria-controls</code> to the root element;\nBind modified <code>dataTest</code> to <code>data-test</code> attr</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadDropdown.Target",
-      "srcFileId": "addon_components_rad-dropdown_target.js"
+      "class": "Component.RadDrawer.Target",
+      "srcFileId": "addon_components_rad-drawer_target.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
@@ -7345,16 +7477,6 @@
       "type": "{Array}",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
-      "file": "addon/components/rad-drawer.js",
-      "line": 176,
-      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadDrawer",
-      "srcFileId": "addon_components_rad-drawer.js"
     },
     {
       "file": "addon/components/rad-card/footer.js",
@@ -7377,34 +7499,24 @@
       "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-drawer/target.js",
-      "line": 44,
-      "description": "<p>Bind <code>aria-expanded</code> and <code>aria-controls</code> to the root element;\nBind modified <code>dataTest</code> to <code>data-test</code> attr</p>\n",
+      "file": "addon/components/rad-tabs/content.js",
+      "line": 89,
+      "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n<li><code>_hidden</code>: to hide this tab if it is not selected or if prop hidden is true</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadDrawer.Target",
-      "srcFileId": "addon_components_rad-drawer_target.js"
+      "class": "Component.RadTabs.Content",
+      "srcFileId": "addon_components_rad-tabs_content.js"
     },
     {
-      "file": "addon/components/rad-card.js",
-      "line": 93,
+      "file": "addon/components/rad-tabs.js",
+      "line": 196,
       "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card.js"
-    },
-    {
-      "file": "addon/components/rad-popover.js",
-      "line": 121,
-      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
-      "itemtype": "property",
-      "name": "attributeBindings",
-      "type": "{Array}",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
+      "class": "Component.RadTabs",
+      "srcFileId": "addon_components_rad-tabs.js"
     },
     {
       "file": "addon/components/rad-popover/content.js",
@@ -7415,6 +7527,16 @@
       "type": "{Array}",
       "class": "Component.RadPopover.Content",
       "srcFileId": "addon_components_rad-popover_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target.js",
+      "line": 33,
+      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target.js"
     },
     {
       "file": "addon/components/rad-drawer/content.js",
@@ -7437,14 +7559,34 @@
       "srcFileId": "addon_components_rad-card_body.js"
     },
     {
-      "file": "addon/components/rad-tabs/content.js",
-      "line": 89,
-      "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n<li><code>_hidden</code>: to hide this tab if it is not selected or if prop hidden is true</li>\n</ul>\n",
+      "file": "addon/components/rad-drawer.js",
+      "line": 176,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
-      "class": "Component.RadTabs.Content",
-      "srcFileId": "addon_components_rad-tabs_content.js"
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
+    },
+    {
+      "file": "addon/components/rad-svg.js",
+      "line": 36,
+      "description": "<p>Allow direct binding of <code>data-test</code> attributes so that icons can be\ndirectly targeted in automated testing.</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg.js"
+    },
+    {
+      "file": "addon/components/rad-card/title.js",
+      "line": 24,
+      "description": "<p>Bound attributes:</p>\n<ul>\n<li><code>data-test</code>: for precise testing identification</li>\n</ul>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadCard.Title",
+      "srcFileId": "addon_components_rad-card_title.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
@@ -7483,28 +7625,17 @@
       "srcFileId": "addon_components_rad-card.js"
     },
     {
-      "file": "addon/components/rad-modal/header.js",
+      "file": "addon/components/rad-alert.js",
       "line": 45,
-      "description": "<p>If you want that header to have some pop</p>\n",
+      "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
       "itemtype": "property",
       "name": "brand",
-      "type": "{?string}",
-      "passed": "",
-      "optional": 1,
-      "default": "null",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header.js"
-    },
-    {
-      "file": "addon/components/rad-card.js",
-      "line": 30,
-      "description": "<p>Pass a brand to use to style the component and it's child components.</p>\n",
-      "itemtype": "property",
-      "name": "brand",
-      "type": "{string}",
       "default": "''",
-      "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card.js"
+      "type": "{string}",
+      "access": "public",
+      "tagname": "",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
@@ -7529,6 +7660,30 @@
       "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
+      "file": "addon/components/rad-card.js",
+      "line": 30,
+      "description": "<p>Pass a brand to use to style the component and it's child components.</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 45,
+      "description": "<p>If you want that header to have some pop</p>\n",
+      "itemtype": "property",
+      "name": "brand",
+      "type": "{?string}",
+      "passed": "",
+      "optional": 1,
+      "default": "null",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header.js"
+    },
+    {
       "file": "addon/components/rad-button.js",
       "line": 56,
       "description": "<p>Pass a brand to have <code>btn-${brand}</code> class applied</p>\n",
@@ -7541,52 +7696,6 @@
       "default": "null",
       "class": "Component.RadButton",
       "srcFileId": "addon_components_rad-button.js"
-    },
-    {
-      "file": "addon/components/rad-alert.js",
-      "line": 45,
-      "description": "<p>Specify brand, component handles assigning correct css class</p>\n",
-      "itemtype": "property",
-      "name": "brand",
-      "default": "''",
-      "type": "{string}",
-      "access": "public",
-      "tagname": "",
-      "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert.js"
-    },
-    {
-      "file": "addon/components/rad-button.js",
-      "line": 154,
-      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
-      "itemtype": "property",
-      "name": "brandClass",
-      "type": "{string}",
-      "class": "Component.RadButton",
-      "subprops": [
-        {
-          "name": "'brand'",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-button.js"
-    },
-    {
-      "file": "addon/components/rad-modal/header.js",
-      "line": 100,
-      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
-      "itemtype": "property",
-      "name": "brandClass",
-      "type": "{string}",
-      "class": "Component.RadModal.Header",
-      "subprops": [
-        {
-          "name": "brand",
-          "description": "",
-          "type": "String"
-        }
-      ],
-      "srcFileId": "addon_components_rad-modal_header.js"
     },
     {
       "file": "addon/components/rad-alert.js",
@@ -7607,6 +7716,22 @@
       "srcFileId": "addon_components_rad-alert.js"
     },
     {
+      "file": "addon/components/rad-button.js",
+      "line": 154,
+      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{string}",
+      "class": "Component.RadButton",
+      "subprops": [
+        {
+          "name": "'brand'",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-button.js"
+    },
+    {
       "file": "addon/components/rad-card.js",
       "line": 100,
       "description": "<p>Computed css class for the brand bound to the component.</p>\n",
@@ -7615,6 +7740,44 @@
       "type": "{String}",
       "class": "Component.RadCard",
       "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 100,
+      "description": "<p>Computed css class bound to component. Handled by component to allow for\nflexibility in future updates to branding class names</p>\n",
+      "itemtype": "property",
+      "name": "brandClass",
+      "type": "{string}",
+      "class": "Component.RadModal.Header",
+      "subprops": [
+        {
+          "name": "brand",
+          "description": "",
+          "type": "String"
+        }
+      ],
+      "srcFileId": "addon_components_rad-modal_header.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/target.js",
+      "line": 18,
+      "description": "<p>Display the target content as a button instead of a plain link. Passed in\nfrom the parent <code>rad-drawer</code> and ultimately updates the <code>link</code>\nproperty on <code>rad-button</code>.</p>\n",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "class": "Component.RadDrawer.Target",
+      "srcFileId": "addon_components_rad-drawer_target.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 93,
+      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
+      "itemtype": "property",
+      "name": "buttonStyle",
+      "type": "{Boolean}",
+      "passed": "",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-tooltip.js",
@@ -7650,27 +7813,6 @@
       "default": "true",
       "class": "Component.RadTabs",
       "srcFileId": "addon_components_rad-tabs.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 93,
-      "description": "<p>Whether or not to style the target as a link or a button</p>\n",
-      "itemtype": "property",
-      "name": "buttonStyle",
-      "type": "{Boolean}",
-      "passed": "",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
-      "file": "addon/components/rad-drawer/target.js",
-      "line": 18,
-      "description": "<p>Display the target content as a button instead of a plain link. Passed in\nfrom the parent <code>rad-drawer</code> and ultimately updates the <code>link</code>\nproperty on <code>rad-button</code>.</p>\n",
-      "itemtype": "property",
-      "name": "buttonStyle",
-      "type": "{Boolean}",
-      "class": "Component.RadDrawer.Target",
-      "srcFileId": "addon_components_rad-drawer_target.js"
     },
     {
       "file": "addon/components/rad-tabs.js",
@@ -7793,24 +7935,14 @@
       "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-alert.js",
-      "line": 112,
+      "file": "addon/components/rad-tooltip.js",
+      "line": 111,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
-      "default": "['brandClass']",
-      "class": "Component.RadAlert",
-      "srcFileId": "addon_components_rad-alert.js"
-    },
-    {
-      "file": "addon/components/rad-card.js",
-      "line": 114,
-      "description": "<p>Bind props to classes on the root component element.</p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card.js"
+      "default": "['hidden::active']",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
       "file": "addon/components/rad-card/footer.js",
@@ -7823,14 +7955,14 @@
       "srcFileId": "addon_components_rad-card_footer.js"
     },
     {
-      "file": "addon/components/rad-drawer.js",
-      "line": 153,
+      "file": "addon/components/rad-dropdown.js",
+      "line": 197,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
       "default": "['hidden::active']",
-      "class": "Component.RadDrawer",
-      "srcFileId": "addon_components_rad-drawer.js"
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-card/title.js",
@@ -7843,14 +7975,14 @@
       "srcFileId": "addon_components_rad-card_title.js"
     },
     {
-      "file": "addon/components/rad-modal/header.js",
-      "line": 110,
+      "file": "addon/components/rad-alert.js",
+      "line": 112,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
-      "default": "['brandClass', 'brandClass:branded']",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header.js"
+      "default": "['brandClass']",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
     },
     {
       "file": "addon/components/rad-popover/content.js",
@@ -7863,14 +7995,14 @@
       "srcFileId": "addon_components_rad-popover_content.js"
     },
     {
-      "file": "addon/components/rad-tooltip.js",
-      "line": 111,
+      "file": "addon/components/rad-popover.js",
+      "line": 130,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
       "default": "['hidden::active']",
-      "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip.js"
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-svg.js",
@@ -7883,16 +8015,6 @@
       "srcFileId": "addon_components_rad-svg.js"
     },
     {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 197,
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "default": "['hidden::active']",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
       "file": "addon/components/rad-modal.js",
       "line": 266,
       "itemtype": "property",
@@ -7901,16 +8023,6 @@
       "default": "['_active:active']",
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/content.js",
-      "line": 71,
-      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true. Also\nbinds the positional class to the container</p>\n",
-      "itemtype": "property",
-      "name": "classNameBindings",
-      "type": "{Array}",
-      "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
       "file": "addon/components/rad-card/body.js",
@@ -7923,34 +8035,54 @@
       "srcFileId": "addon_components_rad-card_body.js"
     },
     {
-      "file": "addon/components/rad-popover.js",
-      "line": 128,
+      "file": "addon/components/rad-modal/header.js",
+      "line": 110,
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "default": "['brandClass', 'brandClass:branded']",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header.js"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 153,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
       "default": "['hidden::active']",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
     },
     {
-      "file": "addon/components/rad-tabs/content.js",
-      "line": 97,
-      "description": "<p>Class names: <code>tabs-content</code></p>\n",
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 71,
+      "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true. Also\nbinds the positional class to the container</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 114,
+      "description": "<p>Bind props to classes on the root component element.</p>\n",
+      "itemtype": "property",
+      "name": "classNameBindings",
+      "type": "{Array}",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-drawer/content.js",
+      "line": 34,
+      "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadTabs.Content",
-      "srcFileId": "addon_components_rad-tabs_content.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip/title.js",
-      "line": 58,
-      "description": "<p>Handle binding standard core class name <code>tooltip-title</code> and <code>basic-b</code>\nbound for display purposes</p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadTooltip.Title",
-      "srcFileId": "addon_components_rad-tooltip_title.js"
+      "class": "Component.RadDrawer.Content",
+      "srcFileId": "addon_components_rad-drawer_content.js"
     },
     {
       "file": "addon/components/rad-button.js",
@@ -7963,64 +8095,14 @@
       "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-popover.js",
-      "line": 134,
-      "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
+      "file": "addon/components/rad-dropdown.js",
+      "line": 203,
+      "description": "<p>Bind <code>rad-dropdown</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 14,
-      "description": "<p>Binds <code>dropdown-item</code> class</p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadDropdown.MenuItem",
-      "srcFileId": "addon_components_rad-dropdown_menu-item.js"
-    },
-    {
-      "file": "addon/components/rad-drawer.js",
-      "line": 159,
-      "description": "<p>Bind <code>rad-drawer</code> to component</p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadDrawer",
-      "srcFileId": "addon_components_rad-drawer.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/target.js",
-      "line": 39,
-      "description": "<p>Bind <code>dropdown-target</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadDropdown.Target",
-      "srcFileId": "addon_components_rad-dropdown_target.js"
-    },
-    {
-      "file": "addon/components/rad-modal/footer.js",
-      "line": 14,
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "default": "['modal-footer']",
-      "class": "Component.RadModal.Footer",
-      "srcFileId": "addon_components_rad-modal_footer.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/content.js",
-      "line": 65,
-      "description": "<p>Bind <code>dropdown-content</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content.js"
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-tooltip.js",
@@ -8034,14 +8116,14 @@
       "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-svg.js",
-      "line": 44,
-      "description": "<p>Class names: <code>rad-svg</code></p>\n",
+      "file": "addon/components/rad-modal/header.js",
+      "line": 116,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg.js"
+      "default": "['modal-header']",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header.js"
     },
     {
       "file": "addon/components/rad-drawer/target.js",
@@ -8054,34 +8136,24 @@
       "srcFileId": "addon_components_rad-drawer_target.js"
     },
     {
-      "file": "addon/components/rad-drawer/content.js",
-      "line": 34,
-      "description": "<p>Bind <code>dropdown-content</code></p>\n",
+      "file": "addon/components/rad-drawer.js",
+      "line": 159,
+      "description": "<p>Bind <code>rad-drawer</code> to component</p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadDrawer.Content",
-      "srcFileId": "addon_components_rad-drawer_content.js"
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
     },
     {
-      "file": "addon/components/rad-popover/content.js",
-      "line": 87,
-      "description": "<p>Bind wrapping classname <code>popover-content</code></p>\n",
+      "file": "addon/components/rad-tabs/content.js",
+      "line": 97,
+      "description": "<p>Class names: <code>tabs-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content.js"
-    },
-    {
-      "file": "addon/components/rad-modal/header.js",
-      "line": 116,
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "default": "['modal-header']",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header.js"
+      "class": "Component.RadTabs.Content",
+      "srcFileId": "addon_components_rad-tabs_content.js"
     },
     {
       "file": "addon/components/rad-alert.js",
@@ -8094,24 +8166,14 @@
       "srcFileId": "addon_components_rad-alert.js"
     },
     {
-      "file": "addon/components/rad-tabs.js",
-      "line": 203,
-      "description": "<p>Class names: <code>rad-tabs</code></p>\n",
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 14,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadTabs",
-      "srcFileId": "addon_components_rad-tabs.js"
-    },
-    {
-      "file": "addon/components/rad-card.js",
-      "line": 108,
-      "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
-      "itemtype": "property",
-      "name": "classNames",
-      "type": "{Array}",
-      "class": "Component.RadCard",
-      "srcFileId": "addon_components_rad-card.js"
+      "default": "['modal-footer']",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
@@ -8124,26 +8186,94 @@
       "srcFileId": "addon_components_rad-tooltip_content.js"
     },
     {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 203,
-      "description": "<p>Bind <code>rad-dropdown</code></p>\n",
+      "file": "addon/components/rad-tooltip/title.js",
+      "line": 58,
+      "description": "<p>Handle binding standard core class name <code>tooltip-title</code> and <code>basic-b</code>\nbound for display purposes</p>\n",
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown.js"
+      "class": "Component.RadTooltip.Title",
+      "srcFileId": "addon_components_rad-tooltip_title.js"
     },
     {
-      "file": "addon/components/rad-button.js",
-      "line": 144,
-      "description": "<p>Behavior to execute when clicking the button; pass any closure action in and Ember's built-in click event listener will execute it for you.</p>\n",
+      "file": "addon/components/rad-svg.js",
+      "line": 44,
+      "description": "<p>Class names: <code>rad-svg</code></p>\n",
       "itemtype": "property",
-      "name": "click",
-      "access": "public",
-      "tagname": "",
-      "passed": "",
-      "class": "Component.RadButton",
-      "srcFileId": "addon_components_rad-button.js"
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg.js"
+    },
+    {
+      "file": "addon/components/rad-tabs.js",
+      "line": 203,
+      "description": "<p>Class names: <code>rad-tabs</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadTabs",
+      "srcFileId": "addon_components_rad-tabs.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 65,
+      "description": "<p>Bind <code>dropdown-content</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 136,
+      "description": "<p>Bind standard core class: <code>rad-popover</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/target.js",
+      "line": 39,
+      "description": "<p>Bind <code>dropdown-target</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.Target",
+      "srcFileId": "addon_components_rad-dropdown_target.js"
+    },
+    {
+      "file": "addon/components/rad-card.js",
+      "line": 108,
+      "description": "<p>Bind standard core class: <code>card-footer</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadCard",
+      "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-popover/content.js",
+      "line": 87,
+      "description": "<p>Bind wrapping classname <code>popover-content</code></p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 14,
+      "description": "<p>Binds <code>dropdown-item</code> class</p>\n",
+      "itemtype": "property",
+      "name": "classNames",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.MenuItem",
+      "srcFileId": "addon_components_rad-dropdown_menu-item.js"
     },
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
@@ -8159,17 +8289,16 @@
       "srcFileId": "addon_components_rad-dropdown_menu-item.js"
     },
     {
-      "file": "addon/components/rad-modal/header.js",
-      "line": 54,
-      "description": "<p>Controls display of the modal header close button. Is defaulted to true and\ncan be set to false in order to suppress the header close button.</p>\n",
+      "file": "addon/components/rad-button.js",
+      "line": 144,
+      "description": "<p>Behavior to execute when clicking the button; pass any closure action in and Ember's built-in click event listener will execute it for you.</p>\n",
       "itemtype": "property",
-      "name": "closeButton",
-      "type": "{!Boolean}",
+      "name": "click",
+      "access": "public",
+      "tagname": "",
       "passed": "",
-      "optional": 1,
-      "default": "true",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header.js"
+      "class": "Component.RadButton",
+      "srcFileId": "addon_components_rad-button.js"
     },
     {
       "file": "addon/components/rad-modal.js",
@@ -8183,6 +8312,19 @@
       "default": "true",
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 54,
+      "description": "<p>Controls display of the modal header close button. Is defaulted to true and\ncan be set to false in order to suppress the header close button.</p>\n",
+      "itemtype": "property",
+      "name": "closeButton",
+      "type": "{!Boolean}",
+      "passed": "",
+      "optional": 1,
+      "default": "true",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header.js"
     },
     {
       "file": "addon/components/rad-modal/header.js",
@@ -8211,15 +8353,6 @@
       "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-state.js",
-      "line": 73,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
-      "itemtype": "method",
-      "name": "closeModal",
-      "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state.js"
-    },
-    {
       "file": "addon/components/rad-modal/header.js",
       "line": 88,
       "description": "<p>Closure action bound to header close button.</p>\n",
@@ -8244,6 +8377,15 @@
       "closure": "",
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 73,
+      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
+      "itemtype": "method",
+      "name": "closeModal",
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/utils/listeners.js",
@@ -8271,15 +8413,16 @@
       "srcFileId": "addon_utils_listeners.js"
     },
     {
-      "file": "addon/components/rad-drawer.js",
-      "line": 134,
+      "file": "addon/components/rad-popover.js",
+      "line": 94,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",
       "passed": "",
       "optional": 1,
-      "default": "'rad-drawer/content'",
-      "class": "Component.RadDrawer"
+      "default": "'rad-popover/content'",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-tooltip.js",
@@ -8318,20 +8461,19 @@
       "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
-      "file": "addon/components/rad-popover.js",
-      "line": 92,
+      "file": "addon/components/rad-drawer.js",
+      "line": 126,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",
       "passed": "",
       "optional": 1,
-      "default": "'rad-popover/content'",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
+      "default": "'rad-drawer/content'",
+      "class": "Component.RadDrawer"
     },
     {
       "file": "addon/components/rad-drawer.js",
-      "line": 126,
+      "line": 134,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",
@@ -8393,34 +8535,8 @@
       "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-modal.js",
-      "line": 408,
-      "description": "<p>Whenever this component receives attrs check if the <code>open</code> prop matches the\ntemplate status. If not, call the handlers for open/close</p>\n",
-      "itemtype": "event",
-      "name": "didReceiveAttrs",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal.js"
-    },
-    {
-      "file": "addon/components/rad-drawer.js",
-      "line": 187,
-      "description": "<p>The component's <code>didReceiveAttrs</code> hook. Allows udpates from external state\nto adjust the <code>hidden</code> state of a <code>rad-drawer</code> instance.</p>\n",
-      "itemtype": "event",
-      "name": "didReceiveAttrs",
-      "return": {
-        "description": "",
-        "type": "Undefined"
-      },
-      "class": "Component.RadDrawer",
-      "srcFileId": "addon_components_rad-drawer.js"
-    },
-    {
       "file": "addon/components/rad-popover.js",
-      "line": 178,
+      "line": 212,
       "description": "<p>Checks for a position prop value; if none was supplied, set a default\nof <code>bottom</code></p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -8443,6 +8559,32 @@
       },
       "class": "Component.RadDropdown.MenuItem",
       "srcFileId": "addon_components_rad-dropdown_menu-item.js"
+    },
+    {
+      "file": "addon/components/rad-drawer.js",
+      "line": 187,
+      "description": "<p>The component's <code>didReceiveAttrs</code> hook. Allows udpates from external state\nto adjust the <code>hidden</code> state of a <code>rad-drawer</code> instance.</p>\n",
+      "itemtype": "event",
+      "name": "didReceiveAttrs",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDrawer",
+      "srcFileId": "addon_components_rad-drawer.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
+      "line": 408,
+      "description": "<p>Whenever this component receives attrs check if the <code>open</code> prop matches the\ntemplate status. If not, call the handlers for open/close</p>\n",
+      "itemtype": "event",
+      "name": "didReceiveAttrs",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
@@ -8528,6 +8670,22 @@
       "srcFileId": "addon_components_rad-modal_header.js"
     },
     {
+      "file": "addon/components/rad-drawer/target.js",
+      "line": 33,
+      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
+      "itemtype": "property",
+      "name": "expanded",
+      "type": "{string}",
+      "class": "Component.RadDrawer.Target",
+      "subprops": [
+        {
+          "name": "hidden",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-drawer_target.js"
+    },
+    {
       "file": "addon/utils/arias.js",
       "line": 28,
       "description": "<p>Method for use with binding aria-expanded. Returns string of negated boolean\nfor hidden.</p>\n",
@@ -8556,22 +8714,6 @@
         }
       ],
       "srcFileId": "addon_components_rad-dropdown_target.js"
-    },
-    {
-      "file": "addon/components/rad-drawer/target.js",
-      "line": 33,
-      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
-      "itemtype": "property",
-      "name": "expanded",
-      "type": "{string}",
-      "class": "Component.RadDrawer.Target",
-      "subprops": [
-        {
-          "name": "hidden",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-drawer_target.js"
     },
     {
       "file": "addon/components/rad-drawer.js",
@@ -8645,7 +8787,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 207,
+      "line": 240,
       "description": "<p>Show content on focus</p>\n",
       "itemtype": "event",
       "name": "focusIn",
@@ -8663,24 +8805,12 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 214,
+      "line": 247,
       "description": "<p>Hide content on focusOut</p>\n",
       "itemtype": "event",
       "name": "focusOut",
       "class": "Component.RadPopover",
       "srcFileId": "addon_components_rad-popover.js"
-    },
-    {
-      "file": "addon/components/rad-modal.js",
-      "line": 247,
-      "itemtype": "property",
-      "name": "footerComponent",
-      "type": "{string}",
-      "passed": "",
-      "optional": 1,
-      "default": "'rad-modal/footer'",
-      "class": "Component.RadModal",
-      "srcFileId": "addon_components_rad-modal.js"
     },
     {
       "file": "addon/components/rad-card.js",
@@ -8696,6 +8826,18 @@
     },
     {
       "file": "addon/components/rad-modal.js",
+      "line": 247,
+      "itemtype": "property",
+      "name": "footerComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-modal/footer'",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
       "line": 255,
       "itemtype": "property",
       "name": "headerComponent",
@@ -8705,6 +8847,17 @@
       "default": "'rad-modal/header'",
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 179,
+      "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
+      "itemtype": "property",
+      "name": "hidden",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-tabs/content.js",
@@ -8731,17 +8884,6 @@
       "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
-      "file": "addon/components/rad-tooltip/content.js",
-      "line": 30,
-      "description": "<p>Display status of the tooltip. Is bound to the properties <code>aria-hidden</code> for\nbetter usability and to handle css of show/hide. Is also bound to html5\n<code>hidden</code> attribute.</p>\n",
-      "itemtype": "property",
-      "name": "hidden",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadTooltip.Content",
-      "srcFileId": "addon_components_rad-tooltip_content.js"
-    },
-    {
       "file": "addon/components/rad-drawer.js",
       "line": 165,
       "description": "<p>State boolean for display of the drawer content. Is toggled true/false to\nhandle show/hide. Updated in <code>toggleHidden</code></p>\n",
@@ -8753,15 +8895,15 @@
       "srcFileId": "addon_components_rad-drawer.js"
     },
     {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 179,
-      "description": "<p>State boolean for display of the dropdown content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
+      "file": "addon/components/rad-popover.js",
+      "line": 142,
+      "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
       "itemtype": "property",
       "name": "hidden",
       "type": "{Boolean}",
       "default": "true",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown.js"
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-popover/content.js",
@@ -8775,15 +8917,15 @@
       "srcFileId": "addon_components_rad-popover_content.js"
     },
     {
-      "file": "addon/components/rad-popover.js",
-      "line": 140,
-      "description": "<p>State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in <code>_showContent</code> and <code>_hideContent</code></p>\n",
+      "file": "addon/components/rad-tooltip/content.js",
+      "line": 30,
+      "description": "<p>Display status of the tooltip. Is bound to the properties <code>aria-hidden</code> for\nbetter usability and to handle css of show/hide. Is also bound to html5\n<code>hidden</code> attribute.</p>\n",
       "itemtype": "property",
       "name": "hidden",
       "type": "{Boolean}",
       "default": "true",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
+      "class": "Component.RadTooltip.Content",
+      "srcFileId": "addon_components_rad-tooltip_content.js"
     },
     {
       "file": "addon/components/rad-popover/content.js",
@@ -8801,6 +8943,22 @@
         }
       ],
       "srcFileId": "addon_components_rad-popover_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 46,
+      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
+      "itemtype": "property",
+      "name": "hiddenForArias",
+      "type": "{string}",
+      "class": "Component.RadDropdown.Content",
+      "subprops": [
+        {
+          "name": "hidden",
+          "description": ""
+        }
+      ],
+      "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
       "file": "addon/utils/arias.js",
@@ -8833,30 +8991,17 @@
       "srcFileId": "addon_components_rad-drawer_content.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content.js",
-      "line": 46,
-      "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
-      "itemtype": "property",
-      "name": "hiddenForArias",
-      "type": "{string}",
-      "class": "Component.RadDropdown.Content",
-      "subprops": [
-        {
-          "name": "hidden",
-          "description": ""
-        }
-      ],
-      "srcFileId": "addon_components_rad-dropdown_content.js"
-    },
-    {
-      "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 28,
-      "description": "<p>Closure action that hides the dropdown</p>\n",
-      "itemtype": "property",
+      "file": "addon/components/rad-popover.js",
+      "line": 273,
+      "description": "<p>Proxy action for the {{c-l '_hideContent'}} method.</p>\n",
+      "itemtype": "method",
       "name": "hide",
-      "closure": "",
-      "class": "Component.RadDropdown.MenuItem",
-      "srcFileId": "addon_components_rad-dropdown_menu-item.js"
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-dropdown.js",
@@ -8872,6 +9017,16 @@
       "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 28,
+      "description": "<p>Closure action that hides the dropdown</p>\n",
+      "itemtype": "property",
+      "name": "hide",
+      "closure": "",
+      "class": "Component.RadDropdown.MenuItem",
+      "srcFileId": "addon_components_rad-dropdown_menu-item.js"
+    },
+    {
       "file": "addon/components/rad-drawer.js",
       "line": 113,
       "description": "<p>If you want to use a different SVG icon from the default on your <code>target</code>,\nspecify it by name/id here. If you don't want to display an icon\nat all, pass <code>false</code> into this property</p>\n",
@@ -8881,6 +9036,15 @@
       "default": "'arrow-down'",
       "class": "Component.RadDrawer",
       "srcFileId": "addon_components_rad-drawer.js"
+    },
+    {
+      "file": "addon/components/rad-tabs/content.js",
+      "line": 123,
+      "description": "<p>Handle registering with the tabs container on int by firing <code>registerTab</code>\nclosure action with this tab's data.</p>\n",
+      "itemtype": "event",
+      "name": "init",
+      "class": "Component.RadTabs.Content",
+      "srcFileId": "addon_components_rad-tabs_content.js"
     },
     {
       "file": "addon/components/rad-tabs.js",
@@ -8894,15 +9058,6 @@
       },
       "class": "Component.RadTabs",
       "srcFileId": "addon_components_rad-tabs.js"
-    },
-    {
-      "file": "addon/components/rad-tabs/content.js",
-      "line": 123,
-      "description": "<p>Handle registering with the tabs container on int by firing <code>registerTab</code>\nclosure action with this tab's data.</p>\n",
-      "itemtype": "event",
-      "name": "init",
-      "class": "Component.RadTabs.Content",
-      "srcFileId": "addon_components_rad-tabs_content.js"
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
@@ -8987,17 +9142,6 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 152,
-      "itemtype": "property",
-      "name": "menuItemComponent",
-      "type": "{string}",
-      "passed": "",
-      "optional": 1,
-      "default": "'rad-dropdown/menu-item'",
-      "class": "Component.RadDropdown"
-    },
-    {
-      "file": "addon/components/rad-dropdown.js",
       "line": 160,
       "itemtype": "property",
       "name": "menuItemComponent",
@@ -9005,6 +9149,17 @@
       "passed": "",
       "optional": 1,
       "default": "'rad-dropdown/target'",
+      "class": "Component.RadDropdown"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 152,
+      "itemtype": "property",
+      "name": "menuItemComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-dropdown/menu-item'",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
     },
@@ -9022,15 +9177,6 @@
       "srcFileId": "addon_components_rad-button.js"
     },
     {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 261,
-      "description": "<p>Check for an auto-close timer when user mouses into dropdown and cancel it\nif it exists.</p>\n",
-      "itemtype": "event",
-      "name": "mouseEnter",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown.js"
-    },
-    {
       "file": "addon/components/rad-tooltip.js",
       "line": 167,
       "description": "<p>Show content on mouse enter</p>\n",
@@ -9038,6 +9184,24 @@
       "name": "mouseEnter",
       "class": "Component.RadTooltip",
       "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 254,
+      "description": "<p>Show content on mouse enter</p>\n",
+      "itemtype": "event",
+      "name": "mouseEnter",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 261,
+      "description": "<p>Check for an auto-close timer when user mouses into dropdown and cancel it\nif it exists.</p>\n",
+      "itemtype": "event",
+      "name": "mouseEnter",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
     },
     {
       "file": "addon/components/rad-button.js",
@@ -9051,24 +9215,6 @@
       },
       "class": "Component.RadButton",
       "srcFileId": "addon_components_rad-button.js"
-    },
-    {
-      "file": "addon/components/rad-popover.js",
-      "line": 193,
-      "description": "<p>Show content on mouse enter</p>\n",
-      "itemtype": "event",
-      "name": "mouseEnter",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
-    },
-    {
-      "file": "addon/components/rad-popover.js",
-      "line": 200,
-      "description": "<p>Hide content on mouse leave</p>\n",
-      "itemtype": "event",
-      "name": "mouseLeave",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-tooltip.js",
@@ -9087,6 +9233,15 @@
       "name": "mouseLeave",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 261,
+      "description": "<p>Hide content on mouse leave</p>\n",
+      "itemtype": "event",
+      "name": "mouseLeave",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-tabs.js",
@@ -9186,17 +9341,6 @@
       "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-popover/content.js",
-      "line": 24,
-      "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
-      "itemtype": "property",
-      "name": "position",
-      "type": "{string}",
-      "default": "''",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content.js"
-    },
-    {
       "file": "addon/components/rad-dropdown.js",
       "line": 124,
       "description": "<p>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.\nValid options are:</p>\n<ul>\n<li><code>'left'</code></li>\n<li><code>'top'</code></li>\n<li><code>'right'</code></li>\n<li><code>'top right'</code></li>\n</ul>\n<p>Defaults to <code>'left'</code> if no value is supplied.</p>\n",
@@ -9210,7 +9354,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 57,
+      "line": 59,
       "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
       "itemtype": "property",
       "name": "position",
@@ -9218,6 +9362,17 @@
       "default": "''",
       "class": "Component.RadPopover",
       "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
+      "file": "addon/components/rad-popover/content.js",
+      "line": 24,
+      "description": "<p>The position that the tooltip is created in relative to its anchor element.\nValid options are:</p>\n<ul>\n<li><code>'top'</code></li>\n<li><code>'bottom'</code></li>\n<li><code>'left'</code></li>\n<li><code>'right'</code></li>\n<li><code>'bottom-left'</code></li>\n<li><code>'bottom-right'</code></li>\n</ul>\n<p>Defaults to <code>'bottom'</code> if no value is supplied.</p>\n",
+      "itemtype": "property",
+      "name": "position",
+      "type": "{string}",
+      "default": "''",
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content.js"
     },
     {
       "file": "addon/services/tagging.js",
@@ -9295,6 +9450,19 @@
       "srcFileId": "addon_components_rad-tabs.js"
     },
     {
+      "file": "addon/components/rad-popover.js",
+      "line": 281,
+      "description": "<p>Proxy action for the {{c-l '_showContent'}} method.</p>\n",
+      "itemtype": "method",
+      "name": "show",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
       "file": "addon/components/rad-dropdown.js",
       "line": 298,
       "description": "<p>Handle the showing of the dropdown. This will pass on any arguments you\npass to it in the action.</p>\n",
@@ -9324,15 +9492,15 @@
       "srcFileId": "addon_components_rad-tabs.js"
     },
     {
-      "file": "addon/components/rad-popover/content.js",
-      "line": 41,
+      "file": "addon/components/rad-popover.js",
+      "line": 76,
       "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
       "itemtype": "property",
       "name": "size",
       "type": "{string}",
       "default": "''",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content.js"
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-modal.js",
@@ -9346,15 +9514,15 @@
       "srcFileId": "addon_components_rad-modal.js"
     },
     {
-      "file": "addon/components/rad-popover.js",
-      "line": 74,
+      "file": "addon/components/rad-popover/content.js",
+      "line": 41,
       "description": "<p>The size of the tooltip itself. A list of preset sizes available are:</p>\n<ul>\n<li><code>'small'</code></li>\n<li><code>'medium'</code></li>\n<li><code>'large'</code></li>\n<li><code>'x-large'</code></li>\n</ul>\n<p>Defaults to <code>'medium'</code> if no value is supplied.</p>\n",
       "itemtype": "property",
       "name": "size",
       "type": "{string}",
       "default": "''",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content.js"
     },
     {
       "file": "addon/components/rad-drawer/target.js",
@@ -9439,65 +9607,14 @@
       "srcFileId": "addon_components_rad-tabs.js"
     },
     {
-      "file": "addon/components/rad-modal/header.js",
-      "line": 122,
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "default": "'header'",
-      "class": "Component.RadModal.Header",
-      "srcFileId": "addon_components_rad-modal_header.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip.js",
-      "line": 136,
-      "description": "<p>Tooltips should almost aways be inline spans.</p>\n",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "default": "span",
-      "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip.js"
-    },
-    {
-      "file": "addon/components/rad-popover/content.js",
-      "line": 109,
-      "description": "<p>Remove wrapping ember element for subcomponent, it's not needed.</p>\n",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "class": "Component.RadPopover.Content",
-      "srcFileId": "addon_components_rad-popover_content.js"
-    },
-    {
-      "file": "addon/components/rad-modal/footer.js",
-      "line": 20,
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "default": "'footer'",
-      "class": "Component.RadModal.Footer",
-      "srcFileId": "addon_components_rad-modal_footer.js"
-    },
-    {
-      "file": "addon/components/rad-popover.js",
-      "line": 148,
-      "description": "<p>Component element: div</p>\n",
-      "itemtype": "property",
-      "name": "tagName",
-      "type": "{string}",
-      "class": "Component.RadPopover",
-      "srcFileId": "addon_components_rad-popover.js"
-    },
-    {
-      "file": "addon/components/rad-state.js",
+      "file": "addon/components/rad-svg.js",
       "line": 56,
-      "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
+      "description": "<p>SVG DOM element</p>\n",
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
-      "class": "Component.RadState",
-      "srcFileId": "addon_components_rad-state.js"
+      "class": "Component.RadSVG",
+      "srcFileId": "addon_components_rad-svg.js"
     },
     {
       "file": "addon/components/rad-button.js",
@@ -9511,6 +9628,16 @@
       "srcFileId": "addon_components_rad-button.js"
     },
     {
+      "file": "addon/components/rad-modal/header.js",
+      "line": 122,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'header'",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header.js"
+    },
+    {
       "file": "addon/components/rad-tooltip/content.js",
       "line": 51,
       "description": "<p><code>div</code> DOM element</p>\n",
@@ -9521,14 +9648,55 @@
       "srcFileId": "addon_components_rad-tooltip_content.js"
     },
     {
-      "file": "addon/components/rad-svg.js",
+      "file": "addon/components/rad-state.js",
       "line": 56,
-      "description": "<p>SVG DOM element</p>\n",
+      "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
-      "class": "Component.RadSVG",
-      "srcFileId": "addon_components_rad-svg.js"
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 150,
+      "description": "<p>Component element: div</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
+    },
+    {
+      "file": "addon/components/rad-popover/content.js",
+      "line": 109,
+      "description": "<p>Remove wrapping ember element for subcomponent, it's not needed.</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "class": "Component.RadPopover.Content",
+      "srcFileId": "addon_components_rad-popover_content.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 136,
+      "description": "<p>Tooltips should almost aways be inline spans.</p>\n",
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "span",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
+    },
+    {
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 20,
+      "itemtype": "property",
+      "name": "tagName",
+      "type": "{string}",
+      "default": "'footer'",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
     },
     {
       "file": "addon/components/rad-button.js",
@@ -9596,6 +9764,17 @@
       "srcFileId": "addon_components_rad-modal_header.js"
     },
     {
+      "file": "addon/components/rad-tooltip/title.js",
+      "line": 46,
+      "description": "<p>Tooltips are tagged on hover by default. <code>RadButton</code> will check this flag\nand the existence of <code>tagcategory</code> on mouseEnter. This means if you need\nto fire a tag on hover, you only have to pass <code>tagcategory</code>.</p>\n",
+      "itemtype": "property",
+      "name": "taghover",
+      "type": "{Boolean}",
+      "default": "true",
+      "class": "Component.RadTooltip.Title",
+      "srcFileId": "addon_components_rad-tooltip_title.js"
+    },
+    {
       "file": "addon/components/rad-button.js",
       "line": 122,
       "description": "<p>Tagging property. Handles firing a tag on hover when true.</p>\n",
@@ -9608,17 +9787,6 @@
       "default": "false",
       "class": "Component.RadButton",
       "srcFileId": "addon_components_rad-button.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip/title.js",
-      "line": 46,
-      "description": "<p>Tooltips are tagged on hover by default. <code>RadButton</code> will check this flag\nand the existence of <code>tagcategory</code> on mouseEnter. This means if you need\nto fire a tag on hover, you only have to pass <code>tagcategory</code>.</p>\n",
-      "itemtype": "property",
-      "name": "taghover",
-      "type": "{Boolean}",
-      "default": "true",
-      "class": "Component.RadTooltip.Title",
-      "srcFileId": "addon_components_rad-tooltip_title.js"
     },
     {
       "file": "addon/components/rad-button.js",
@@ -9664,7 +9832,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 100,
+      "line": 102,
       "itemtype": "property",
       "name": "targetComponent",
       "type": "{string}",
@@ -9673,18 +9841,6 @@
       "default": "'rad-button'",
       "class": "Component.RadPopover",
       "srcFileId": "addon_components_rad-popover.js"
-    },
-    {
-      "file": "addon/components/rad-tooltip.js",
-      "line": 90,
-      "itemtype": "property",
-      "name": "titleComponent",
-      "type": "{string}",
-      "passed": "",
-      "optional": 1,
-      "default": "'rad-tooltip/title'",
-      "class": "Component.RadTooltip",
-      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
       "file": "addon/components/rad-card.js",
@@ -9697,6 +9853,18 @@
       "default": "'rad-card/title'",
       "class": "Component.RadCard",
       "srcFileId": "addon_components_rad-card.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip.js",
+      "line": 90,
+      "itemtype": "property",
+      "name": "titleComponent",
+      "type": "{string}",
+      "passed": "",
+      "optional": 1,
+      "default": "'rad-tooltip/title'",
+      "class": "Component.RadTooltip",
+      "srcFileId": "addon_components_rad-tooltip.js"
     },
     {
       "file": "addon/components/rad-drawer.js",
@@ -9741,13 +9909,6 @@
       "srcFileId": "addon_components_rad-state.js"
     },
     {
-      "file": "addon/components/rad-dropdown/content.js",
-      "line": 26,
-      "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
-      "class": "Component.RadDropdown.Content",
-      "srcFileId": "addon_components_rad-dropdown_content.js"
-    },
-    {
       "file": "addon/components/rad-popover/content.js",
       "line": 178,
       "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
@@ -9758,10 +9919,17 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 82,
-      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
+      "line": 81,
+      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-dropdown</code> element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 26,
+      "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
       "class": "Component.RadDropdown.Content",
       "srcFileId": "addon_components_rad-dropdown_content.js"
     },
@@ -9825,13 +9993,13 @@
       "srcFileId": "addon_components_rad-tabs.js"
     },
     {
-      "file": "addon/components/rad-dropdown.js",
-      "line": 243,
-      "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
+      "file": "addon/components/rad-popover.js",
+      "line": 223,
+      "description": "<p>Safety first!\nIf we leave the page without closing the popover we don't want to orphan\nlisteners.</p>\n",
       "itemtype": "method",
       "name": "willDestroyElement",
-      "class": "Component.RadDropdown",
-      "srcFileId": "addon_components_rad-dropdown.js"
+      "class": "Component.RadPopover",
+      "srcFileId": "addon_components_rad-popover.js"
     },
     {
       "file": "addon/components/rad-modal.js",
@@ -9845,6 +10013,15 @@
       },
       "class": "Component.RadModal",
       "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown.js",
+      "line": 243,
+      "description": "<p>Safety first!\nIf we leave the page without closing the dropdown we don't want to orphan\nlisteners.</p>\n",
+      "itemtype": "method",
+      "name": "willDestroyElement",
+      "class": "Component.RadDropdown",
+      "srcFileId": "addon_components_rad-dropdown.js"
     }
   ],
   "warnings": [
@@ -10030,11 +10207,11 @@
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-popover.js:92"
+      "line": " addon/components/rad-popover.js:94"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-popover.js:100"
+      "line": " addon/components/rad-popover.js:102"
     },
     {
       "message": "unknown tag: passed",

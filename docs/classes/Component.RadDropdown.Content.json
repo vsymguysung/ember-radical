@@ -61,17 +61,17 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 26,
-      "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
+      "line": 81,
+      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-dropdown</code> element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.</p>\n",
+      "itemtype": "event",
+      "name": "touchEnd",
       "class": "Component.RadDropdown.Content",
       "srcFileId": "addon_components_rad-dropdown_content.js"
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 82,
-      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
-      "itemtype": "event",
-      "name": "touchEnd",
+      "line": 26,
+      "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
       "class": "Component.RadDropdown.Content",
       "srcFileId": "addon_components_rad-dropdown_content.js"
     }
@@ -148,8 +148,8 @@
   "event": [
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 82,
-      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
+      "line": 81,
+      "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-dropdown</code> element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",
       "class": "Component.RadDropdown.Content",

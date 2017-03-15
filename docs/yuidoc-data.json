@@ -569,7 +569,7 @@
       "plugin_for": [],
       "extension_for": [],
       "file": "addon/components/rad-popover.js",
-      "line": 8,
+      "line": 10,
       "description": "Popover tooltips to Make UI Great Again.™\n\nUse this component along with the subcomponent `rad-popover.content` to\ncreate popovers(super fancy tooltips). This component works by using mouse\nand focus events on **this** wrapping element.\n\n#### Sample Usage:\n\n```handlebars\n{{#rad-popover as |components|}}\n  {{#components.target}}Hover me{{/rad-button}}\n  {{#components.content position=\"top\" size=\"small\"}}\n    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>\n  {{/components.content}}\n{{/rad-popover}}\n```\n\n#### Configuration Properties\n\nA set of configuration properties can be passed into the child `{{rad-popover/content}}`\ncomponent to control how its appearance. Here is a brief overview:\n\n- `position`: Where the tooltip is positioned relative to anchor element:\n   - `top`\n   - `bottom`\n   - `left`\n   - `right`\n   - `bottom-left`\n   - `bottom-right`\n- `size`: Preset width of the tooltip:\n   - `small`\n   - `medium`\n   - `large`\n\n```glimmer\n\nFor full documentation, see the {{cross-link class=\"Component.CorePopover\" item=\"position\"}}position property{{/cross-link}} and the {{cross-link class=\"Component.CorePopover\" item=\"size\"}}size property{{/cross-link}}.\n```",
       "is_constructor": 1,
       "extends": "Ember.Component"
@@ -956,8 +956,8 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 82,
-      "description": "Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n`rad-popover` element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.",
+      "line": 81,
+      "description": "Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n`rad-dropdown` element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.",
       "itemtype": "event",
       "name": "touchEnd",
       "class": "Component.RadDropdown.Content"
@@ -2288,7 +2288,7 @@
       "line": 230,
       "description": "Remove click listener from body. Used to DRY up our cleanup code in the\nsupported click and mouse out close liseners.",
       "itemtype": "method",
-      "name": "_unbindClickListener",
+      "name": "_unbindDropdownListeners",
       "access": "protected",
       "tagname": "",
       "class": "Component.RadDropdown"
@@ -2583,7 +2583,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 57,
+      "line": 59,
       "description": "The position that the tooltip is created in relative to its anchor element.\nValid options are:\n- `\"top\"`\n- `\"bottom\"`\n- `\"left\"`\n- `\"right\"`\n- `\"bottom-left\"`\n- `\"bottom-right\"`\n\nDefaults to `\"bottom\"` if no value is supplied.",
       "itemtype": "property",
       "name": "position",
@@ -2593,7 +2593,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 74,
+      "line": 76,
       "description": "The size of the tooltip itself. A list of preset sizes available are:\n- `\"small\"`\n- `\"medium\"`\n- `\"large\"`\n- `\"x-large\"`\n\nDefaults to `\"medium\"` if no value is supplied.",
       "itemtype": "property",
       "name": "size",
@@ -2603,7 +2603,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 92,
+      "line": 94,
       "itemtype": "property",
       "name": "contentComponent",
       "type": "{string}",
@@ -2614,7 +2614,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 100,
+      "line": 102,
       "itemtype": "property",
       "name": "targetComponent",
       "type": "{string}",
@@ -2625,7 +2625,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 112,
+      "line": 114,
       "description": "Unique string used to handle setting up aria roles for A++ usability. This\nidentifier needs to be set as the `aria-describedby` attr of the popover\nhover target and the `id` of the actual popover content",
       "itemtype": "property",
       "name": "aria-describedby",
@@ -2640,7 +2640,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 121,
+      "line": 123,
       "description": "Auto-binds `data-test` attributes",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -2649,7 +2649,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 128,
+      "line": 130,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -2658,7 +2658,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 134,
+      "line": 136,
       "description": "Bind standard core class: `rad-popover`",
       "itemtype": "property",
       "name": "classNames",
@@ -2667,7 +2667,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 140,
+      "line": 142,
       "description": "State boolean for display of the popover content. Is toggled true/false to\nhandle show/hide. Updated in `_showContent` and `_hideContent`",
       "itemtype": "property",
       "name": "hidden",
@@ -2677,7 +2677,7 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 148,
+      "line": 150,
       "description": "Component element: div",
       "itemtype": "property",
       "name": "tagName",
@@ -2686,29 +2686,51 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 158,
-      "description": "Handle showing tooltip content",
-      "itemtype": "method",
-      "name": "_showContent",
-      "return": {
-        "description": "undefined"
-      },
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover.js",
-      "line": 166,
-      "description": "Handle showing tooltip content",
+      "line": 160,
+      "description": "Handle hiding tooltip content; unbind touch event listeners, unbind escape\nkey listener, set hidden state to true.",
       "itemtype": "method",
       "name": "_hideContent",
       "return": {
-        "description": "undefined"
+        "description": "",
+        "type": "Undefined"
       },
       "class": "Component.RadPopover"
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 178,
+      "line": 171,
+      "description": "When the popover is opened, bind an event listener that will close it if\nthe user touches anywhere other than the popover.",
+      "itemtype": "method",
+      "name": "_bindPopoverListeners",
+      "access": "protected",
+      "tagname": "",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 188,
+      "description": "Handle showing tooltip content; bind an event listener for mobile for\ntouch events that occur outside of the popover, set hidden state to false",
+      "itemtype": "method",
+      "name": "_showContent",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 199,
+      "description": "Remove mouseleave and touchend listeners from body. Used to DRY up our\ncleanup code in the supported mouseleave and touchend close liseners.",
+      "itemtype": "method",
+      "name": "_unbindClickListener",
+      "access": "protected",
+      "tagname": "",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 212,
       "description": "Checks for a position prop value; if none was supplied, set a default\nof `bottom`",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -2720,23 +2742,15 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 193,
-      "description": "Show content on mouse enter",
-      "itemtype": "event",
-      "name": "mouseEnter",
+      "line": 223,
+      "description": "Safety first!\nIf we leave the page without closing the popover we don't want to orphan\nlisteners.",
+      "itemtype": "method",
+      "name": "willDestroyElement",
       "class": "Component.RadPopover"
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 200,
-      "description": "Hide content on mouse leave",
-      "itemtype": "event",
-      "name": "mouseLeave",
-      "class": "Component.RadPopover"
-    },
-    {
-      "file": "addon/components/rad-popover.js",
-      "line": 207,
+      "line": 240,
       "description": "Show content on focus",
       "itemtype": "event",
       "name": "focusIn",
@@ -2744,10 +2758,50 @@
     },
     {
       "file": "addon/components/rad-popover.js",
-      "line": 214,
+      "line": 247,
       "description": "Hide content on focusOut",
       "itemtype": "event",
       "name": "focusOut",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 254,
+      "description": "Show content on mouse enter",
+      "itemtype": "event",
+      "name": "mouseEnter",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 261,
+      "description": "Hide content on mouse leave",
+      "itemtype": "event",
+      "name": "mouseLeave",
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 273,
+      "description": "Proxy action for the {{c-l '_hideContent'}} method.",
+      "itemtype": "method",
+      "name": "hide",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadPopover"
+    },
+    {
+      "file": "addon/components/rad-popover.js",
+      "line": 281,
+      "description": "Proxy action for the {{c-l '_showContent'}} method.",
+      "itemtype": "method",
+      "name": "show",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
       "class": "Component.RadPopover"
     },
     {
@@ -3652,11 +3706,11 @@
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-popover.js:92"
+      "line": " addon/components/rad-popover.js:94"
     },
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-popover.js:100"
+      "line": " addon/components/rad-popover.js:102"
     },
     {
       "message": "unknown tag: passed",
