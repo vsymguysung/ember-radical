@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 56,
+      "line": 57,
       "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -14,7 +14,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 71,
+      "line": 72,
       "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true. Also\nbinds the positional class to the container</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -24,7 +24,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 65,
+      "line": 66,
       "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -34,7 +34,23 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 18,
+      "line": 83,
+      "description": "<p>Handle checking component width against window width on render. If\noverflowing reset the width of the popover to prevent overflow.</p>\n",
+      "todo": [
+        ": Adjust width of dropdown to be 90/100% of viewport and center it\ninstead of shrinking it to fit."
+      ],
+      "itemtype": "event",
+      "name": "didRender",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 19,
       "description": "<p>Adds <code>dropdown-menu</code> class which removes padding in order to show\ndropdown menu items.</p>\n",
       "itemtype": "property",
       "name": "dropdownMenu",
@@ -45,7 +61,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 46,
+      "line": 47,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -61,7 +77,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 81,
+      "line": 126,
       "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-dropdown</code> element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",
@@ -70,7 +86,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 26,
+      "line": 27,
       "description": "<p>/**</p>\n<ul>\n<li>The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.</li>\n<li>Valid options are:</li>\n<li>\n<ul>\n<li><code>'left'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'right'</code></li>\n</ul>\n</li>\n<li>\n<ul>\n<li><code>'top right'</code></li>\n</ul>\n</li>\n<li></li>\n<li>Defaults to <code>'left'</code> if no value is supplied. Passed in from parent.</li>\n<li></li>\n<li>@property position</li>\n<li>@type {string}</li>\n<li>@passed</li>\n<li>@default ''</li>\n</ul>\n",
       "class": "Component.RadDropdown.Content",
       "srcFileId": "addon_components_rad-dropdown_content.js"
@@ -81,7 +97,7 @@
   "plugin_for": [],
   "extension_for": [],
   "file": "addon/components/rad-dropdown/content.js",
-  "line": 7,
+  "line": 8,
   "description": "<p>Core dropdown content component</p>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
@@ -89,7 +105,7 @@
   "property": [
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 56,
+      "line": 57,
       "description": "<p>Bind <code>aria-hidden</code> for A+ usability</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -99,7 +115,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 71,
+      "line": 72,
       "description": "<p>Binds <code>dropdown-menu</code> class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true. Also\nbinds the positional class to the container</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -109,7 +125,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 65,
+      "line": 66,
       "description": "<p>Bind <code>dropdown-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -119,7 +135,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 18,
+      "line": 19,
       "description": "<p>Adds <code>dropdown-menu</code> class which removes padding in order to show\ndropdown menu items.</p>\n",
       "itemtype": "property",
       "name": "dropdownMenu",
@@ -130,7 +146,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 46,
+      "line": 47,
       "description": "<p>String representation of boolean state for <code>aria</code> attrs.</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -148,7 +164,23 @@
   "event": [
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 81,
+      "line": 83,
+      "description": "<p>Handle checking component width against window width on render. If\noverflowing reset the width of the popover to prevent overflow.</p>\n",
+      "todo": [
+        ": Adjust width of dropdown to be 90/100% of viewport and center it\ninstead of shrinking it to fit."
+      ],
+      "itemtype": "event",
+      "name": "didRender",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown.Content",
+      "srcFileId": "addon_components_rad-dropdown_content.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 126,
       "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-dropdown</code> element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",

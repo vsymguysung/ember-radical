@@ -359,7 +359,7 @@
       "plugin_for": [],
       "extension_for": [],
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 7,
+      "line": 8,
       "description": "Core dropdown content component",
       "is_constructor": 1,
       "extends": "Ember.Component"
@@ -898,7 +898,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 18,
+      "line": 19,
       "description": "Adds `dropdown-menu` class which removes padding in order to show\ndropdown menu items.",
       "itemtype": "property",
       "name": "dropdownMenu",
@@ -908,13 +908,13 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 26,
+      "line": 27,
       "description": "/**\n * The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.\n * Valid options are:\n * - `\"left\"`\n * - `\"top\"`\n * - `\"right\"`\n * - `\"top right\"`\n *\n * Defaults to `\"left\"` if no value is supplied. Passed in from parent.\n *\n * @property position\n * @type {string}\n * @passed\n * @default ''",
       "class": "Component.RadDropdown.Content"
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 46,
+      "line": 47,
       "description": "String representation of boolean state for `aria` attrs.",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -929,7 +929,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 56,
+      "line": 57,
       "description": "Bind `aria-hidden` for A+ usability",
       "itemtype": "property",
       "name": "attributeBindings",
@@ -938,7 +938,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 65,
+      "line": 66,
       "description": "Bind `dropdown-content`",
       "itemtype": "property",
       "name": "classNames",
@@ -947,7 +947,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 71,
+      "line": 72,
       "description": "Binds `dropdown-menu` class if {{cross-link class=\"Component.RadDropdown.Content\" item=\"dropdownMenu\"}} is true. Also\nbinds the positional class to the container",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -956,7 +956,22 @@
     },
     {
       "file": "addon/components/rad-dropdown/content.js",
-      "line": 81,
+      "line": 83,
+      "description": "Handle checking component width against window width on render. If\noverflowing reset the width of the popover to prevent overflow.",
+      "todo": [
+        ": Adjust width of dropdown to be 90/100% of viewport and center it\ninstead of shrinking it to fit."
+      ],
+      "itemtype": "event",
+      "name": "didRender",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadDropdown.Content"
+    },
+    {
+      "file": "addon/components/rad-dropdown/content.js",
+      "line": 126,
       "description": "Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n`rad-dropdown` element. Real abnoxious when you're trying to click\nsomething. Fire the link or button manually. Through the wonderful power\nof JavaScript.",
       "itemtype": "event",
       "name": "touchEnd",
@@ -3526,7 +3541,7 @@
   "warnings": [
     {
       "message": "unknown tag: passed",
-      "line": " addon/components/rad-dropdown/content.js:18"
+      "line": " addon/components/rad-dropdown/content.js:19"
     },
     {
       "message": "unknown tag: closure",
@@ -3766,7 +3781,7 @@
     },
     {
       "message": "Missing item type\n/**\n * The position that the tooltip is created in relative to its anchor element. Combine \"top\" with \"right\" to get a top and right aligned menu.\n * Valid options are:\n * - `\"left\"`\n * - `\"top\"`\n * - `\"right\"`\n * - `\"top right\"`\n *\n * Defaults to `\"left\"` if no value is supplied. Passed in from parent.\n *\n * @property position\n * @type {string}\n * @passed\n * @default ''",
-      "line": " addon/components/rad-dropdown/content.js:26"
+      "line": " addon/components/rad-dropdown/content.js:27"
     }
   ]
 }
