@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-alert.js",
-      "line": 122,
+      "line": 129,
       "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
       "itemtype": "method",
       "name": "_selfDestruct",
@@ -17,7 +17,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 141,
+      "line": 148,
       "description": "<p>Actions hash</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -33,6 +33,16 @@
       "name": "ariaRole",
       "type": "{string}",
       "default": "'alert'",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    {
+      "file": "addon/components/rad-alert.js",
+      "line": 106,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
       "class": "Component.RadAlert",
       "srcFileId": "addon_components_rad-alert.js"
     },
@@ -82,7 +92,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 112,
+      "line": 119,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -92,7 +102,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 106,
+      "line": 113,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -102,7 +112,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 147,
+      "line": 154,
       "description": "<p>A proxy action for the selfDestruct method</p>\n",
       "itemtype": "method",
       "name": "dismiss",
@@ -139,7 +149,7 @@
   "method": [
     {
       "file": "addon/components/rad-alert.js",
-      "line": 122,
+      "line": 129,
       "description": "<p>Allows for quick and easy dismissal of the alert. The alert is faded from\nview, then totally removed from the DOM and the component instance is\ndestroyed.</p>\n",
       "itemtype": "method",
       "name": "_selfDestruct",
@@ -152,7 +162,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 147,
+      "line": 154,
       "description": "<p>A proxy action for the selfDestruct method</p>\n",
       "itemtype": "method",
       "name": "dismiss",
@@ -167,7 +177,7 @@
   "property": [
     {
       "file": "addon/components/rad-alert.js",
-      "line": 141,
+      "line": 148,
       "description": "<p>Actions hash</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -183,6 +193,16 @@
       "name": "ariaRole",
       "type": "{string}",
       "default": "'alert'",
+      "class": "Component.RadAlert",
+      "srcFileId": "addon_components_rad-alert.js"
+    },
+    {
+      "file": "addon/components/rad-alert.js",
+      "line": 106,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
       "class": "Component.RadAlert",
       "srcFileId": "addon_components_rad-alert.js"
     },
@@ -232,7 +252,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 112,
+      "line": 119,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -242,7 +262,7 @@
     },
     {
       "file": "addon/components/rad-alert.js",
-      "line": 106,
+      "line": 113,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",

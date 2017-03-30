@@ -34,7 +34,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 93,
+      "line": 96,
       "description": "<p>Bind size and position props</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -44,7 +44,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 87,
+      "line": 90,
       "description": "<p>Bind wrapping classname <code>popover-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -54,7 +54,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 136,
+      "line": 139,
       "description": "<p>Handle checking component width against window width on render. If overflowing\nreset the width of the popover to prevent overflow</p>\n",
       "itemtype": "event",
       "name": "didRender",
@@ -78,7 +78,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 99,
+      "line": 102,
       "description": "<p>Computed prop returning <strong>strings</strong> for boolean of hidden. This is done so\nthat <code>aria-hidden</code> is always present on component and displays either 'true'\nor \"false\". (Binding boolean removes <code>aria-hidden</code> entirely when hidden is\ntrue)</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -95,7 +95,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 119,
+      "line": 122,
       "description": "<p>Handle binding passed <code>aria-describedby</code> as this component's <code>elementId</code> on\ninit.</p>\n",
       "itemtype": "event",
       "name": "init",
@@ -130,7 +130,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 109,
+      "line": 112,
       "description": "<p>Remove wrapping ember element for subcomponent, it's not needed.</p>\n",
       "itemtype": "property",
       "name": "tagName",
@@ -140,7 +140,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 178,
+      "line": 181,
       "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",
@@ -191,7 +191,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 93,
+      "line": 96,
       "description": "<p>Bind size and position props</p>\n",
       "itemtype": "property",
       "name": "classNameBindings",
@@ -201,7 +201,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 87,
+      "line": 90,
       "description": "<p>Bind wrapping classname <code>popover-content</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -222,7 +222,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 99,
+      "line": 102,
       "description": "<p>Computed prop returning <strong>strings</strong> for boolean of hidden. This is done so\nthat <code>aria-hidden</code> is always present on component and displays either 'true'\nor \"false\". (Binding boolean removes <code>aria-hidden</code> entirely when hidden is\ntrue)</p>\n",
       "itemtype": "property",
       "name": "hiddenForArias",
@@ -261,7 +261,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 109,
+      "line": 112,
       "description": "<p>Remove wrapping ember element for subcomponent, it's not needed.</p>\n",
       "itemtype": "property",
       "name": "tagName",
@@ -273,7 +273,7 @@
   "event": [
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 136,
+      "line": 139,
       "description": "<p>Handle checking component width against window width on render. If overflowing\nreset the width of the popover to prevent overflow</p>\n",
       "itemtype": "event",
       "name": "didRender",
@@ -286,7 +286,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 119,
+      "line": 122,
       "description": "<p>Handle binding passed <code>aria-describedby</code> as this component's <code>elementId</code> on\ninit.</p>\n",
       "itemtype": "event",
       "name": "init",
@@ -299,7 +299,7 @@
     },
     {
       "file": "addon/components/rad-popover/content.js",
-      "line": 178,
+      "line": 181,
       "description": "<p>Nasty touch eventses. Tricksy touch eventses. Any short touch event on this\ncontent component will fire the focusOut and the mouseLeave on the\n<code>rad-popover</code> element. Real abnoxious when you're trying to click something.\nFire the link or button manually. Through the wonderful power of JavaScript.</p>\n",
       "itemtype": "event",
       "name": "touchEnd",

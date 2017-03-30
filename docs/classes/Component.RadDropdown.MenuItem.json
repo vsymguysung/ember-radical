@@ -4,7 +4,17 @@
   "classitems": [
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 14,
+      "line": 32,
+      "description": "<p>Auto-binds <code>data-test</code> attribute</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.MenuItem",
+      "srcFileId": "addon_components_rad-dropdown_menu-item.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 39,
       "description": "<p>Binds <code>dropdown-item</code> class</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -14,7 +24,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 20,
+      "line": 15,
       "description": "<p>Placeholder closure action for click events. If no value is passed in it\nwill just call <code>_super</code> from the original <code>RadButton</code> class and then call\nthe <code>hide</code> closure action.</p>\n",
       "itemtype": "event",
       "name": "click",
@@ -27,7 +37,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 38,
+      "line": 48,
       "description": "<p>When attributes are received, if a prop exists for click, we assume that\nsome custom behavior has been passed in. However, this custom behavior will\noverride our default behavior of closing the dropdown menus when a menu\nitem is clicked, which is bad.</p>\n<p>So, we will compare the new value of <code>click</code> with an old value that we\nmanually store. If they are not equal, we set up a new method that calls\nsuper, runs the new behavior, and then runs the passed-in hide action. This\nalso works well for setting up default click behavior when no click action\nis passed in, as the initial value of click is a dummy closure.</p>\n<p>This method is then stored on both the <code>click</code> and <code>_click</code> properties so\nthat it can be used by default for clicks, and so that it is preserved\nfor comparison if/when a new action is passed in. Because we compare the\nold and new values, the method creation and setting should really only\nevaluate the first time attributes are passed in unless the user is doing\nsome crazy dynamic action switching, and even if they are, we have that\ncase covered here.</p>\n<p>This is also useful to safeguard against unnecessary repeated sets if OTHER\npassed properties (like branding or classNames/class or whatever else) get\nupdated even if the click action doesn't change.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -40,7 +50,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 28,
+      "line": 23,
       "description": "<p>Closure action that hides the dropdown</p>\n",
       "itemtype": "property",
       "name": "hide",
@@ -62,7 +72,17 @@
   "property": [
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 14,
+      "line": 32,
+      "description": "<p>Auto-binds <code>data-test</code> attribute</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadDropdown.MenuItem",
+      "srcFileId": "addon_components_rad-dropdown_menu-item.js"
+    },
+    {
+      "file": "addon/components/rad-dropdown/menu-item.js",
+      "line": 39,
       "description": "<p>Binds <code>dropdown-item</code> class</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -72,7 +92,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 28,
+      "line": 23,
       "description": "<p>Closure action that hides the dropdown</p>\n",
       "itemtype": "property",
       "name": "hide",
@@ -84,7 +104,7 @@
   "event": [
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 20,
+      "line": 15,
       "description": "<p>Placeholder closure action for click events. If no value is passed in it\nwill just call <code>_super</code> from the original <code>RadButton</code> class and then call\nthe <code>hide</code> closure action.</p>\n",
       "itemtype": "event",
       "name": "click",
@@ -97,7 +117,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/menu-item.js",
-      "line": 38,
+      "line": 48,
       "description": "<p>When attributes are received, if a prop exists for click, we assume that\nsome custom behavior has been passed in. However, this custom behavior will\noverride our default behavior of closing the dropdown menus when a menu\nitem is clicked, which is bad.</p>\n<p>So, we will compare the new value of <code>click</code> with an old value that we\nmanually store. If they are not equal, we set up a new method that calls\nsuper, runs the new behavior, and then runs the passed-in hide action. This\nalso works well for setting up default click behavior when no click action\nis passed in, as the initial value of click is a dummy closure.</p>\n<p>This method is then stored on both the <code>click</code> and <code>_click</code> properties so\nthat it can be used by default for clicks, and so that it is preserved\nfor comparison if/when a new action is passed in. Because we compare the\nold and new values, the method creation and setting should really only\nevaluate the first time attributes are passed in unless the user is doing\nsome crazy dynamic action switching, and even if they are, we have that\ncase covered here.</p>\n<p>This is also useful to safeguard against unnecessary repeated sets if OTHER\npassed properties (like branding or classNames/class or whatever else) get\nupdated even if the click action doesn't change.</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",

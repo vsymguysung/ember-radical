@@ -1,11 +1,10 @@
 {
   "parser": "YUIDoc",
-  "namespaces": [],
   "name": "Ember Radical Docs",
   "description": "API documentation for Ember Radical Components, Helpers and Services",
-  "version": "1.5.3",
+  "version": "1.6.0",
   "repository": "https://github.com/healthsparq/ember-radical",
-  "logo": "/ember-radical/ember-fountainhead/img/ember-logo.png",
+  "guides": [],
   "modules": [],
   "classes": [
     {
@@ -126,6 +125,10 @@
     },
     {
       "name": "Utils.Arias",
+      "type": "classes"
+    },
+    {
+      "name": "Utils.Deprecated",
       "type": "classes"
     },
     {

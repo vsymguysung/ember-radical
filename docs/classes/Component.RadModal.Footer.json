@@ -5,6 +5,16 @@
     {
       "file": "addon/components/rad-modal/footer.js",
       "line": 14,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
+    },
+    {
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 21,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -14,7 +24,7 @@
     },
     {
       "file": "addon/components/rad-modal/footer.js",
-      "line": 20,
+      "line": 27,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
@@ -37,6 +47,16 @@
     {
       "file": "addon/components/rad-modal/footer.js",
       "line": 14,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal.Footer",
+      "srcFileId": "addon_components_rad-modal_footer.js"
+    },
+    {
+      "file": "addon/components/rad-modal/footer.js",
+      "line": 21,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -46,7 +66,7 @@
     },
     {
       "file": "addon/components/rad-modal/footer.js",
-      "line": 20,
+      "line": 27,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",

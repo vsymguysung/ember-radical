@@ -15,6 +15,16 @@
     {
       "file": "addon/components/rad-tooltip/title.js",
       "line": 58,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadTooltip.Title",
+      "srcFileId": "addon_components_rad-tooltip_title.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip/title.js",
+      "line": 65,
       "description": "<p>Handle binding standard core class name <code>tooltip-title</code> and <code>basic-b</code>\nbound for display purposes</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -58,6 +68,16 @@
     {
       "file": "addon/components/rad-tooltip/title.js",
       "line": 58,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadTooltip.Title",
+      "srcFileId": "addon_components_rad-tooltip_title.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip/title.js",
+      "line": 65,
       "description": "<p>Handle binding standard core class name <code>tooltip-title</code> and <code>basic-b</code>\nbound for display purposes</p>\n",
       "itemtype": "property",
       "name": "classNames",

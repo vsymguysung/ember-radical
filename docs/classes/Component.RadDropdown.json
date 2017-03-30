@@ -160,13 +160,13 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 152,
+      "line": 160,
       "itemtype": "property",
       "name": "menuItemComponent",
       "type": "{string}",
       "passed": "",
       "optional": 1,
-      "default": "'rad-dropdown/menu-item'",
+      "default": "'rad-dropdown/target'",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
     },
@@ -441,13 +441,13 @@
     },
     {
       "file": "addon/components/rad-dropdown.js",
-      "line": 152,
+      "line": 160,
       "itemtype": "property",
       "name": "menuItemComponent",
       "type": "{string}",
       "passed": "",
       "optional": 1,
-      "default": "'rad-dropdown/menu-item'",
+      "default": "'rad-dropdown/target'",
       "class": "Component.RadDropdown",
       "srcFileId": "addon_components_rad-dropdown.js"
     },

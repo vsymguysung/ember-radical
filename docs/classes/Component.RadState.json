@@ -4,7 +4,7 @@
   "classitems": [
     {
       "file": "addon/components/rad-state.js",
-      "line": 67,
+      "line": 70,
       "description": "<p>Actions hash</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -14,29 +14,38 @@
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 50,
-      "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
-      "itemtype": "property",
-      "name": "active",
-      "type": "{Boolean}",
+      "line": 76,
+      "description": "<p>Sets the {{c-l state}} property to <code>false</code>.\nThis action is now deprecated as of Ember Radical 1.6 and will be\nremoved in Ember Radical 2.0. you should use {{c-l actions.setFalse}}\ninstead.</p>\n",
+      "itemtype": "method",
+      "name": "close",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "deprecated": true,
       "class": "Component.RadState",
       "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 73,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
+      "line": 89,
+      "description": "<p>Sets the {{c-l state}} property to <code>true</code>.\nThis action is now deprecated as of Ember Radical 1.6 and will be\nremoved in Ember Radical 2.0. you should use {{c-l actions.setTrue}}\ninstead.</p>\n",
       "itemtype": "method",
-      "name": "closeModal",
+      "name": "open",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "deprecated": true,
       "class": "Component.RadState",
       "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 80,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
+      "line": 102,
+      "description": "<p>Sets the {{c-l state}} property to <code>false</code>.</p>\n",
       "itemtype": "method",
-      "name": "openModal",
+      "name": "setFalse",
       "return": {
         "description": "",
         "type": "Undefined"
@@ -46,7 +55,30 @@
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 56,
+      "line": 110,
+      "description": "<p>Sets the {{c-l state}} property to <code>true</code>.</p>\n",
+      "itemtype": "method",
+      "name": "setTrue",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 52,
+      "description": "<p>Boolean state tracking property. Use this to handle show/hide status or\nany arbitrary state that can be represented by a boolean.</p>\n",
+      "itemtype": "property",
+      "name": "state",
+      "type": "{Boolean}",
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 59,
       "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
       "itemtype": "property",
       "name": "tagName",
@@ -56,17 +88,10 @@
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 88,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
+      "line": 118,
+      "description": "<p>Toggles the value of {{c-l 'state'}} to the opposite of its current\nvalue.</p>\n",
       "itemtype": "method",
       "name": "toggleState",
-      "params": [
-        {
-          "name": "state",
-          "description": "<p>State to set active to</p>\n",
-          "type": "Boolean"
-        }
-      ],
       "return": {
         "description": "",
         "type": "Undefined"
@@ -80,26 +105,45 @@
   "plugin_for": [],
   "extension_for": [],
   "file": "addon/components/rad-state.js",
-  "line": 4,
-  "description": "<p>Component that can be used for tracking state changes with modals or drawers.\nWrap either in one of these and use the yielded state and actions to handle\nshowing/hiding/controlling your component.</p>\n<p>Useful mainly for demonstration/documentation purposes, but also handy for\nwhen you don't have a convenient place to store state (particularly during\nearly development stages). It's also kind of nice for not cluttering up your\nparent scope with a bunch of extra state and actions you might not want to\nhang onto. Go nuts!</p>\n<h2>Usage</h2>\n<p>Instances of <code>rad-state</code> yield an <code>active</code> property and a hash of <code>actions</code>\nfor manipulating that state: <code>open</code>, <code>close</code>, and <code>toggleState</code>.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>state stateActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>bank<span class=\"token operator\">-</span>vault\n    isOpen<span class=\"token operator\">=</span>state\n    closeVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>close\n    openVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>open<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Or for a smipler toggling implementation:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>switchState switchActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>light<span class=\"token operator\">-</span><span class=\"token keyword\">switch</span> isOn<span class=\"token operator\">=</span>switchState toggleSwitch<span class=\"token operator\">=</span>switchActions<span class=\"token punctuation\">.</span>toggleState<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>The actions in the actions hash have already been yielded via the action\nhelper, so it is not necessary to continue using that helper when passing\nactions into child components as properties (but you totally still can if\nyou would prefer to.</p>\n",
+  "line": 5,
+  "description": "<p>Component that can be used for tracking state changes with modals or drawers.\nWrap either in one of these and use the yielded state and actions to handle\nshowing/hiding/controlling your component.</p>\n<p>Useful mainly for demonstration/documentation purposes, but also handy for\nwhen you don't have a convenient place to store state (particularly during\nearly development stages). It's also kind of nice for not cluttering up your\nparent scope with a bunch of extra state and actions you might not want to\nhang onto. Go nuts!</p>\n<h2>Usage</h2>\n<p>Instances of <code>rad-state</code> yield a {{c-l state}} property and a hash of\n<code>actions</code> for manipulating that state: {{c-l setTrue}}, {{c-l setFalse}},\nand {{c-l toggleState}}.</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>state stateActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>bank<span class=\"token operator\">-</span>vault\n    isOpen<span class=\"token operator\">=</span>state\n    closeVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>setFalse\n    openVault<span class=\"token operator\">=</span>stateActions<span class=\"token punctuation\">.</span>setTrue<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>Or for a smipler toggling implementation:</p>\n<pre class=\"language-handlebars\"><code class=\"language-handlebars\"><span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>#rad<span class=\"token operator\">-</span>state <span class=\"token keyword\">as</span> <span class=\"token operator\">|</span>switchState switchActions<span class=\"token operator\">|</span><span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n  <span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span>light<span class=\"token operator\">-</span><span class=\"token keyword\">switch</span> isOn<span class=\"token operator\">=</span>switchState toggleSwitch<span class=\"token operator\">=</span>switchActions<span class=\"token punctuation\">.</span>toggleState<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n<span class=\"token punctuation\">{</span><span class=\"token punctuation\">{</span><span class=\"token operator\">/</span>rad<span class=\"token operator\">-</span>state<span class=\"token punctuation\">}</span><span class=\"token punctuation\">}</span>\n</code></pre>\n<p>The actions in the actions hash have already been yielded via the action\nhelper, so it is not necessary to continue using that helper when passing\nactions into child components as properties (but you totally still can if\nyou would prefer to.</p>\n",
   "is_constructor": 1,
   "extends": "Ember.Component",
   "method": [
     {
       "file": "addon/components/rad-state.js",
-      "line": 73,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to false.</p>\n",
+      "line": 76,
+      "description": "<p>Sets the {{c-l state}} property to <code>false</code>.\nThis action is now deprecated as of Ember Radical 1.6 and will be\nremoved in Ember Radical 2.0. you should use {{c-l actions.setFalse}}\ninstead.</p>\n",
       "itemtype": "method",
-      "name": "closeModal",
+      "name": "close",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "deprecated": true,
       "class": "Component.RadState",
       "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 80,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to true.</p>\n",
+      "line": 89,
+      "description": "<p>Sets the {{c-l state}} property to <code>true</code>.\nThis action is now deprecated as of Ember Radical 1.6 and will be\nremoved in Ember Radical 2.0. you should use {{c-l actions.setTrue}}\ninstead.</p>\n",
       "itemtype": "method",
-      "name": "openModal",
+      "name": "open",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "deprecated": true,
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 102,
+      "description": "<p>Sets the {{c-l state}} property to <code>false</code>.</p>\n",
+      "itemtype": "method",
+      "name": "setFalse",
       "return": {
         "description": "",
         "type": "Undefined"
@@ -109,17 +153,23 @@
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 88,
-      "description": "<p>Sets the <a href=\"#property_active\">active</a> property to passed state.</p>\n",
+      "line": 110,
+      "description": "<p>Sets the {{c-l state}} property to <code>true</code>.</p>\n",
+      "itemtype": "method",
+      "name": "setTrue",
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Component.RadState",
+      "srcFileId": "addon_components_rad-state.js"
+    },
+    {
+      "file": "addon/components/rad-state.js",
+      "line": 118,
+      "description": "<p>Toggles the value of {{c-l 'state'}} to the opposite of its current\nvalue.</p>\n",
       "itemtype": "method",
       "name": "toggleState",
-      "params": [
-        {
-          "name": "state",
-          "description": "<p>State to set active to</p>\n",
-          "type": "Boolean"
-        }
-      ],
       "return": {
         "description": "",
         "type": "Undefined"
@@ -131,7 +181,7 @@
   "property": [
     {
       "file": "addon/components/rad-state.js",
-      "line": 67,
+      "line": 70,
       "description": "<p>Actions hash</p>\n",
       "itemtype": "property",
       "name": "actions",
@@ -141,17 +191,17 @@
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 50,
-      "description": "<p>Boolean state tracking property. Use this to handle show/hide status.</p>\n",
+      "line": 52,
+      "description": "<p>Boolean state tracking property. Use this to handle show/hide status or\nany arbitrary state that can be represented by a boolean.</p>\n",
       "itemtype": "property",
-      "name": "active",
+      "name": "state",
       "type": "{Boolean}",
       "class": "Component.RadState",
       "srcFileId": "addon_components_rad-state.js"
     },
     {
       "file": "addon/components/rad-state.js",
-      "line": 56,
+      "line": 59,
       "description": "<p>Rad State is a purely functional component with no rendered output of its\nown, so it doesn't need a root element cluttering up the DOM when it's\nbeing used.</p>\n",
       "itemtype": "property",
       "name": "tagName",

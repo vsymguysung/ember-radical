@@ -4,6 +4,16 @@
   "classitems": [
     {
       "file": "addon/components/rad-modal/header.js",
+      "line": 113,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
       "line": 45,
       "description": "<p>If you want that header to have some pop</p>\n",
       "itemtype": "property",
@@ -34,7 +44,7 @@
     },
     {
       "file": "addon/components/rad-modal/header.js",
-      "line": 110,
+      "line": 120,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -44,7 +54,7 @@
     },
     {
       "file": "addon/components/rad-modal/header.js",
-      "line": 116,
+      "line": 126,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -105,7 +115,7 @@
     },
     {
       "file": "addon/components/rad-modal/header.js",
-      "line": 122,
+      "line": 132,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",
@@ -140,6 +150,16 @@
   "property": [
     {
       "file": "addon/components/rad-modal/header.js",
+      "line": 113,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal.Header",
+      "srcFileId": "addon_components_rad-modal_header.js"
+    },
+    {
+      "file": "addon/components/rad-modal/header.js",
       "line": 45,
       "description": "<p>If you want that header to have some pop</p>\n",
       "itemtype": "property",
@@ -170,7 +190,7 @@
     },
     {
       "file": "addon/components/rad-modal/header.js",
-      "line": 110,
+      "line": 120,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -180,7 +200,7 @@
     },
     {
       "file": "addon/components/rad-modal/header.js",
-      "line": 116,
+      "line": 126,
       "itemtype": "property",
       "name": "classNames",
       "type": "{Array}",
@@ -241,7 +261,7 @@
     },
     {
       "file": "addon/components/rad-modal/header.js",
-      "line": 122,
+      "line": 132,
       "itemtype": "property",
       "name": "tagName",
       "type": "{string}",

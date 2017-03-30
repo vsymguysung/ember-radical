@@ -16,6 +16,16 @@
     {
       "file": "addon/components/rad-tooltip/content.js",
       "line": 43,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadTooltip.Content",
+      "srcFileId": "addon_components_rad-tooltip_content.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip/content.js",
+      "line": 50,
       "description": "<p>Handle binding standard core class names: <code>jsTooltipTarget</code> &amp;&amp; <code>tooltip-content</code>\n<code>jsTooltipTarget</code> is being used for css positioning. Do we want to pass that\ndirectly instead? probably.</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -25,7 +35,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
-      "line": 70,
+      "line": 77,
       "description": "<p>On render validate that the tooltip content is not overflowing the window.\nIf it is, chop off the overflow.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
       "itemtype": "event",
       "name": "didRender",
@@ -49,7 +59,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
-      "line": 61,
+      "line": 68,
       "description": "<p>Log warning if <code>aria-describedby</code> is not passed in.</p>\n",
       "itemtype": "event",
       "name": "init",
@@ -62,7 +72,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
-      "line": 51,
+      "line": 58,
       "description": "<p><code>div</code> DOM element</p>\n",
       "itemtype": "property",
       "name": "tagName",
@@ -96,6 +106,16 @@
     {
       "file": "addon/components/rad-tooltip/content.js",
       "line": 43,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadTooltip.Content",
+      "srcFileId": "addon_components_rad-tooltip_content.js"
+    },
+    {
+      "file": "addon/components/rad-tooltip/content.js",
+      "line": 50,
       "description": "<p>Handle binding standard core class names: <code>jsTooltipTarget</code> &amp;&amp; <code>tooltip-content</code>\n<code>jsTooltipTarget</code> is being used for css positioning. Do we want to pass that\ndirectly instead? probably.</p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -116,7 +136,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
-      "line": 51,
+      "line": 58,
       "description": "<p><code>div</code> DOM element</p>\n",
       "itemtype": "property",
       "name": "tagName",
@@ -128,7 +148,7 @@
   "event": [
     {
       "file": "addon/components/rad-tooltip/content.js",
-      "line": 70,
+      "line": 77,
       "description": "<p>On render validate that the tooltip content is not overflowing the window.\nIf it is, chop off the overflow.</p>\n<p>If you need to override this event, be sure to call <code>this._super();</code></p>\n",
       "itemtype": "event",
       "name": "didRender",
@@ -141,7 +161,7 @@
     },
     {
       "file": "addon/components/rad-tooltip/content.js",
-      "line": 61,
+      "line": 68,
       "description": "<p>Log warning if <code>aria-describedby</code> is not passed in.</p>\n",
       "itemtype": "event",
       "name": "init",

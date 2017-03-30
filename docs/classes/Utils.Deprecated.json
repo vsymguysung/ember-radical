@@ -1,0 +1,78 @@
+{
+  "name": "Utils.Deprecated",
+  "shortname": "Utils.Deprecated",
+  "classitems": [
+    {
+      "file": "addon/utils/deprecated.js",
+      "line": 6,
+      "description": "<p>Simple utility for emitting consistent, standardized deprecation notices\nfor properties, methods, or other arbitrary parts of the radical component\nAPI that are slated to be removed in the next major release.</p>\n",
+      "itemtype": "method",
+      "name": "deprecated",
+      "params": [
+        {
+          "name": "oldItem",
+          "description": "<p>The name of the deprecated item (property/method/etc)</p>\n",
+          "type": "String"
+        },
+        {
+          "name": "newItem",
+          "description": "<p>The name of the new preferred item</p>\n",
+          "type": "String"
+        },
+        {
+          "name": "nextVersion",
+          "description": "<p>= '2.0' The next major release of the app in which the oldItem will be removed.</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Utils.Deprecated",
+      "srcFileId": "addon_utils_deprecated.js"
+    }
+  ],
+  "plugins": [],
+  "extensions": [],
+  "plugin_for": [],
+  "extension_for": [],
+  "file": "addon/utils/deprecated.js",
+  "line": 1,
+  "is_constructor": 1,
+  "method": [
+    {
+      "file": "addon/utils/deprecated.js",
+      "line": 6,
+      "description": "<p>Simple utility for emitting consistent, standardized deprecation notices\nfor properties, methods, or other arbitrary parts of the radical component\nAPI that are slated to be removed in the next major release.</p>\n",
+      "itemtype": "method",
+      "name": "deprecated",
+      "params": [
+        {
+          "name": "oldItem",
+          "description": "<p>The name of the deprecated item (property/method/etc)</p>\n",
+          "type": "String"
+        },
+        {
+          "name": "newItem",
+          "description": "<p>The name of the new preferred item</p>\n",
+          "type": "String"
+        },
+        {
+          "name": "nextVersion",
+          "description": "<p>= '2.0' The next major release of the app in which the oldItem will be removed.</p>\n",
+          "type": "String"
+        }
+      ],
+      "return": {
+        "description": "",
+        "type": "Undefined"
+      },
+      "class": "Utils.Deprecated",
+      "srcFileId": "addon_utils_deprecated.js"
+    }
+  ],
+  "property": [],
+  "event": [],
+  "srcFileId": "addon_utils_deprecated.js"
+}

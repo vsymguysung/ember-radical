@@ -15,7 +15,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 277,
+      "line": 284,
       "description": "<p>Determines if the modal is currently <em>active</em>, which means that the modal\nhas been opened/closed. Note that this is different from <em>visible</em>. Due to\ntransition time, a modal can be <em>active</em> but not yet <em>visible</em> to the user.\nSeperate props are required for tracking active vs visible to allow the\ncss animations to trigger.</p>\n",
       "itemtype": "property",
       "name": "_active",
@@ -26,7 +26,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 312,
+      "line": 319,
       "description": "<p>Handle modal cleanup here:</p>\n<ul>\n<li>Unfreeze body</li>\n<li>Remove 'active' class from modal elements to hide them if still in DOM</li>\n<li>Return focus to last active element unless disabled (for better\nusability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleClose",
@@ -39,7 +39,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 357,
+      "line": 364,
       "description": "<p>Handle modal open work here:</p>\n<ul>\n<li>Freeze the body so that scrolling inside the modal doesn't jank up the\nscreen</li>\n<li>Add 'active' class to modal elements, if the modal is already in DOM this\nwill make it visible</li>\n<li>Set private reference to currently active DOM element so we can return\nfocus to it when the modal closes (for usability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleOpen",
@@ -52,7 +52,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 288,
+      "line": 295,
       "description": "<p>Private reference to the last focused element in the DOM before the modal\nwas opened. This is used to make the experience for keyboard users not\nterrible.</p>\n",
       "itemtype": "property",
       "name": "_lastFocusedElement",
@@ -63,7 +63,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 298,
+      "line": 305,
       "description": "<p>Determines if the modal should be rendered in the template. This is not\nequivalent to <code>open</code>. In order for CSS transitions to work properly, the\nmodal must be rendered in the DOM when the class that applies the\ntransition is added to/removed from the modal.</p>\n",
       "itemtype": "property",
       "name": "_visible",
@@ -95,6 +95,16 @@
     },
     {
       "file": "addon/components/rad-modal.js",
+      "line": 266,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
       "line": 143,
       "description": "<p>Unless autoFocus is toggled to false, the modal will store a\nreference to whatever element is currently active in the dom and return\nfocus to that element when the modal closes.</p>\n",
       "itemtype": "property",
@@ -106,7 +116,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 266,
+      "line": 273,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -155,7 +165,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 425,
+      "line": 432,
       "description": "<p>When modal is inserted into DOM, check if it should be open by default, if\nso we need to call <code>_handleOpen</code> manually to open it.</p>\n",
       "itemtype": "method",
       "name": "didInsertElement",
@@ -164,7 +174,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 408,
+      "line": 415,
       "description": "<p>Whenever this component receives attrs check if the <code>open</code> prop matches the\ntemplate status. If not, call the handlers for open/close</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -244,7 +254,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 450,
+      "line": 457,
       "description": "<p>willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.</p>\n<p><strong>NOTE:</strong> This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.</p>\n",
       "itemtype": "event",
       "name": "willDestroyElement",
@@ -268,7 +278,7 @@
   "method": [
     {
       "file": "addon/components/rad-modal.js",
-      "line": 312,
+      "line": 319,
       "description": "<p>Handle modal cleanup here:</p>\n<ul>\n<li>Unfreeze body</li>\n<li>Remove 'active' class from modal elements to hide them if still in DOM</li>\n<li>Return focus to last active element unless disabled (for better\nusability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleClose",
@@ -281,7 +291,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 357,
+      "line": 364,
       "description": "<p>Handle modal open work here:</p>\n<ul>\n<li>Freeze the body so that scrolling inside the modal doesn't jank up the\nscreen</li>\n<li>Add 'active' class to modal elements, if the modal is already in DOM this\nwill make it visible</li>\n<li>Set private reference to currently active DOM element so we can return\nfocus to it when the modal closes (for usability)</li>\n</ul>\n",
       "itemtype": "method",
       "name": "_handleOpen",
@@ -294,7 +304,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 425,
+      "line": 432,
       "description": "<p>When modal is inserted into DOM, check if it should be open by default, if\nso we need to call <code>_handleOpen</code> manually to open it.</p>\n",
       "itemtype": "method",
       "name": "didInsertElement",
@@ -316,7 +326,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 277,
+      "line": 284,
       "description": "<p>Determines if the modal is currently <em>active</em>, which means that the modal\nhas been opened/closed. Note that this is different from <em>visible</em>. Due to\ntransition time, a modal can be <em>active</em> but not yet <em>visible</em> to the user.\nSeperate props are required for tracking active vs visible to allow the\ncss animations to trigger.</p>\n",
       "itemtype": "property",
       "name": "_active",
@@ -327,7 +337,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 288,
+      "line": 295,
       "description": "<p>Private reference to the last focused element in the DOM before the modal\nwas opened. This is used to make the experience for keyboard users not\nterrible.</p>\n",
       "itemtype": "property",
       "name": "_lastFocusedElement",
@@ -338,7 +348,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 298,
+      "line": 305,
       "description": "<p>Determines if the modal should be rendered in the template. This is not\nequivalent to <code>open</code>. In order for CSS transitions to work properly, the\nmodal must be rendered in the DOM when the class that applies the\ntransition is added to/removed from the modal.</p>\n",
       "itemtype": "property",
       "name": "_visible",
@@ -370,6 +380,16 @@
     },
     {
       "file": "addon/components/rad-modal.js",
+      "line": 266,
+      "description": "<p>Auto-binds <code>data-test</code> attributes</p>\n",
+      "itemtype": "property",
+      "name": "attributeBindings",
+      "type": "{Array}",
+      "class": "Component.RadModal",
+      "srcFileId": "addon_components_rad-modal.js"
+    },
+    {
+      "file": "addon/components/rad-modal.js",
       "line": 143,
       "description": "<p>Unless autoFocus is toggled to false, the modal will store a\nreference to whatever element is currently active in the dom and return\nfocus to that element when the modal closes.</p>\n",
       "itemtype": "property",
@@ -381,7 +401,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 266,
+      "line": 273,
       "itemtype": "property",
       "name": "classNameBindings",
       "type": "{Array}",
@@ -499,7 +519,7 @@
   "event": [
     {
       "file": "addon/components/rad-modal.js",
-      "line": 408,
+      "line": 415,
       "description": "<p>Whenever this component receives attrs check if the <code>open</code> prop matches the\ntemplate status. If not, call the handlers for open/close</p>\n",
       "itemtype": "event",
       "name": "didReceiveAttrs",
@@ -512,7 +532,7 @@
     },
     {
       "file": "addon/components/rad-modal.js",
-      "line": 450,
+      "line": 457,
       "description": "<p>willDestroyElement hook used to ensure that all of the closing logic that\nneeds to happen fires off.</p>\n<p><strong>NOTE:</strong> This will make sure that the body doesn't get frozen in place if\nyour modal isn't cleaned up, but when you navigate back to whatever created\nthis modal it may still be open. If this is the case remember that the\nopen state of your modal is a data down property which needs to be cleaned\nup on whatever parent context controls it.</p>\n",
       "itemtype": "event",
       "name": "willDestroyElement",

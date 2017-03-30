@@ -15,7 +15,7 @@
     {
       "file": "addon/components/rad-dropdown/target.js",
       "line": 33,
-      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability</p>\n",
+      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability;\nAuto-binds <code>data-test</code> attribute</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
@@ -24,7 +24,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/target.js",
-      "line": 39,
+      "line": 44,
       "description": "<p>Bind <code>dropdown-target</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
@@ -73,7 +73,7 @@
     {
       "file": "addon/components/rad-dropdown/target.js",
       "line": 33,
-      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability</p>\n",
+      "description": "<p>Bind <code>aria-haspopup</code> and <code>aria-expanded</code> for A+ usability;\nAuto-binds <code>data-test</code> attribute</p>\n",
       "itemtype": "property",
       "name": "attributeBindings",
       "type": "{Array}",
@@ -82,7 +82,7 @@
     },
     {
       "file": "addon/components/rad-dropdown/target.js",
-      "line": 39,
+      "line": 44,
       "description": "<p>Bind <code>dropdown-target</code></p>\n",
       "itemtype": "property",
       "name": "classNames",
